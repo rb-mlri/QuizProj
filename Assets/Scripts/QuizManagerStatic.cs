@@ -31,13 +31,28 @@ public class QuizManagerStatic : MonoBehaviour
 
         int selectedLevel = PlayerPrefs.GetInt("SelectedLevel", 1);
         LoadQuestionsFromFile(selectedLevel);
-        ShuffleQuestions();
-        quizQuestions = allQuestions.Take(totalQuestionsInTest).ToList();
+
+        // Split into difficulty groups
+        List<Question> easyQ = allQuestions.Where(q => q.questionText.Contains("(Easy)")).ToList();
+        List<Question> mediumQ = allQuestions.Where(q => q.questionText.Contains("(Medium)")).ToList();
+        List<Question> hardQ = allQuestions.Where(q => q.questionText.Contains("(Hard)")).ToList();
+
+        // Shuffle each list
+        ShuffleList(easyQ);
+        ShuffleList(mediumQ);
+        ShuffleList(hardQ);
+
+        // Take desired counts
+        quizQuestions = new List<Question>();
+        quizQuestions.AddRange(easyQ.Take(7));
+        quizQuestions.AddRange(mediumQ.Take(7));
+        quizQuestions.AddRange(hardQ.Take(6));
+
         ShowQuestion();
 
         backToMenuButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene("MainMenu"); // replace with your menu scene name
+            SceneManager.LoadScene("MainMenu");
         });
     }
 
@@ -95,6 +110,21 @@ public class QuizManagerStatic : MonoBehaviour
             }
         }
     }
+
+    void ShuffleList(List<Question> list)
+    {
+        System.Random rng = new System.Random();
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            var value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+    }
+
 
     void ShuffleQuestions()
     {
