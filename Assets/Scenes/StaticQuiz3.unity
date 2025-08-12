@@ -738,7 +738,7 @@ MonoBehaviour:
   resultPanel: {fileID: 1499402779}
   resultText: {fileID: 2125749391}
   backToMenuButton: {fileID: 86341395}
-  fileName: questions.txt
+  fileName: questions3.txt
   totalQuestionsInTest: 20
 --- !u!1 &286543402
 GameObject:

@@ -3,29 +3,39 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject mainButtonsPanel;
-    public GameObject levelPanel;
+    public GameObject levelSelectPanel;
 
     public void ShowLevelPanel()
     {
-        mainButtonsPanel.SetActive(false);
-        levelPanel.SetActive(true);
+        levelSelectPanel.SetActive(true);
     }
 
     public void BackToMainMenu()
     {
-        levelPanel.SetActive(false);
-        mainButtonsPanel.SetActive(true);
+        levelSelectPanel.SetActive(false);
     }
 
     public void SelectLevel(int level)
     {
         PlayerPrefs.SetInt("SelectedLevel", level);
-        SceneManager.LoadScene("StaticQuiz");
+
+        // Dynamically load scene name based on level number
+        string sceneName = $"StaticQuiz{level}";
+        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            Debug.LogError($"Scene '{sceneName}' not found in Build Settings!");
+        }
     }
 
     public void ExitGame()
     {
         Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

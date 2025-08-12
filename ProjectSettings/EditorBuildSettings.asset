@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a001b8e890ac27e4fbd844b91daf3958
   - enabled: 1
-    path: Assets/Scenes/StaticQuiz.unity
+    path: Assets/Scenes/StaticQuiz1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/StaticQuiz2.unity
+    guid: 8b253825ccf66ac469275243340c42b1
+  - enabled: 1
+    path: Assets/Scenes/StaticQuiz3.unity
+    guid: 97dc25a115cbebe4f981e2cfc0c564e2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
