@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 749792544}
   - component: {fileID: 749792543}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Static Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 825634626}
   - component: {fileID: 825634625}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2035,7 +2035,7 @@ GameObject:
   - component: {fileID: 1534521330}
   - component: {fileID: 1534521329}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Adaptive Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2446,8 +2446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ef33505a67a76419da7dd6c499d993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainButtonsPanel: {fileID: 1768035955}
-  levelPanel: {fileID: 1402492707}
+  levelSelectPanel: {fileID: 1402492707}
 --- !u!4 &1708299773
 Transform:
   m_ObjectHideFlags: 0
