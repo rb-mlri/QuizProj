@@ -17,7 +17,7 @@ public class QuizManagerStatic : MonoBehaviour
     public Button backToMenuButton;
 
     [Header("File Settings")]
-    public string baseFileName = "questions"; // file name without level number
+    public string fileName = "questions.txt"; // must be in StreamingAssets
     public int totalQuestionsInTest = 20;
 
     private List<Question> allQuestions = new List<Question>();
@@ -30,12 +30,24 @@ public class QuizManagerStatic : MonoBehaviour
         resultPanel.SetActive(false); // hide result panel at start
 
         int selectedLevel = PlayerPrefs.GetInt("SelectedLevel", 1);
+        LoadQuestionsFromFile(selectedLevel);
 
-        // Build the correct file name based on the selected level
-        string fileName = $"{baseFileName}{selectedLevel}.txt";
+        // Split into difficulty groups
+        List<Question> easyQ = allQuestions.Where(q => q.questionText.Contains("(Easy)")).ToList();
+        List<Question> mediumQ = allQuestions.Where(q => q.questionText.Contains("(Medium)")).ToList();
+        List<Question> hardQ = allQuestions.Where(q => q.questionText.Contains("(Hard)")).ToList();
 
-        LoadQuestionsFromFile(fileName);
-        SelectBalancedQuestions();
+        // Shuffle each list
+        ShuffleList(easyQ);
+        ShuffleList(mediumQ);
+        ShuffleList(hardQ);
+
+        // Take desired counts
+        quizQuestions = new List<Question>();
+        quizQuestions.AddRange(easyQ.Take(7));
+        quizQuestions.AddRange(mediumQ.Take(7));
+        quizQuestions.AddRange(hardQ.Take(6));
+
         ShowQuestion();
 
         backToMenuButton.onClick.AddListener(() =>
@@ -44,7 +56,7 @@ public class QuizManagerStatic : MonoBehaviour
         });
     }
 
-    void LoadQuestionsFromFile(string fileName)
+    void LoadQuestionsFromFile(int level)
     {
         string path = Path.Combine(Application.streamingAssetsPath, fileName);
 
@@ -57,13 +69,14 @@ public class QuizManagerStatic : MonoBehaviour
         string[] lines = File.ReadAllLines(path);
         Question q = null;
         List<string> opts = new List<string>();
+        int currentLevel = 0;
 
         foreach (string rawLine in lines)
         {
             string line = rawLine.Trim();
             if (string.IsNullOrEmpty(line))
             {
-                if (q != null)
+                if (q != null && currentLevel == level)
                 {
                     q.options = opts.ToArray();
                     allQuestions.Add(q);
@@ -73,7 +86,12 @@ public class QuizManagerStatic : MonoBehaviour
                 continue;
             }
 
-            if (line.StartsWith("Q:"))
+            if (line.StartsWith("Level:"))
+            {
+                if (int.TryParse(line.Substring(6).Trim(), out int lvl))
+                    currentLevel = lvl;
+            }
+            else if (line.StartsWith("Q:"))
             {
                 q = new Question();
                 q.questionText = line.Substring(2).Trim();
@@ -84,30 +102,16 @@ public class QuizManagerStatic : MonoBehaviour
             }
             else if (line.StartsWith("Answer:"))
             {
-                if (q != null && int.TryParse(line.Substring(7).Trim(), out int idx))
-                    q.correctIndex = idx;
+                if (q != null)
+                {
+                    if (int.TryParse(line.Substring(7).Trim(), out int idx))
+                        q.correctIndex = idx;
+                }
             }
         }
     }
 
-    void SelectBalancedQuestions()
-    {
-        // Split questions by difficulty
-        var easy = allQuestions.Where(q => q.questionText.Contains("(Easy)")).ToList();
-        var medium = allQuestions.Where(q => q.questionText.Contains("(Medium)")).ToList();
-        var hard = allQuestions.Where(q => q.questionText.Contains("(Hard)")).ToList();
-
-        Shuffle(easy);
-        Shuffle(medium);
-        Shuffle(hard);
-
-        quizQuestions.Clear();
-        quizQuestions.AddRange(easy.Take(7));
-        quizQuestions.AddRange(medium.Take(7));
-        quizQuestions.AddRange(hard.Take(6));
-    }
-
-    void Shuffle(List<Question> list)
+    void ShuffleList(List<Question> list)
     {
         System.Random rng = new System.Random();
         int n = list.Count;
@@ -118,6 +122,21 @@ public class QuizManagerStatic : MonoBehaviour
             var value = list[k];
             list[k] = list[n];
             list[n] = value;
+        }
+    }
+
+
+    void ShuffleQuestions()
+    {
+        System.Random rng = new System.Random();
+        int n = allQuestions.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            var value = allQuestions[k];
+            allQuestions[k] = allQuestions[n];
+            allQuestions[n] = value;
         }
     }
 
@@ -157,15 +176,17 @@ public class QuizManagerStatic : MonoBehaviour
         }
 
         currentIndex++;
-        Invoke(nameof(ShowQuestion), 0.5f);
+        Invoke(nameof(ShowQuestion), 0.5f); // short delay before next
     }
 
     void FinishQuiz()
     {
+        // Hide question elements
         questionText.gameObject.SetActive(false);
         feedbackText.gameObject.SetActive(false);
         foreach (Button b in optionButtons) b.gameObject.SetActive(false);
 
+        // Show result panel
         resultPanel.SetActive(true);
         resultText.text = $"Score: {score}/{quizQuestions.Count}";
     }

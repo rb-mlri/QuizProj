@@ -1,4 +1,0 @@
-repository "QuizProj 2025-08-08_20-25-44/QuizProj@18968223786204@cloud"
-  path "/"
-    br "/main"
-    co "/main"
