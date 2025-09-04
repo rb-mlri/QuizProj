@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "QuizProj-main.sln"
+    "dotnet.defaultSolution": "QuizProj.sln"
 }
