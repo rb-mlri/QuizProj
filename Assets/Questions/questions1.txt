@@ -1,0 +1,696 @@
+﻿Level: 1
+Topic: Syntax
+Q: (Easy) Which symbol is used to end a statement in Java?
+A) :
+B) ;
+C) .
+D) ,
+Answer: 1
+
+Level: 1
+Topic: Variables
+Q: (Easy) What is the correct way to declare an integer variable named count?
+A) int count;
+B) integer count;
+C) var count;
+D) num count;
+Answer: 0
+
+Level: 1
+Topic: Variables
+Q: (Easy) Which keyword is used to create a constant in Java?
+A) const
+B) static
+C) final
+D) constant
+Answer: 2
+
+Level: 1
+Topic: Data Types
+Q: (Easy) Which of these is NOT a primitive data type in Java?
+A) int
+B) double
+C) boolean
+D) String
+Answer: 3
+
+Level: 1
+Topic: Output
+Q: (Easy) Which method is used to print text without a newline?
+A) System.out.println()
+B) System.out.print()
+C) System.out.write()
+D) System.print()
+Answer: 1
+
+Level: 1
+Topic: Data Types
+Q: (Easy) What is the default value of an uninitialized int in Java?
+A) 0
+B) null
+C) undefined
+D) garbage value
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Easy) Which operator is used for string concatenation in Java?
+A) &
+B) +
+C) .
+D) ,
+Answer: 1
+
+Level: 1
+Topic: Comments
+Q: (Easy) How do you write a single-line comment in Java?
+A) #
+B) //
+C) /* */
+D) <!-- -->
+Answer: 1
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which keyword is used to create a new object?
+A) make
+B) create
+C) new
+D) alloc
+Answer: 2
+
+Level: 1
+Topic: Strings
+Q: (Easy) Which escape sequence represents a newline?
+A) "\ n"
+B) "\ t"
+C) "\ r"
+D) "\ s"
+Answer: 0
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which keyword is used to declare a class in Java?
+A) define
+B) class
+C) new
+D) object
+Answer: 1
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which of these is a valid Java identifier?
+A) my-variable
+B) myVariable
+C) 123value
+D) #count
+Answer: 1
+
+Level: 1
+Topic: Comments
+Q: (Easy) What does the '//' symbol represent in Java?
+A) Start of a loop
+B) Single-line comment
+C) Division operator
+D) End of statement
+Answer: 1
+
+Level: 1
+Topic: Variables
+Q: (Easy) What is the correct way to assign value 10 to variable x?
+A) int x == 10;
+B) int x = 10;
+C) int x : 10;
+D) int x <- 10;
+Answer: 1
+
+Level: 1
+Topic: Data Types
+Q: (Easy) Which data type is used to store decimal values?
+A) int
+B) double
+C) char
+D) boolean
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Easy) Which symbol is used for multiplication in Java?
+A) ","
+B) x
+C) *
+D) multiply
+Answer: 2
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which keyword is used to define a class in Java?
+A) define
+B) class
+C) new
+D) object
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Easy) Which escape sequence is used for a tab space?
+A) "\ n"
+B) "\ t"
+C) "\ s"
+D) "\ r"
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Easy) Which of these is a correct way to declare a string?
+A) string name = "Java";
+B) String name = "Java";
+C) str name = "Java";
+D) text name = "Java";
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Easy) What will this print? 
+System.out.println("Java " + "Rocks");
+A) Java Rocks
+B) JavaRocks
+C) "Java Rocks"
+D) Rocks Java
+Answer: 0
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which of these is used to start the main method in Java?
+A) public static void start(String[] args)
+B) public void main(String[] args)
+C) public static void main(String[] args)
+D) static main(String args)
+Answer: 2
+
+Level: 1
+Topic: Comments
+Q: (Easy) How do you write a multi-line comment in Java?
+A) <!-- comment -->
+B) /* comment */
+C) // comment
+D) ## comment ##
+Answer: 1
+
+Level: 1
+Topic: Variables
+Q: (Easy) Which is the correct way to declare a double variable named price?
+A) double price;
+B) num price;
+C) decimal price;
+D) var price;
+Answer: 0
+
+Level: 1
+Topic: Strings
+Q: (Easy) What will this print?
+System.out.println("Hello" + " " + "World");
+A) HelloWorld
+B) Hello World
+C) "Hello World"
+D) Hello+World
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Easy) Which operator is used to compare two values in Java?
+A) =
+B) ==
+C) !=
+D) equals
+Answer: 1
+
+Level: 1
+Topic: Data Types
+Q: (Medium) Which data type should be used to store a single character in Java?
+A) char
+B) String
+C) byte
+D) int
+Answer: 0
+
+Level: 1
+Topic: Type Casting
+Q: (Medium) What is the result of this code?
+int x = (int) 4.9;
+System.out.println(x);
+A) 4
+B) 5
+C) 4.9
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Strings
+Q: (Medium) What is the output?
+System.out.println("Java".toUpperCase());
+A) Java
+B) JAVA
+C) java
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Input
+Q: (Medium) Which import is required to use the Scanner class?
+A) import java.util.Scanner;
+B) import java.io.Scanner;
+C) include Scanner;
+D) import Scanner.util;
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Medium) What is the output?
+System.out.println(10 == 5 + 5);
+A) true
+B) false
+C) 10
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Medium) What will this code output? int x = 7; System.out.println(x % 3);
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 1
+
+Level: 1
+Topic: Type Casting
+Q: (Medium) Which method converts a String to an int?
+A) Integer.parseInt()
+B) String.toInt()
+C) Integer.convert()
+D) int.parse()
+Answer: 0
+
+Level: 1
+Topic: Variables
+Q: (Medium) Which of the following is a valid variable name?
+A) 2value
+B) _value
+C) value#
+D) class
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) What is the result of 5 + 2 * 3?
+A) 21
+B) 11
+C) 15
+D) 7
+Answer: 1
+
+Level: 1
+Topic: Input
+Q: (Medium) Which method reads a line of text from console input?
+A) System.in.readLine()
+B) Scanner.nextLine()
+C) read.input()
+D) Console.getLine()
+Answer: 1
+
+Level: 1
+Topic: Output
+Q: (Medium) Which format specifier is used for integers in printf?
+A) %d
+B) %i
+C) %f
+D) %s
+Answer: 0
+
+Level: 1
+Topic: Data Types
+Q: (Medium) What is the size of an int in Java?
+A) 8 bits
+B) 16 bits
+C) 32 bits
+D) 64 bits
+Answer: 2
+
+Level: 1
+Topic: Variables
+Q: (Medium) Which keyword is used to prevent variable modification?
+A) constant
+B) final
+C) fixed
+D) static
+Answer: 1
+
+Level: 1
+Topic: Type Casting
+Q: (Medium) Which casting is done automatically by Java?
+A) Narrowing
+B) Widening
+C) Explicit
+D) Forced
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Medium) What is the output? 
+System.out.println("2" + 3 + 4)
+A) 9
+B) 234
+C) 27
+D) 7
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) Which operator has the highest precedence?
+A) +
+B) *
+C) =
+D) &&
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) What will this print?
+int a = 5, b = 2;
+System.out.println(a / b);
+A) 2.5
+B) 2
+C) 3
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Medium) Which method returns the length of a string?
+A) size()
+B) length
+C) length()
+D) count()
+Answer: 2
+
+Level: 1
+Topic: Type Casting
+Q: (Medium) Which conversion requires explicit casting?
+A) int to long
+B) double to int
+C) int to double
+D) char to int
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) Which of these will evaluate to true?
+A) (5 == 6)
+B) (7 > 2)
+C) (3 < 1)
+D) (4 != 4)
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Medium) What is the output?
+System.out.println("Hello".length());
+A) 4
+B) 5
+C) 6
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) Which operator is used for logical OR?
+A) ||
+B) |
+C) or
+D) bitOr
+Answer: 0
+
+Level: 1
+Topic: Input
+Q: (Medium) Which class is used to handle console input?
+A) Console
+B) Scanner
+C) Reader
+D) Input
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) Which expression will result in 15?
+A) 3 + 5 * 2
+B) (3 + 5) * 2 - 1
+C) 30 / 2
+D) 18 - 4
+Answer: 2
+
+Level: 1
+Topic: Strings
+Q: (Medium) Which value is returned by 'charAt(0)' for "World"?
+A) W
+B) o
+C) r
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Hard) What will be the result of this code?
+int x = 5;
+x += 3 * 2;
+System.out.println(x);
+A) 11
+B) 16
+C) 10
+D) 5
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Hard) What is the output?
+System.out.println(10 / 4);
+A) 2.5
+B) 2
+C) 2.0
+D) 3
+Answer: 1
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which of the following is not allowed in Java identifiers?
+A) $
+B) _
+C) digits at start
+D) letters
+Answer: 2
+
+Level: 1
+Topic: Strings
+Q: (Hard) What is the output?
+System.out.println("Result: " + (5 + 2) * 2);
+A) Result: 14
+B) Result: 9
+C) Result: 52
+D) Compilation Error
+Answer: 3
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) What is the ASCII value of character 'A'?
+A) 65
+B) 66
+C) 64
+D) 67
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Hard) What is the result of this?
+System.out.println(7 % 4 * 3);
+A) 21
+B) 9
+C) 3
+D) 12
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Hard) What will this print?
+System.out.println("Hello".charAt(1));
+A) H
+B) e
+C) l
+D) o
+Answer: 1
+
+Level: 1
+Topic: Variables
+Q: (Hard) Which of the following is the correct declaration of a constant?
+A) final int VALUE = 100;
+B) const int VALUE = 100;
+C) constant int VALUE = 100;
+D) fixed int VALUE = 100;
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Hard) What is the result of Math.pow(2, 3)?
+A) 6
+B) 8
+C) 9
+D) 4
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Hard) Which escape sequence is used to represent a backslash?
+A) \\
+B) \b
+C) \s
+D) \/
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Hard) Which of these operators is used for logical AND?
+A) &&
+B) &
+C) and
+D) &&
+Answer: 0
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which type of error is detected during compilation?
+A) Logical Error
+B) Syntax Error
+C) Runtime Error
+D) None
+Answer: 1
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) Which of these is a widening conversion?
+A) double → int
+B) int → long
+C) int → byte
+D) long → short
+Answer: 1
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) What is the value of this expression?
+(int) 7.9
+A) 8
+B) 7
+C) 7.9
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which package is automatically imported into every Java program?
+A) java.io
+B) java.util
+C) java.lang
+D) java.math
+Answer: 2
+
+Level: 1
+Topic: Operators
+Q: (Hard) Which operator is used for bitwise XOR?
+A) ^
+B) |
+C) &
+D) ~
+Answer: 0
+
+Level: 1
+Topic: Strings
+Q: (Hard) What will this print?
+System.out.println(2 + 3 + "4");
+A) 234
+B) 54
+C) 9
+D) 23
+Answer: 1
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) Which conversion is NOT allowed without explicit casting?
+A) int → double
+B) int → long
+C) double → int
+D) char → int
+Answer: 2
+
+Level: 1
+Topic: Variables
+Q: (Hard) Which keyword is used to create a constant value in Java?
+A) static
+B) const
+C) final
+D) constant
+Answer: 2
+
+Level: 1
+Topic: Operators
+Q: (Hard) What is the output of this?
+System.out.println(10 % 3 == 1);
+A) true
+B) false
+C) 1
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Strings
+Q: (Hard) Which method returns the character at a specific index in a string?
+A) substring()
+B) indexOf()
+C) charAt()
+D) get()
+Answer: 2
+
+Level: 1
+Topic: Data Types
+Q: (Hard) Which data type can store the largest range of values?
+A) int
+B) float
+C) long
+D) double
+Answer: 3
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which of these is not a Java keyword?
+A) static
+B) private
+C) goto
+D) include
+Answer: 3
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) What will be the output?
+System.out.println((int) (3.6 + 2.5));
+A) 5
+B) 6
+C) 7
+D) 8
+Answer: 2
+
+Level: 1
+Topic: Strings
+Q: (Hard) What is the result of this?
+System.out.println("A" + 1);
+A) A1
+B) 66
+C) 65
+D) Error
+Answer: 0

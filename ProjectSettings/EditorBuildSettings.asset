@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StaticQuiz3.unity
     guid: 1c8d7dc69b5806f4aaf06750904ea2f0
+  - enabled: 1
+    path: Assets/Scenes/DynamicQuiz4.unity
+    guid: c0268592344cafa40a60394f4679f2a4
+  - enabled: 1
+    path: Assets/Scenes/DynamicQuiz5.unity
+    guid: 8aa52da984c1dad448d8b99fd160b7ce
+  - enabled: 1
+    path: Assets/Scenes/DynamicQuiz6.unity
+    guid: 84a1e2652405cea4781fb350d256f6f4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

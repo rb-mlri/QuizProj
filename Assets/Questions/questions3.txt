@@ -1,0 +1,818 @@
+Level: 3
+Topic: Methods - Defining
+Q: (Easy) Which keyword is used to define a method in Java?
+A) def
+B) method
+C) void
+D) function
+Answer: 2
+
+Level: 3
+Topic: Methods - Defining
+Q: (Easy) What is the correct way to declare a method named 'addNumbers' that returns an int?
+A) int addNumbers() { }
+B) void addNumbers() { }
+C) function addNumbers() { }
+D) def addNumbers() { }
+Answer: 0
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Easy) What will this method return?
+public int getValue() {
+   return 5;
+}
+A) 0
+B) 5
+C) Error
+D) Nothing
+Answer: 1
+
+Level: 3
+Topic: Methods - Defining
+Q: (Easy) What must every method declaration include?
+A) Method body
+B) Method name
+C) Return type
+D) All of the above
+Answer: 3
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Easy) Which keyword is used to exit from a method and return a value?
+A) break
+B) stop
+C) return
+D) exit
+Answer: 2
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Easy) What is the default return type if none is specified in Java?
+A) int
+B) void
+C) Object
+D) There must always be a return type
+Answer: 3
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Easy) What is the correct syntax to declare an integer array named 'nums' with 10 elements?
+A) int nums = new int[10];
+B) int nums[10];
+C) int[] nums = new int[10];
+D) array int nums[10];
+Answer: 2
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Easy) Which index does the first element of an array have in Java?
+A) 0
+B) 1
+C) -1
+D) Depends on declaration
+Answer: 0
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Easy) What is the correct way to access the 3rd element of an array 'arr'?
+A) arr[3]
+B) arr(3)
+C) arr[2]
+D) arr.get(3)
+Answer: 2
+
+Level: 3
+Topic: Arrays - Properties
+Q: (Easy) What is the correct way to find the length of an array 'nums'?
+A) nums.length
+B) nums.length()
+C) length(nums)
+D) nums.size()
+Answer: 0
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Easy) What does the following code print?
+int[] arr = {1,2,3};
+System.out.println(arr[1]);
+A) 1
+B) 2
+C) 3
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Easy) What happens if you try to access an array index out of bounds?
+A) Returns -1
+B) Returns null
+C) Throws ArrayIndexOutOfBoundsException
+D) Prints nothing
+Answer: 2
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Easy) What is the default value of an int array element in Java?
+A) 0
+B) null
+C) -1
+D) undefined
+Answer: 0
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Easy) Which loop is commonly used to traverse an array?
+A) if
+B) for
+C) switch
+D) goto
+Answer: 1
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Easy) What does this code print?
+int[] arr = {10,20,30};
+for(int i=0;i<arr.length;i++) {
+   System.out.print(arr[i] + " ");
+}
+A) 10 20 30
+B) 0 1 2
+C) 30 20 10
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Easy) Which of these correctly declares a method with parameters?
+A) void greet() { }
+B) void greet(String name) { }
+C) greet(String name) { }
+D) def greet(String name) { }
+Answer: 1
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Easy) Which of these methods must specify a return type?
+A) All methods
+B) Only methods that return a value
+C) Only void methods
+D) None
+Answer: 1
+
+Level: 3
+Topic: Methods - Defining
+Q: (Easy) What does the keyword 'void' mean in a method declaration?
+A) Method returns an int
+B) Method does not return anything
+C) Method stops executing
+D) Method is private
+Answer: 1
+
+Level: 3
+Topic: Methods - Calling
+Q: (Easy) What will be the output?
+public void greet() {
+   System.out.println("Hello");
+}
+greet();
+A) Prints nothing
+B) Prints "Hello"
+C) Error
+D) Null
+Answer: 1
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Easy) Which is the correct way to pass arguments to a method?
+A) myMethod()
+B) myMethod(5, "Hello")
+C) myMethod{5, "Hello"}
+D) myMethod: 5, "Hello"
+Answer: 1
+
+Level: 3
+Topic: Methods - Defining
+Q: (Easy) Which method header is valid?
+A) public void sum(int a, int b)
+B) void sum(a, b)
+C) def sum(int a, int b)
+D) function sum(int a, int b)
+Answer: 0
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Easy) What is required for a method to return an int?
+A) void keyword
+B) int keyword in method header
+C) return keyword with int value
+D) Both B and C
+Answer: 3
+
+Level: 3
+Topic: Methods - Calling
+Q: (Easy) Which method call is correct if this method is defined?
+public int square(int n)
+A) square();
+B) square(5);
+C) square("5");
+D) square(int 5);
+Answer: 1
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Easy) Which array declaration is valid?
+A) int arr[] = {1,2,3};
+B) int arr = {1,2,3};
+C) arr = new int{1,2,3};
+D) array arr[3] = {1,2,3};
+Answer: 0
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Easy) What is the index of the last element of an array with size 5?
+A) 5
+B) 4
+C) 6
+D) Depends
+Answer: 1
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Medium) What will this method return?
+public int multiply(int a, int b) {
+   return a * b;
+}
+System.out.println(multiply(2,3));
+A) 5
+B) 6
+C) 23
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Properties
+Q: (Medium) What is printed?
+int[] nums = {1,2,3,4};
+System.out.println(nums.length);
+A) 3
+B) 4
+C) 5
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Medium) What is printed?
+int[] arr = {2,4,6};
+for(int i=0; i<arr.length; i++) {
+   System.out.print(arr[i] + " ");
+}
+A) 246
+B) 2 4 6
+C) 6 4 2
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Medium) What will happen?
+int[] arr = new int[3];
+System.out.println(arr[0]);
+A) 0
+B) null
+C) Error
+D) undefined
+Answer: 0
+
+Level: 3
+Topic: Methods - Defining
+Q: (Medium) Which statement correctly defines a method that returns a double?
+A) public void getValue() { return 2.5; }
+B) public double getValue() { return 2.5; }
+C) double getValue { return 2.5; }
+D) function getValue() double { return 2.5; }
+Answer: 1
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Medium) What is the output?
+public int add(int a, int b) {
+   return a + b;
+}
+System.out.println(add(5,7));
+A) 12
+B) 57
+C) 5
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Medium) What is printed?
+int[] arr = {5,10,15};
+for(int num : arr) {
+   System.out.print(num + " ");
+}
+A) 5 10 15
+B) 15 10 5
+C) 0 1 2
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Medium) Which is the correct way to declare a method that takes a String parameter and returns void?
+A) void printName(String name) { }
+B) printName(String name) { }
+C) void printName(name: String) { }
+D) String printName(void) { }
+Answer: 0
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Medium) What is printed?
+public int square(int n) {
+   return n * n;
+}
+System.out.println(square(4));
+A) 8
+B) 16
+C) 4
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Medium) What is printed?
+int[] nums = {1,2,3,4,5};
+System.out.println(nums[nums.length-1]);
+A) 4
+B) 5
+C) 1
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Properties
+Q: (Medium) Which statement is true about Java arrays?
+A) Size can change dynamically
+B) First index starts at 1
+C) Length is fixed once declared
+D) Elements are stored unordered
+Answer: 2
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Medium) What is printed?
+public void greet(String name) {
+   System.out.println("Hello " + name);
+}
+greet("Alice");
+A) Hello
+B) Hello Alice
+C) Alice
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Medium) What will be the output?
+int[] arr = new int[2];
+arr[0] = 7;
+arr[1] = 9;
+System.out.println(arr[0] + arr[1]);
+A) 16
+B) 79
+C) 7
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods - Defining
+Q: (Medium) What is the correct method header?
+A) public void printMessage() { }
+B) void printMessage;
+C) function printMessage() { }
+D) def printMessage() { }
+Answer: 0
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Medium) What does this code print?
+int[] arr = {1,2,3,4};
+for(int i=arr.length-1; i>=0; i--) {
+   System.out.print(arr[i]);
+}
+A) 1234
+B) 4321
+C) 1111
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Medium) Which of these calls is valid for this method?
+public void show(int x, String y)
+A) show(5,"Hi");
+B) show("Hi",5);
+C) show();
+D) show(int x, String y);
+Answer: 0
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Medium) What will be printed?
+int[] nums = {2,4,6,8};
+int sum = 0;
+for(int n : nums) {
+   sum += n;
+}
+System.out.println(sum);
+A) 20
+B) 26
+C) 8
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods - Defining
+Q: (Medium) Which statement is correct?
+A) A method can only have one parameter
+B) A method must always return a value
+C) A method can return void
+D) A method cannot be public
+Answer: 2
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Medium) What is printed?
+public String echo(String msg) {
+   return msg;
+}
+System.out.println(echo("Test"));
+A) echo
+B) Test
+C) null
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Medium) What happens if a method declares an int return type but does not return anything?
+A) Returns 0 automatically
+B) Returns null
+C) Compilation error
+D) Runtime error
+Answer: 2
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Medium) Which loop is best for traversing all elements of an array?
+A) for loop
+B) enhanced for loop
+C) while loop
+D) All of the above
+Answer: 3
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Medium) What will this print?
+int[] arr = {2,4,6};
+System.out.println(arr[0] + arr[2]);
+A) 6
+B) 8
+C) 2
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods - Defining
+Q: (Medium) Which is valid?
+A) public int sum(int a, int b) { return a+b; }
+B) public int sum(int a, int b) { }
+C) int sum { return a+b; }
+D) def sum(int a, int b) { return a+b; }
+Answer: 0
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Medium) What will happen if you call a method with fewer arguments than it requires?
+A) Missing values are set to 0
+B) Missing values are set to null
+C) Compilation error
+D) Runtime error
+Answer: 2
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Medium) Which array initialization is correct?
+A) int[] arr = new int[]{1,2,3};
+B) int arr = new int[3]{1,2,3};
+C) int arr() = {1,2,3};
+D) array arr = {1,2,3};
+Answer: 0
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Hard) What will this method output?
+public int divide(int a, int b) {
+   return a / b;
+}
+System.out.println(divide(5,2));
+A) 2.5
+B) 2
+C) 3
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Hard) What is printed?
+int[] arr = {1,2,3};
+System.out.println(arr[arr.length]);
+A) 3
+B) 2
+C) Error (IndexOutOfBounds)
+D) null
+Answer: 2
+
+Level: 3
+Topic: Methods - Recursion
+Q: (Hard) What is printed?
+public int factorial(int n) {
+   if(n==0) return 1;
+   return n * factorial(n-1);
+}
+System.out.println(factorial(4));
+A) 12
+B) 24
+C) 20
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods - Defining
+Q: (Hard) Which will compile?
+A) public int add(int a, int b) { return a+b; }
+B) public void add(int a, int b) { return a+b; }
+C) public int add(a,b) { return a+b; }
+D) int add(int a, int b) { System.out.println(a+b); }
+Answer: 0
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Hard) What is printed?
+int[] arr = new int[3];
+arr[0] = 1;
+arr[1] = 2;
+arr[2] = 3;
+for(int i=0; i<=arr.length; i++) {
+   System.out.print(arr[i]);
+}
+A) 123
+B) 123 + Exception
+C) 12
+D) Error at compile
+Answer: 1
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Hard) What will this method return?
+public double average(int[] nums) {
+   int sum = 0;
+   for(int n : nums) sum += n;
+   return sum / nums.length;
+}
+System.out.println(average(new int[]{2,3}));
+A) 2.5
+B) 2
+C) 3
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods - Recursion
+Q: (Hard) What is the result?
+public static int mystery(int x) {
+   if(x<=1) return 1;
+   return x + mystery(x-1);
+}
+System.out.println(mystery(3));
+A) 6
+B) 5
+C) 4
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays - Multidimensional
+Q: (Hard) What is printed?
+int[][] matrix = {{1,2},{3,4}};
+System.out.println(matrix[1][0]);
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 2
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Hard) Which statement about arrays is correct?
+A) int[] arr = new int[-1]; is valid
+B) int[] arr = new int[0]; is valid
+C) int arr[5] = {1,2,3,4,5}; is valid
+D) Arrays are resizable
+Answer: 1
+
+Level: 3
+Topic: Methods - Parameters
+Q: (Hard) What is the output?
+public void test() {
+   int x=5;
+   change(x);
+   System.out.println(x);
+}
+public void change(int y) {
+   y = 10;
+}
+test();
+A) 5
+B) 10
+C) 0
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Hard) What will be printed?
+int[] arr = {1,2,3,4};
+for(int i=0; i<arr.length; i+=2) {
+   System.out.print(arr[i]);
+}
+A) 1234
+B) 13
+C) 24
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Hard) Which code produces an error?
+A) int[] a = new int[0];
+B) int[] b = {};
+C) int[] c = null;
+D) int d[] = new int[-5];
+Answer: 3
+
+Level: 3
+Topic: Methods - Parameters (Varargs)
+Q: (Hard) What is printed?
+public static int sum(int... nums) {
+   int total = 0;
+   for(int n : nums) total += n;
+   return total;
+}
+System.out.println(sum(1,2,3));
+A) 6
+B) 123
+C) 5
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays - Null Handling
+Q: (Hard) What happens?
+int[] arr = {1,2,3};
+arr = null;
+System.out.println(arr[0]);
+A) 1
+B) 0
+C) NullPointerException
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Methods - Recursion
+Q: (Hard) What is the output?
+public int f(int n) {
+   if(n<=1) return n;
+   return f(n-1) + f(n-2);
+}
+System.out.println(f(4));
+A) 2
+B) 3
+C) 5
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Arrays - Parameters
+Q: (Hard) Which statement is true?
+A) Java arrays are passed by value
+B) Java arrays are passed by reference
+C) Array references are passed by value
+D) Arrays are immutable
+Answer: 2
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Hard) What will be printed?
+String[] names = {"A","B","C"};
+System.out.println(names[1]);
+A) A
+B) B
+C) C
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Parameters
+Q: (Hard) What is printed?
+public static void print(int[] arr) {
+   for(int i=0;i<arr.length;i++) {
+      arr[i]+=1;
+   }
+}
+int[] nums = {1,2};
+print(nums);
+System.out.println(nums[0]);
+A) 1
+B) 2
+C) 3
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays - Defining
+Q: (Hard) Which declaration is invalid?
+A) int[] arr = new int[5];
+B) int arr[] = new int[5];
+C) int arr[5];
+D) int[] arr = {1,2,3};
+Answer: 2
+
+Level: 3
+Topic: Arrays - Traversal
+Q: (Hard) What is printed?
+int[] arr = {10,20,30};
+for(int i=0;i<2;i++) {
+   System.out.print(arr[i]);
+}
+A) 10 20
+B) 1020
+C) 30
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods - Return Values
+Q: (Hard) What happens if a method that declares void has a return statement with a value?
+A) It returns the value
+B) It causes a compile error
+C) It ignores the value
+D) It runs but prints nothing
+Answer: 1
+
+Level: 3
+Topic: Methods - Recursion
+Q: (Hard) What is printed?
+public static int mystery(int n) {
+   if(n==1) return 1;
+   return n + mystery(n-1);
+}
+System.out.println(mystery(5));
+A) 15
+B) 10
+C) 5
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods - Defining
+Q: (Hard) Which method header is valid?
+A) public void f(int x);
+B) public void f(int x) { }
+C) void f(int) { }
+D) f(int x) { }
+Answer: 1
+
+Level: 3
+Topic: Arrays - Indexing
+Q: (Hard) What happens if you try to access arr[-1]?
+A) Returns first element
+B) Returns last element
+C) ArrayIndexOutOfBoundsException
+D) NullPointerException
+Answer: 2
+
+Level: 3
+Topic: Arrays - Properties
+Q: (Hard) What is printed?
+int[] arr = {1,2,3,4};
+System.out.println(arr.length * arr[0]);
+A) 1
+B) 4
+C) 5
+D) Error
+Answer: 1
