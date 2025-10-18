@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      light-filters-through-window-illuminating-ancient-stone-steps_0: 2409397643254500145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

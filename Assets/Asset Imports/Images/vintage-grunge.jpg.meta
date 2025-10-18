@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vintage-grunge_0: -107705083174564938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
