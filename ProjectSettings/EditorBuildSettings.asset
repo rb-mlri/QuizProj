@@ -9,23 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a001b8e890ac27e4fbd844b91daf3958
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 9b99b7798445dbf4c893e80b8e6b64e2
+  - enabled: 1
     path: Assets/Scenes/StaticQuiz1.unity
     guid: e99cc74861dfdb0409324ff6d54e32e5
   - enabled: 1
     path: Assets/Scenes/StaticQuiz2.unity
-    guid: 3c611ffcf4b4d424e9d0f4977a1768f9
+    guid: 3e1d54d3aeb46d749b3a2bab03d6b6d1
   - enabled: 1
     path: Assets/Scenes/StaticQuiz3.unity
-    guid: 1c8d7dc69b5806f4aaf06750904ea2f0
+    guid: 9890b508db5505b479a206ef5ab82466
   - enabled: 1
     path: Assets/Scenes/DynamicQuiz4.unity
-    guid: c0268592344cafa40a60394f4679f2a4
+    guid: de44c865ddf456441a6665f6cd42df95
   - enabled: 1
     path: Assets/Scenes/DynamicQuiz5.unity
-    guid: 8aa52da984c1dad448d8b99fd160b7ce
+    guid: 37dcdaa5313b38d4ab14374b7e80f55e
   - enabled: 1
     path: Assets/Scenes/DynamicQuiz6.unity
-    guid: 84a1e2652405cea4781fb350d256f6f4
+    guid: 85d9aa77652f57f4b849052a9bd6e53c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

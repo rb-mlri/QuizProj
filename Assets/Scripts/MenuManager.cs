@@ -6,6 +6,7 @@ public class MenuManager : MonoBehaviour
 {
     [Header("UI References")]
     public GameObject startButton;   // <--- Add this in the Inspector
+    public GameObject tutorialButton; // <-- For the tutorial Scene
     public GameObject modeSelectPanel;
     public GameObject staticLevelPanel;
     public GameObject dynamicLevelPanel;
@@ -44,16 +45,30 @@ public class MenuManager : MonoBehaviour
         tooltipPanel.SetActive(false);
     }
 
+    // ------------------- Tutorial Button ------------------- //
+    public void TutorialScene()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+    // ------------------- Back menu Scene Button ------------------- //
+    public void Back()
+    {
+        SceneManager.LoadScene(0);
+
+    }
+
     // ------------------- Start Button ------------------- //
     public void ShowGameModes()
     {
         startButton.SetActive(false);   // hide Start button
+        tutorialButton.SetActive(false);    // show tutorial button again
         modeSelectPanel.SetActive(true);
     }
 
     public void BackToMainMenu()
     {
         startButton.SetActive(true);    // show Start button again
+        tutorialButton.SetActive(true);    // show tutorial button again
         modeSelectPanel.SetActive(false);
         staticLevelPanel.SetActive(false);
         dynamicLevelPanel.SetActive(false);
