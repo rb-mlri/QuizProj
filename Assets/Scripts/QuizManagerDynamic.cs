@@ -233,14 +233,71 @@ public class QuizManagerDynamic : MonoBehaviour
             _ => easyPool
         };
 
-        if (pool.Count == 0) return null;
+        if (pool.Count == 0)
+            pool = allQuestions;
 
-        //Removes Question From Pool To Not Repeat
-        int randIndex = Random.Range(0, pool.Count);
-        Question q = pool[randIndex];
-        pool.RemoveAt(randIndex);
+        // 1️⃣ Choose a topic based on Bayesian confidence
+        string selectedTopic = SelectTopicByConfidence();
+
+        // 2️⃣ Prefer questions from that topic
+        List<Question> topicQuestions = pool
+            .Where(q => q.topic == selectedTopic)
+            .ToList();
+
+        // 3️⃣ Fallback if that topic pool is empty
+        if (topicQuestions.Count == 0)
+            topicQuestions = pool;
+
+        // 4️⃣ Choose a random question
+        Question q = topicQuestions[Random.Range(0, topicQuestions.Count)];
+        pool.Remove(q);
+
+        // 5️⃣ Dynamically adjust difficulty based on mastery
+        float mastery = knowledgeStates.ContainsKey(q.topic) ? knowledgeStates[q.topic] : 0.5f;
+
+        if (mastery >= 0.8f && currentDifficulty != Difficulty.Hard)
+            currentDifficulty = Difficulty.Hard;
+        else if (mastery >= 0.6f && currentDifficulty == Difficulty.Easy)
+            currentDifficulty = Difficulty.Medium;
+        else if (mastery <= 0.4f && currentDifficulty != Difficulty.Easy)
+            currentDifficulty = Difficulty.Easy;
+
         return q;
     }
+
+    //------------------------- Select Topic w/ Confidence -------------------------//
+
+    string SelectTopicByConfidence()
+    {
+        if (knowledgeStates.Count == 0)
+            return null;
+
+        var weights = new Dictionary<string, float>();
+        float totalWeight = 0f;
+
+        foreach (var kvp in knowledgeStates)
+        {
+            // Topics with low confidence (low knowledge) get higher weight
+            float w = Mathf.Max(0.01f, 1f - kvp.Value);
+            weights[kvp.Key] = w;
+            totalWeight += w;
+        }
+
+        float r = Random.value * totalWeight;
+        float cum = 0f;
+
+        foreach (var kvp in weights)
+        {
+            cum += kvp.Value;
+            if (r <= cum)
+                return kvp.Key;
+        }
+
+        return knowledgeStates.Keys.FirstOrDefault();
+    }
+
+
+
     //------------------------- Chosen Answer Checker (Ex. If Right/Wrong) -------------------------//
     void OnOptionSelected(Question q, int choiceIndex)
     {
@@ -301,27 +358,40 @@ public class QuizManagerDynamic : MonoBehaviour
         if (string.IsNullOrEmpty(topic)) return;
 
         if (!knowledgeStates.ContainsKey(topic))
-            knowledgeStates[topic] = 0.5f;
+            knowledgeStates[topic] = 0.5f; // start neutral
 
         float prior = knowledgeStates[topic];
 
-        float likelihoodCorrect = 0.8f;
-        float likelihoodWrong = 0.2f;
+        // Base likelihoods
+        float baseLc = 0.85f;  // chance of correct if topic is known
+        float baseLn = 0.20f;  // chance of correct if topic is NOT known
 
-        float scale = 1f + (weight - 1) * 0.5f;
+        // Adjust confidence by weight — harder = more informative
+        float weightFactor = (weight - 1) * 0.2f; // 0 (easy), 0.2 (med), 0.4 (hard)
+        float Lc = Mathf.Clamp01(baseLc + weightFactor * 0.10f);
+        float Ln = Mathf.Clamp01(baseLn - weightFactor * 0.10f);
+
+        float posterior = prior;
+
         if (wasCorrect)
-            likelihoodCorrect = Mathf.Clamp01(likelihoodCorrect * scale);
+        {
+            float numerator = prior * Lc;
+            float denominator = numerator + (1f - prior) * Ln;
+            if (denominator > 0f) posterior = numerator / denominator;
+        }
         else
-            likelihoodWrong = Mathf.Clamp01(likelihoodWrong * scale);
+        {
+            float numerator = prior * (1f - Lc);
+            float denominator = numerator + (1f - prior) * (1f - Ln);
+            if (denominator > 0f) posterior = numerator / denominator;
+        }
 
-        float numerator = wasCorrect ? prior * likelihoodCorrect : prior * (1 - likelihoodWrong);
-        float denominator = numerator + ((1 - prior) * (wasCorrect ? (1 - likelihoodCorrect) : likelihoodWrong));
-
-        float posterior = denominator > 0 ? numerator / denominator : prior;
+        posterior = Mathf.Clamp01(posterior);
         knowledgeStates[topic] = posterior;
 
-        Debug.Log($"[Bayesian] Topic: {topic}, New P(Knowledge)={posterior:F2}");
+        Debug.Log($"[Bayes] Topic={topic} Prior={prior:F2} Lc={Lc:F2} Ln={Ln:F2} Correct={wasCorrect} → Posterior={posterior:F2}");
     }
+
 
     //------------------------- Decision Tree | Difficulty Adjustment -------------------------//
     void UpdateDifficultyAfterAnswer(bool wasCorrect)
@@ -385,7 +455,7 @@ public class QuizManagerDynamic : MonoBehaviour
         string display = "Topic Mastery (Estimates):\n";
         foreach (var kvp in knowledgeStates)
         {
-            display += $"{kvp.Key}: {(kvp.Value * 50f):F1}%\n";
+            display += $"{kvp.Key}: {(kvp.Value * 100f):F1}%\n";
         }
 
         knowledgeText.text = display;
