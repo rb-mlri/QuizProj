@@ -286,7 +286,7 @@ MonoBehaviour:
   sfxSource: {fileID: 0}
   slashClip: {fileID: 0}
   scarecrow: {fileID: 20430909}
-  nextQuestionDelay: 2
+  nextQuestionDelay: 0
 --- !u!1 &461866764
 GameObject:
   m_ObjectHideFlags: 0

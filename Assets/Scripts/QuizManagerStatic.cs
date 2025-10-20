@@ -18,7 +18,8 @@ public class QuizManagerStatic : MonoBehaviour
     public Button backToMenuButton;
 
     [Header("File Settings")]
-    public TextAsset questionFile; // drag the text file that contains the questions
+    [Tooltip("Assign the question text file manually in the Inspector")]
+    public TextAsset questionFile;
     public int totalQuestionsInTest = 20;
 
     private List<Question> allQuestions = new List<Question>();
@@ -40,7 +41,7 @@ public class QuizManagerStatic : MonoBehaviour
     [Header("Timing Settings")]
     public float nextQuestionDelay = 2f;
 
-    //CSV Generator
+    // CSV Generator
     [System.Serializable]
     public class QuestionResponse
     {
@@ -53,17 +54,25 @@ public class QuizManagerStatic : MonoBehaviour
     private List<QuestionResponse> responses = new List<QuestionResponse>();
     private List<int> userAnswers = new List<int>();
 
+
     void Start()
     {
         resultPanel.SetActive(false);
 
         if (questionFile == null)
         {
-            Debug.LogError("No question file assigned in Inspector!");
+            Debug.LogError("[StaticQuiz] ❌ No question file assigned in Inspector!");
             return;
         }
 
         allQuestions = LoadQuestionsFromFile();
+
+        if (allQuestions == null || allQuestions.Count == 0)
+        {
+            Debug.LogError("[StaticQuiz] ❌ No valid questions found in the file!");
+            return;
+        }
+
         SelectBalancedQuestions();
         ShowQuestion();
 
@@ -73,18 +82,19 @@ public class QuizManagerStatic : MonoBehaviour
         });
     }
 
-    //------------------------- File Loader (Ex. questions'#'.txt) -------------------------//
+    //------------------------- File Loader -------------------------//
     private List<Question> LoadQuestionsFromFile()
     {
         List<Question> questions = new List<Question>();
-        string[] lines = questionFile.text.Split(new[] { '\n' }, System.StringSplitOptions.None);
+        string[] lines = questionFile.text.Replace("\r", "").Split('\n');
 
         Question currentQuestion = null;
         List<string> questionTextBuffer = new List<string>();
 
         foreach (string rawLine in lines)
         {
-            string line = rawLine.TrimEnd('\r');
+            string line = rawLine.Trim();
+            if (string.IsNullOrEmpty(line)) continue;
 
             if (line.StartsWith("Level:"))
             {
@@ -125,8 +135,8 @@ public class QuizManagerStatic : MonoBehaviour
             {
                 currentQuestion.correctIndex = int.Parse(line.Split(':')[1].Trim());
                 currentQuestion.questionText = string.Join("\n", questionTextBuffer);
-
                 questions.Add(currentQuestion);
+
                 currentQuestion = null;
                 questionTextBuffer.Clear();
             }
@@ -137,15 +147,13 @@ public class QuizManagerStatic : MonoBehaviour
             }
         }
 
+        Debug.Log($"[StaticQuiz] ✅ Loaded {questions.Count} questions from {questionFile.name}");
         return questions;
     }
 
-
-
-    //------------------------- Select Balanced Questions & Shuffle Each Question By Group Difficulty -------------------------//
+    //------------------------- Select Balanced Questions -------------------------//
     void SelectBalancedQuestions()
     {
-        // Split questions by difficulty
         var easy = allQuestions.Where(q => q.questionText.Contains("(Easy)")).ToList();
         var medium = allQuestions.Where(q => q.questionText.Contains("(Medium)")).ToList();
         var hard = allQuestions.Where(q => q.questionText.Contains("(Hard)")).ToList();
@@ -158,6 +166,8 @@ public class QuizManagerStatic : MonoBehaviour
         quizQuestions.AddRange(easy.Take(easyQuestionsCount));
         quizQuestions.AddRange(medium.Take(mediumQuestionsCount));
         quizQuestions.AddRange(hard.Take(hardQuestionsCount));
+
+        Debug.Log($"[StaticQuiz] 🧩 Selected {quizQuestions.Count} total questions");
     }
 
     //------------------------- Randomizer -------------------------//
@@ -169,9 +179,7 @@ public class QuizManagerStatic : MonoBehaviour
         {
             n--;
             int k = rng.Next(n + 1);
-            var value = list[k];
-            list[k] = list[n];
-            list[n] = value;
+            (list[n], list[k]) = (list[k], list[n]);
         }
     }
 
@@ -185,6 +193,13 @@ public class QuizManagerStatic : MonoBehaviour
         }
 
         Question q = quizQuestions[currentIndex];
+        if (q == null)
+        {
+            Debug.LogError($"[StaticQuiz] ⚠️ Null question at index {currentIndex}");
+            FinishQuiz();
+            return;
+        }
+
         questionText.text = q.questionText;
 
         for (int i = 0; i < optionButtons.Length; i++)
@@ -198,17 +213,15 @@ public class QuizManagerStatic : MonoBehaviour
         if (feedbackText) feedbackText.text = "";
     }
 
-    //------------------------- Chosen Answer Checker (Ex. If Right/Wrong) -------------------------//
+    //------------------------- Answer Checker -------------------------//
     void OnOptionSelected(int choiceIndex)
     {
         Question q = quizQuestions[currentIndex];
         bool correct = choiceIndex == q.correctIndex;
 
-        // Disable Buttons Once There's An Answer
         foreach (Button b in optionButtons)
             b.interactable = false;
 
-        // Record response
         responses.Add(new QuestionResponse
         {
             questionText = q.questionText,
@@ -222,63 +235,32 @@ public class QuizManagerStatic : MonoBehaviour
             score++;
             if (feedbackText) feedbackText.text = "Correct!";
 
-            if (knightAnimator != null)
-            {
-                knightAnimator.SetTrigger("Attack");
-                sfxSource.PlayOneShot(slashClip);
-                scarecrow.Wiggle();
-            }
+            if (knightAnimator) knightAnimator.SetTrigger("Attack");
+            if (sfxSource && slashClip) sfxSource.PlayOneShot(slashClip);
+            if (scarecrow) scarecrow.Wiggle();
         }
-        else
+        else if (feedbackText)
         {
-            if (feedbackText) feedbackText.text = $"Wrong! Correct: {q.options[q.correctIndex]}";
+            feedbackText.text = $"Wrong! Correct: {q.options[q.correctIndex]}";
         }
 
         currentIndex++;
         userAnswers.Add(choiceIndex);
 
-        // Start coroutine to delay before next question
         StartCoroutine(NextQuestionAfterDelay());
     }
 
-    // Delays Next Question
     IEnumerator NextQuestionAfterDelay()
     {
         yield return new WaitForSeconds(nextQuestionDelay);
 
-        // Re-enable buttons for the next question
         foreach (Button b in optionButtons)
             b.interactable = true;
 
-        ShowQuestion();
-    }
-
-
-    //------------------------- Get Results and Save for CSV (QuizProj/Assets/QuizResults) -------------------------//
-    void SaveResultsToCSV()
-    {
-        int selectedLevel = PlayerPrefs.GetInt("SelectedLevel", 1);
-        string fileName = $"QuizResults_Level{selectedLevel}_{System.DateTime.Now:yyyyMMdd_HHmmss}.csv";
-        string filePath = Path.Combine(Application.persistentDataPath, fileName);
-
-        List<string> lines = new List<string>();
-        lines.Add("Level,Question,Selected Answer,Correct Answer,Correct?");
-
-        foreach (var r in responses)
-        {
-            // Escape commas in the question text
-            string qText = r.questionText.Replace(",", ";");
-            string selected = r.selectedAnswer.Replace(",", ";");
-            string correct = r.correctAnswer.Replace(",", ";");
-            lines.Add($"{selectedLevel},{qText},{selected},{correct},{r.isCorrect}");
-        }
-
-        // Add total score at the end
-        lines.Add($",,,Total Score,{score}/{quizQuestions.Count}");
-
-        File.WriteAllLines(filePath, lines.ToArray());
-
-        Debug.Log($"CSV saved: {filePath}");
+        if (currentIndex < quizQuestions.Count)
+            ShowQuestion();
+        else
+            FinishQuiz();
     }
 
     //------------------------- Finish Quiz -------------------------//
@@ -290,25 +272,21 @@ public class QuizManagerStatic : MonoBehaviour
 
         resultPanel.SetActive(true);
         resultText.text = $"Score: {score}/{quizQuestions.Count}";
-
         GenerateCSV();
     }
 
-    //------------------------- Get Saved Results And Put In CSV -------------------------//
+    //------------------------- CSV Generator -------------------------//
     void GenerateCSV()
     {
-        string mode = "Static"; // mode name
+        string mode = "Static";
         int level = PlayerPrefs.GetInt("SelectedLevel", 1);
 
-        // Create folder inside game directory if not exists
         string folderPath = Path.Combine(Application.dataPath, "QuizResults");
         if (!Directory.Exists(folderPath))
             Directory.CreateDirectory(folderPath);
 
-        // CSV filename includes mode, level, timestamp
         string filePath = Path.Combine(folderPath, $"{mode}_QuizResults_Level{level}_{System.DateTime.Now:yyyyMMdd_HHmmss}.csv");
 
-        // CSV header without Difficulty
         string csvContent = "Question,SelectedAnswer,CorrectAnswer,Correct\n";
 
         for (int i = 0; i < quizQuestions.Count; i++)
@@ -324,16 +302,13 @@ public class QuizManagerStatic : MonoBehaviour
             csvContent += $"{questionTextClean},{selectedAnswerText},{correctAnswerText},{correct}\n";
         }
 
-        // Prefix score with a single quote to force Excel to treat as text
         csvContent += $"\nTotal Score,'{score}/{quizQuestions.Count}'";
 
         File.WriteAllText(filePath, csvContent);
-        Debug.Log("CSV saved at: " + filePath);
+        Debug.Log($"[StaticQuiz] 📁 CSV saved at: {filePath}");
     }
 
-
-
-    //------------------------- Main Menu -------------------------//
+    //------------------------- Back To Menu -------------------------//
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");

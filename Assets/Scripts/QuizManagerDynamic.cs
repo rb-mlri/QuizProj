@@ -50,7 +50,7 @@ public class QuizManagerDynamic : MonoBehaviour
     // Bayesian knowledge states
     private Dictionary<string, float> knowledgeStates = new Dictionary<string, float>();
 
-    // CSV Response Tracker
+    // CSV Generator
     [System.Serializable]
     public class QuestionResponse
     {

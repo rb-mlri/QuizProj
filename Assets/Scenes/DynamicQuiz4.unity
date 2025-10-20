@@ -297,7 +297,7 @@ MonoBehaviour:
   scarecrow: {fileID: 20430909}
   audioSource: {fileID: 0}
   slashSound: {fileID: 0}
-  nextQuestionDelay: 2
+  nextQuestionDelay: 0
 --- !u!1001 &380484574
 PrefabInstance:
   m_ObjectHideFlags: 0
