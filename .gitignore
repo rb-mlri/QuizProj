@@ -98,3 +98,13 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+.plastic/plastic.changes
+.plastic/plastic.wktree
+Assets/Prinbles_Asset_Robin (v 1.1) (9_5_2023).meta
+Assets/Prinbles_Asset_Robin (v 1.1) (9_5_2023)/Prinbles_Asset_Robin (v 1.1) (9_5_2023)/@preview.meta
+Assets/Prinbles_Asset_Robin (v 1.1) (9_5_2023)/Prinbles_Asset_Robin (v 1.1) (9_5_2023).meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+Assets/UniversalRenderPipelineGlobalSettings.asset
+ProjectSettings/GraphicsSettings.asset
+ProjectSettings/ProjectSettings.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset

@@ -5,8 +5,8 @@ using TMPro;
 public class MenuManager : MonoBehaviour
 {
     [Header("UI References")]
-    public GameObject startButton;   // <--- Add this in the Inspector
-    public GameObject tutorialButton; // <-- For the tutorial Scene
+    public GameObject startButton;
+    public GameObject tutorialButton;
     public GameObject modeSelectPanel;
     public GameObject staticLevelPanel;
     public GameObject dynamicLevelPanel;
@@ -14,23 +14,27 @@ public class MenuManager : MonoBehaviour
     [Header("Tooltip")]
     public GameObject tooltipPanel;
     public TextMeshProUGUI tooltipText;
-    public Vector3 tooltipOffset = new Vector3(100f, -30f, 0f);
+    public Vector3 tooltipOffset = new Vector3(20f, -20f, 0f); // Offset from cursor
+
+    private bool isTooltipActive = false;
+
+    private void Awake()
+    {
+        tooltipPanel.SetActive(false);
+    }
 
     private void Update()
     {
-        if (tooltipPanel.activeSelf)
+        if (isTooltipActive)
         {
-            Vector3 newPos = Input.mousePosition + tooltipOffset;
-
-            RectTransform rt = tooltipPanel.GetComponent<RectTransform>();
-            float tooltipWidth = rt.rect.width;
-            float tooltipHeight = rt.rect.height;
-
-            float clampedX = Mathf.Min(newPos.x, Screen.width - tooltipWidth / 2f);
-            float clampedY = Mathf.Max(newPos.y, tooltipHeight / 2f);
-
-            tooltipPanel.transform.position = new Vector3(clampedX, clampedY, 0f);
+            FollowMouse();
         }
+    }
+
+    private void FollowMouse()
+    {
+        Vector3 mousePos = Input.mousePosition + tooltipOffset;
+        tooltipPanel.transform.position = mousePos;
     }
 
     // ------------------- Tooltip Control ------------------- //
@@ -38,11 +42,14 @@ public class MenuManager : MonoBehaviour
     {
         tooltipText.text = content;
         tooltipPanel.SetActive(true);
+        isTooltipActive = true;
+        FollowMouse(); // Set initial position immediately
     }
 
     public void HideTooltip()
     {
         tooltipPanel.SetActive(false);
+        isTooltipActive = false;
     }
 
     // ------------------- Tutorial Button ------------------- //
@@ -50,25 +57,25 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
+
     // ------------------- Back menu Scene Button ------------------- //
     public void Back()
     {
         SceneManager.LoadScene(0);
-
     }
 
     // ------------------- Start Button ------------------- //
     public void ShowGameModes()
     {
-        startButton.SetActive(false);   // hide Start button
-        tutorialButton.SetActive(false);    // show tutorial button again
+        startButton.SetActive(false);
+        tutorialButton.SetActive(false);
         modeSelectPanel.SetActive(true);
     }
 
     public void BackToMainMenu()
     {
-        startButton.SetActive(true);    // show Start button again
-        tutorialButton.SetActive(true);    // show tutorial button again
+        startButton.SetActive(true);
+        tutorialButton.SetActive(true);
         modeSelectPanel.SetActive(false);
         staticLevelPanel.SetActive(false);
         dynamicLevelPanel.SetActive(false);
