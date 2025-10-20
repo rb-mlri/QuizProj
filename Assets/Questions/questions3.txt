@@ -1,101 +1,756 @@
 Level: 3
-Topic: Methods - Defining
-Q: (Easy) Which keyword is used to define a method in Java?
-A) def
-B) method
+Topic: Methods
+Q: (Easy) What keyword is used to define a method in Java?
+A) func
+B) define
 C) void
 D) function
 Answer: 2
 
 Level: 3
-Topic: Methods - Defining
-Q: (Easy) What is the correct way to declare a method named 'addNumbers' that returns an int?
-A) int addNumbers() { }
-B) void addNumbers() { }
-C) function addNumbers() { }
-D) def addNumbers() { }
+Topic: Methods
+Q: (Easy) What does a method return if its return type is void?
+A) 0
+B) Nothing
+C) null
+D) False
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is printed by this method call?
+void sayHello() {
+    System.out.println("Hello");
+}
+sayHello();
+A) sayHello
+B) Hello
+C) Error
+D) null
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) Which of the following correctly defines a method that returns an integer?
+A) int add() { return 5; }
+B) void add(int x) { return x; }
+C) int add() return 5;
+D) return int add() { 5; }
 Answer: 0
 
 Level: 3
-Topic: Methods - Return Values
-Q: (Easy) What will this method return?
-public int getValue() {
-   return 5;
-}
-A) 0
+Topic: Methods
+Q: (Easy) What keyword is used to return a value from a method?
+A) give
+B) send
+C) output
+D) return
+Answer: 3
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is the output?
+int sum(int a, int b) { return a + b; }
+System.out.println(sum(2, 3));
+A) 23
 B) 5
+C) a+b
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) What must match between a method call and its definition?
+A) Return type only
+B) Name and parameters
+C) Only name
+D) Only number of arguments
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is a method parameter?
+A) The method�s return value
+B) The variable passed into a method
+C) The name of the class
+D) The main method
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is the correct way to call a method named greet?
+A) greet;
+B) call greet;
+C) greet();
+D) greet[];
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Easy) Which of the following methods returns a String?
+A) void printName() { }
+B) String getName() { return "John"; }
+C) int getNumber() { return 5; }
+D) None
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How do you declare an array of integers?
+A) int array;
+B) int[] array;
+C) int array[];
+D) Both B and C
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How do you create an array with 5 elements?
+A) int arr = new int[5];
+B) int arr[5];
+C) int arr = {1,2,3,4,5};
+D) int[] arr = new int[5];
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What is the first index of an array in Java?
+A) 1
+B) 0
+C) -1
+D) It depends
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What is the output?
+int[] arr = {1, 2, 3};
+System.out.println(arr[1]);
+A) 1
+B) 2
+C) 3
+D) 0
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How do you find the length of an array named nums?
+A) nums.length()
+B) nums.size()
+C) nums.length
+D) length(nums)
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What does this print?
+int[] a = {10, 20, 30};
+System.out.println(a[0]);
+A) 10
+B) 20
+C) 30
+D) 0
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What happens if you access arr[10] in an array of size 5?
+A) Prints 0
+B) Prints null
+C) Throws an exception
+D) Ignores it
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What is the index of the last element in an array of length 4?
+A) 4
+B) 5
+C) 3
+D) 2
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) Which loop is best used to traverse an array?
+A) while
+B) for
+C) do-while
+D) switch
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What will this print?
+int[] a = {2,4,6};
+for(int i = 0; i < a.length; i++) {
+    System.out.print(a[i]);
+}
+A) 246
+B) 2 4 6
 C) Error
+D) 24
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Easy) Which method header is valid?
+A) public void start()
+B) public start void()
+C) void start(public)
+D) start void()
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Easy) How many return statements can a method have?
+A) One only
+B) Many, but only one executes
+C) None
+D) Unlimited and all execute
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) Which method returns no value?
+A) int sum()
+B) String print()
+C) void show()
+D) return()
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How do you initialize an array directly?
+A) int[] arr = new int(3);
+B) int arr = {1,2,3};
+C) int[] arr = {1,2,3};
+D) array int[] = new {1,2,3};
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How can you access the first element of array a?
+A) a[0]
+B) a(1)
+C) a.first
+D) a{0}
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What is printed?
+int[] x = {5, 10, 15};
+System.out.println(x.length);
+A) 5
+B) 10
+C) 3
+D) 15
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What happens if you use negative index?
+A) Accesses last element
+B) Error
+C) Returns 0
+D) None
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) Can a method have multiple parameters?
+A) No
+B) Yes
+C) Only one
+D) Only in constructors
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is printed?
+int multiply(int a, int b) { return a * b; }
+System.out.println(multiply(2, 4));
+A) 8
+B) 24
+C) 2
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How can you store 5 student grades?
+A) Using 5 variables
+B) Using an array
+C) Using switch
+D) Using for loop
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) Which method call is correct?
+A) display;
+B) display();
+C) display;
+D) display[ ];
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is the default return type if not specified?
+A) void
+B) int
+C) Object
+D) None
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What is printed?
+int[] nums = {3, 6, 9};
+System.out.println(nums[2]);
+A) 3
+B) 6
+C) 9
+D) 0
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How do you print each element of array arr using a for loop?
+A) for(int i=0;i<arr.length;i++) System.out.println(arr[i]);
+B) for(int i:arr) System.out.println(arr);
+C) for() print(arr);
+D) while(i<arr) print(i);
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is printed?
+void greet(String name) { System.out.println("Hi " + name); }
+greet("Ana");
+A) Hi Ana
+B) greet Ana
+C) Error
+D) null
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is a return type of main()?
+A) void
+B) int
+C) String
+D) boolean
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What will print?
+int[] arr = {1,2,3};
+System.out.println(arr[0] + arr[2]);
+A) 4
+B) 5
+C) 3
+D) 2
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Easy) What does System.out.println do?
+A) Defines a method
+B) Prints text to the console
+C) Reads input
+D) Returns values
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What type of data can arrays hold?
+A) Only int
+B) Only strings
+C) One data type
+D) Multiple data types
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is required in every Java program?
+A) one variable
+B) a class
+C) a loop
+D) an array
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What is printed?
+int[] vals = new int[3];
+System.out.println(vals[1]);
+A) 0
+B) null
+C) 1
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Easy) How can you change an element in array arr?
+A) arr.set(0, 5);
+B) arr[0] = 5;
+C) arr = 5;
+D) arr{0}=5;
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What keyword is used to create a new array?
+A) array
+B) make
+C) new
+D) create
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What will be printed?
+int[] a = {10,20,30};
+for (int i = 0; i < a.length; i++) System.out.print(a[i]+" ");
+A) 10 20 30
+B) 10,20,30
+C) 30 20 10
+D) 0 1 2
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Easy) What is printed?
+int add(int x, int y) { return x + y; }
+System.out.println(add(3,7));
+A) 37
+B) 10
+C) x+y
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Easy) What happens if you assign beyond array size?
+A) Extends array
+B) Compile-time error
+C) Runtime error
+D) Ignores assignment
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Easy) What can a method return?
+A) Only int
+B) Only String
+C) Any data type
+D) Nothing
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Easy) Which correctly defines a String array?
+A) String[] arr = {"A","B","C"};
+B) String arr = ["A","B","C"];
+C) array String arr = {A,B,C};
+D) String[] arr = new String(A,B,C);
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) What will this print?
+int add(int a, int b) { return a + b; }
+System.out.println(add(3, 5));
+A) 8
+B) 35
+C) 3+5
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) What is method overloading?
+A) Using the same name but different parameters
+B) Defining two methods in different classes
+C) Returning multiple values
+D) A syntax error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) Which of the following will cause an error?
+A) void test() {}
+B) int test() { return 5; }
+C) void test(int a) { return a; }
+D) void test(String s) {}
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Medium) What happens if a method returns a value but has void as return type?
+A) Compiles successfully
+B) Throws a runtime error
+C) Compile-time error
+D) Prints null
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Medium) What will happen here?
+int multiply(int a, int b) { return a*b; }
+System.out.println(multiply(2, multiply(3,4)));
+A) 24
+B) 14
+C) 26
+D) 8
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) What is the output?
+void showMessage(String msg) {
+    System.out.println(msg);
+}
+showMessage("Hello World");
+A) Hello
+B) Hello World
+C) msg
+D) showMessage
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) Which statement is TRUE about method parameters?
+A) They are local variables within the method
+B) They can be accessed anywhere in the class
+C) They are global variables
+D) They must be declared static
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) What is printed?
+int x = 10;
+void printX() { System.out.println(x); }
+printX();
+A) 10
+B) Error
+C) x
 D) Nothing
 Answer: 1
 
 Level: 3
-Topic: Methods - Defining
-Q: (Easy) What must every method declaration include?
-A) Method body
-B) Method name
-C) Return type
-D) All of the above
-Answer: 3
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Easy) Which keyword is used to exit from a method and return a value?
-A) break
-B) stop
-C) return
-D) exit
-Answer: 2
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Easy) What is the default return type if none is specified in Java?
-A) int
-B) void
-C) Object
-D) There must always be a return type
-Answer: 3
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Easy) What is the correct syntax to declare an integer array named 'nums' with 10 elements?
-A) int nums = new int[10];
-B) int nums[10];
-C) int[] nums = new int[10];
-D) array int nums[10];
-Answer: 2
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Easy) Which index does the first element of an array have in Java?
-A) 0
-B) 1
-C) -1
-D) Depends on declaration
+Topic: Methods
+Q: (Medium) Which is a recursive method?
+A) A method that calls itself
+B) A method that returns itself
+C) A method that loops
+D) A method that is static
 Answer: 0
 
 Level: 3
-Topic: Arrays - Indexing
-Q: (Easy) What is the correct way to access the 3rd element of an array 'arr'?
-A) arr[3]
-B) arr(3)
-C) arr[2]
-D) arr.get(3)
-Answer: 2
-
-Level: 3
-Topic: Arrays - Properties
-Q: (Easy) What is the correct way to find the length of an array 'nums'?
-A) nums.length
-B) nums.length()
-C) length(nums)
-D) nums.size()
+Topic: Methods
+Q: (Medium) What is the output?
+int factorial(int n) {
+    if(n==1) return 1;
+    return n*factorial(n-1);
+}
+System.out.println(factorial(3));
+A) 6
+B) 3
+C) 9
+D) 5
 Answer: 0
 
 Level: 3
-Topic: Arrays - Indexing
-Q: (Easy) What does the following code print?
-int[] arr = {1,2,3};
-System.out.println(arr[1]);
+Topic: Arrays
+Q: (Medium) What does this print?
+int[] nums = {1,2,3,4};
+System.out.println(nums[nums.length-1]);
+A) 3
+B) 4
+C) 0
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What happens here?
+int[] arr = new int[3];
+arr[0] = 1;
+arr[3] = 4;
+A) Prints 4
+B) Error: Index out of bounds
+C) Nothing
+D) Compiles but no output
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) How do you print all elements of array arr using enhanced for loop?
+A) for(int i : arr) System.out.println(i);
+B) for(arr i) print(i);
+C) for(each i of arr) print(i);
+D) for(int arr : i) System.out.println(i);
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What will this print?
+int[] a = {2,4,6};
+int sum = 0;
+for(int i=0;i<a.length;i++){ sum+=a[i]; }
+System.out.println(sum);
+A) 12
+B) 6
+C) 24
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is printed?
+int[] vals = {3,6,9};
+System.out.println(vals[1+1]);
+A) 6
+B) 9
+C) 3
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) How many elements does this array have?
+int[] a = new int[5];
+A) 5
+B) 6
+C) 4
+D) 0
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) Which code correctly copies all elements from arr1 to arr2?
+A) arr2 = arr1;
+B) for(int i=0;i<arr1.length;i++) arr2[i]=arr1[i];
+C) copy(arr1, arr2);
+D) arr2.equals(arr1);
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What happens here?
+int[] a = {1,2,3};
+a[1] = a[2];
+System.out.println(a[1]);
+A) 3
+B) 2
+C) 1
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) Which of the following methods returns a boolean?
+A) boolean isEven(int n) { return n % 2 == 0; }
+B) int isEven(int n) { return n % 2 == 0; }
+C) void isEven() { return true; }
+D) String isEven(int n) { return true; }
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What does this print?
+int[] arr = {5,10,15};
+for(int x : arr) System.out.print(x + " ");
+A) 5 10 15
+B) 5,10,15
+C) 15 10 5
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) What happens if a method doesn�t return a value but declares int?
+A) Returns 0 by default
+B) Compile-time error
+C) Runtime error
+D) Returns null
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) What is the output?
+int add(int a) { return a + 2; }
+int add(int a, int b) { return a + b; }
+System.out.println(add(3));
+A) 5
+B) 6
+C) 3
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Medium) What does the keyword static mean for a method?
+A) It belongs to the class, not an object
+B) It cannot be called
+C) It runs automatically
+D) It�s temporary
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is the output?
+int[] arr = {2,4,6,8};
+System.out.println(arr.length - 1);
+A) 4
+B) 3
+C) 8
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is printed?
+int[] x = {10,20,30};
+x[2] = 50;
+System.out.println(x[2]);
+A) 30
+B) 50
+C) 20
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) What is printed?
+int subtract(int a, int b) { return a - b; }
+System.out.println(subtract(10, 4));
+A) 14
+B) 6
+C) -6
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is the purpose of using a loop with arrays?
+A) To access all elements easily
+B) To copy arrays only
+C) To store arrays
+D) To sort them only
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What will this print?
+int[] a = {1,2,3};
+System.out.println(a[a[0]]);
 A) 1
 B) 2
 C) 3
@@ -103,1410 +758,697 @@ D) Error
 Answer: 1
 
 Level: 3
-Topic: Arrays - Indexing
-Q: (Easy) What happens if you try to access an array index out of bounds?
-A) Returns -1
-B) Returns null
-C) Throws ArrayIndexOutOfBoundsException
-D) Prints nothing
-Answer: 2
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Easy) What is the default value of an int array element in Java?
-A) 0
-B) null
-C) -1
-D) undefined
-Answer: 0
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Easy) Which loop is commonly used to traverse an array?
-A) if
-B) for
-C) switch
-D) goto
+Topic: Arrays
+Q: (Medium) What is the output?
+int[] data = {4, 8, 12};
+data[0] = data[1];
+System.out.println(data[0]);
+A) 4
+B) 8
+C) 12
+D) 0
 Answer: 1
 
 Level: 3
-Topic: Arrays - Traversal
-Q: (Easy) What does this code print?
-int[] arr = {10,20,30};
-for(int i=0;i<arr.length;i++) {
-   System.out.print(arr[i] + " ");
-}
-A) 10 20 30
-B) 0 1 2
-C) 30 20 10
+Topic: Methods
+Q: (Medium) What happens when no return is given in a non-void method?
+A) Returns 0
+B) Compile error
+C) Prints null
+D) Skips return
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) Can a method be inside another method?
+A) Yes, always
+B) No, not in Java
+C) Only in main()
+D) Only static ones
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is the index of the last element of an array arr of size n?
+A) n
+B) n-1
+C) n+1
+D) 0
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is printed?
+int[] arr = {1, 3, 5, 7};
+int total = 0;
+for (int x : arr) total += x;
+System.out.println(total);
+A) 14
+B) 16
+C) 18
+D) 12
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) What does this print?
+int result = square(4);
+System.out.println(result);
+int square(int n){ return n*n; }
+A) 16
+B) 8
+C) 4
+D) Error
+Answer: 3
+
+Level: 3
+Topic: Methods
+Q: (Medium) What will be the return type of a method that returns true or false?
+A) int
+B) boolean
+C) void
+D) String
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is printed?
+int[] arr = {5,10,15};
+for(int i=1; i<arr.length; i++)
+    System.out.print(arr[i] + " ");
+A) 5 10
+B) 10 15
+C) 5 15
+D) 5 10 15
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is the output?
+int[] x = {2,4,6,8};
+System.out.println(x[1] + x[3]);
+A) 10
+B) 12
+C) 14
+D) 8
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) Which is true about recursion?
+A) It always runs forever
+B) It requires a base case to stop
+C) It�s faster than iteration
+D) It doesn�t return values
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) Which method can replace:
+int sum(int a, int b) { return a+b; }
+A) double sum(double a,double b){ return a+b; }
+B) String sum(String a,String b){ return a+b; }
+C) Both A and B
+D) Neither
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Q: (Medium) How do you sum all values of array arr?
+A) for each add arr
+B) for(int i=0;i<arr.length;i++) sum+=arr[i];
+C) arr.sum();
+D) arr.total();
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) What will this output?
+int a=2,b=3;
+System.out.println(add(a,b));
+int add(int x,int y){ return x+y; }
+A) 5
+B) Error
+C) 6
+D) 23
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Medium) What is the data type of arr in int[] arr = {1,2,3}?
+A) int
+B) array
+C) int[]
+D) List
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Medium) What will this print?
+int calc(int x){ return x*2; }
+System.out.println(calc(5)+calc(3));
+A) 10
+B) 16
+C) 8
+D) 20
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Medium) Which method signature is correct?
+A) public void start(int x)
+B) void start(int x);
+C) start void(int x)
+D) method void start()
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Medium) How do you print an array backwards?
+A) for(int i=arr.length-1;i>=0;i--) System.out.print(arr[i]);
+B) for(int i=0;i<arr.length;i++) print(i);
+C) for() print(arr);
+D) arr.reverse();
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What will this print?
+int f(int n){ if(n==0) return 0; return n + f(n-1); }
+System.out.println(f(3));
+A) 3
+B) 6
+C) 9
+D) 0
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Hard) What happens if a recursive method lacks a base case?
+A) It stops automatically
+B) It runs infinitely and causes StackOverflowError
+C) It returns 0
+D) It throws syntax error
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Hard) What will be printed?
+int factorial(int n){ return (n==1)?1:n*factorial(n-1); }
+System.out.println(factorial(4));
+A) 24
+B) 12
+C) 8
+D) 16
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) Which statement is true about returning arrays from methods?
+A) Java allows returning arrays
+B) Java cannot return arrays
+C) Only void methods can return arrays
+D) Arrays must be static
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What will this print?
+int[] arr = {1,2,3,4,5};
+System.out.println(arr[arr.length - arr[2]]);
+A) 3
+B) 4
+C) 2
+D) 1
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is printed?
+int[] nums = {2,4,6,8};
+for(int i=0;i<nums.length;i+=2)
+    System.out.print(nums[i] + " ");
+A) 2 6
+B) 4 8
+C) 6 8
+D) 2 4
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What is the output?
+int m(int x){ return x==0?1:x*m(x-1); }
+System.out.println(m(5));
+A) 120
+B) 24
+C) 0
 D) Error
 Answer: 0
 
 Level: 3
-Topic: Methods - Parameters
-Q: (Easy) Which of these correctly declares a method with parameters?
-A) void greet() { }
-B) void greet(String name) { }
-C) greet(String name) { }
-D) def greet(String name) { }
-Answer: 1
+Topic: Arrays
+Q: (Hard) What will this print?
+int[] a = {3,6,9};
+int sum = 0;
+for(int i=0; i<a.length; i++)
+    if(a[i] % 2 == 0) sum += a[i];
+System.out.println(sum);
+A) 6
+B) 12
+C) 9
+D) 0
+Answer: 0
 
 Level: 3
-Topic: Methods - Return Values
-Q: (Easy) Which of these methods must specify a return type?
-A) All methods
-B) Only methods that return a value
-C) Only void methods
-D) None
-Answer: 1
+Topic: Methods
+Q: (Hard) Which of these methods is overloaded correctly?
+A) void calc(int a){} and void calc(double a){}
+B) void calc(int a){} and int calc(int b){}
+C) Both A and B
+D) Neither
+Answer: 2
 
 Level: 3
-Topic: Methods - Defining
-Q: (Easy) What does the keyword 'void' mean in a method declaration?
-A) Method returns an int
-B) Method does not return anything
-C) Method stops executing
-D) Method is private
-Answer: 1
+Topic: Arrays
+Q: (Hard) What is the output?
+int[] x = {1,2,3,4};
+for(int i=1;i<x.length;i++)
+    x[i] += x[i-1];
+System.out.println(x[3]);
+A) 10
+B) 9
+C) 8
+D) 6
+Answer: 0
 
 Level: 3
-Topic: Methods - Calling
-Q: (Easy) What will be the output?
-public void greet() {
-   System.out.println("Hello");
-}
-greet();
-A) Prints nothing
-B) Prints "Hello"
+Topic: Methods
+Q: (Hard) What does this print?
+void call(){ System.out.println("Call"); }
+void call(String s){ System.out.println(s); }
+call("Test");
+A) Call
+B) Test
 C) Error
 D) Null
 Answer: 1
 
 Level: 3
-Topic: Methods - Parameters
-Q: (Easy) Which is the correct way to pass arguments to a method?
-A) myMethod()
-B) myMethod(5, "Hello")
-C) myMethod{5, "Hello"}
-D) myMethod: 5, "Hello"
-Answer: 1
-
-Level: 3
-Topic: Methods - Defining
-Q: (Easy) Which method header is valid?
-A) public void sum(int a, int b)
-B) void sum(a, b)
-C) def sum(int a, int b)
-D) function sum(int a, int b)
+Topic: Methods
+Q: (Hard) What is true about recursion?
+A) Every recursive call creates a new stack frame
+B) It shares the same memory as the parent call
+C) It never returns
+D) It uses global variables
 Answer: 0
 
 Level: 3
-Topic: Methods - Return Values
-Q: (Easy) What is required for a method to return an int?
-A) void keyword
-B) int keyword in method header
-C) return keyword with int value
-D) Both B and C
-Answer: 3
-
-Level: 3
-Topic: Methods - Calling
-Q: (Easy) Which method call is correct if this method is defined?
-public int square(int n)
-A) square();
-B) square(5);
-C) square("5");
-D) square(int 5);
-Answer: 1
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Easy) Which array declaration is valid?
-A) int arr[] = {1,2,3};
-B) int arr = {1,2,3};
-C) arr = new int{1,2,3};
-D) array arr[3] = {1,2,3};
-Answer: 0
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Easy) What is the index of the last element of an array with size 5?
-A) 5
-B) 4
-C) 6
-D) Depends
-Answer: 1
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Medium) What will this method return?
-public int multiply(int a, int b) {
-   return a * b;
-}
-System.out.println(multiply(2,3));
-A) 5
-B) 6
-C) 23
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Properties
-Q: (Medium) What is printed?
-int[] nums = {1,2,3,4};
-System.out.println(nums.length);
-A) 3
-B) 4
-C) 5
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Medium) What is printed?
-int[] arr = {2,4,6};
-for(int i=0; i<arr.length; i++) {
-   System.out.print(arr[i] + " ");
-}
-A) 246
-B) 2 4 6
-C) 6 4 2
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Medium) What will happen?
-int[] arr = new int[3];
-System.out.println(arr[0]);
-A) 0
-B) null
-C) Error
-D) undefined
-Answer: 0
-
-Level: 3
-Topic: Methods - Defining
-Q: (Medium) Which statement correctly defines a method that returns a double?
-A) public void getValue() { return 2.5; }
-B) public double getValue() { return 2.5; }
-C) double getValue { return 2.5; }
-D) function getValue() double { return 2.5; }
-Answer: 1
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Medium) What is the output?
-public int add(int a, int b) {
-   return a + b;
-}
-System.out.println(add(5,7));
-A) 12
-B) 57
-C) 5
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Medium) What is printed?
-int[] arr = {5,10,15};
-for(int num : arr) {
-   System.out.print(num + " ");
-}
-A) 5 10 15
-B) 15 10 5
-C) 0 1 2
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Methods - Parameters
-Q: (Medium) Which is the correct way to declare a method that takes a String parameter and returns void?
-A) void printName(String name) { }
-B) printName(String name) { }
-C) void printName(name: String) { }
-D) String printName(void) { }
-Answer: 0
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Medium) What is printed?
-public int square(int n) {
-   return n * n;
-}
-System.out.println(square(4));
-A) 8
-B) 16
-C) 4
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Medium) What is printed?
-int[] nums = {1,2,3,4,5};
-System.out.println(nums[nums.length-1]);
-A) 4
-B) 5
-C) 1
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Properties
-Q: (Medium) Which statement is true about Java arrays?
-A) Size can change dynamically
-B) First index starts at 1
-C) Length is fixed once declared
-D) Elements are stored unordered
-Answer: 2
-
-Level: 3
-Topic: Methods - Parameters
-Q: (Medium) What is printed?
-public void greet(String name) {
-   System.out.println("Hello " + name);
-}
-greet("Alice");
-A) Hello
-B) Hello Alice
-C) Alice
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Medium) What will be the output?
-int[] arr = new int[2];
-arr[0] = 7;
-arr[1] = 9;
-System.out.println(arr[0] + arr[1]);
-A) 16
-B) 79
-C) 7
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Methods - Defining
-Q: (Medium) What is the correct method header?
-A) public void printMessage() { }
-B) void printMessage;
-C) function printMessage() { }
-D) def printMessage() { }
-Answer: 0
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Medium) What does this code print?
-int[] arr = {1,2,3,4};
-for(int i=arr.length-1; i>=0; i--) {
-   System.out.print(arr[i]);
-}
-A) 1234
-B) 4321
-C) 1111
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods - Parameters
-Q: (Medium) Which of these calls is valid for this method?
-public void show(int x, String y)
-A) show(5,"Hi");
-B) show("Hi",5);
-C) show();
-D) show(int x, String y);
-Answer: 0
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Medium) What will be printed?
-int[] nums = {2,4,6,8};
-int sum = 0;
-for(int n : nums) {
-   sum += n;
-}
-System.out.println(sum);
-A) 20
-B) 26
-C) 8
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Methods - Defining
-Q: (Medium) Which statement is correct?
-A) A method can only have one parameter
-B) A method must always return a value
-C) A method can return void
-D) A method cannot be public
-Answer: 2
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Medium) What is printed?
-public String echo(String msg) {
-   return msg;
-}
-System.out.println(echo("Test"));
-A) echo
-B) Test
-C) null
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Medium) What happens if a method declares an int return type but does not return anything?
-A) Returns 0 automatically
-B) Returns null
-C) Compilation error
-D) Runtime error
-Answer: 2
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Medium) Which loop is best for traversing all elements of an array?
-A) for loop
-B) enhanced for loop
-C) while loop
-D) All of the above
-Answer: 3
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Medium) What will this print?
-int[] arr = {2,4,6};
-System.out.println(arr[0] + arr[2]);
-A) 6
-B) 8
-C) 2
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods - Defining
-Q: (Medium) Which is valid?
-A) public int sum(int a, int b) { return a+b; }
-B) public int sum(int a, int b) { }
-C) int sum { return a+b; }
-D) def sum(int a, int b) { return a+b; }
-Answer: 0
-
-Level: 3
-Topic: Methods - Parameters
-Q: (Medium) What will happen if you call a method with fewer arguments than it requires?
-A) Missing values are set to 0
-B) Missing values are set to null
-C) Compilation error
-D) Runtime error
-Answer: 2
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Medium) Which array initialization is correct?
-A) int[] arr = new int[]{1,2,3};
-B) int arr = new int[3]{1,2,3};
-C) int arr() = {1,2,3};
-D) array arr = {1,2,3};
-Answer: 0
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Hard) What will this method output?
-public int divide(int a, int b) {
-   return a / b;
-}
-System.out.println(divide(5,2));
-A) 2.5
-B) 2
-C) 3
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Hard) What is printed?
-int[] arr = {1,2,3};
-System.out.println(arr[arr.length]);
-A) 3
-B) 2
-C) Error (IndexOutOfBounds)
-D) null
-Answer: 2
-
-Level: 3
-Topic: Methods - Recursion
-Q: (Hard) What is printed?
-public int factorial(int n) {
-   if(n==0) return 1;
-   return n * factorial(n-1);
-}
-System.out.println(factorial(4));
-A) 12
-B) 24
-C) 20
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods - Defining
-Q: (Hard) Which will compile?
-A) public int add(int a, int b) { return a+b; }
-B) public void add(int a, int b) { return a+b; }
-C) public int add(a,b) { return a+b; }
-D) int add(int a, int b) { System.out.println(a+b); }
-Answer: 0
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Hard) What is printed?
-int[] arr = new int[3];
-arr[0] = 1;
-arr[1] = 2;
-arr[2] = 3;
-for(int i=0; i<=arr.length; i++) {
-   System.out.print(arr[i]);
-}
-A) 123
-B) 123 + Exception
-C) 12
-D) Error at compile
-Answer: 1
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Hard) What will this method return?
-public double average(int[] nums) {
-   int sum = 0;
-   for(int n : nums) sum += n;
-   return sum / nums.length;
-}
-System.out.println(average(new int[]{2,3}));
-A) 2.5
-B) 2
-C) 3
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods - Recursion
-Q: (Hard) What is the result?
-public static int mystery(int x) {
-   if(x<=1) return 1;
-   return x + mystery(x-1);
-}
-System.out.println(mystery(3));
-A) 6
-B) 5
-C) 4
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays - Multidimensional
-Q: (Hard) What is printed?
-int[][] matrix = {{1,2},{3,4}};
-System.out.println(matrix[1][0]);
-A) 1
-B) 2
-C) 3
-D) 4
-Answer: 2
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Hard) Which statement about arrays is correct?
-A) int[] arr = new int[-1]; is valid
-B) int[] arr = new int[0]; is valid
-C) int arr[5] = {1,2,3,4,5}; is valid
-D) Arrays are resizable
-Answer: 1
-
-Level: 3
-Topic: Methods - Parameters
-Q: (Hard) What is the output?
-public void test() {
-   int x=5;
-   change(x);
-   System.out.println(x);
-}
-public void change(int y) {
-   y = 10;
-}
-test();
-A) 5
-B) 10
-C) 0
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays - Traversal
-Q: (Hard) What will be printed?
-int[] arr = {1,2,3,4};
-for(int i=0; i<arr.length; i+=2) {
-   System.out.print(arr[i]);
-}
-A) 1234
-B) 13
-C) 24
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Defining
-Q: (Hard) Which code produces an error?
-A) int[] a = new int[0];
-B) int[] b = {};
-C) int[] c = null;
-D) int d[] = new int[-5];
-Answer: 3
-
-Level: 3
-Topic: Methods - Parameters (Varargs)
-Q: (Hard) What is printed?
-public static int sum(int... nums) {
-   int total = 0;
-   for(int n : nums) total += n;
-   return total;
-}
-System.out.println(sum(1,2,3));
-A) 6
-B) 123
-C) 5
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays - Null Handling
-Q: (Hard) What happens?
-int[] arr = {1,2,3};
-arr = null;
-System.out.println(arr[0]);
-A) 1
-B) 0
-C) NullPointerException
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Methods - Recursion
-Q: (Hard) What is the output?
-public int f(int n) {
-   if(n<=1) return n;
-   return f(n-1) + f(n-2);
-}
-System.out.println(f(4));
-A) 2
-B) 3
-C) 5
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays - Parameters
-Q: (Hard) Which statement is true?
-A) Java arrays are passed by value
-B) Java arrays are passed by reference
-C) Array references are passed by value
-D) Arrays are immutable
-Answer: 2
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Hard) What will be printed?
-String[] names = {"A","B","C"};
-System.out.println(names[1]);
-A) A
-B) B
-C) C
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays - Parameters
-Q: (Hard) What is printed?
-public static void print(int[] arr) {
-   for(int i=0;i<arr.length;i++) {
-      arr[i]+=1;
-   }
-}
-int[] nums = {1,2};
-print(nums);
+Topic: Arrays
+Q: (Hard) What will happen?
+int[] nums = {1,2,3};
+nums = null;
 System.out.println(nums[0]);
 A) 1
-B) 2
-C) 3
-D) Error
+B) Error
+C) 0
+D) null
 Answer: 1
 
 Level: 3
-Topic: Arrays - Defining
-Q: (Hard) Which declaration is invalid?
-A) int[] arr = new int[5];
-B) int arr[] = new int[5];
-C) int arr[5];
-D) int[] arr = {1,2,3};
-Answer: 2
+Topic: Arrays
+Q: (Hard) What is printed?
+int[] data = {10,20,30,40};
+System.out.println(data[(data.length/2)]);
+A) 20
+B) 30
+C) 40
+D) 10
+Answer: 1
 
 Level: 3
-Topic: Arrays - Traversal
+Topic: Methods
+Q: (Hard) Which method will produce infinite recursion?
+A) int test(){ return test(); }
+B) int test(){ return 0; }
+C) void test(){ if(true) return; }
+D) All of the above
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What does this code print?
+int[] a = {1,2,3,4};
+for(int i=a.length-1; i>=0; i--)
+    System.out.print(a[i] + " ");
+A) 4 3 2 1
+B) 1 2 3 4
+C) 4 2
+D) 3 2 1
+Answer: 0
+
+Level: 3
+Topic: Methods
 Q: (Hard) What is printed?
-int[] arr = {10,20,30};
-for(int i=0;i<2;i++) {
-   System.out.print(arr[i]);
+void printArray(int[] arr){
+  for(int i=0;i<arr.length;i++)
+      System.out.print(arr[i]+" ");
 }
-A) 10 20
-B) 1020
-C) 30
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods - Return Values
-Q: (Hard) What happens if a method that declares void has a return statement with a value?
-A) It returns the value
-B) It causes a compile error
-C) It ignores the value
-D) It runs but prints nothing
-Answer: 1
-
-Level: 3
-Topic: Methods - Recursion
-Q: (Hard) What is printed?
-public static int mystery(int n) {
-   if(n==1) return 1;
-   return n + mystery(n-1);
-}
-System.out.println(mystery(5));
-A) 15
-B) 10
-C) 5
-D) Error
+int[] vals = {5,10};
+printArray(vals);
+A) 5 10
+B) 10 5
+C) Error
+D) 0 0
 Answer: 0
 
 Level: 3
-Topic: Methods - Defining
-Q: (Hard) Which method header is valid?
-A) public void f(int x);
-B) public void f(int x) { }
-C) void f(int) { }
-D) f(int x) { }
-Answer: 1
-
-Level: 3
-Topic: Arrays - Indexing
-Q: (Hard) What happens if you try to access arr[-1]?
-A) Returns first element
-B) Returns last element
-C) ArrayIndexOutOfBoundsException
-D) NullPointerException
-Answer: 2
-
-Level: 3
-Topic: Arrays - Properties
-Q: (Hard) What is printed?
-int[] arr = {1,2,3,4};
-System.out.println(arr.length * arr[0]);
-A) 1
-B) 4
-C) 5
-D) Error
-Answer: 1
-
-Here are **75 brand-new Level 3 questions** (25 Easy, 25 Medium, 25 Hard) on methods and 1-D arrays with loop-based traversal. Answers use **zero-based indices** (A→0, B→1, C→2, D→3). Java casing is correct.
-
-Level: 3
-Topic: Methods – Defining
-Q: (Easy) Which access modifier allows a method to be called from any class?
-A) private
-B) protected
-C) public
-D) default
-Answer: 2
-
-Level: 3
-Topic: Methods – Calling
-Q: (Easy) How do you call a static method `sum()` inside the same class?
-A) this.sum();
-B) ClassName.sum();
-C) new ClassName().sum();
-D) super.sum();
-Answer: 1
-
-Level: 3
-Topic: Arrays – Defining
-Q: (Easy) Create an empty String array with length 3.
-A) String[3] a;
-B) String[] a = new String[3];
-C) String a = new String[3];
-D) new String[3] a;
-Answer: 1
-
-Level: 3
-Topic: Methods – Return Values
-Q: (Easy) What keyword must appear in a non-void method’s body?
-A) stop
-B) return
-C) break
-D) yield
-Answer: 1
-
-Level: 3
-Topic: Arrays – Indexing
-Q: (Easy) After `int[] a = {4,7,9}; a[2] = 1;` what is `a[2]`?
-A) 4
-B) 7
-C) 1
-D) 9
-Answer: 2
-
-Level: 3
-Topic: Methods – Parameters
-Q: (Easy) Which is a valid parameter list?
-A) (int a; int b)
-B) (int a, int b)
-C) (a int, b int)
-D) (int a: int b)
-Answer: 1
-
-Level: 3
-Topic: Arrays – Properties
-Q: (Easy) What prints? `int[] a = new int[2]; System.out.println(a.length);`
-A) 0
-B) 1
-C) 2
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Methods – Defining
-Q: (Easy) Choose a correct header returning boolean.
-A) public bool ok()
-B) public Boolean ok()
-C) public boolean ok()
-D) boolean() ok
-Answer: 2
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Easy) Which loops through every element?
-A) for (int i=0; i<a.length; i++) { … }
-B) if (a.length>0) { … }
-C) switch (a.length) { … }
-D) goto a[i];
+Topic: Methods
+Q: (Hard) What happens if you call a method with wrong argument type?
+A) Compile-time error
+B) Runtime error
+C) Automatic conversion
+D) Ignored
 Answer: 0
 
 Level: 3
-Topic: Methods – Calling
-Q: (Easy) Correct call for `void show()`?
-A) show;
-B) show();
-C) call show();
-D) Show();
-Answer: 1
-
-Level: 3
-Topic: Arrays – Defining
-Q: (Easy) Which initializes to 0,0,0,0?
-A) int[] a = new int[4];
-B) int[] a = {0,0,0};
-C) int a = 0[4];
-D) new int[]{4};
-Answer: 0
-
-Level: 3
-Topic: Methods – Return Values
-Q: (Easy) What is printed?
-`static int f(){ return 7; } System.out.println(f());`
-A) 6
-B) 7
-C) f
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays – Indexing
-Q: (Easy) Valid read of first element in `int[] a`?
-A) a(0)
-B) a{0}
-C) a[0]
-D) a.0
-Answer: 2
-
-Level: 3
-Topic: Methods – Defining
-Q: (Easy) Which keyword prevents a method from being overridden?
-A) static
-B) final
-C) const
-D) default
-Answer: 1
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Easy) Output?
-`int[] a={2,3}; for(int x : a) System.out.print(x+" ");`
-A) 2 3
-B) 23
-C) 3 2
-D) 0 1
-Answer: 0
-
-Level: 3
-Topic: Methods – Parameters
-Q: (Easy) For `void set(int v)`, which call is valid?
-A) set("1")
-B) set(1)
-C) set()
-D) set(int 1)
-Answer: 1
-
-Level: 3
-Topic: Arrays – Properties
-Q: (Easy) Default value in `new double[1]` element?
-A) 0.0
-B) 0
-C) null
-D) 1.0
-Answer: 0
-
-Level: 3
-Topic: Methods – Calling
-Q: (Easy) What prints?
-`static void ping(){ System.out.print("P"); } ping();`
-A) P
-B) ping
-C) Nothing
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays – Defining
-Q: (Easy) Which is invalid?
-A) int[] a;
-B) int a[];
-C) int[] a = null;
-D) int a[] = new int();
+Topic: Arrays
+Q: (Hard) What is the result?
+int[] nums = {2,4,6};
+int result = 1;
+for(int x : nums) result *= x;
+System.out.println(result);
+A) 48
+B) 12
+C) 8
+D) 24
 Answer: 3
 
 Level: 3
-Topic: Methods – Return Values
-Q: (Easy) Meaning of `return;` inside `void` method?
-A) Return 0
-B) Exit the method
-C) Pause execution
-D) Compile error
-Answer: 1
-
-Level: 3
-Topic: Arrays – Indexing
-Q: (Easy) After `String[] s = {"x","y"}; System.out.print(s[0]);`
-A) x
-B) y
-C) 0
-D) null
-Answer: 0
-
-Level: 3
-Topic: Methods – Defining
-Q: (Easy) Which is a correct empty body method?
-A) `public void run() { }`
-B) `public void run();`
-C) `public run(void) { }`
-D) `void run[] { }`
-Answer: 0
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Easy) What prints?
-`int[] a={1,4}; for(int i=0;i<a.length;i++){ System.out.print(i); }`
-A) 1 4
-B) 0 1
-C) 01
-D) 10
-Answer: 2
-
-Level: 3
-Topic: Methods – Parameters
-Q: (Easy) Which declares two parameters `int x` and `String y`?
-A) `(x int, y String)`
-B) `(int x; String y)`
-C) `(int x, String y)`
-D) `(String y, int)`
-Answer: 2
-
----
-
-Level: 3
-Topic: Methods – Overloading
-Q: (Medium) Which pair is a valid overload of `int add(int a,int b)`?
-A) `int add(int x,int y)`
-B) `double add(int a,int b)`
-C) `int add(double a,double b)`
-D) `void add(int a,int b)`
-Answer: 2
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Medium) Output?
-`int[] a={1,3,5,7}; int s=0; for(int i=1;i<a.length;i+=2) s+=a[i]; System.out.print(s);`
-A) 3
-B) 8
-C) 10
-D) 16
-Answer: 1
-
-Level: 3
-Topic: Methods – Parameters
-Q: (Medium) What prints?
-`static void inc(int n){ n++; } public static void main(String[] args){ int x=5; inc(x); System.out.print(x); }`
-A) 5
-B) 6
-C) 0
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays – Copying
-Q: (Medium) After `int[] a={1,2}; int[] b=a; b[0]=9; System.out.print(a[0]);`
-A) 1
-B) 9
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Methods – Return Values
-Q: (Medium) Output?
-`static double g(){ return 5/2; } System.out.print(g());`
-A) 2
-B) 2.0
-C) 2.5
-D) 3
-Answer: 1
-
-Level: 3
-Topic: Arrays – Properties
-Q: (Medium) Which is true?
-A) `a.length()` gets array length
-B) `a.length` is a field
-C) `length(a)` is a utility method
-D) Arrays have `size()`
-Answer: 1
-
-Level: 3
-Topic: Methods – Varargs
-Q: (Medium) Which header accepts any number of ints?
-A) `void f(int* v)`
-B) `void f(int... v)`
-C) `void f(...int v)`
-D) `void f(var int v[])`
-Answer: 1
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Medium) Output?
-`int[] a={2,4,6}; for(int i=a.length-1;i>=0;i--){ System.out.print(a[i]+" "); }`
-A) 2 4 6
-B) 6 4 2
-C) 246
-D) 642
-Answer: 1
-
-Level: 3
-Topic: Methods – Calling
-Q: (Medium) Given `class A{ int f(){return 1;} }`, which is valid?
-A) `A.f();`
-B) `new A().f();`
-C) `f(A);`
-D) `A new().f();`
-Answer: 1
-
-Level: 3
-Topic: Arrays – Indexing
-Q: (Medium) What prints?
-`int[] a={0,1,2,3}; int i=1; System.out.print(a[i+2]);`
-A) 1
-B) 2
-C) 3
-D) 0
-Answer: 2
-
-Level: 3
-Topic: Methods – Return Values
-Q: (Medium) Output?
-`static int h(int x){ if(x<0) return -x; return x; } System.out.print(h(-3));`
-A) -3
-B) 0
-C) 3
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Medium) Sum of first 3 elements?
-`int[] a={5,5,5,5}; int s=0; for(int i=0;i<3;i++) s+=a[i]; System.out.print(s);`
-A) 10
-B) 15
-C) 20
-D) 5
-Answer: 1
-
-Level: 3
-Topic: Methods – Overloading
-Q: (Medium) Which calls the `print(double)` overload?
-A) `print(5)`
-B) `print(5.0)`
-C) `print('5')`
-D) `print("5")`
-Answer: 1
-
-Level: 3
-Topic: Arrays – Defining
-Q: (Medium) Which is valid initialization on two lines?
-A) `int[] a; a = {1,2};`
-B) `int[] a; a = new int[]{1,2};`
-C) `int[] a; a() = {1,2};`
-D) `int a[]; a = int[]{1,2};`
-Answer: 1
-
-Level: 3
-Topic: Methods – Parameters
-Q: (Medium) Output?
-`static void swap(int a,int b){ int t=a;a=b;b=t; } int x=1,y=2; swap(x,y); System.out.print(x+""+y);`
-A) 12
-B) 21
-C) 03
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Medium) What prints?
-`int[] a={1,2,3}; for(int i=0;i<a.length;i++){ a[i]+=i; } System.out.print(a[2]);`
+Topic: Methods
+Q: (Hard) What will this print?
+int compute(int n){
+    if(n<=1) return n;
+    return compute(n-1)+compute(n-2);
+}
+System.out.println(compute(4));
 A) 3
 B) 4
 C) 5
-D) 6
-Answer: 2
-
-Level: 3
-Topic: Methods – Defining
-Q: (Medium) Which header is valid and package-private?
-A) `void go(){}`
-B) `private void go(){}`
-C) `public void go(){}`
-D) `protected void go(){}`
-Answer: 0
-
-Level: 3
-Topic: Arrays – Properties
-Q: (Medium) Output?
-`int[] a = {1,2}; System.out.print((a.length==2) ? "OK" : "NO");`
-A) OK
-B) NO
-C) 2
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Methods – Return Values
-Q: (Medium) Output?
-`static int parse(String s){ return Integer.parseInt(s); } System.out.print(parse("7"));`
-A) 7
-B) "7"
-C) Error
-D) 0
-Answer: 0
-
-Level: 3
-Topic: Arrays – Traversal
-Q: (Medium) Output?
-`int[] a={3,3,3}; int c=0; for(int x:a) if(x==3) c++; System.out.print(c);`
-A) 1
-B) 2
-C) 3
-D) 0
-Answer: 2
-
-Level: 3
-Topic: Methods – Calling
-Q: (Medium) What prints?
-`static String echo(int n){ return "N="+n; } System.out.print(echo(4));`
-A) N=4
-B) "N="+4
-C) 4
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays – Indexing
-Q: (Medium) What prints?
-`int[] a=new int[3]; a[0]=1; a[1]=a[0]+1; a[2]=a[1]+1; System.out.print(a[1]);`
-A) 1
-B) 2
-C) 3
-D) 0
-Answer: 1
-
----
-
-Level: 3
-Topic: Methods – Return/Division
-Q: (Hard) Output?
-`static double avg(int a,int b){ return (a+b)/2; } System.out.print(avg(1,2));`
-A) 1.0
-B) 1.5
-C) 2.0
-D) 2.5
-Answer: 0
-
-Level: 3
-Topic: Arrays – Bounds
-Q: (Hard) What happens?
-`int[] a={1,2}; System.out.print(a[-1]);`
-A) 1
-B) 2
-C) ArrayIndexOutOfBoundsException
-D) 0
-Answer: 2
-
-Level: 3
-Topic: Methods – Overloading Resolution
-Q: (Hard) Which method is chosen by `call(5)`?
-`void call(long x)` / `void call(double x)` / `void call(Integer x)` / `void call(int... x)`
-A) call(long x)
-B) call(double x)
-C) call(Integer x)
-D) call(int... x)
-Answer: 0
-
-Level: 3
-Topic: Arrays – Aliasing
-Q: (Hard) Output?
-`int[] a={1,2,3}; int[] b=a.clone(); b[0]=9; System.out.print(a[0]+""+b[0]);`
-A) 19
-B) 99
-C) 91
-D) 11
-Answer: 0
-
-Level: 3
-Topic: Methods – Recursion
-Q: (Hard) Output?
-`static int sumTo(int n){ return (n<=0)?0:n+sumTo(n-1); } System.out.print(sumTo(4));`
-A) 6
-B) 10
-C) 4
-D) 8
-Answer: 1
-
-Level: 3
-Topic: Arrays – Computation
-Q: (Hard) Output?
-`int[] a={2,1,4}; for(int i=0;i<a.length;i++){ a[i]=a[i]*i; } System.out.print(a[2]);`
-A) 4
-B) 6
-C) 8
 D) 2
 Answer: 2
 
 Level: 3
-Topic: Methods – Shadowing
-Q: (Hard) Output?
-`static int x=1; static void set(int x){ x=5; } public static void main(String[] args){ set(x); System.out.print(x); }`
-A) 5
-B) 1
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays – Searching
-Q: (Hard) Output?
-`int[] a={4,5,6}; boolean f=false; for(int v:a){ if(v==5){ f=true; break; } } System.out.print(f);`
-A) true
-B) false
-C) 5
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Methods – Multiple Returns
-Q: (Hard) Output?
-`static int test(int n){ if(n%2==0) return n/2; return n*2; } System.out.print(test(5));`
-A) 2
-B) 5
-C) 10
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays – Reverse Build
-Q: (Hard) Output?
-`int[] a=new int[3]; for(int i=0;i<a.length;i++){ a[a.length-1-i]=i; } System.out.print(a[0]+a[2]);`
-A) 1
-B) 2
-C) 3
-D) 4
-Answer: 1
-
-Level: 3
-Topic: Methods – Static vs Instance
-Q: (Hard) Which is valid?
-A) Call instance method from static context using `this.method()`
-B) Call static method using `ClassName.method()`
-C) Call static method using `new ClassName().method()` only
-D) Instance methods are implicitly static
-Answer: 1
-
-Level: 3
-Topic: Arrays – Sum With Continue
-Q: (Hard) Output?
-`int[] a={1,2,3,4}; int s=0; for(int i=0;i<a.length;i++){ if(i%2==1) continue; s+=a[i]; } System.out.print(s);`
-A) 4
-B) 5
-C) 6
-D) 10
-Answer: 1
-
-Level: 3
-Topic: Methods – Return Types
-Q: (Hard) Which compiles?
-A) `int foo(){ return; }`
-B) `void foo(){ return; }`
-C) `void foo(){ return 0; }`
-D) `int foo(){ }`
-Answer: 1
-
-Level: 3
-Topic: Arrays – Out/Print
-Q: (Hard) Output?
-`int[] a={1,2}; System.out.print(a);`
-A) [1, 2]
-B) 12
-C) A type hashcode string
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Methods – Chaining
-Q: (Hard) Output?
-`static int add(int a,int b){ return a+b; } static int twice(int x){ return x*2; } System.out.print(twice(add(2,3)));`
-A) 10
-B) 7
-C) 12
-D) 5
-Answer: 0
-
-Level: 3
-Topic: Arrays – Min Scan
-Q: (Hard) Output?
-`int[] a={7,3,9}; int m=a[0]; for(int i=1;i<a.length;i++) if(a[i]<m) m=a[i]; System.out.print(m);`
-A) 7
-B) 3
-C) 9
-D) 10
-Answer: 1
-
-Level: 3
-Topic: Methods – Recursion Base
-Q: (Hard) Output?
-`static int f(int n){ if(n==1) return 1; return n*f(n-1); } System.out.print(f(3));`
-A) 3
-B) 6
-C) 9
-D) 0
-Answer: 1
-
-Level: 3
-Topic: Arrays – Mutation in Method
-Q: (Hard) Output?
-`static void bump(int[] a){ for(int i=0;i<a.length;i++) a[i]++; } int[] x={1,1}; bump(x); System.out.print(x[0]+x[1]);`
-A) 2
-B) 3
-C) 4
-D) 22
-Answer: 2
-
-Level: 3
-Topic: Methods – Overloading/Autobox
-Q: (Hard) Which call picks `void p(Integer x)` over `void p(int x)`?
-A) `p(5)`
-B) `p(Integer.valueOf(5))`
-C) `p((int)5L)`
-D) None
-Answer: 1
-
-Level: 3
-Topic: Arrays – Partial Loop
-Q: (Hard) Output?
-`int[] a={1,2,3,4,5}; for(int i=0;i<4;i++) a[i]=a[i+1]; System.out.print(a[3]);`
-A) 4
-B) 5
-C) 3
-D) 2
-Answer: 0
-
-Level: 3
-Topic: Methods – Parameter Order
-Q: (Hard) Given `void m(int a,String b)`, which call compiles?
-A) `m("x",1);`
-B) `m(1,"x");`
-C) `m();`
-D) `m(int 1, String "x");`
-Answer: 1
-
-Level: 3
-Topic: Arrays – Sentinel Sum
-Q: (Hard) Output?
-`int[] a={1,2,0,3}; int s=0; for(int v:a){ if(v==0) break; s+=v; } System.out.print(s);`
-A) 0
-B) 3
-C) 6
-D) 1
-Answer: 1
-
-Level: 3
-Topic: Methods – Local vs Field
-Q: (Hard) Output?
-`static int v=2; static int get(){ int v=5; return v; } System.out.print(get()+v);`
-A) 7
-B) 10
+Topic: Arrays
+Q: (Hard) What is the output?
+int[] arr = {5,10,15};
+int total = 0;
+for(int i=0;i<arr.length;i++){
+    total += arr[i];
+    if(total>15) break;
+}
+System.out.println(total);
+A) 15
+B) 30
 C) 25
 D) 5
 Answer: 0
 
 Level: 3
-Topic: Arrays – Even Count
-Q: (Hard) Output?
-`int[] a={2,3,4,5,6}; int c=0; for(int x:a) if(x%2==0) c++; System.out.print(c);`
-A) 2
-B) 3
+Topic: Arrays
+Q: (Hard) Which statement is TRUE about arrays in Java?
+A) Arrays are objects
+B) Arrays can grow dynamically
+C) Arrays store different data types
+D) Arrays are not supported
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What is printed?
+int mystery(int x){
+    if(x<=1) return 1;
+    return x*mystery(x-2);
+}
+System.out.println(mystery(5));
+A) 15
+B) 25
+C) 5
+D) 8
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is the output?
+int[][] grid = {{1,2},{3,4}};
+System.out.println(grid[1][0]);
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Hard) What does this print?
+int func(int n){
+  if(n==1) return 1;
+  return n + func(n-1);
+}
+System.out.println(func(4));
+A) 10
+B) 6
 C) 4
-D) 5
+D) 0
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is printed?
+int[] a = {1,3,5,7};
+System.out.println(a[(a.length/2)-1]);
+A) 1
+B) 3
+C) 5
+D) 7
 Answer: 1
 
 Level: 3
-Topic: Methods – Casting Return
-Q: (Hard) Output?
-`static int toInt(double d){ return (int)d; } System.out.print(toInt(3.9));`
-A) 3.9
-B) 4
-C) 3
+Topic: Arrays
+Q: (Hard) Which of these will print the second column of a 2D array?
+A) for(int i=0;i<arr.length;i++) System.out.println(arr[i][1]);
+B) for(int i=0;i<arr.length;i++) System.out.println(arr[1][i]);
+C) for(int i=1;i<arr[0].length;i++) print(arr[i]);
+D) arr.column(2);
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What will this code print?
+int x=2;
+void doubleIt(int n){ n*=2; System.out.println(n); }
+doubleIt(x);
+System.out.println(x);
+A) 4 4
+B) 4 2
+C) 2 4
 D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What will be printed?
+int[] nums = {1,2,3,4};
+for(int i=0;i<nums.length;i++)
+  for(int j=0;j<=i;j++)
+     System.out.print(nums[j]);
+A) 122334
+B) 1234
+C) 1121231234
+D) 12341234
 Answer: 2
 
 Level: 3
-Topic: Arrays – Fill Then Print
-Q: (Hard) Output?
-`int[] a=new int[3]; for(int i=0;i<a.length;i++) a[i]=i*i; System.out.print(a[0]+a[1]+a[2]);`
-A) 3
-B) 5
-C) 6
+Topic: Methods
+Q: (Hard) What is printed?
+int sumArray(int[] arr){
+   int sum=0;
+   for(int n:arr) sum+=n;
+   return sum;
+}
+System.out.println(sumArray(new int[]{2,4,6}));
+A) 12
+B) 6
+C) 10
+D) 8
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What does this code print?
+int[] x = {2,4,6};
+for(int i=x.length-1;i>=0;i--)
+  System.out.print(x[i]*2+" ");
+A) 12 8 4
+B) 4 8 12
+C) 6 4 2
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) Which of these methods correctly returns the maximum of two numbers?
+A) int max(int a,int b){ return a>b?a:b; }
+B) int max(int a,int b){ System.out.println(a>b?a:b); }
+C) void max(a,b){ return a>b?a:b; }
+D) max(a,b){ return a+b; }
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What will be printed?
+int[][] arr = {{2,4},{6,8}};
+System.out.println(arr[0][1]+arr[1][0]);
+A) 8
+B) 10
+C) 12
 D) 14
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Hard) What is true about parameters in Java?
+A) Passed by value
+B) Passed by reference
+C) Both
+D) None
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is printed?
+int[] x = {1,2,3};
+int y = 0;
+for(int i : x) y += i*i;
+System.out.println(y);
+A) 14
+B) 12
+C) 9
+D) 6
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) Which method correctly swaps two integers?
+A) void swap(int a,int b){int t=a;a=b;b=t;}
+B) int swap(int a,int b){return a;}
+C) void swap(int a,int b){System.out.println(a+b);}
+D) void swap(int a){}
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is the result?
+int[] arr = {2,4,6,8};
+for(int i=0;i<arr.length;i++) arr[i]+=i;
+System.out.println(arr[3]);
+A) 11
+B) 10
+C) 12
+D) 8
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What will be the output?
+int f(int n){ if(n<=1)return 1; return n*f(n-1);}
+System.out.println(f(5));
+A) 120
+B) 24
+C) 60
+D) 15
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is printed?
+int[][] nums = {{1,2,3},{4,5,6}};
+System.out.println(nums[1][2]);
+A) 6
+B) 5
+C) 3
+D) 2
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What happens if two methods have same name and parameters but different return types?
+A) Compilation error
+B) Runtime error
+C) Overloaded method
+D) Accepted
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is printed?
+int[] x = {2,4,8};
+System.out.println(x[0]*x[1]*x[2]);
+A) 64
+B) 36
+C) 24
+D) 16
 Answer: 2
+
+Level: 3
+Topic: Methods
+Q: (Hard) Which statement about main method is true?
+A) It must be public and static
+B) It can be private
+C) It can return int
+D) It must have no parameters
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What is printed?
+int[] a = {10,20,30,40};
+System.out.println(a[(int)Math.sqrt(4)]);
+A) 30
+B) 40
+C) 20
+D) 10
+Answer: 0
+
+Level: 3
+Topic: Methods
+Q: (Hard) What is printed?
+void call(int x){ System.out.println(x*2); }
+call(5);
+A) 10
+B) 5
+C) 25
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Q: (Hard) What happens when you access arr[-1]?
+A) Prints last element
+B) Throws ArrayIndexOutOfBoundsException
+C) Returns 0
+D) Error but continues
+Answer: 1
+
+Level: 3
+Topic: Methods
+Q: (Hard) What is printed?
+int mystery(int n){
+  if(n==0) return 0;
+  else return n+mystery(n-1);
+}
+System.out.println(mystery(5));
+A) 15
+B) 10
+C) 5
+D) 20
+Answer: 0
