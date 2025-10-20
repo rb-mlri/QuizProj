@@ -640,7 +640,7 @@ Q: (Hard) Which of these is true about nested loops?
 A) Inner loop runs independently
 B) Inner loop executes fully for each outer iteration
 C) Inner and outer loops run in parallel
-D) Inner loop can�t access outer variables
+D) Inner loop can�t access outer variables
 Answer: 1
 
 Level: 2
@@ -892,3 +892,837 @@ B) continue ends the program
 C) return skips iteration
 D) exit repeats loop
 Answer: 0
+
+Here are **75 brand-new Level 2 questions** (25 Easy, 25 Medium, 25 Hard). Topics span If-Else, Switch, While, For, Do/While, Break, Continue. Answers use **zero-based indices** (A→0, B→1, C→2, D→3). All Java keywords/casing are correct.
+
+Level: 2
+Topic: If-Else Statements
+Q: (Easy) Which line correctly starts a conditional block?
+A) If(condition) { … }
+B) if (condition) { … }
+C) IF (condition) { … }
+D) IfElse (condition) { … }
+Answer: 1
+
+Level: 2
+Topic: If-Else Statements
+Q: (Easy) What is printed?
+int n = 0;
+if (n == 0) { System.out.print("Zero"); }
+A) zero
+B) ZERO
+C) Zero
+D) Nothing
+Answer: 2
+
+Level: 2
+Topic: While Loop
+Q: (Easy) Which syntax is valid?
+A) while n < 5 { … }
+B) while (n < 5) { … }
+C) While (n < 5) { … }
+D) while(n < 5); { … }
+Answer: 1
+
+Level: 2
+Topic: For Loop
+Q: (Easy) Fill the blank to loop 5 times: for (int i = 0; ___ ; i++)
+A) i <= 5
+B) i < 5
+C) i == 5
+D) i >= 5
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop
+Q: (Easy) Which line ends a do-while loop correctly?
+A) } while (cond)
+B) } While (cond);
+C) } while (cond);
+D) } while cond;
+Answer: 2
+
+Level: 2
+Topic: Switch Statement
+Q: (Easy) Which value type is **not** allowed as a switch selector?
+A) int
+B) char
+C) String
+D) double
+Answer: 3
+
+Level: 2
+Topic: Break
+Q: (Easy) The statement to leave a switch immediately is…
+A) continue;
+B) break;
+C) exit;
+D) stop;
+Answer: 1
+
+Level: 2
+Topic: Continue
+Q: (Easy) In a for-loop, which keyword skips the remaining statements and proceeds with the next iteration?
+A) skip
+B) jump
+C) continue
+D) break
+Answer: 2
+
+Level: 2
+Topic: For Loop
+Q: (Easy) Output?
+for (int i = 1; i <= 3; i++) { System.out.print(i + " "); }
+A) 1 2 3
+B) 0 1 2
+C) 2 3 4
+D) 1 2 3 4
+Answer: 0
+
+Level: 2
+Topic: While Loop
+Q: (Easy) Output?
+int i = 3;
+while (i > 0) { System.out.print("*"); i--; }
+A) **
+B) ***
+C) *
+D) ****
+Answer: 1
+
+Level: 2
+Topic: If-Else Statements
+Q: (Easy) Choose the valid else syntax.
+A) else { … }
+B) Else { … }
+C) ELSE { … }
+D) end if
+Answer: 0
+
+Level: 2
+Topic: Switch Statement
+Q: (Easy) Where can the default label appear?
+A) Only first
+B) Only last
+C) Anywhere inside switch
+D) After break only
+Answer: 2
+
+Level: 2
+Topic: Do/While Loop
+Q: (Easy) Output?
+int k = 1;
+do { System.out.print(k); k++; } while (k <= 2);
+A) 1
+B) 12
+C) 23
+D) 123
+Answer: 1
+
+Level: 2
+Topic: For Loop
+Q: (Easy) Which is legal?
+A) for (int i = 0; i < 3; ) { i++; }
+B) for (i = 0; i < 3; i++) { }
+C) for int i=0; i<3; i++ {}
+D) for (int i; i<3; i++) {}
+Answer: 0
+
+Level: 2
+Topic: While Loop
+Q: (Easy) What must be inside parentheses of while?
+A) Statement
+B) Condition (boolean)
+C) Variable name
+D) Type
+Answer: 1
+
+Level: 2
+Topic: If-Else Statements
+Q: (Easy) Output?
+int a = 2;
+if (a > 5) System.out.print("Big"); else System.out.print("Small");
+A) Big
+B) Small
+C) Nothing
+D) Error
+Answer: 1
+
+Level: 2
+Topic: Switch Statement
+Q: (Easy) Valid case label for char c?
+A) case "A":
+B) case 'A':
+C) case A:
+D) case (A):
+Answer: 1
+
+Level: 2
+Topic: Continue
+Q: (Easy) Output?
+for (int i=1;i<=3;i++){ if(i==2) continue; System.out.print(i); }
+A) 12
+B) 23
+C) 13
+D) 123
+Answer: 2
+
+Level: 2
+Topic: Break
+Q: (Easy) Output?
+int i=0; while(true){ System.out.print(i); break; }
+A) 0
+B) 1
+C) Nothing
+D) Infinite printing
+Answer: 0
+
+Level: 2
+Topic: For Loop
+Q: (Easy) Which header iterates over array `arr` elements?
+A) for (int x of arr)
+B) for (int x : arr)
+C) for (arr : int x)
+D) foreach (arr as x)
+Answer: 1
+
+Level: 2
+Topic: While Loop
+Q: (Easy) What ensures a while-loop eventually stops?
+A) Increasing JVM memory
+B) Modifying the loop variable toward the condition
+C) Adding more print statements
+D) Using default break
+Answer: 1
+
+Level: 2
+Topic: If-Else Statements
+Q: (Easy) Which operator in Java negates a boolean?
+A) !
+B) not
+C) ~
+D) ^
+Answer: 0
+
+Level: 2
+Topic: Switch Statement
+Q: (Easy) Missing word: switch (x) { ____ 1: System.out.print("one"); }
+A) case
+B) CASE
+C) Case
+D) option
+Answer: 0
+
+Level: 2
+Topic: For Loop
+Q: (Easy) Output?
+for (int i=0;i<1;i++) System.out.print("Hi");
+A) (nothing)
+B) Hi
+C) HI
+D) hi
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop
+Q: (Easy) If the condition is false at first check, a do-while loop runs…
+A) 0 times
+B) 1 time
+C) 2 times
+D) Until condition becomes true
+Answer: 1
+
+Level: 2
+Topic: Continue
+Q: (Easy) In a while-loop, `continue;` jumps to…
+A) Program end
+B) Next iteration’s condition check
+C) Next statement after loop
+D) Default case
+Answer: 1
+
+---
+
+Level: 2
+Topic: If-Else Statements
+Q: (Medium) Output?
+int x = 3;
+if (x++ == 3) { System.out.print(x); } else { System.out.print(0); }
+A) 3
+B) 4
+C) 0
+D) 1
+Answer: 1
+
+Level: 2
+Topic: For Loop
+Q: (Medium) How many prints?
+for (int i=0; i<=6; i+=2) { System.out.print(i); }
+A) 3
+B) 4
+C) 5
+D) 6
+Answer: 2
+
+Level: 2
+Topic: Switch Statement
+Q: (Medium) Output?
+String s = "no";
+switch (s) { case "yes": System.out.print(1); break; default: System.out.print(0); }
+A) 1
+B) 0
+C) yes
+D) Error
+Answer: 1
+
+Level: 2
+Topic: While Loop
+Q: (Medium) Output?
+int i=1, c=0;
+while (i<10) { i*=3; c++; }
+System.out.print(c);
+A) 2
+B) 3
+C) 4
+D) 1
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop
+Q: (Medium) Output?
+int n=5;
+do { n-=2; } while (n>0);
+System.out.print(n);
+A) 1
+B) -1
+C) 0
+D) 3
+Answer: 1
+
+Level: 2
+Topic: Break
+Q: (Medium) Output?
+int i=0;
+for(;;){ if(i==2) break; System.out.print(i); i++; }
+A) 0
+B) 01
+C) 012
+D) 0123
+Answer: 1
+
+Level: 2
+Topic: Continue
+Q: (Medium) Output?
+int s=0; for(int i=0;i<5;i++){ if(i%2==0) continue; s+=i; } System.out.print(s);
+A) 4
+B) 6
+C) 9
+D) 10
+Answer: 2
+
+Level: 2
+Topic: If-Else Statements
+Q: (Medium) Output?
+int a=2,b=3;
+if (a>1 && b<3) System.out.print("X"); else System.out.print("Y");
+A) X
+B) Y
+C) XY
+D) Nothing
+Answer: 1
+
+Level: 2
+Topic: For Loop
+Q: (Medium) Output?
+for (int i=3;i>0;i--){ if(i==2) continue; System.out.print(i); }
+A) 321
+B) 31
+C) 32
+D) 21
+Answer: 1
+
+Level: 2
+Topic: Switch Statement (Fall-through)
+Q: (Medium) Output?
+int v=0;
+switch(v){ case 0: System.out.print("A"); case 1: System.out.print("B"); }
+A) A
+B) B
+C) AB
+D) Nothing
+Answer: 2
+
+Level: 2
+Topic: While Loop
+Q: (Medium) What prints?
+int i=0; while (i++ < 2) { System.out.print(i); }
+A) 01
+B) 12
+C) 23
+D) 02
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop
+Q: (Medium) How many times?
+int c=0,i=10; do { c++; i-=4; } while (i>0); System.out.print(c);
+A) 2
+B) 3
+C) 4
+D) 5
+Answer: 1
+
+Level: 2
+Topic: Break
+Q: (Medium) In nested loops, an unlabeled break exits…
+A) All loops
+B) The inner loop only
+C) The outer loop only
+D) The method
+Answer: 1
+
+Level: 2
+Topic: Continue (While)
+Q: (Medium) Output?
+int i=0; while(i<4){ i++; if(i==3) continue; System.out.print(i); }
+A) 12
+B) 1234
+C) 124
+D) 134
+Answer: 2
+
+Level: 2
+Topic: If-Else Statements
+Q: (Medium) Choose the correct ternary usage.
+A) x > 0 ? "pos" : "neg";
+B) x > 0 : "pos" ? "neg";
+C) ? x > 0 : "pos" "neg";
+D) x ? > 0 "pos" : "neg";
+Answer: 0
+
+Level: 2
+Topic: For Loop (Multiple vars)
+Q: (Medium) Output?
+for (int i=0, j=2; i<j; i++, j--) { System.out.print(i+j); }
+A) 2
+B) 22
+C) 24
+D) 44
+Answer: 1
+
+Level: 2
+Topic: Switch Statement
+Q: (Medium) Valid default syntax?
+A) default(): …
+B) default: …
+C) Default: …
+D) DEFAULT: …
+Answer: 1
+
+Level: 2
+Topic: While Loop
+Q: (Medium) With `boolean run=false; while(run){…}`, the body executes…
+A) 0 times
+B) 1 time
+C) 2 times
+D) Until run becomes true
+Answer: 0
+
+Level: 2
+Topic: Do/While Loop
+Q: (Medium) Output?
+int i=2; do { System.out.print(i); i+=3; } while(i<8);
+A) 2
+B) 25
+C) 258
+D) 25 8
+Answer: 1
+
+Level: 2
+Topic: For Loop
+Q: (Medium) Which header creates an infinite loop intentionally?
+A) for ( ; ; ) { }
+B) for (true; ; ) { }
+C) for ( ; true ; ) { }
+D) for ( ; ; true ) { }
+Answer: 0
+
+Level: 2
+Topic: If-Else Statements
+Q: (Medium) Output?
+int x=4;
+if (x>5) System.out.print("A"); else if (x==4) System.out.print("B"); else System.out.print("C");
+A) A
+B) B
+C) C
+D) Nothing
+Answer: 1
+
+Level: 2
+Topic: Switch Statement
+Q: (Medium) What compiles?
+A) switch(3.14) { }
+B) switch(true) { }
+C) switch('a') { }
+D) switch(1L) { }
+Answer: 2
+
+Level: 2
+Topic: Continue
+Q: (Medium) Output?
+int count=0;
+for(int i=0;i<5;i++){ if(i<3) continue; count++; }
+System.out.print(count);
+A) 2
+B) 3
+C) 4
+D) 5
+Answer: 0
+
+Level: 2
+Topic: While Loop
+Q: (Medium) Output?
+int n=1; while(n<=3) { System.out.print(n*n+" "); n++; }
+A) 1 4 9
+B) 1 2 3
+C) 2 4 6
+D) 1 3 5
+Answer: 0
+
+---
+
+Level: 2
+Topic: If-Else Statements
+Q: (Hard) Output?
+int x=1,y=2;
+if (x++ > 1) { y++; } else if (++x == 3) { y+=2; }
+System.out.print(x+":"+y);
+A) 2:2
+B) 3:4
+C) 2:4
+D) 3:3
+Answer: 2
+
+Level: 2
+Topic: For Loop
+Q: (Hard) Output?
+int s=0; for(int i=1;i<=4;i++){ if(i%2==0) s-=i; else s+=i; } System.out.print(s);
+A) 0
+B) 2
+C) -2
+D) 4
+Answer: 1
+
+Level: 2
+Topic: Switch Statement (Fall-through)
+Q: (Hard) Output?
+int n=1;
+switch(n){
+case 0: System.out.print("Z"); break;
+case 1: System.out.print("A");
+case 2: System.out.print("B");
+default: System.out.print("D");
+}
+A) A
+B) ABD
+C) AD
+D) BD
+Answer: 2
+
+Level: 2
+Topic: While Loop
+Q: (Hard) Output?
+int i=3;
+while(--i >= 0){ System.out.print(i); }
+A) 210
+B) 3210
+C) 21
+D) 20
+Answer: 0
+
+Level: 2
+Topic: Do/While Loop
+Q: (Hard) Output?
+int i=0; do { i++; if(i==2) continue; System.out.print(i); } while(i<3);
+A) 12
+B) 13
+C) 123
+D) 23
+Answer: 1
+
+Level: 2
+Topic: Break (Nested)
+Q: (Hard) Output?
+outer: for(int i=0;i<2;i++){
+for(int j=0;j<3;j++){
+if(j==1) break outer;
+System.out.print(i+""+j+" ");
+}
+}
+System.out.print("X");
+A) 00 01 X
+B) 00 X
+C) 01 X
+D) X
+Answer: 1
+
+Level: 2
+Topic: Continue (Nested)
+Q: (Hard) Output?
+for(int i=0;i<3;i++){
+for(int j=0;j<3;j++){
+if(j==2) continue;
+System.out.print(i+j);
+}
+}
+A) 011223
+B) 012012012
+C) 012345
+D) 001122
+Answer: 0
+
+Level: 2
+Topic: If-Else Statements
+Q: (Hard) Output?
+int a=5;
+if (a>2) if (a<5) System.out.print("X"); else System.out.print("Y");
+A) X
+B) Y
+C) Nothing
+D) Error
+Answer: 1
+
+Level: 2
+Topic: For Loop
+Q: (Hard) Output?
+int p=1; for(int i=1;i<=3;i++){ p*=i; } System.out.print(p);
+A) 6
+B) 5
+C) 9
+D) 3
+Answer: 0
+
+Level: 2
+Topic: Switch Statement (String)
+Q: (Hard) Output?
+String k="Go";
+switch(k){ case "Stop": System.out.print(0); break; case "Go": System.out.print(1); break; default: System.out.print(-1);}
+A) 0
+B) 1
+C) -1
+D) Error
+Answer: 1
+
+Level: 2
+Topic: While Loop
+Q: (Hard) Output?
+int x=1, t=0;
+while(x<=4){ t+=x; x+=2; }
+System.out.print(t);
+A) 4
+B) 6
+C) 8
+D) 10
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop
+Q: (Hard) Output?
+int i=5; do { System.out.print(i--); } while(i>5);
+A) 5
+B) 54
+C) (nothing)
+D) 54321
+Answer: 0
+
+Level: 2
+Topic: Break vs Continue
+Q: (Hard) Which statement is true?
+A) `continue` exits the loop and the method
+B) `break` exits only the current loop level unless labeled
+C) `continue` exits all nested loops
+D) `break` skips only the current iteration
+Answer: 1
+
+Level: 2
+Topic: For Loop (Empty body)
+Q: (Hard) Output?
+int i; for(i=0;i<3;i++); System.out.print(i*i);
+A) 4
+B) 9
+C) 0
+D) 3
+Answer: 0
+
+Level: 2
+Topic: While Loop (Compound)
+Q: (Hard) Output?
+int i=0,j=0;
+while(i<3 && j<2){ i++; j+=i%2; }
+System.out.print(i+":"+j);
+A) 3:2
+B) 2:2
+C) 3:1
+D) 2:1
+Answer: 0
+
+Level: 2
+Topic: Switch Statement
+Q: (Hard) Which compiles and prints “C”?
+A) switch(2.0){ case 2: System.out.print("C"); }
+B) switch(2){ case 2: System.out.print("C"); }
+C) switch(true){ case true: System.out.print("C"); }
+D) switch('2'){ case 2: System.out.print("C"); }
+Answer: 1
+
+Level: 2
+Topic: If-Else Statements
+Q: (Hard) Output?
+int x=0;
+if (x==0) System.out.print("A"); if (x!=0) System.out.print("B"); else System.out.print("C");
+A) A
+B) AC
+C) ABC
+D) C
+Answer: 1
+
+Level: 2
+Topic: Continue (For)
+Q: (Hard) Output?
+int n=0;
+for(int i=0;i<4;i++){ if(i%2==0) { continue; } n+=i; }
+System.out.print(n);
+A) 2
+B) 4
+C) 6
+D) 3
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop
+Q: (Hard) Output?
+int c=0; int i=1;
+do { c+=i; i+=2; } while (i<7);
+System.out.print(c);
+A) 9
+B) 12
+C) 16
+D) 10
+Answer: 2
+
+Level: 2
+Topic: For Loop (Nested)
+Q: (Hard) Output?
+int count=0;
+for(int i=0;i<3;i++){ for(int j=0;j<i;j++){ count++; } }
+System.out.print(count);
+A) 2
+B) 3
+C) 4
+D) 5
+Answer: 1
+
+Level: 2
+Topic: Switch Statement
+Q: (Hard) What happens?
+int a=1; switch(a){ case 1: System.out.print("A"); break; default: System.out.print("D"); }
+A) Prints A
+B) Prints D
+C) Nothing
+D) Compile error
+Answer: 0
+
+Level: 2
+Topic: While Loop
+Q: (Hard) Output?
+int i=0; while(i<3){ System.out.print(i); i+= (i==1?2:1); }
+A) 012
+B) 01
+C) 02
+D) 0
+Answer: 2
+
+Level: 2
+Topic: If-Else Statements
+Q: (Hard) Output?
+int a=1,b=1;
+if (a++ == 1 || ++b == 2) { }
+System.out.print(a+":"+b);
+A) 1:2
+B) 2:1
+C) 2:1 (short-circuit)
+D) 2:2
+Answer: 3
+
+Level: 2
+Topic: Break (Labeled)
+Q: (Hard) Output?
+outer: for(int i=0;i<2;i++){
+for(int j=0;j<2;j++){ System.out.print(i+""+j+" "); break outer; }
+}
+A) 00 01 10 11
+B) 00
+C) 00 01
+D) 01
+Answer: 1
+
+Level: 2
+Topic: Continue (Labeled)
+Q: (Hard) Output?
+outer: for(int i=0;i<2;i++){
+for(int j=0;j<3;j++){
+if(j==1) { continue outer; }
+System.out.print(i+""+j+" ");
+}
+}
+A) 00 01 02 10 11 12
+B) 00 02 10 12
+C) 00 02
+D) 10 12
+Answer: 2
+
+Level: 2
+Topic: For Loop
+Q: (Hard) Output?
+int x=0; for(int i=0;i<5;i++){ x += (i%3==0)?2:1; } System.out.print(x);
+A) 5
+B) 6
+C) 7
+D) 8
+Answer: 1
+
+Level: 2
+Topic: Do/While Loop + Break
+Q: (Hard) Output?
+int i=0,sum=0;
+do{ sum+=i; if(sum>3) break; i++; } while(i<5);
+System.out.print(i+":"+sum);
+A) 2:3
+B) 3:6
+C) 2:1
+D) 3:3
+Answer: 0
+
+Level: 2
+Topic: Switch Statement (Default position)
+Q: (Hard) Output?
+int n=9;
+switch(n){ default: System.out.print("D"); case 9: System.out.print("N"); }
+A) D
+B) N
+C) DN
+D) ND
+Answer: 2
+
+Level: 2
+Topic: While Loop (Complex)
+Q: (Hard) Output?
+int i=0,j=0;
+while(i<3){ if((i+j)%2==0) j++; else i++; }
+System.out.print(i+":"+j);
+A) 3:1
+B) 2:2
+C) 1:3
+D) 3:0
+Answer: 1
+

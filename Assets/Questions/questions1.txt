@@ -694,3 +694,631 @@ B) 66
 C) 65
 D) Error
 Answer: 0
+
+Level: 1
+ Topic: Syntax
+ Q: (Easy) Which symbol starts a code block in Java?
+ A) {
+ B) [
+ C) (
+ D) <
+ Answer: 0
+Level: 1
+ Topic: Variables
+ Q: (Easy) What happens if you use a local variable before initializing it?
+ A) It defaults to 0
+ B) It defaults to null
+ C) Compiler error
+ D) Runtime exception
+ Answer: 2
+Level: 1
+ Topic: Data Types
+ Q: (Easy) Which type stores true or false values?
+ A) int
+ B) boolean
+ C) char
+ D) byte
+ Answer: 1
+Level: 1
+ Topic: Output
+ Q: (Easy) Which method prints text followed by a newline?
+ A) System.out.println()
+ B) System.out.print()
+ C) System.out.printf()
+ D) System.out.write()
+ Answer: 0
+Level: 1
+ Topic: Comments
+ Q: (Easy) Which starts a Javadoc comment?
+ A) /** ... /
+ B) //
+ C) / ... */
+ D) <!— ... —>
+ Answer: 0
+Level: 1
+ Topic: Operators
+ Q: (Easy) Which is the assignment operator in Java?
+ A) =
+ B) ==
+ C) :=
+ D) equals()
+ Answer: 0
+Level: 1
+ Topic: Strings
+ Q: (Easy) Which method compares two strings for exact content (case-sensitive)?
+ A) equals()
+ B) ==
+ C) compareToIgnoreCase()
+ D) equalsIgnoreCase()
+ Answer: 0
+Level: 1
+ Topic: Input
+ Q: (Easy) Which creates a Scanner to read from the keyboard?
+ A) new Scanner(System.in);
+ B) new Scanner();
+ C) Scanner(System);
+ D) System.in.Scanner();
+ Answer: 0
+Level: 1
+ Topic: Syntax
+ Q: (Easy) What is the correct file extension for a Java source file?
+ A) .jav
+ B) .java
+ C) .class
+ D) .jar
+ Answer: 1
+Level: 1
+ Topic: Variables
+ Q: (Easy) Which is a valid char declaration and initialization?
+ A) char grade = 'A';
+ B) char grade = "A";
+ C) char grade = A;
+ D) char 'A' = grade;
+ Answer: 0
+Level: 1
+ Topic: Data Types
+ Q: (Medium) What is the range of a byte in Java?
+ A) –128 to 127
+ B) 0 to 255
+ C) –255 to 255
+ D) –32,768 to 32,767
+ Answer: 0
+Level: 1
+ Topic: Operators
+ Q: (Medium) What is printed by System.out.println(10 / 3.0); ?
+ A) 3
+ B) 3.0
+ C) 3.3333333333333335
+ D) Error
+ Answer: 2
+Level: 1
+ Topic: Strings
+ Q: (Medium) What is the output of "Java".substring(1, 3)?
+ A) Ja
+ B) av
+ C) va
+ D) ava
+ Answer: 1
+Level: 1
+ Topic: Type Casting
+ Q: (Medium) What is printed here? int n = 'A'; System.out.println(n);
+ A) 64
+ B) 65
+ C) 'A'
+ D) Error
+ Answer: 1
+Level: 1
+ Topic: Input
+ Q: (Medium) After calling nextInt(), what should you do before reading a full line with nextLine()?
+ A) Call next()
+ B) Call nextLine() once to consume the newline
+ C) Nothing extra
+ D) Close and reopen the Scanner
+ Answer: 1
+Level: 1
+ Topic: Output
+ Q: (Medium) Which printf specifier prints a floating number with two decimals?
+ A) %.2f
+ B) %2f
+ C) %.02
+ D) %f2
+ Answer: 0
+Level: 1
+ Topic: Syntax
+ Q: (Medium) Which access level makes a member visible only within its package?
+ A) public
+ B) private
+ C) protected
+ D) no modifier (package-private)
+ Answer: 3
+Level: 1
+ Topic: Operators
+ Q: (Medium) What does this print? int i = 3; System.out.println(i++);
+ A) 3
+ B) 4
+ C) Error
+ D) NaN
+ Answer: 0
+Level: 1
+ Topic: Variables
+ Q: (Medium) Which declares an array of 5 integers?
+ A) int a(5);
+ B) int[] a = new int[5];
+ C) int a = [5]int;
+ D) array<int> a(5);
+ Answer: 1
+Level: 1
+ Topic: Strings
+ Q: (Medium) Result of "abc".equalsIgnoreCase("ABC")?
+ A) true
+ B) false
+ C) "abc"
+ D) Error
+ Answer: 0
+Level: 1
+ Topic: Operators
+ Q: (Hard) Result of (5 > 3) ? 10 : 20;
+ A) 10
+ B) 20
+ C) true
+ D) false
+ Answer: 0
+Level: 1
+ Topic: Type Casting
+ Q: (Hard) Which cast is narrowing and may lose precision?
+ A) int → double
+ B) double → float
+ C) byte → short
+ D) char → int
+ Answer: 1
+Level: 1
+ Topic: Syntax
+ Q: (Hard) Which statement is true about overloading main?
+ A) You cannot overload main at all
+ B) You can overload main, but the JVM starts with public static void main(String[] args)
+ C) main may return int instead of void
+ D) main must be private to run
+ Answer: 1
+Level: 1
+ Topic: Strings
+ Q: (Hard) What does this print? String s = " hi "; System.out.println(s.trim().length());
+ A) 2
+ B) 4
+ C) 6
+ D) 0
+ Answer: 0
+Level: 1
+ Topic: Output
+ Q: (Hard) What is printed by System.out.printf("%d %s", 7, "up"); ?
+ A) 7 up
+ B) 7up
+ C) 7 up\n
+ D) Error
+ Answer: 0
+
+Here are **45 brand-new Level 1 questions**—**15 Easy, 15 Medium, 15 Hard**—covering Syntax, Comments, Variables, Data Types, Type Casting, Operators, Strings, Input, and Output. Answers use **0 = A, 1 = B, 2 = C, 3 = D**.
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which keyword declares a package at the top of a Java file?
+A) package
+B) import
+C) namespace
+D) module
+Answer: 0
+
+Level: 1
+Topic: Variables
+Q: (Easy) Which is a correct multiple declaration and initialization?
+A) int a = 1; int b = 2;
+B) int a, b = 2 = 1;
+C) int a = 1, b = 2;
+D) int (a=1, b=2);
+Answer: 2
+
+Level: 1
+Topic: Data Types
+Q: (Easy) Which primitive stores a 64-bit whole number?
+A) int
+B) long
+C) short
+D) byte
+Answer: 1
+
+Level: 1
+Topic: Output
+Q: (Easy) Which method supports format specifiers like %d and %.2f?
+A) System.out.print()
+B) System.out.write()
+C) System.out.printf()
+D) System.print()
+Answer: 2
+
+Level: 1
+Topic: Comments
+Q: (Easy) Which of these will the compiler ignore?
+A) /* comment */
+B) / comment /
+C) <!- comment ->
+D) //-comment-//
+Answer: 0
+
+Level: 1
+Topic: Operators
+Q: (Easy) Which operator computes the remainder?
+A) /
+B) %
+C) *
+D) ^
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Easy) Which method converts a string to lowercase?
+A) toLower()
+B) lower()
+C) toLowerCase()
+D) lowercase()
+Answer: 2
+
+Level: 1
+Topic: Input
+Q: (Easy) How do you read an int with Scanner named sc?
+A) sc.readInt()
+B) sc.next()
+C) sc.nextInt()
+D) sc.getInt()
+Answer: 2
+
+Level: 1
+Topic: Syntax
+Q: (Easy) Which symbol closes a Java code block?
+A) )
+B) ]
+C) }
+D) >
+Answer: 2
+
+Level: 1
+Topic: Variables
+Q: (Easy) Which is a valid long literal?
+A) 100l
+B) 100L
+C) L100
+D) 100Long
+Answer: 1
+
+Level: 1
+Topic: Data Types
+Q: (Easy) Default value of a boolean field (not local) is:
+A) true
+B) false
+C) null
+D) 0
+Answer: 1
+
+Level: 1
+Topic: Type Casting
+Q: (Easy) Which performs an explicit cast from long to int?
+A) int x = long y;
+B) int x = (int) y;
+C) (int x) = y;
+D) cast<int>(y);
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Easy) Which increments a variable by 1 (postfix)?
+A) ++i
+B) i++
+C) i+=0
+D) i=+1
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Easy) Which checks if a substring exists?
+A) includes()
+B) contains()
+C) has()
+D) find()
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Easy) Which escape sequence represents a double quote inside a string literal?
+A) \q
+B) "
+C) ''
+D) ""
+Answer: 1
+
+---
+
+Level: 1
+Topic: Syntax
+Q: (Medium) Which access modifier restricts visibility to the same class only?
+A) public
+B) private
+C) protected
+D) default
+Answer: 1
+
+Level: 1
+Topic: Variables
+Q: (Medium) Which is valid for a constant?
+A) final int X; X = 5;
+B) final int X = 5;
+C) int final X = 5;
+D) const int X = 5;
+Answer: 1
+
+Level: 1
+Topic: Data Types
+Q: (Medium) How many bits are in a double?
+A) 32
+B) 48
+C) 64
+D) 128
+Answer: 2
+
+Level: 1
+Topic: Type Casting
+Q: (Medium) Which converts a String to a double?
+A) Double.parse()
+B) Double.parseDouble()
+C) parseDouble(String)
+D) String.toDouble()
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) Result of `4 + 6 / 2 * 3`?
+A) 15
+B) 13
+C) 12
+D) 9
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Medium) Which compares references, not contents?
+A) equals()
+B) compareTo()
+C) ==
+D) equalsIgnoreCase()
+Answer: 2
+
+Level: 1
+Topic: Input
+Q: (Medium) What does `Scanner.next()` return?
+A) Entire line including newline
+B) Next token delimited by whitespace
+C) Next character
+D) Next integer
+Answer: 1
+
+Level: 1
+Topic: Output
+Q: (Medium) Platform-independent newline in printf is:
+A) \n
+B) \r\n
+C) %n
+D) \t
+Answer: 2
+
+Level: 1
+Topic: Comments
+Q: (Medium) Which block is a Javadoc comment?
+A) /* ... */
+B) /** ... */
+C) // ...
+D) <!— ... —>
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Medium) The ternary operator syntax is:
+A) cond : a ? b
+B) a ? b : cond
+C) cond ? a : b
+D) a : cond ? b
+Answer: 2
+
+Level: 1
+Topic: Type Casting
+Q: (Medium) What happens for `Integer.parseInt("abc")`?
+A) 0
+B) "abc"
+C) NumberFormatException
+D) IllegalArgumentException
+Answer: 2
+
+Level: 1
+Topic: Syntax
+Q: (Medium) Which is a valid Unicode escape for 'A'?
+A) '\u0041'
+B) "u0041"
+C) \u0041
+D) '0041u'
+Answer: 0
+
+Level: 1
+Topic: Variables
+Q: (Medium) Which is a valid float literal?
+A) 3.14
+B) 3.14F
+C) 3,14f
+D) 3.14D
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Medium) What does `"hello".indexOf("z")` return?
+A) 0
+B) 1
+C) -1
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Data Types
+Q: (Medium) Size of `char` in Java?
+A) 8 bits
+B) 16 bits
+C) 32 bits
+D) 64 bits
+Answer: 1
+
+---
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which import lets you call `sqrt(9)` without `Math.`?
+A) import java.lang.Math;
+B) import static java.lang.Math.sqrt;
+C) import static java.lang.Math.*;
+D) import java.math.*;
+Answer: 2
+
+Level: 1
+Topic: Operators
+Q: (Hard) What prints?
+
+```
+int i = 1;
+int y = i++ + ++i; 
+System.out.println(y);
+```
+
+A) 2
+B) 3
+C) 4
+D) 5
+Answer: 3
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) Value of `(short)32768`?
+A) 32768
+B) -32768
+C) 0
+D) 32767
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Hard) Given `String s = "abc"; s.replace('a','z'); System.out.println(s);` what prints?
+A) zbc
+B) abc
+C) Error
+D) null
+Answer: 1
+
+Level: 1
+Topic: Input
+Q: (Hard) Best way to read a single char with Scanner `sc`?
+A) sc.nextChar()
+B) sc.next().charAt(0)
+C) sc.read()
+D) sc.nextByte()
+Answer: 1
+
+Level: 1
+Topic: Output
+Q: (Hard) What prints? `System.out.printf("%6.2f", 3.1);`
+A) 3.10
+B) 003.10
+C) ␣␣3.10 (two spaces then 3.10)
+D) 3.100000
+Answer: 2
+
+Level: 1
+Topic: Data Types
+Q: (Hard) Which provides arbitrary-precision integers?
+A) long
+B) BigInteger
+C) double
+D) short
+Answer: 1
+
+Level: 1
+Topic: Operators
+Q: (Hard) Result of `-1 >>> 1` on 32-bit int?
+A) -1
+B) 2147483647
+C) 0
+D) 1073741823
+Answer: 1
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which numeric literal with underscores is valid?
+A) 1_000_
+B) _1000
+C) 1_000_000
+D) 1000__000
+Answer: 2
+
+Level: 1
+Topic: Variables
+Q: (Hard) Which statement is true?
+A) Local variables get default values
+B) Instance fields of primitives default to 0/false
+C) Uninitialized fields cause compile errors
+D) Only static fields have defaults
+Answer: 1
+
+Level: 1
+Topic: Strings
+Q: (Hard) Best class for efficient string concatenation in loops?
+A) String
+B) StringBuffer
+C) StringBuilder
+D) Formatter
+Answer: 2
+
+Level: 1
+Topic: Type Casting
+Q: (Hard) What happens?
+
+```
+Integer i = null;
+int x = i;
+```
+
+A) x becomes 0
+B) x becomes null
+C) NullPointerException
+D) Compile error
+Answer: 2
+
+Level: 1
+Topic: Data Types
+Q: (Hard) Value of `byte b = (byte)130; System.out.println(b);`
+A) 130
+B) -126
+C) 126
+D) -130
+Answer: 1
+
+Level: 1
+Topic: Syntax
+Q: (Hard) Which main signature is also valid?
+A) static void main(String args)
+B) public static int main(String[] args)
+C) public static void main(String... args)
+D) private static void main(String[] args)
+Answer: 2
+
+Level: 1
+Topic: Operators
+Q: (Hard) Result of `1 << 3`?
+A) 3
+B) 8
+C) 6
+D) 4
+Answer: 1
+
+
+

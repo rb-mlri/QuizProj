@@ -816,3 +816,697 @@ B) 4
 C) 5
 D) Error
 Answer: 1
+
+Here are **75 brand-new Level 3 questions** (25 Easy, 25 Medium, 25 Hard) on methods and 1-D arrays with loop-based traversal. Answers use **zero-based indices** (A→0, B→1, C→2, D→3). Java casing is correct.
+
+Level: 3
+Topic: Methods – Defining
+Q: (Easy) Which access modifier allows a method to be called from any class?
+A) private
+B) protected
+C) public
+D) default
+Answer: 2
+
+Level: 3
+Topic: Methods – Calling
+Q: (Easy) How do you call a static method `sum()` inside the same class?
+A) this.sum();
+B) ClassName.sum();
+C) new ClassName().sum();
+D) super.sum();
+Answer: 1
+
+Level: 3
+Topic: Arrays – Defining
+Q: (Easy) Create an empty String array with length 3.
+A) String[3] a;
+B) String[] a = new String[3];
+C) String a = new String[3];
+D) new String[3] a;
+Answer: 1
+
+Level: 3
+Topic: Methods – Return Values
+Q: (Easy) What keyword must appear in a non-void method’s body?
+A) stop
+B) return
+C) break
+D) yield
+Answer: 1
+
+Level: 3
+Topic: Arrays – Indexing
+Q: (Easy) After `int[] a = {4,7,9}; a[2] = 1;` what is `a[2]`?
+A) 4
+B) 7
+C) 1
+D) 9
+Answer: 2
+
+Level: 3
+Topic: Methods – Parameters
+Q: (Easy) Which is a valid parameter list?
+A) (int a; int b)
+B) (int a, int b)
+C) (a int, b int)
+D) (int a: int b)
+Answer: 1
+
+Level: 3
+Topic: Arrays – Properties
+Q: (Easy) What prints? `int[] a = new int[2]; System.out.println(a.length);`
+A) 0
+B) 1
+C) 2
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Methods – Defining
+Q: (Easy) Choose a correct header returning boolean.
+A) public bool ok()
+B) public Boolean ok()
+C) public boolean ok()
+D) boolean() ok
+Answer: 2
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Easy) Which loops through every element?
+A) for (int i=0; i<a.length; i++) { … }
+B) if (a.length>0) { … }
+C) switch (a.length) { … }
+D) goto a[i];
+Answer: 0
+
+Level: 3
+Topic: Methods – Calling
+Q: (Easy) Correct call for `void show()`?
+A) show;
+B) show();
+C) call show();
+D) Show();
+Answer: 1
+
+Level: 3
+Topic: Arrays – Defining
+Q: (Easy) Which initializes to 0,0,0,0?
+A) int[] a = new int[4];
+B) int[] a = {0,0,0};
+C) int a = 0[4];
+D) new int[]{4};
+Answer: 0
+
+Level: 3
+Topic: Methods – Return Values
+Q: (Easy) What is printed?
+`static int f(){ return 7; } System.out.println(f());`
+A) 6
+B) 7
+C) f
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays – Indexing
+Q: (Easy) Valid read of first element in `int[] a`?
+A) a(0)
+B) a{0}
+C) a[0]
+D) a.0
+Answer: 2
+
+Level: 3
+Topic: Methods – Defining
+Q: (Easy) Which keyword prevents a method from being overridden?
+A) static
+B) final
+C) const
+D) default
+Answer: 1
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Easy) Output?
+`int[] a={2,3}; for(int x : a) System.out.print(x+" ");`
+A) 2 3
+B) 23
+C) 3 2
+D) 0 1
+Answer: 0
+
+Level: 3
+Topic: Methods – Parameters
+Q: (Easy) For `void set(int v)`, which call is valid?
+A) set("1")
+B) set(1)
+C) set()
+D) set(int 1)
+Answer: 1
+
+Level: 3
+Topic: Arrays – Properties
+Q: (Easy) Default value in `new double[1]` element?
+A) 0.0
+B) 0
+C) null
+D) 1.0
+Answer: 0
+
+Level: 3
+Topic: Methods – Calling
+Q: (Easy) What prints?
+`static void ping(){ System.out.print("P"); } ping();`
+A) P
+B) ping
+C) Nothing
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays – Defining
+Q: (Easy) Which is invalid?
+A) int[] a;
+B) int a[];
+C) int[] a = null;
+D) int a[] = new int();
+Answer: 3
+
+Level: 3
+Topic: Methods – Return Values
+Q: (Easy) Meaning of `return;` inside `void` method?
+A) Return 0
+B) Exit the method
+C) Pause execution
+D) Compile error
+Answer: 1
+
+Level: 3
+Topic: Arrays – Indexing
+Q: (Easy) After `String[] s = {"x","y"}; System.out.print(s[0]);`
+A) x
+B) y
+C) 0
+D) null
+Answer: 0
+
+Level: 3
+Topic: Methods – Defining
+Q: (Easy) Which is a correct empty body method?
+A) `public void run() { }`
+B) `public void run();`
+C) `public run(void) { }`
+D) `void run[] { }`
+Answer: 0
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Easy) What prints?
+`int[] a={1,4}; for(int i=0;i<a.length;i++){ System.out.print(i); }`
+A) 1 4
+B) 0 1
+C) 01
+D) 10
+Answer: 2
+
+Level: 3
+Topic: Methods – Parameters
+Q: (Easy) Which declares two parameters `int x` and `String y`?
+A) `(x int, y String)`
+B) `(int x; String y)`
+C) `(int x, String y)`
+D) `(String y, int)`
+Answer: 2
+
+---
+
+Level: 3
+Topic: Methods – Overloading
+Q: (Medium) Which pair is a valid overload of `int add(int a,int b)`?
+A) `int add(int x,int y)`
+B) `double add(int a,int b)`
+C) `int add(double a,double b)`
+D) `void add(int a,int b)`
+Answer: 2
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Medium) Output?
+`int[] a={1,3,5,7}; int s=0; for(int i=1;i<a.length;i+=2) s+=a[i]; System.out.print(s);`
+A) 3
+B) 8
+C) 10
+D) 16
+Answer: 1
+
+Level: 3
+Topic: Methods – Parameters
+Q: (Medium) What prints?
+`static void inc(int n){ n++; } public static void main(String[] args){ int x=5; inc(x); System.out.print(x); }`
+A) 5
+B) 6
+C) 0
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays – Copying
+Q: (Medium) After `int[] a={1,2}; int[] b=a; b[0]=9; System.out.print(a[0]);`
+A) 1
+B) 9
+C) 0
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Methods – Return Values
+Q: (Medium) Output?
+`static double g(){ return 5/2; } System.out.print(g());`
+A) 2
+B) 2.0
+C) 2.5
+D) 3
+Answer: 1
+
+Level: 3
+Topic: Arrays – Properties
+Q: (Medium) Which is true?
+A) `a.length()` gets array length
+B) `a.length` is a field
+C) `length(a)` is a utility method
+D) Arrays have `size()`
+Answer: 1
+
+Level: 3
+Topic: Methods – Varargs
+Q: (Medium) Which header accepts any number of ints?
+A) `void f(int* v)`
+B) `void f(int... v)`
+C) `void f(...int v)`
+D) `void f(var int v[])`
+Answer: 1
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Medium) Output?
+`int[] a={2,4,6}; for(int i=a.length-1;i>=0;i--){ System.out.print(a[i]+" "); }`
+A) 2 4 6
+B) 6 4 2
+C) 246
+D) 642
+Answer: 1
+
+Level: 3
+Topic: Methods – Calling
+Q: (Medium) Given `class A{ int f(){return 1;} }`, which is valid?
+A) `A.f();`
+B) `new A().f();`
+C) `f(A);`
+D) `A new().f();`
+Answer: 1
+
+Level: 3
+Topic: Arrays – Indexing
+Q: (Medium) What prints?
+`int[] a={0,1,2,3}; int i=1; System.out.print(a[i+2]);`
+A) 1
+B) 2
+C) 3
+D) 0
+Answer: 2
+
+Level: 3
+Topic: Methods – Return Values
+Q: (Medium) Output?
+`static int h(int x){ if(x<0) return -x; return x; } System.out.print(h(-3));`
+A) -3
+B) 0
+C) 3
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Medium) Sum of first 3 elements?
+`int[] a={5,5,5,5}; int s=0; for(int i=0;i<3;i++) s+=a[i]; System.out.print(s);`
+A) 10
+B) 15
+C) 20
+D) 5
+Answer: 1
+
+Level: 3
+Topic: Methods – Overloading
+Q: (Medium) Which calls the `print(double)` overload?
+A) `print(5)`
+B) `print(5.0)`
+C) `print('5')`
+D) `print("5")`
+Answer: 1
+
+Level: 3
+Topic: Arrays – Defining
+Q: (Medium) Which is valid initialization on two lines?
+A) `int[] a; a = {1,2};`
+B) `int[] a; a = new int[]{1,2};`
+C) `int[] a; a() = {1,2};`
+D) `int a[]; a = int[]{1,2};`
+Answer: 1
+
+Level: 3
+Topic: Methods – Parameters
+Q: (Medium) Output?
+`static void swap(int a,int b){ int t=a;a=b;b=t; } int x=1,y=2; swap(x,y); System.out.print(x+""+y);`
+A) 12
+B) 21
+C) 03
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Medium) What prints?
+`int[] a={1,2,3}; for(int i=0;i<a.length;i++){ a[i]+=i; } System.out.print(a[2]);`
+A) 3
+B) 4
+C) 5
+D) 6
+Answer: 2
+
+Level: 3
+Topic: Methods – Defining
+Q: (Medium) Which header is valid and package-private?
+A) `void go(){}`
+B) `private void go(){}`
+C) `public void go(){}`
+D) `protected void go(){}`
+Answer: 0
+
+Level: 3
+Topic: Arrays – Properties
+Q: (Medium) Output?
+`int[] a = {1,2}; System.out.print((a.length==2) ? "OK" : "NO");`
+A) OK
+B) NO
+C) 2
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods – Return Values
+Q: (Medium) Output?
+`static int parse(String s){ return Integer.parseInt(s); } System.out.print(parse("7"));`
+A) 7
+B) "7"
+C) Error
+D) 0
+Answer: 0
+
+Level: 3
+Topic: Arrays – Traversal
+Q: (Medium) Output?
+`int[] a={3,3,3}; int c=0; for(int x:a) if(x==3) c++; System.out.print(c);`
+A) 1
+B) 2
+C) 3
+D) 0
+Answer: 2
+
+Level: 3
+Topic: Methods – Calling
+Q: (Medium) What prints?
+`static String echo(int n){ return "N="+n; } System.out.print(echo(4));`
+A) N=4
+B) "N="+4
+C) 4
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays – Indexing
+Q: (Medium) What prints?
+`int[] a=new int[3]; a[0]=1; a[1]=a[0]+1; a[2]=a[1]+1; System.out.print(a[1]);`
+A) 1
+B) 2
+C) 3
+D) 0
+Answer: 1
+
+---
+
+Level: 3
+Topic: Methods – Return/Division
+Q: (Hard) Output?
+`static double avg(int a,int b){ return (a+b)/2; } System.out.print(avg(1,2));`
+A) 1.0
+B) 1.5
+C) 2.0
+D) 2.5
+Answer: 0
+
+Level: 3
+Topic: Arrays – Bounds
+Q: (Hard) What happens?
+`int[] a={1,2}; System.out.print(a[-1]);`
+A) 1
+B) 2
+C) ArrayIndexOutOfBoundsException
+D) 0
+Answer: 2
+
+Level: 3
+Topic: Methods – Overloading Resolution
+Q: (Hard) Which method is chosen by `call(5)`?
+`void call(long x)` / `void call(double x)` / `void call(Integer x)` / `void call(int... x)`
+A) call(long x)
+B) call(double x)
+C) call(Integer x)
+D) call(int... x)
+Answer: 0
+
+Level: 3
+Topic: Arrays – Aliasing
+Q: (Hard) Output?
+`int[] a={1,2,3}; int[] b=a.clone(); b[0]=9; System.out.print(a[0]+""+b[0]);`
+A) 19
+B) 99
+C) 91
+D) 11
+Answer: 0
+
+Level: 3
+Topic: Methods – Recursion
+Q: (Hard) Output?
+`static int sumTo(int n){ return (n<=0)?0:n+sumTo(n-1); } System.out.print(sumTo(4));`
+A) 6
+B) 10
+C) 4
+D) 8
+Answer: 1
+
+Level: 3
+Topic: Arrays – Computation
+Q: (Hard) Output?
+`int[] a={2,1,4}; for(int i=0;i<a.length;i++){ a[i]=a[i]*i; } System.out.print(a[2]);`
+A) 4
+B) 6
+C) 8
+D) 2
+Answer: 2
+
+Level: 3
+Topic: Methods – Shadowing
+Q: (Hard) Output?
+`static int x=1; static void set(int x){ x=5; } public static void main(String[] args){ set(x); System.out.print(x); }`
+A) 5
+B) 1
+C) 0
+D) Error
+Answer: 1
+
+Level: 3
+Topic: Arrays – Searching
+Q: (Hard) Output?
+`int[] a={4,5,6}; boolean f=false; for(int v:a){ if(v==5){ f=true; break; } } System.out.print(f);`
+A) true
+B) false
+C) 5
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Methods – Multiple Returns
+Q: (Hard) Output?
+`static int test(int n){ if(n%2==0) return n/2; return n*2; } System.out.print(test(5));`
+A) 2
+B) 5
+C) 10
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Arrays – Reverse Build
+Q: (Hard) Output?
+`int[] a=new int[3]; for(int i=0;i<a.length;i++){ a[a.length-1-i]=i; } System.out.print(a[0]+a[2]);`
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 1
+
+Level: 3
+Topic: Methods – Static vs Instance
+Q: (Hard) Which is valid?
+A) Call instance method from static context using `this.method()`
+B) Call static method using `ClassName.method()`
+C) Call static method using `new ClassName().method()` only
+D) Instance methods are implicitly static
+Answer: 1
+
+Level: 3
+Topic: Arrays – Sum With Continue
+Q: (Hard) Output?
+`int[] a={1,2,3,4}; int s=0; for(int i=0;i<a.length;i++){ if(i%2==1) continue; s+=a[i]; } System.out.print(s);`
+A) 4
+B) 5
+C) 6
+D) 10
+Answer: 1
+
+Level: 3
+Topic: Methods – Return Types
+Q: (Hard) Which compiles?
+A) `int foo(){ return; }`
+B) `void foo(){ return; }`
+C) `void foo(){ return 0; }`
+D) `int foo(){ }`
+Answer: 1
+
+Level: 3
+Topic: Arrays – Out/Print
+Q: (Hard) Output?
+`int[] a={1,2}; System.out.print(a);`
+A) [1, 2]
+B) 12
+C) A type hashcode string
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Methods – Chaining
+Q: (Hard) Output?
+`static int add(int a,int b){ return a+b; } static int twice(int x){ return x*2; } System.out.print(twice(add(2,3)));`
+A) 10
+B) 7
+C) 12
+D) 5
+Answer: 0
+
+Level: 3
+Topic: Arrays – Min Scan
+Q: (Hard) Output?
+`int[] a={7,3,9}; int m=a[0]; for(int i=1;i<a.length;i++) if(a[i]<m) m=a[i]; System.out.print(m);`
+A) 7
+B) 3
+C) 9
+D) 10
+Answer: 1
+
+Level: 3
+Topic: Methods – Recursion Base
+Q: (Hard) Output?
+`static int f(int n){ if(n==1) return 1; return n*f(n-1); } System.out.print(f(3));`
+A) 3
+B) 6
+C) 9
+D) 0
+Answer: 1
+
+Level: 3
+Topic: Arrays – Mutation in Method
+Q: (Hard) Output?
+`static void bump(int[] a){ for(int i=0;i<a.length;i++) a[i]++; } int[] x={1,1}; bump(x); System.out.print(x[0]+x[1]);`
+A) 2
+B) 3
+C) 4
+D) 22
+Answer: 2
+
+Level: 3
+Topic: Methods – Overloading/Autobox
+Q: (Hard) Which call picks `void p(Integer x)` over `void p(int x)`?
+A) `p(5)`
+B) `p(Integer.valueOf(5))`
+C) `p((int)5L)`
+D) None
+Answer: 1
+
+Level: 3
+Topic: Arrays – Partial Loop
+Q: (Hard) Output?
+`int[] a={1,2,3,4,5}; for(int i=0;i<4;i++) a[i]=a[i+1]; System.out.print(a[3]);`
+A) 4
+B) 5
+C) 3
+D) 2
+Answer: 0
+
+Level: 3
+Topic: Methods – Parameter Order
+Q: (Hard) Given `void m(int a,String b)`, which call compiles?
+A) `m("x",1);`
+B) `m(1,"x");`
+C) `m();`
+D) `m(int 1, String "x");`
+Answer: 1
+
+Level: 3
+Topic: Arrays – Sentinel Sum
+Q: (Hard) Output?
+`int[] a={1,2,0,3}; int s=0; for(int v:a){ if(v==0) break; s+=v; } System.out.print(s);`
+A) 0
+B) 3
+C) 6
+D) 1
+Answer: 1
+
+Level: 3
+Topic: Methods – Local vs Field
+Q: (Hard) Output?
+`static int v=2; static int get(){ int v=5; return v; } System.out.print(get()+v);`
+A) 7
+B) 10
+C) 25
+D) 5
+Answer: 0
+
+Level: 3
+Topic: Arrays – Even Count
+Q: (Hard) Output?
+`int[] a={2,3,4,5,6}; int c=0; for(int x:a) if(x%2==0) c++; System.out.print(c);`
+A) 2
+B) 3
+C) 4
+D) 5
+Answer: 1
+
+Level: 3
+Topic: Methods – Casting Return
+Q: (Hard) Output?
+`static int toInt(double d){ return (int)d; } System.out.print(toInt(3.9));`
+A) 3.9
+B) 4
+C) 3
+D) Error
+Answer: 2
+
+Level: 3
+Topic: Arrays – Fill Then Print
+Q: (Hard) Output?
+`int[] a=new int[3]; for(int i=0;i<a.length;i++) a[i]=i*i; System.out.print(a[0]+a[1]+a[2]);`
+A) 3
+B) 5
+C) 6
+D) 14
+Answer: 2

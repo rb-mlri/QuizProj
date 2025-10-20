@@ -1,0 +1,33 @@
+Question,Topic,Weight,SelectedAnswer,CorrectAnswer,Correct
+(Easy) How do you write a multi-line comment in Java?,Comments,1,/* comment */,/* comment */,True
+(Easy) Which of these is a correct way to declare a string?,Strings,1,text name = "Java";,String name = "Java";,False
+(Easy) Which of these is a correct way to declare a string?,Strings,1,string name = "Java";,String name = "Java";,False
+(Easy) Which escape sequence represents a newline?,Strings,1,"\ t","\ n",False
+(Easy) What is the default value of an uninitialized int in Java?,Data Types,1,0,0,True
+(Easy) What is the default value of an uninitialized int in Java?,Data Types,1,garbage value,0,False
+(Easy) Which escape sequence is used for a tab space?,Strings,1,"\ t","\ t",True
+(Medium) Which class is used to handle console input?,Input,1,Input,Scanner,False
+(Medium) Which method converts a String to an int?,Type Casting,1,Integer.parseInt(),Integer.parseInt(),True
+(Medium) Which of the following is a valid variable name?,Variables,1,value#,_value,False
+(Medium) What is the result of this code? int x = (int) 4.9; System.out.println(x);,Type Casting,1,5,4,False
+(Medium) What is the size of an int in Java?,Data Types,1,64 bits,32 bits,False
+(Medium) What will this code output? int x = 7; System.out.println(x % 3);,Operators,1,1,2,False
+(Medium) What will this code output? int x = 7; System.out.println(x % 3);,Operators,1,3,2,False
+(Medium) Which operator has the highest precedence?,Operators,1,*,*,True
+(Medium) What is the output? System.out.println(10 == 5 + 5);,Operators,1,Error,true,False
+(Medium) Which format specifier is used for integers in printf?,Output,1,%d,%d,True
+(Hard) Which escape sequence is used to represent a backslash?,Strings,1,\s,\\,False
+(Hard) What is the result of Math.pow(2  3)?,Operators,1,8,8,True
+(Hard) Which package is automatically imported into every Java program?,Syntax,1,java.math,java.lang,False
+
+Total Score,'7/20'
+Knowledge States:
+Syntax,0.80
+Variables,0.80
+Data Types,0.98
+Output,0.80
+Operators,1.00
+Comments,0.80
+Strings,1.00
+Type Casting,0.94
+Input,0.80
