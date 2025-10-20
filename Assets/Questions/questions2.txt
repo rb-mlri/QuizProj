@@ -505,7 +505,7 @@ D) Nothing
 Answer: 0
 
 Level: 2
-Topic: Control Flow (Uncategorized)
+Topic: Control Flow
 Q: (Medium) Which of these produces an infinite loop?
 A) for(;;)
 B) while(true)
@@ -635,7 +635,7 @@ D) 5
 Answer: 0
 
 Level: 2
-Topic: Control Flow (Uncategorized)
+Topic: Control Flow
 Q: (Hard) Which of these is true about nested loops?
 A) Inner loop runs independently
 B) Inner loop executes fully for each outer iteration
@@ -709,7 +709,7 @@ D) Must end with default
 Answer: 1
 
 Level: 2
-Topic: Control Flow (Uncategorized)
+Topic: Control Flow
 Q: (Hard) What is printed?
 for(int i=1; i<=3; i++) {
    for(int j=1; j<=2; j++) {
@@ -763,7 +763,7 @@ D) Nothing
 Answer: 0
 
 Level: 2
-Topic: Control Flow (Uncategorized)
+Topic: Control Flow
 Q: (Hard) Which keyword exits both inner and outer loops if used inside nested loops?
 A) break
 B) continue
@@ -772,7 +772,7 @@ D) stop
 Answer: 2
 
 Level: 2
-Topic: Control Flow (Uncategorized)
+Topic: Control Flow
 Q: (Hard) What is printed?
 int sum=0;
 for(int i=0; i<3; i++) {
