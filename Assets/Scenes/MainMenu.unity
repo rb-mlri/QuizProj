@@ -911,44 +911,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 244877093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: a9fdba911bc900c48a34e1d9d8754842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: ShowTooltip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tControl Flow and Logic (If-Else Statements,
-              Switch Statement, While Loop, For Loop, Do/While Loop, Break and Continue)."
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: HideTooltip
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tControl Flow and Logic (If-Else Statements,
-              Switch Statement, While Loop, For Loop, Do/While Loop, Break and Continue)."
-            m_BoolArgument: 0
-          m_CallState: 2
+  tooltipMessage: "\u25A0\tControl Flow and Logic (If-Else Statements, Switch Statement,
+    While Loop, For Loop, Do/While Loop, Break and Continue)."
 --- !u!1 &359549922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,16 +1155,16 @@ RectTransform:
   m_GameObject: {fileID: 505233166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35999998, y: 0.22999999, z: 0.38898385}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.32172188, y: 0.20554455, z: 0.34762394}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1520644942}
   m_Father: {fileID: 198294308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960, y: -540}
-  m_SizeDelta: {x: 1619.22, y: 1080}
+  m_AnchoredPosition: {x: 283, y: 112.18831}
+  m_SizeDelta: {x: 1354.7502, y: 1369.7668}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &505233169
 CanvasRenderer:
@@ -2378,46 +2345,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1253649177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: a9fdba911bc900c48a34e1d9d8754842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: ShowTooltip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tProcedural Modularity and Structured Data
-              (Methods: Defining, Calling, Parameters, Return Values; Arrays: Single-dimensional,
-              loop-based traversal)."
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: HideTooltip
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tProcedural Modularity and Structured Data
-              (Methods: Defining, Calling, Parameters, Return Values; Arrays: Single-dimensional,
-              loop-based traversal)."
-            m_BoolArgument: 0
-          m_CallState: 2
+  tooltipMessage: "\u25A0\tProcedural Modularity and Structured Data (Methods: Defining,
+    Calling, Parameters, Return Values; Arrays: Single-dimensional, loop-based traversal)."
 --- !u!1 &1371506835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,17 +2905,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520644941}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.39, y: 3.77, z: 3.77}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.3317075, y: 3.6780484, z: 3.6780484}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1969611848}
   m_Father: {fileID: 505233167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 542}
+  m_AnchoredPosition: {x: 7, y: 687}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520644943
@@ -3591,46 +3523,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1588101908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: a9fdba911bc900c48a34e1d9d8754842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: ShowTooltip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tProcedural Modularity and Structured Data
-              (Methods: Defining, Calling, Parameters, Return Values; Arrays: Single-dimensional,
-              loop-based traversal)."
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: HideTooltip
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tProcedural Modularity and Structured Data
-              (Methods: Defining, Calling, Parameters, Return Values; Arrays: Single-dimensional,
-              loop-based traversal)."
-            m_BoolArgument: 0
-          m_CallState: 2
+  tooltipMessage: "\u25A0\tProcedural Modularity and Structured Data (Methods: Defining,
+    Calling, Parameters, Return Values; Arrays: Single-dimensional, loop-based traversal)."
 --- !u!1 &1654810458
 GameObject:
   m_ObjectHideFlags: 0
@@ -4032,10 +3929,9 @@ MonoBehaviour:
   modeSelectPanel: {fileID: 1940604718}
   staticLevelPanel: {fileID: 1402492707}
   dynamicLevelPanel: {fileID: 1529474036}
-  tooltipPanel: {fileID: 505233167}
+  tooltipPanel: {fileID: 505233166}
   tooltipText: {fileID: 1969611849}
-  tooltipOffset: {x: 50, y: 0}
-  tooltipSmoothTime: 0.1
+  tooltipOffset: {x: 35, y: -10, z: 0}
 --- !u!1 &1711144586
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,44 +4381,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1794198051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: a9fdba911bc900c48a34e1d9d8754842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: ShowTooltip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tControl Flow and Logic (If-Else Statements,
-              Switch Statement, While Loop, For Loop, Do/While Loop, Break and Continue)."
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: HideTooltip
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tControl Flow and Logic (If-Else Statements,
-              Switch Statement, While Loop, For Loop, Do/While Loop, Break and Continue)."
-            m_BoolArgument: 0
-          m_CallState: 2
+  tooltipMessage: "\u25A0\tControl Flow and Logic (If-Else Statements, Switch Statement,
+    While Loop, For Loop, Do/While Loop, Break and Continue)."
 --- !u!1 &1935958609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4666,46 +4529,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935958609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: a9fdba911bc900c48a34e1d9d8754842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: ShowTooltip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tBasic Syntax and Operations (Syntax, Comments,
-              Variables, Data Types, Type Casting, Operators, Strings, Input, and
-              Output)."
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: HideTooltip
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tBasic Syntax and Operations (Syntax, Comments,
-              Variables, Data Types, Type Casting, Operators, Strings, Input, and
-              Output)."
-            m_BoolArgument: 0
-          m_CallState: 2
+  tooltipMessage: "\u25A0\tBasic Syntax and Operations (Syntax, Comments, Variables,
+    Data Types, Type Casting, Operators, Strings, Input, and Output)."
 --- !u!1 &1940604718
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,7 +4600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -72}
+  m_AnchoredPosition: {x: 0, y: -99}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969611849
@@ -4830,7 +4658,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4860,7 +4688,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -220.35776, y: 0, z: -217.45836, w: -172.62244}
+  m_margin: {x: -177.25708, y: -27.01135, z: -172.08934, w: -226.64494}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5425,46 +5253,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2098958390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: a9fdba911bc900c48a34e1d9d8754842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: ShowTooltip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tBasic Syntax and Operations (Syntax, Comments,
-              Variables, Data Types, Type Casting, Operators, Strings, Input, and
-              Output)."
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1708299774}
-          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-          m_MethodName: HideTooltip
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: "\u25A0\tBasic Syntax and Operations (Syntax, Comments,
-              Variables, Data Types, Type Casting, Operators, Strings, Input, and
-              Output)."
-            m_BoolArgument: 0
-          m_CallState: 2
+  tooltipMessage: "\u25A0\tBasic Syntax and Operations (Syntax, Comments, Variables,
+    Data Types, Type Casting, Operators, Strings, Input, and Output)."
 --- !u!1 &2130287891
 GameObject:
   m_ObjectHideFlags: 0
