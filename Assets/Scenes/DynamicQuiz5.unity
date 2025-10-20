@@ -1341,11 +1341,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2135840852540007455, guid: ac0f0e746c953874f8dbd73704004193, type: 3}
       propertyPath: m_fontSize
-      value: 13
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2135840852540007455, guid: ac0f0e746c953874f8dbd73704004193, type: 3}
       propertyPath: m_fontSizeBase
-      value: 13
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2743216172029120821, guid: ac0f0e746c953874f8dbd73704004193, type: 3}
       propertyPath: m_Pivot.x
