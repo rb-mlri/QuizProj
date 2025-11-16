@@ -62,8 +62,7 @@ public class QuizManagerStatic : MonoBehaviour
     private List<QuestionResponse> responses = new List<QuestionResponse>();
     private List<int> userAnswers = new List<int>();
 
-<<<<<<< HEAD
-    // --- NEW: try to auto-wire an AudioSource if one isn't set
+
     private void Awake()
     {
         if (!sfxSource)
@@ -75,8 +74,6 @@ public class QuizManagerStatic : MonoBehaviour
                 sfxSource = GetComponent<AudioSource>(); // fallback to this GameObject
         }
     }
-=======
->>>>>>> 699e4f6ac87a5179a574b330fd5a232ecbea6242
 
     void Start()
     {
@@ -259,15 +256,15 @@ public class QuizManagerStatic : MonoBehaviour
             if (feedbackText) feedbackText.text = "Correct!";
 
             if (knightAnimator) knightAnimator.SetTrigger("Attack");
-<<<<<<< HEAD
+
 
             // Play slash either now (immediate) or let the Animation Event call PlaySlashSFX()
             if (!useAnimationEventForSlash)
                 PlaySlashSFX();
 
-=======
+
             if (sfxSource && slashClip) sfxSource.PlayOneShot(slashClip);
->>>>>>> 699e4f6ac87a5179a574b330fd5a232ecbea6242
+
             if (scarecrow) scarecrow.Wiggle();
         }
         else if (feedbackText)
