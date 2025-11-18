@@ -1339,7 +1339,7 @@ Answer: 0
 Level: 3
 Topic: Methods
 Q: (Hard) Which method correctly swaps two integers?
-A) void swap(int a,int b){int t=a;a=b;b=t;}
+A) None
 B) int swap(int a,int b){return a;}
 C) void swap(int a,int b){System.out.println(a+b);}
 D) void swap(int a){}

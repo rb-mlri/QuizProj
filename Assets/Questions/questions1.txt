@@ -428,7 +428,7 @@ Q: (Medium) Which operator is used for logical OR?
 A) ||
 B) |
 C) or
-D) bitOr
+D) &&
 Answer: 0
 
 Level: 1
@@ -497,7 +497,7 @@ A) Result: 14
 B) Result: 9
 C) Result: 52
 D) Compilation Error
-Answer: 3
+Answer: 0
 
 Level: 1
 Topic: Type Casting
@@ -550,8 +550,8 @@ Level: 1
 Topic: Strings
 Q: (Hard) Which escape sequence is used to represent a backslash?
 A) \\
-B) \b
-C) \s
+B) \ b
+C) \ s
 D) \/
 Answer: 0
 
@@ -561,7 +561,7 @@ Q: (Hard) Which of these operators is used for logical AND?
 A) &&
 B) &
 C) and
-D) &&
+D) ||
 Answer: 0
 
 Level: 1
@@ -896,8 +896,6 @@ Level: 1
  D) Error
  Answer: 0
 
-Here are **45 brand-new Level 1 questions**—**15 Easy, 15 Medium, 15 Hard**—covering Syntax, Comments, Variables, Data Types, Type Casting, Operators, Strings, Input, and Output. Answers use **0 = A, 1 = B, 2 = C, 3 = D**.
-
 Level: 1
 Topic: Syntax
 Q: (Easy) Which keyword declares a package at the top of a Java file?
@@ -1101,10 +1099,10 @@ Answer: 1
 Level: 1
 Topic: Output
 Q: (Medium) Platform-independent newline in printf is:
-A) \n
-B) \r\n
-C) %n
-D) \t
+A) '\ n'
+B) '\ r \ n'
+C) '%n'
+D) '\ t'
 Answer: 2
 
 Level: 1
