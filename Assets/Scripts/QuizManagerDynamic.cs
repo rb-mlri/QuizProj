@@ -389,7 +389,8 @@ public class QuizManagerDynamic : MonoBehaviour
         posterior = Mathf.Clamp01(posterior);
         knowledgeStates[topic] = posterior;
 
-        Debug.Log($"[Bayes] Topic={topic} Prior={prior:F2} Lc={Lc:F2} Ln={Ln:F2} Correct={wasCorrect} → Posterior={posterior:F2}");
+        Debug.Log($"[Topic Mastery] {topic}: {prior:P0} → {posterior:P0} (Correct: {wasCorrect})");
+
     }
 
 
