@@ -15,7 +15,8 @@ public class Question
     public int correctIndex;
     public Difficulty difficulty;
     public string topic;
-    public int weight = 1;
+    public string explanation = "";
+    public float weight;
 }
 
 
