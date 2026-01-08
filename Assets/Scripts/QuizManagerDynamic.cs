@@ -201,33 +201,61 @@ public class QuizManagerDynamic : MonoBehaviour
     //------------------------- Pick From Pool Of Questions -------------------------//
     Question GetQuestionFromDifficulty(Difficulty _)
     {
+        // Pick topic
         string topic;
-
         List<string> uncoveredTopics = allTopics.Except(askedTopics).ToList();
-        if (uncoveredTopics.Count > 0)
+        bool isFirstExposure = uncoveredTopics.Count > 0;
+
+        if (isFirstExposure)
             topic = uncoveredTopics[Random.Range(0, uncoveredTopics.Count)];
         else
             topic = SelectTopicByConfidence();
 
         askedTopics.Add(topic);
 
+        // Get questions for this topic
         List<Question> topicQuestions = allQuestions.Where(q => q.topic == topic).ToList();
         if (topicQuestions.Count == 0) topicQuestions = allQuestions;
 
-        // Thesis decision tree
-        float mastery = knowledgeStates.ContainsKey(topic) ? knowledgeStates[topic] : 0.3f;
-        Difficulty targetDifficulty = Difficulty.Easy;
-        if (mastery > 0.7f) targetDifficulty = Difficulty.Hard;
-        else if (mastery > 0.4f) targetDifficulty = Difficulty.Medium;
+        // Determine difficulty
+        Difficulty targetDifficulty;
 
+        if (isFirstExposure)
+        {
+            // Force first question of a new topic to Easy
+            targetDifficulty = Difficulty.Easy;
+        }
+        else
+        {
+            float mastery = knowledgeStates.ContainsKey(topic) ? knowledgeStates[topic] : 0.3f;
+
+            if (mastery >= 0.7f)
+                targetDifficulty = Difficulty.Hard;
+            else if (mastery >= 0.4f)
+                targetDifficulty = Difficulty.Medium;
+            else
+                targetDifficulty = Difficulty.Easy;
+        }
+
+        // Filter questions of the chosen difficulty
         List<Question> filtered = topicQuestions.Where(q => q.difficulty == targetDifficulty).ToList();
-        if (filtered.Count == 0) filtered = topicQuestions;
+
+        // Fallback in order: Easy → Medium → Hard
+        if (filtered.Count == 0)
+        {
+            if (targetDifficulty == Difficulty.Hard)
+                filtered = topicQuestions.Where(q => q.difficulty == Difficulty.Medium).ToList();
+            if (filtered.Count == 0)
+                filtered = topicQuestions.Where(q => q.difficulty == Difficulty.Easy).ToList();
+            if (filtered.Count == 0)
+                filtered = topicQuestions; // ultimate fallback
+        }
 
         Question q = filtered[Random.Range(0, filtered.Count)];
-
         currentDifficulty = q.difficulty;
         return q;
     }
+
 
     //------------------------- Select Topic by Confidence -------------------------//
     string SelectTopicByConfidence()
