@@ -39,7 +39,7 @@ public class QuizManagerDynamic : MonoBehaviour
 
     private List<Question> allQuestions = new List<Question>();
     private HashSet<string> askedTopics = new HashSet<string>();
-    private HashSet<string> usedQuestions = new HashSet<string>(); // FIX: Track used questions
+    private HashSet<string> usedQuestions = new HashSet<string>();
     private List<string> allTopics = new List<string>();
 
     private Difficulty currentDifficulty = Difficulty.Easy;
@@ -104,6 +104,8 @@ public class QuizManagerDynamic : MonoBehaviour
 
         Question currentQuestion = null;
         List<string> questionTextBuffer = new List<string>();
+        List<string> explanationBuffer = new List<string>();
+        bool readingExplanation = false;
 
         foreach (string rawLine in lines)
         {
@@ -115,46 +117,135 @@ public class QuizManagerDynamic : MonoBehaviour
                 if (currentQuestion != null)
                 {
                     currentQuestion.questionText = string.Join("\n", questionTextBuffer);
+                    currentQuestion.explanation = string.Join("\n", explanationBuffer);
                     allQuestions.Add(currentQuestion);
                 }
+
                 currentQuestion = new Question();
                 questionTextBuffer.Clear();
+                explanationBuffer.Clear();
+                readingExplanation = false;
+            }
+            else if (line.StartsWith("Topic:"))
+            {
+                currentQuestion.topic = line.Split(':')[1].Trim();
             }
             else if (line.StartsWith("Q:"))
             {
                 string questionLine = line.Substring(2).Trim();
                 questionTextBuffer.Add(questionLine);
 
-                if (questionLine.Contains("(Easy)")) currentQuestion.difficulty = Difficulty.Easy;
-                else if (questionLine.Contains("(Medium)")) currentQuestion.difficulty = Difficulty.Medium;
-                else if (questionLine.Contains("(Hard)")) currentQuestion.difficulty = Difficulty.Hard;
+                if (questionLine.Contains("(Easy)"))
+                    currentQuestion.difficulty = Difficulty.Easy;
+                else if (questionLine.Contains("(Medium)"))
+                    currentQuestion.difficulty = Difficulty.Medium;
+                else if (questionLine.Contains("(Hard)"))
+                    currentQuestion.difficulty = Difficulty.Hard;
+                else
+                    currentQuestion.difficulty = Difficulty.Easy;
+
+                readingExplanation = false;
             }
-            else if (line.StartsWith("Topic:"))
-                currentQuestion.topic = line.Split(':')[1].Trim();
             else if (line.StartsWith("Explanation:"))
-                currentQuestion.explanation = line.Substring("Explanation:".Length).Trim();
+            {
+                explanationBuffer.Add(line.Substring("Explanation:".Length).Trim());
+                readingExplanation = true;
+            }
             else if (line.StartsWith("A)"))
             {
                 currentQuestion.options = new string[4];
                 currentQuestion.options[0] = line.Substring(2).Trim();
+                readingExplanation = false;
             }
             else if (line.StartsWith("B)"))
+            {
                 currentQuestion.options[1] = line.Substring(2).Trim();
+            }
             else if (line.StartsWith("C)"))
+            {
                 currentQuestion.options[2] = line.Substring(2).Trim();
+            }
             else if (line.StartsWith("D)"))
+            {
                 currentQuestion.options[3] = line.Substring(2).Trim();
+            }
             else if (line.StartsWith("Answer:"))
             {
                 currentQuestion.correctIndex = int.Parse(line.Split(':')[1].Trim());
+
                 currentQuestion.questionText = string.Join("\n", questionTextBuffer);
+                currentQuestion.explanation = string.Join("\n", explanationBuffer);
+
                 allQuestions.Add(currentQuestion);
+
                 currentQuestion = null;
                 questionTextBuffer.Clear();
+                explanationBuffer.Clear();
+                readingExplanation = false;
             }
             else
-                questionTextBuffer.Add(line);
+            {
+                if (currentQuestion != null)
+                {
+                    if (readingExplanation)
+                        explanationBuffer.Add(line);
+                    else
+                        questionTextBuffer.Add(line);
+                }
+            }
         }
+
+        if (currentQuestion != null)
+        {
+            currentQuestion.questionText = string.Join("\n", questionTextBuffer);
+            currentQuestion.explanation = string.Join("\n", explanationBuffer);
+            allQuestions.Add(currentQuestion);
+        }
+    }
+
+    //------------------------- Educational Topic Priority -------------------------//
+    string SelectTopicByEducationalPriority()
+    {
+        if (knowledgeStates.Count == 0) return null;
+
+        var weights = new Dictionary<string, float>();
+        float totalWeight = 0f;
+
+        foreach (var kvp in knowledgeStates)
+        {
+            // Higher priority if mastery is low
+            float priority = Mathf.Clamp01(1f - kvp.Value);
+
+            // High mastery topics still appear (but less frequently)
+            priority = Mathf.Max(priority, 0.2f);
+
+            weights[kvp.Key] = priority;
+            totalWeight += priority;
+        }
+
+        float r = Random.value * totalWeight;
+        float cumulative = 0f;
+
+        foreach (var kvp in weights)
+        {
+            cumulative += kvp.Value;
+            if (r <= cumulative)
+                return kvp.Key;
+        }
+
+        return knowledgeStates.Keys.FirstOrDefault();
+    }
+
+    Difficulty GetDifficultyForTopic(string topic)
+    {
+        float mastery = knowledgeStates.ContainsKey(topic) ? knowledgeStates[topic] : 0.3f;
+
+        if (mastery < 0.40f)
+            return Difficulty.Easy;
+        if (mastery < 0.70f)
+            return Difficulty.Medium;
+
+        return Difficulty.Hard;
     }
 
     //------------------------- Display Questions -------------------------//
@@ -166,14 +257,38 @@ public class QuizManagerDynamic : MonoBehaviour
             return;
         }
 
-        Question q = GetQuestionFromDifficulty(currentDifficulty);
-        if (q == null) q = allQuestions[Random.Range(0, allQuestions.Count)];
+        string topic = SelectTopicByEducationalPriority();
+        if (string.IsNullOrEmpty(topic))
+            topic = allTopics.Count > 0 ? allTopics[Random.Range(0, allTopics.Count)] : null;
 
+        Difficulty difficulty = GetDifficultyForTopic(topic);
+
+        List<Question> pool = allQuestions
+            .Where(q => q.topic == topic && q.difficulty == difficulty)
+            .ToList();
+
+        if (pool.Count == 0)
+            pool = allQuestions.Where(q => q.topic == topic).ToList();
+
+        if (pool.Count == 0)
+            pool = allQuestions;
+
+        if (pool.Count == 0)
+        {
+            Debug.LogError("No questions available.");
+            FinishQuiz();
+            return;
+        }
+
+        Question q = pool[Random.Range(0, pool.Count)];
+
+        // weight assignment for CSV (and educational tracking)
         switch (q.difficulty)
         {
             case Difficulty.Easy: q.weight = 0.25f; break;
-            case Difficulty.Medium: q.weight = 0.6f; break;
-            case Difficulty.Hard: q.weight = 1.0f; break;
+            case Difficulty.Medium: q.weight = 0.60f; break;
+            case Difficulty.Hard: q.weight = 1.00f; break;
+            default: q.weight = 0.25f; break;
         }
 
         questionText.text = q.questionText;
@@ -196,94 +311,13 @@ public class QuizManagerDynamic : MonoBehaviour
             optionButtons[i].onClick.RemoveAllListeners();
             optionButtons[i].onClick.AddListener(() => OnOptionSelected(q, choiceIndex));
         }
-    }
 
-    //------------------------- Pick From Pool Of Questions -------------------------//
-    Question GetQuestionFromDifficulty(Difficulty _)
-    {
-        string topic;
-        List<string> uncoveredTopics = allTopics.Except(askedTopics).ToList();
-        bool isFirstExposure = uncoveredTopics.Count > 0;
-
-        if (isFirstExposure)
-            topic = uncoveredTopics[Random.Range(0, uncoveredTopics.Count)];
-        else
-            topic = SelectTopicByConfidence();
-
-        askedTopics.Add(topic);
-
-        List<Question> topicQuestions = allQuestions.Where(q => q.topic == topic).ToList();
-        if (topicQuestions.Count == 0) topicQuestions = allQuestions;
-
-        Difficulty targetDifficulty;
-
-        if (isFirstExposure)
-        {
-            targetDifficulty = Difficulty.Easy;
-        }
-        else
-        {
-            float mastery = knowledgeStates.ContainsKey(topic) ? knowledgeStates[topic] : 0.3f;
-
-            if (mastery >= 0.7f)
-                targetDifficulty = Difficulty.Hard;
-            else if (mastery >= 0.4f)
-                targetDifficulty = Difficulty.Medium;
-            else
-                targetDifficulty = Difficulty.Easy;
-        }
-
-        List<Question> filtered = topicQuestions
-            .Where(q => q.difficulty == targetDifficulty && !usedQuestions.Contains(q.questionText))
-            .ToList();
-
-        if (filtered.Count == 0)
-        {
-            usedQuestions.Clear(); // RESET when exhausted
-            filtered = topicQuestions.Where(q => q.difficulty == targetDifficulty).ToList();
-        }
-
-        if (filtered.Count == 0)
-        {
-            filtered = topicQuestions;
-        }
-
-        Question q = filtered[Random.Range(0, filtered.Count)];
         usedQuestions.Add(q.questionText);
         currentDifficulty = q.difficulty;
-        return q;
+        askedTopics.Add(topic);
     }
 
-    //------------------------- Select Topic by Confidence -------------------------//
-    string SelectTopicByConfidence()
-    {
-        if (knowledgeStates.Count == 0) return null;
-
-        var weights = new Dictionary<string, float>();
-        float totalWeight = 0f;
-
-        foreach (var kvp in knowledgeStates)
-        {
-            float weight = Mathf.Clamp01(1f - kvp.Value);
-            weight = Mathf.Max(weight, 0.05f);
-            weights[kvp.Key] = weight;
-            totalWeight += weight;
-        }
-
-        float r = Random.value * totalWeight;
-        float cum = 0f;
-
-        foreach (var kvp in weights)
-        {
-            cum += kvp.Value;
-            if (r <= cum)
-                return kvp.Key;
-        }
-
-        return knowledgeStates.Keys.FirstOrDefault();
-    }
-
-    //------------------------- Handle Option Selection -------------------------//
+    //------------------------- Answer Handling -------------------------//
     void OnOptionSelected(Question q, int choiceIndex)
     {
         bool correct = choiceIndex == q.correctIndex;
@@ -300,9 +334,13 @@ public class QuizManagerDynamic : MonoBehaviour
             if (i != q.correctIndex && i != choiceIndex)
                 optionButtons[i].image.color = Color.gray;
 
-        feedbackText.text = correct ? "<color=green>Correct!</color>" : $"<color=red>Wrong.</color> Correct: {q.options[q.correctIndex]}";
+        feedbackText.text = correct ? "<color=green>Correct!</color>" :
+            $"<color=red>Wrong.</color> Correct: {q.options[q.correctIndex]}";
+
         explanationPanel.SetActive(true);
-        explanationText.text = string.IsNullOrEmpty(q.explanation) ? "Review the concept behind the correct answer." : q.explanation;
+        explanationText.text = string.IsNullOrEmpty(q.explanation)
+            ? "Review the concept behind the correct answer."
+            : q.explanation;
 
         if (correct)
         {
@@ -338,7 +376,7 @@ public class QuizManagerDynamic : MonoBehaviour
         ShowNextQuestion();
     }
 
-    //------------------------- Knowledge Update -------------------------//
+    //------------------------- Knowledge Update (Educational) -------------------------//
     void UpdateBayesianKnowledge(string topic, bool wasCorrect, float weight)
     {
         if (string.IsNullOrEmpty(topic)) return;
@@ -359,7 +397,7 @@ public class QuizManagerDynamic : MonoBehaviour
         Debug.Log($"[Topic Mastery] {topic}: {prior:P0} → {knowledgeStates[topic]:P0}");
     }
 
-    //------------------------- Quiz End -------------------------//
+    //------------------------- Finish Quiz -------------------------//
     void FinishQuiz()
     {
         questionText.gameObject.SetActive(false);
@@ -385,7 +423,7 @@ public class QuizManagerDynamic : MonoBehaviour
         knowledgeText.text = display;
     }
 
-    //------------------------- CSV Generation -------------------------//
+    //------------------------- CSV (Correct Difficulty & Weight) -------------------------//
     void GenerateCSV()
     {
         string mode = "Dynamic";
@@ -395,21 +433,23 @@ public class QuizManagerDynamic : MonoBehaviour
         if (!Directory.Exists(folderPath))
             Directory.CreateDirectory(folderPath);
 
-        string filePath = Path.Combine(folderPath, $"{mode}_QuizResults_Level{level}_{System.DateTime.Now:yyyyMMdd_HHmmss}.csv");
+        string filePath = Path.Combine(folderPath,
+            $"{mode}_QuizResults_Level{level}_{System.DateTime.Now:yyyyMMdd_HHmmss}.csv");
 
         string csvContent = "Question,Topic,Difficulty,Weight,SelectedAnswer,CorrectAnswer,Correct\n";
 
         foreach (var r in responses)
         {
             string questionTextClean = r.questionText.Replace("\n", " ").Replace(",", " ");
-            string topicClean = r.topic.Replace(",", " ");
+            string topicClean = r.topic?.Replace(",", " ") ?? "";
             string selectedAnswerText = r.selectedAnswer.Replace(",", " ");
             string correctAnswerText = r.correctAnswer.Replace(",", " ");
-            csvContent += $"{questionTextClean},{topicClean},{r.difficulty},{r.weight},{selectedAnswerText},{correctAnswerText},{r.isCorrect}\n";
+
+            csvContent += $"{questionTextClean},{topicClean},{r.difficulty},{r.weight:F2},{selectedAnswerText},{correctAnswerText},{r.isCorrect}\n";
         }
 
         csvContent += $"\nTotal Score,'{score}/{totalQuestions}'\n";
-        csvContent += "Knowledge States:\n";
+
         foreach (var kvp in knowledgeStates)
             csvContent += $"{kvp.Key},{kvp.Value:F2}\n";
 

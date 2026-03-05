@@ -104,10 +104,14 @@ public class QuizManagerStatic : MonoBehaviour
 
         Question currentQuestion = null;
         List<string> questionTextBuffer = new List<string>();
+        List<string> explanationBuffer = new List<string>();
+        bool readingQuestion = false;
+        bool readingExplanation = false;
 
-        foreach (string rawLine in lines)
+        foreach (string raw in lines)
         {
-            string line = rawLine.Trim();
+            string line = raw.Trim();
+
             if (string.IsNullOrEmpty(line)) continue;
 
             if (line.StartsWith("Level:"))
@@ -115,30 +119,87 @@ public class QuizManagerStatic : MonoBehaviour
                 if (currentQuestion != null)
                 {
                     currentQuestion.questionText = string.Join("\n", questionTextBuffer);
+                    currentQuestion.explanation = string.Join("\n", explanationBuffer);
                     questions.Add(currentQuestion);
                 }
+
                 currentQuestion = new Question();
                 questionTextBuffer.Clear();
+                explanationBuffer.Clear();
+                readingQuestion = false;
+                readingExplanation = false;
             }
-            else if (line.StartsWith("Q:")) questionTextBuffer.Add(line.Substring(2).Trim());
+            else if (line.StartsWith("Topic:"))
+            {
+                // optional: store topic if needed
+            }
+            else if (line.StartsWith("Q:"))
+            {
+                readingQuestion = true;
+                readingExplanation = false;
+                questionTextBuffer.Add(line.Substring(2).Trim());
+            }
+            else if (line.StartsWith("Explanation:"))
+            {
+                readingExplanation = true;
+                readingQuestion = false;
+                explanationBuffer.Add(line.Substring("Explanation:".Length).Trim());
+            }
             else if (line.StartsWith("A)"))
             {
                 currentQuestion.options = new string[4];
                 currentQuestion.options[0] = line.Substring(2).Trim();
+                readingQuestion = false;
+                readingExplanation = false;
             }
-            else if (line.StartsWith("B)")) currentQuestion.options[1] = line.Substring(2).Trim();
-            else if (line.StartsWith("C)")) currentQuestion.options[2] = line.Substring(2).Trim();
-            else if (line.StartsWith("D)")) currentQuestion.options[3] = line.Substring(2).Trim();
-            else if (line.StartsWith("Explanation:")) currentQuestion.explanation = line.Substring("Explanation:".Length).Trim();
+            else if (line.StartsWith("B)"))
+            {
+                currentQuestion.options[1] = line.Substring(2).Trim();
+            }
+            else if (line.StartsWith("C)"))
+            {
+                currentQuestion.options[2] = line.Substring(2).Trim();
+            }
+            else if (line.StartsWith("D)"))
+            {
+                currentQuestion.options[3] = line.Substring(2).Trim();
+            }
             else if (line.StartsWith("Answer:"))
             {
                 currentQuestion.correctIndex = int.Parse(line.Split(':')[1].Trim());
+
                 currentQuestion.questionText = string.Join("\n", questionTextBuffer);
+                currentQuestion.explanation = string.Join("\n", explanationBuffer);
+
                 questions.Add(currentQuestion);
+
                 currentQuestion = null;
                 questionTextBuffer.Clear();
+                explanationBuffer.Clear();
+                readingQuestion = false;
+                readingExplanation = false;
             }
-            else if (currentQuestion != null) questionTextBuffer.Add(line);
+            else
+            {
+                // Continuation lines:
+                if (readingExplanation)
+                {
+                    explanationBuffer.Add(line);
+                }
+                else
+                {
+                    questionTextBuffer.Add(line);
+                    readingQuestion = true;
+                }
+            }
+        }
+
+        // Save last question (if file doesn’t end with Answer:)
+        if (currentQuestion != null)
+        {
+            currentQuestion.questionText = string.Join("\n", questionTextBuffer);
+            currentQuestion.explanation = string.Join("\n", explanationBuffer);
+            questions.Add(currentQuestion);
         }
 
         return questions;
