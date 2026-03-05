@@ -10,7 +10,7 @@ public class QuizManagerDynamic : MonoBehaviour
 {
     [Header("UI References")]
     public TextMeshProUGUI questionText;
-    public Button[] optionButtons; // size = 4
+    public Button[] optionButtons;
     public TextMeshProUGUI feedbackText;
     public GameObject resultPanel;
     public TextMeshProUGUI resultText;
@@ -39,6 +39,7 @@ public class QuizManagerDynamic : MonoBehaviour
 
     private List<Question> allQuestions = new List<Question>();
     private HashSet<string> askedTopics = new HashSet<string>();
+    private HashSet<string> usedQuestions = new HashSet<string>(); // FIX: Track used questions
     private List<string> allTopics = new List<string>();
 
     private Difficulty currentDifficulty = Difficulty.Easy;
@@ -87,7 +88,7 @@ public class QuizManagerDynamic : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(q.topic) && !knowledgeStates.ContainsKey(q.topic))
             {
-                knowledgeStates[q.topic] = 0.3f; // initial mastery
+                knowledgeStates[q.topic] = 0.3f;
                 allTopics.Add(q.topic);
             }
         }
@@ -168,7 +169,6 @@ public class QuizManagerDynamic : MonoBehaviour
         Question q = GetQuestionFromDifficulty(currentDifficulty);
         if (q == null) q = allQuestions[Random.Range(0, allQuestions.Count)];
 
-        // Assign fixed weight per difficulty
         switch (q.difficulty)
         {
             case Difficulty.Easy: q.weight = 0.25f; break;
@@ -201,7 +201,6 @@ public class QuizManagerDynamic : MonoBehaviour
     //------------------------- Pick From Pool Of Questions -------------------------//
     Question GetQuestionFromDifficulty(Difficulty _)
     {
-        // Pick topic
         string topic;
         List<string> uncoveredTopics = allTopics.Except(askedTopics).ToList();
         bool isFirstExposure = uncoveredTopics.Count > 0;
@@ -213,16 +212,13 @@ public class QuizManagerDynamic : MonoBehaviour
 
         askedTopics.Add(topic);
 
-        // Get questions for this topic
         List<Question> topicQuestions = allQuestions.Where(q => q.topic == topic).ToList();
         if (topicQuestions.Count == 0) topicQuestions = allQuestions;
 
-        // Determine difficulty
         Difficulty targetDifficulty;
 
         if (isFirstExposure)
         {
-            // Force first question of a new topic to Easy
             targetDifficulty = Difficulty.Easy;
         }
         else
@@ -237,25 +233,26 @@ public class QuizManagerDynamic : MonoBehaviour
                 targetDifficulty = Difficulty.Easy;
         }
 
-        // Filter questions of the chosen difficulty
-        List<Question> filtered = topicQuestions.Where(q => q.difficulty == targetDifficulty).ToList();
+        List<Question> filtered = topicQuestions
+            .Where(q => q.difficulty == targetDifficulty && !usedQuestions.Contains(q.questionText))
+            .ToList();
 
-        // Fallback in order: Easy → Medium → Hard
         if (filtered.Count == 0)
         {
-            if (targetDifficulty == Difficulty.Hard)
-                filtered = topicQuestions.Where(q => q.difficulty == Difficulty.Medium).ToList();
-            if (filtered.Count == 0)
-                filtered = topicQuestions.Where(q => q.difficulty == Difficulty.Easy).ToList();
-            if (filtered.Count == 0)
-                filtered = topicQuestions; // ultimate fallback
+            usedQuestions.Clear(); // RESET when exhausted
+            filtered = topicQuestions.Where(q => q.difficulty == targetDifficulty).ToList();
+        }
+
+        if (filtered.Count == 0)
+        {
+            filtered = topicQuestions;
         }
 
         Question q = filtered[Random.Range(0, filtered.Count)];
+        usedQuestions.Add(q.questionText);
         currentDifficulty = q.difficulty;
         return q;
     }
-
 
     //------------------------- Select Topic by Confidence -------------------------//
     string SelectTopicByConfidence()
@@ -267,7 +264,7 @@ public class QuizManagerDynamic : MonoBehaviour
 
         foreach (var kvp in knowledgeStates)
         {
-            float weight = Mathf.Clamp01(1f - kvp.Value); // low mastery → high chance
+            float weight = Mathf.Clamp01(1f - kvp.Value);
             weight = Mathf.Max(weight, 0.05f);
             weights[kvp.Key] = weight;
             totalWeight += weight;
@@ -341,7 +338,7 @@ public class QuizManagerDynamic : MonoBehaviour
         ShowNextQuestion();
     }
 
-    //------------------------- Safe Bayesian Knowledge Update -------------------------//
+    //------------------------- Knowledge Update -------------------------//
     void UpdateBayesianKnowledge(string topic, bool wasCorrect, float weight)
     {
         if (string.IsNullOrEmpty(topic)) return;
@@ -350,20 +347,16 @@ public class QuizManagerDynamic : MonoBehaviour
 
         float prior = knowledgeStates[topic];
 
-        // Smooth gain/loss scaling
-        float Lc = 0.4f + 0.2f * weight; // correct boost
-        float Ln = 0.05f + 0.05f * (1f - weight); // wrong penalty scaled
+        float Lc = 0.4f + 0.2f * weight;
+        float Ln = 0.05f + 0.05f * (1f - weight);
 
-        float posterior;
-
-        if (wasCorrect)
-            posterior = prior + (1f - prior) * Lc; // gain proportional to distance from 1
-        else
-            posterior = prior - prior * Ln;        // loss proportional to current mastery
+        float posterior = wasCorrect
+            ? prior + (1f - prior) * Lc
+            : prior - prior * Ln;
 
         knowledgeStates[topic] = Mathf.Clamp(posterior, 0.05f, 1f);
 
-        Debug.Log($"[Topic Mastery] {topic}: {prior:P0} → {knowledgeStates[topic]:P0} (Correct: {wasCorrect}, Weight: {weight:F2})");
+        Debug.Log($"[Topic Mastery] {topic}: {prior:P0} → {knowledgeStates[topic]:P0}");
     }
 
     //------------------------- Quiz End -------------------------//
@@ -424,7 +417,6 @@ public class QuizManagerDynamic : MonoBehaviour
         Debug.Log("CSV saved at: " + filePath);
     }
 
-    //------------------------- Main Menu -------------------------//
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
