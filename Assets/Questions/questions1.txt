@@ -1,6 +1,7 @@
 ﻿Level: 1
 Topic: Syntax
 Q: (Easy) Which symbol is used to end a statement in Java?
+Explanation: Example
 A) :
 B) ;
 C) .
