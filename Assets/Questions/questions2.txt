@@ -18,6 +18,7 @@ A) Yes
 B) No
 C) Nothing
 D) Error
+Explanation: Placeholder Explanation
 Answer: 0
 
 Level: 2
@@ -27,6 +28,7 @@ A) for
 B) while
 C) do-while
 D) foreach
+Explanation: Placeholder Explanation
 Answer: 2
 
 Level: 2
@@ -36,6 +38,7 @@ A) if
 B) case
 C) break
 D) return
+Explanation: Placeholder Explanation
 Answer: 1
 
 Level: 2
@@ -48,6 +51,7 @@ A) 0 1 2
 B) 1 2 3
 C) 0 1 2 3
 D) 3 2 1
+Explanation: Placeholder Explanation
 Answer: 0
 
 Level: 2
