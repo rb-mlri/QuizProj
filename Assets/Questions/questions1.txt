@@ -1,648 +1,227 @@
 ﻿Level: 1
-Topic: Syntax
-Q: (Easy) Which symbol is used to end a statement in Java?
-Explanation: Example
-A) :
-B) ;
-C) .
-D) ,
-Answer: 1
-
-Level: 1
-Topic: Variables
-Q: (Easy) What is the correct way to declare an integer variable named count?
-A) int count;
-B) integer count;
-C) var count;
-D) num count;
-Answer: 0
-
-Level: 1
-Topic: Variables
-Q: (Easy) Which keyword is used to create a constant in Java?
-A) const
-B) static
-C) final
-D) constant
-Answer: 2
-
-Level: 1
-Topic: Data Types
-Q: (Easy) Which of these is NOT a primitive data type in Java?
-A) int
-B) double
-C) boolean
-D) String
-Answer: 3
-
-Level: 1
-Topic: Output
-Q: (Easy) Which method is used to print text without a newline?
-A) System.out.println()
-B) System.out.print()
-C) System.out.write()
-D) System.print()
-Answer: 1
-
-Level: 1
-Topic: Data Types
-Q: (Easy) What is the default value of an uninitialized int in Java?
-A) 0
-B) null
-C) undefined
-D) garbage value
-Answer: 0
-
-Level: 1
 Topic: Operators
-Q: (Easy) Which operator is used for string concatenation in Java?
-A) &
-B) +
-C) .
-D) ,
-Answer: 1
-
-Level: 1
-Topic: Comments
-Q: (Easy) How do you write a single-line comment in Java?
-A) #
-B) //
-C) /* */
-D) <!-- -->
-Answer: 1
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which keyword is used to create a new object?
-A) make
-B) create
-C) new
-D) alloc
-Answer: 2
-
-Level: 1
-Topic: Strings
-Q: (Easy) Which escape sequence represents a newline?
-A) "\ n"
-B) "\ t"
-C) "\ r"
-D) "\ s"
-Answer: 0
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which keyword is used to declare a class in Java?
-A) define
-B) class
-C) new
-D) object
-Answer: 1
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which of these is a valid Java identifier?
-A) my-variable
-B) myVariable
-C) 123value
-D) #count
-Answer: 1
-
-Level: 1
-Topic: Comments
-Q: (Easy) What does the '//' symbol represent in Java?
-A) Start of a loop
-B) Single-line comment
-C) Division operator
-D) End of statement
-Answer: 1
-
-Level: 1
-Topic: Variables
-Q: (Easy) What is the correct way to assign value 10 to variable x?
-A) int x == 10;
-B) int x = 10;
-C) int x : 10;
-D) int x <- 10;
-Answer: 1
-
-Level: 1
-Topic: Data Types
-Q: (Easy) Which data type is used to store decimal values?
-A) int
-B) double
-C) char
-D) boolean
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Easy) Which symbol is used for multiplication in Java?
-A) ","
-B) x
-C) *
-D) multiply
-Answer: 2
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which keyword is used to define a class in Java?
-A) define
-B) class
-C) new
-D) object
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Easy) Which escape sequence is used for a tab space?
-A) "\ n"
-B) "\ t"
-C) "\ s"
-D) "\ r"
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Easy) Which of these is a correct way to declare a string?
-A) string name = "Java";
-B) String name = "Java";
-C) str name = "Java";
-D) text name = "Java";
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Easy) What will this print? 
-System.out.println("Java " + "Rocks");
-A) Java Rocks
-B) JavaRocks
-C) "Java Rocks"
-D) Rocks Java
-Answer: 0
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which of these is used to start the main method in Java?
-A) public static void start(String[] args)
-B) public void main(String[] args)
-C) public static void main(String[] args)
-D) static main(String args)
-Answer: 2
-
-Level: 1
-Topic: Comments
-Q: (Easy) How do you write a multi-line comment in Java?
-A) <!-- comment -->
-B) /* comment */
-C) // comment
-D) ## comment ##
-Answer: 1
-
-Level: 1
-Topic: Variables
-Q: (Easy) Which is the correct way to declare a double variable named price?
-A) double price;
-B) num price;
-C) decimal price;
-D) var price;
-Answer: 0
-
-Level: 1
-Topic: Strings
-Q: (Easy) What will this print?
-System.out.println("Hello" + " " + "World");
-A) HelloWorld
-B) Hello World
-C) "Hello World"
-D) Hello+World
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Easy) Which operator is used to compare two values in Java?
+Explanation: == compares two values for equality; = is used for assignment.
+Q: (Easy) Operators - Which operator checks if two values are equal?
 A) =
 B) ==
 C) !=
-D) equals
+D) ===
 Answer: 1
 
 Level: 1
-Topic: Data Types
-Q: (Medium) Which data type should be used to store a single character in Java?
-A) char
-B) String
-C) byte
-D) int
-Answer: 0
+Topic: Operators
+Explanation: != checks whether two values are not equal and returns a boolean result.
+Q: (Easy) Operators - What does != mean in Java?
+A) Assign value
+B) Compare equality
+C) Compare inequality
+D) Logical AND
+Answer: 2
 
 Level: 1
-Topic: Type Casting
-Q: (Medium) What is the result of this code?
-int x = (int) 4.9;
-System.out.println(x);
-A) 4
-B) 5
-C) 4.9
-D) Error
-Answer: 0
+Topic: Operators
+Explanation: && is the logical AND operator; both conditions must be true to return true.
+Q: (Easy) What does && represent?
+A) Logical OR
+B) Logical NOT
+C) Bitwise AND
+D) Logical AND
+Answer: 3
 
 Level: 1
-Topic: Strings
-Q: (Medium) What is the output?
-System.out.println("Java".toUpperCase());
-A) Java
-B) JAVA
-C) java
-D) Error
-Answer: 1
-
-Level: 1
-Topic: Input
-Q: (Medium) Which import is required to use the Scanner class?
-A) import java.util.Scanner;
-B) import java.io.Scanner;
-C) include Scanner;
-D) import Scanner.util;
+Topic: Operators
+Explanation: || is logical OR; it returns true if at least one operand is true.
+Q: (Easy) What does || represent?
+A) Logical OR
+B) Logical AND
+C) Assignment
+D) Bitwise OR
 Answer: 0
 
 Level: 1
 Topic: Operators
-Q: (Medium) What is the output?
-System.out.println(10 == 5 + 5);
+Explanation: !true negates the boolean value, producing false.
+Q: (Easy) What is the result of !true?
 A) true
 B) false
-C) 10
-D) Error
-Answer: 0
-
-Level: 1
-Topic: Operators
-Q: (Medium) What will this code output? int x = 7; System.out.println(x % 3);
-A) 1
-B) 2
-C) 3
-D) 4
-Answer: 1
-
-Level: 1
-Topic: Type Casting
-Q: (Medium) Which method converts a String to an int?
-A) Integer.parseInt()
-B) String.toInt()
-C) Integer.convert()
-D) int.parse()
-Answer: 0
-
-Level: 1
-Topic: Variables
-Q: (Medium) Which of the following is a valid variable name?
-A) 2value
-B) _value
-C) value#
-D) class
+C) Error
+D) 1
 Answer: 1
 
 Level: 1
 Topic: Operators
-Q: (Medium) What is the result of 5 + 2 * 3?
-A) 21
-B) 11
-C) 15
-D) 7
-Answer: 1
-
-Level: 1
-Topic: Input
-Q: (Medium) Which method reads a line of text from console input?
-A) System.in.readLine()
-B) Scanner.nextLine()
-C) read.input()
-D) Console.getLine()
-Answer: 1
-
-Level: 1
-Topic: Output
-Q: (Medium) Which format specifier is used for integers in printf?
-A) %d
-B) %i
-C) %f
-D) %s
-Answer: 0
-
-Level: 1
-Topic: Data Types
-Q: (Medium) What is the size of an int in Java?
-A) 8 bits
-B) 16 bits
-C) 32 bits
-D) 64 bits
-Answer: 2
-
-Level: 1
-Topic: Variables
-Q: (Medium) Which keyword is used to prevent variable modification?
-A) constant
-B) final
-C) fixed
-D) static
-Answer: 1
-
-Level: 1
-Topic: Type Casting
-Q: (Medium) Which casting is done automatically by Java?
-A) Narrowing
-B) Widening
-C) Explicit
-D) Forced
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Medium) What is the output? 
-System.out.println("2" + 3 + 4)
-A) 9
-B) 234
-C) 27
-D) 7
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) Which operator has the highest precedence?
-A) +
-B) *
-C) =
-D) &&
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) What will this print?
-int a = 5, b = 2;
-System.out.println(a / b);
-A) 2.5
-B) 2
-C) 3
-D) Error
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Medium) Which method returns the length of a string?
-A) size()
-B) length
-C) length()
-D) count()
-Answer: 2
-
-Level: 1
-Topic: Type Casting
-Q: (Medium) Which conversion requires explicit casting?
-A) int to long
-B) double to int
-C) int to double
-D) char to int
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) Which of these will evaluate to true?
-A) (5 == 6)
-B) (7 > 2)
-C) (3 < 1)
-D) (4 != 4)
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Medium) What is the output?
-System.out.println("Hello".length());
-A) 4
-B) 5
-C) 6
-D) Error
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) Which operator is used for logical OR?
-A) ||
-B) |
-C) or
-D) &&
-Answer: 0
-
-Level: 1
-Topic: Input
-Q: (Medium) Which class is used to handle console input?
-A) Console
-B) Scanner
-C) Reader
-D) Input
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) Which expression will result in 15?
-A) 3 + 5 * 2
-B) (3 + 5) * 2 - 1
-C) 30 / 2
-D) 18 - 4
-Answer: 2
-
-Level: 1
-Topic: Strings
-Q: (Medium) Which value is returned by 'charAt(0)' for "World"?
-A) W
-B) o
-C) r
-D) Error
-Answer: 0
-
-Level: 1
-Topic: Operators
-Q: (Hard) What will be the result of this code?
-int x = 5;
-x += 3 * 2;
-System.out.println(x);
-A) 11
-B) 16
-C) 10
-D) 5
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Hard) What is the output?
-System.out.println(10 / 4);
-A) 2.5
-B) 2
-C) 2.0
-D) 3
-Answer: 1
-
-Level: 1
-Topic: Syntax
-Q: (Hard) Which of the following is not allowed in Java identifiers?
-A) $
-B) _
-C) digits at start
-D) letters
-Answer: 2
-
-Level: 1
-Topic: Strings
-Q: (Hard) What is the output?
-System.out.println("Result: " + (5 + 2) * 2);
-A) Result: 14
-B) Result: 9
-C) Result: 52
-D) Compilation Error
-Answer: 0
-
-Level: 1
-Topic: Type Casting
-Q: (Hard) What is the ASCII value of character 'A'?
-A) 65
-B) 66
-C) 64
-D) 67
-Answer: 0
-
-Level: 1
-Topic: Operators
-Q: (Hard) What is the result of this?
-System.out.println(7 % 4 * 3);
-A) 21
-B) 9
-C) 3
-D) 12
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Hard) What will this print?
-System.out.println("Hello".charAt(1));
-A) H
-B) e
-C) l
-D) o
-Answer: 1
-
-Level: 1
-Topic: Variables
-Q: (Hard) Which of the following is the correct declaration of a constant?
-A) final int VALUE = 100;
-B) const int VALUE = 100;
-C) constant int VALUE = 100;
-D) fixed int VALUE = 100;
-Answer: 0
-
-Level: 1
-Topic: Operators
-Q: (Hard) What is the result of Math.pow(2, 3)?
-A) 6
-B) 8
-C) 9
-D) 4
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Hard) Which escape sequence is used to represent a backslash?
-A) \\
-B) \ b
-C) \ s
-D) \/
-Answer: 0
-
-Level: 1
-Topic: Operators
-Q: (Hard) Which of these operators is used for logical AND?
+Explanation: ! is the logical NOT operator that reverses a boolean value.
+Q: (Easy) Which operator means “logical NOT”?
 A) &&
-B) &
-C) and
-D) ||
+B) ||
+C) !
+D) ==
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: x++ increments x by 1 after using its current value.
+Q: (Easy) What does x++ do?
+A) Increases x by 2
+B) Decreases x by 1
+C) Increases x by 1
+D) Multiplies x by 2
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: true AND false is false because both operands must be true.
+Q: (Easy) What is the result of true && false?
+A) false
+B) true
+C) 0
+D) Error
 Answer: 0
 
 Level: 1
-Topic: Syntax
-Q: (Hard) Which type of error is detected during compilation?
-A) Logical Error
-B) Syntax Error
-C) Runtime Error
-D) None
+Topic: Operators
+Explanation: /= divides a variable and assigns the result back to the variable.
+Q: (Easy) What does /= do?
+A) Divide and assign
+B) Multiply
+C) Compare
+D) Add
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: %= assigns the remainder of a division back to the variable.
+Q: (Easy) What does %= do?
+A) Multiply
+B) Compare
+C) Add
+D) Assign remainder
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: = is the assignment operator used to store values in variables.
+Q: (Easy) Which operator is used for assignment?
+A) ==
+B) =
+C) !=
+D) >=
 Answer: 1
 
 Level: 1
-Topic: Type Casting
-Q: (Hard) Which of these is a widening conversion?
-A) double → int
-B) int → long
-C) int → byte
-D) long → short
-Answer: 1
+Topic: Operators
+Explanation: The + operator concatenates strings, producing "Hello World".
+Q: (Easy) What is the result of the expression "Hello " + "World"?
+A) "Hello"
+B) "World"
+C) "Hello World"
+D) Error
+Answer: 2
 
 Level: 1
-Topic: Type Casting
-Q: (Hard) What is the value of this expression?
-(int) 7.9
-A) 8
-B) 7
-C) 7.9
+Topic: Operators
+Explanation: true OR false is true because OR needs only one true operand.
+Q: (Easy) What is the result of the expression true || false?
+A) true
+B) false
+C) Error
+D) None of the above
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 12 + 4 performs integer addition resulting in 16.
+Q: (Easy) What is the result of 12 + 4?
+A) 16
+B) 8
+C) 124
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 15 - 6 subtracts to produce 9.
+Q: (Easy) What is the result of 15 - 6?
+A) 9
+B) -9
+C) 21
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 7 * 3 equals 21 using multiplication.
+Q: (Easy) What is the result of 7 * 3?
+A) 21
+B) 10
+C) 73
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 17 % 5 returns the remainder after division, which is 2.
+Q: (Easy) What is the result of 17 % 5?
+A) Error
+B) 3
+C) 0
+D) 2
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: 10 > 3 evaluates to true because 10 is greater than 3.
+Q: (Easy) What is the result of 10 > 3?
+A) 7
+B) false
+C) true
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: 2 < 1 is false since 2 is not less than 1.
+Q: (Easy) What is the result of 2 < 1?
+A) true
+B) false
+C) -1
 D) Error
 Answer: 1
 
 Level: 1
-Topic: Syntax
-Q: (Hard) Which package is automatically imported into every Java program?
-A) java.io
-B) java.util
-C) java.lang
-D) java.math
+Topic: Operators
+Explanation: >= means greater than or equal to in relational comparison.
+Q: (Easy) What does >= represent?
+A) Greater than only
+B) Less than
+C) Greater than or equal to
+D) Assignment
 Answer: 2
 
 Level: 1
 Topic: Operators
-Q: (Hard) Which operator is used for bitwise XOR?
-A) ^
-B) |
-C) &
-D) ~
+Explanation: x += 3 adds 3 to x and stores the result (5 + 3 = 8).
+Q: (Medium) int x = 5; x += 3; What is x?
+A) 8
+B) 5
+C) 15
+D) 2
 Answer: 0
 
 Level: 1
-Topic: Strings
-Q: (Hard) What will this print?
-System.out.println(2 + 3 + "4");
-A) 234
-B) 54
-C) 9
-D) 23
-Answer: 1
-
-Level: 1
-Topic: Type Casting
-Q: (Hard) Which conversion is NOT allowed without explicit casting?
-A) int → double
-B) int → long
-C) double → int
-D) char → int
-Answer: 2
-
-Level: 1
-Topic: Variables
-Q: (Hard) Which keyword is used to create a constant value in Java?
-A) static
-B) const
-C) final
-D) constant
-Answer: 2
+Topic: Operators
+Explanation: x -= 4 subtracts 4 from 10, giving 6.
+Q: (Medium) int x = 10; x -= 4; What is x?
+A) 4
+B) 14
+C) 10
+D) 6
+Answer: 3
 
 Level: 1
 Topic: Operators
-Q: (Hard) What is the output of this?
-System.out.println(10 % 3 == 1);
+Explanation: Both comparisons (6>3 and 6<10) are true, so AND returns true.
+Q: (Medium) What is the output? int x = 6; System.out.println(x > 3 && x < 10);
 A) true
 B) false
 C) 1
@@ -650,17 +229,1851 @@ D) Error
 Answer: 0
 
 Level: 1
-Topic: Strings
-Q: (Hard) Which method returns the character at a specific index in a string?
-A) substring()
-B) indexOf()
-C) charAt()
-D) get()
+Topic: Operators
+Explanation: 9 divided by 3 equals 3; /= stores the result.
+Q: (Medium) int x = 9; x /= 3; What is x?
+A) 6
+B) 27
+C) 3
+D) 9
 Answer: 2
 
 Level: 1
-Topic: Data Types
-Q: (Hard) Which data type can store the largest range of values?
+Topic: Operators
+Explanation: x += 5 increases x from 10 to 15.
+Q: (Medium) What is the result of int x = 10; x += 5;?
+A) 10
+B) 15
+C) 5
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Operators
+Explanation: 10 - 3 equals 7.
+Q: (Medium) What is the result of int x = 10; x -= 3;?
+A) 7
+B) 13
+C) 3
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: x *= 2 multiplies 4 by 2, resulting in 8.
+Q: (Medium) What is the result of int x = 4; x *= 2;?
+A) 6
+B) Error
+C) 2
+D) 8
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Operator precedence evaluates 2 + 1 first, so 7 * 3 = 21.
+Q: (Medium) What is the value of x? int x = 7; x *= 2 + 1;
+A) 21
+B) 14
+C) 9
+D) 7
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 9 % 2 leaves remainder 1.
+Q: (Medium) What is the result of int x = 9; x %= 2;?
+A) 4
+B) Error
+C) 0
+D) 1
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: First condition is true, second is false; AND requires both true.
+Q: (Medium) What is printed? System.out.println(5 > 3 && 8 < 2);
+A) true
+B) 0
+C) false
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: Post-increment prints the current value (5) first, then increases.
+Q: (Medium) What is printed? int x = 5; System.out.println(x++);
+A) 5
+B) 6
+C) Error
+D) 10
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 8 / 2 equals 4.
+Q: (Medium) What is the result? int x = 8; x /= 2;
+A) 2
+B) 4
+C) 6
+D) 16
+Answer: 1
+
+Level: 1
+Topic: Operators
+Explanation: (3 + 1) * 3 = 4 * 3 = 12.
+Q: (Medium) What is the result of the following code? int x = 3; x = (x + 1) * x;
+A) 9
+B) 16
+C) 12
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: 5 > 3 is true; !(2 == 2) is false; true AND false is false.
+Q: (Medium) What is the value of boolean b = (5 > 3) && !(2 == 2);?
+A) true
+B) 1
+C) Error
+D) false
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Integer division in Java truncates decimals; 5 / 2 = 2.
+Q: (Medium) What is the result of int x = 5; int y = 2; int z = x / y;?
+A) 2
+B) 2.5
+C) 3
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: Multiplication happens before addition: 4 * 2 = 8; 3 + 8 = 11.
+Q: (Medium) What is printed? System.out.println(3 + 4 * 2);
+A) 14
+B) 7
+C) 10
+D) 11
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: XOR (^) returns true only when operands differ; true ^ false results in true.
+Q: (Medium) What is the result of boolean b = 5 > 3 ^ 2 < 1;?
+A) 1
+B) false
+C) Error
+D) true
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Integer division drops decimals; 5 / 2 = 2.
+Q: (Medium) What is the output? int x = 5; int y = 2; System.out.println(x / y);
+A) 2.5
+B) 2
+C) 3
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Operators
+Explanation: 10 % 3 leaves remainder 1.
+Q: (Medium) What is the output? int a = 10; System.out.println(a % 3);
+A) Error
+B) 3
+C) 0
+D) 1
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Multiplication happens first: 3 * 2 = 6; 4 + 6 = 10.
+Q: (Medium) What is the value of x? int x = 4; x += 3 * 2;
+A) 7
+B) 14
+C) 10
+D) 12
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: x++ uses 5 (then x becomes 6), then ++x increments 6 to 7. 5 + 7 = 12.
+Q: (Hard) class Test1 { public static void main(String[] args) { int x = 5; System.out.print(x++ + ++x); } }
+A) 10
+B) 11
+C) 12
+D) Compilation error
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: Integer division of 10 / 4 is 2.
+Q: (Hard) class Test2 { public static void main(String[] args) { int a = 10; int b = 4; System.out.print(a / b); } }
+A) 2
+B) 2.5
+C) 3
+D) Compilation error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 10 / 4 is evaluated as integer division first (2), then assigned to double (2.0).
+Q: (Hard) class Test3 { public static void main(String[] args) { double x = 10 / 4; System.out.print(x); } }
+A) 2
+B) 2.5
+C) 2.0
+D) 2.25
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: Presence of a double literal (10.0) forces floating-point division.
+Q: (Hard) class Test4 { public static void main(String[] args) { double x = 10.0 / 4; System.out.print(x); } }
+A) 2
+B) 2.0
+C) Compilation error
+D) 2.5
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Parentheses evaluated first: 3 * (3 + 1) = 3 * 4 = 12.
+Q: (Hard) What is printed? int x = 3; int y = x * (x + 1); System.out.print(y);
+A) 6
+B) 9
+C) 15
+D) 12
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Both comparisons are true, so logical AND returns true.
+Q: (Hard) class Test6 { public static void main(String[] args) { int x = 8; System.out.print(x > 5 && x < 10); } }
+A) true
+B) false
+C) Error
+D) 1
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: Short-circuit OR stops evaluation after the first true condition; x++ is never executed.
+Q: (Hard) class Test7 { public static void main(String[] args) { int x = 5; System.out.print(x == 5 || x++ > 10); } }
+A) true
+B) false
+C) 6
+D) Compilation error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: ++x makes x = 6, then x++ uses 6 (then x becomes 7). 6 + 6 = 12.
+Q: (Hard) class Test8 { public static void main(String[] args) { int x = 5; System.out.print(++x + x++); } }
+A) 11
+B) Error
+C) 13
+D) 12
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: x /= 2 is 2. Then x += 2 results in 4.
+Q: (Hard) class Test9 { public static void main(String[] args) { int x = 5; System.out.print(x += x /= 2); } }
+A) 6
+B) 5
+C) 7
+D) 4
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: 3 + 2 = 5, then concatenation: "5" + "4" + 1 = "541".
+Q: (Hard) class Test10 { public static void main(String[] args) { System.out.print(3 + 2 + "4" + 1); } }
+A) 54
+B) 3241
+C) 541
+D) 51
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: Left shift multiplies by 2: 4 << 1 = 8.
+Q: (Hard) class Test11 { public static void main(String[] args) { int x = 4; System.out.print(x << 1); } }
+A) 2
+B) 4
+C) 8
+D) 16
+Answer: 2
+
+Level: 1
+Topic: Operators
+Explanation: Right shift divides by 2: 10 >> 1 = 5.
+Q: (Hard) class Test12 { public static void main(String[] args) { int x = 10; System.out.print(x >> 1); } }
+A) 2
+B) 5
+C) 10
+D) 20
+Answer: 1
+
+Level: 1
+Topic: Operators
+Explanation: Bitwise AND returns false when one operand is false.
+Q: (Hard) class Test13 { public static void main(String[] args) { boolean a = true; boolean b = false; System.out.print(a & b); } }
+A) false
+B) true
+C) Error
+D) 0
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 7 divided by 3 leaves a remainder of 1.
+Q: (Hard) class Test14 { public static void main(String[] args) { int x = 7; System.out.print(x % 3); } }
+A) 0
+B) 1
+C) 3
+D) 2
+Answer: 1
+
+Level: 1
+Topic: Operators
+Explanation: The ternary operator checks if 5 > 3 (true), executing the x++ branch which returns 5 before incrementing.
+Q: (Hard) class Test15 { public static void main(String[] args) { int x = 5; System.out.print(x > 3 ? x++ : ++x); } }
+A) 5
+B) 6
+C) 7
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: First ++x makes x=2. Second ++x makes x=3. 2 + 3 = 5.
+Q: (Hard) class Test16 { public static void main(String[] args) { int x = 1; System.out.print(++x + ++x); } }
+A) 4
+B) 5
+C) 6
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Operators
+Explanation: The condition is true, so the true branch is returned.
+Q: (Hard) class Test17 { public static void main(String[] args) { int x = 10; System.out.print(x == 10 ? true : false); } }
+A) true
+B) false
+C) Error
+D) 1
+Answer: 0
+
+Level: 1
+Topic: Operators
+Explanation: 5 > 3 is true, and logical NOT reverses it to false.
+Q: (Hard) class Test18 { public static void main(String[] args) { System.out.print(!(5 > 3)); } }
+A) true
+B) 0
+C) Error
+D) false
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Java evaluates left-to-right: x++ uses 5 (x becomes 6), then ++x makes x 7. 5 + 7 = 12.
+Q: (Hard) class Test19 { public static void main(String[] args) { int x = 5; int y = x++ + ++x; System.out.print(y); } }
+A) 11
+B) Undefined
+C) 13
+D) 12
+Answer: 3
+
+Level: 1
+Topic: Operators
+Explanation: Both conditions (8>=8 and 8<=10) are true, so logical AND returns true.
+Q: (Hard) class Test20 { public static void main(String[] args) { int x = 8; System.out.print(x >= 8 && x <= 10); } }
+A) true
+B) false
+C) Error
+D) 1
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Scanner is the standard Java class used to read user input from various sources, including the keyboard via System.in. It provides methods like nextInt(), nextLine(), and nextDouble()
+for typed input handling.
+Q: (Easy) Which class is commonly used to read user input in Java?
+A) Printer
+B) ConsoleFile
+C) Reader
+D) Scanner
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: The Scanner class belongs to the java.util package, which contains utility classes. It must be imported using import java.util.Scanner;.
+Q: (Easy) Which package contains the Scanner class?
+A) java.output
+B) java.util
+C) java.io
+D) java.lang
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() reads and returns an integer value from the input stream. It throws an InputMismatchException if the input is not a valid integer.
+Q: (Easy) Which method reads an integer using Scanner?
+A) nextInt()
+B) readInt()
+C) getInt()
+D) intRead()
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: nextLine() reads an entire line of text, including spaces, until a newline character is encountered.
+Q: (Easy) Which method reads a full line of text?
+A) next()
+B) getLine()
+C) readLine()
+D) nextLine()
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: print() outputs text to the console without automatically adding a newline, so the next output continues on the same line.
+Q: (Easy) Which statement prints text without a new line?
+A) print()
+B) println()
+C) printf()
+D) scan()
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: println() prints text and automatically appends a newline character, moving the cursor to the next line.
+Q: (Easy) Which statement prints text and moves to a new line?
+A) print()
+B) printf()
+C) println()
+D) write()
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: System.out is a PrintStream object used to send output to the console (standard output stream).
+Q: (Easy) Which object represents standard output?
+A) System.in
+B) System.write
+C) System.read
+D) System.out
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: System.in represents the standard input stream, typically connected to keyboard input.
+Q: (Easy) Which object represents standard input?
+A) System.in
+B) System.out
+C) System.scan
+D) System.read
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: printf() allows formatted output using format specifiers like %d, %f, and %s for structured printing.
+Q: (Easy) What does printf() allow?
+A) Input reading
+B) Formatted output
+C) File deletion
+D) Loop control
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: \n is an escape sequence that inserts a newline character in strings.
+Q: (Easy) Which symbol inserts a new line in printf?
+A) /n
+B) //n
+C) \n
+D) newline
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: \t inserts a horizontal tab space in the output.
+Q: (Easy) Which escape sequence prints a tab?
+A) \t
+B) \tab
+C) /t
+D) space
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: nextDouble() reads a floating-point number from input and returns a double value.
+Q: (Easy) Which method reads a decimal number?
+A) nextDouble()
+B) nextDecimal()
+C) readDouble()
+D) doubleRead()
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Output is the process of displaying or sending processed data to an external device such
+as a monitor.
+Q: (Easy) Output refers to:
+A) Saving memory
+B) Receiving keyboard data
+C) Deleting files
+D) Sending data to screen
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Input is the process of receiving data from the user or an external source into the program.
+Q: (Easy) Input refers to:
+A) Printing
+B) Executing
+C) Compiling
+D) Reading user data
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: println() prints numeric values directly; integers are not enclosed in quotation marks.
+Q: (Easy) System.out.println(5); prints:
+A) Error
+B) "5"
+C) 5
+D) null
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: next() reads input until it encounters whitespace (space, tab, or newline).
+Q: (Easy) Which reads a single word?
+A) nextLine()
+B) next()
+C) word()
+D) readWord()
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: %d formats and prints integer values.
+Q: (Easy) printf("%d", 5) prints:
+A) %d
+B) null
+C) Error
+D) 5
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: All escape sequences in Java start with a backslash (\), such as \n and \t.
+Q: (Easy) Escape sequences begin with:
+A) /
+B) %
+C) #
+D) \
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: To read keyboard input, a Scanner must be constructed with System.in.
+Q: (Easy) A Scanner must be connected to:
+A) System.out
+B) System.in
+C) System.write
+D) Console.print
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: Invalid input types result in runtime exceptions like InputMismatchException.
+Q: (Easy) Input errors usually cause:
+A) Exceptions
+B) Faster output
+C) Compilation success
+D) Optimization
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: The + operator concatenates strings with numbers.
+Q: (Medium) What is printed? System.out.println("Hello " + 5);
+A) Hello
+B) 5Hello
+C) Hello 5
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() parses and returns integer input from the user.
+Q: (Medium) What does this read? int x = sc.nextInt();
+A) A string
+B) A decimal
+C) An integer
+D) A character
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: Invalid input causes InputMismatchException.
+Q: (Medium) What happens if a user types text when nextInt() is expected?
+A) Program continues
+B) Value becomes 0
+C) Compilation error
+D) Runtime exception
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: printf() replaces format specifiers with the provided arguments in order.
+Q: (Medium) What is printed? System.out.printf("%d + %d", 2, 3);
+A) 5
+B) 2 + 3
+C) %d + %d
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() leaves a newline in the buffer, which nextLine() immediately consumes.
+Q: (Medium) What does nextLine() read after nextInt()?
+A) Compilation error
+B) Integer again
+C) Random value
+D) Remaining newline
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: String concatenation converts numeric values to text before combining.
+Q: (Medium) What is printed? System.out.println("Age: " + 20);
+A) Age:
+B) 20
+C) Age: 20
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: %.2f formats a floating-point number to two decimal places.
+Q: (Medium) Which format prints a decimal with 2 digits?
+A) %.2f
+B) %d
+C) %s
+D) %n
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: %n inserts a platform-independent newline in printf().
+Q: (Medium) Which prints a new line in printf?
+A) nextLine
+B) /n
+C) newline
+D) %n
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: When one operand is a string, Java converts the number to a string and concatenates.
+Q: (Medium) What is printed? System.out.println(3 + "4");
+A) 7
+B) 3
+C) Error
+D) 34
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: %s formats strings.
+Q: (Medium) printf("%s", "Java") prints:
+A) Error
+B) %s
+C) Java
+D) null
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: \n inserts a newline.
+Q: (Medium) What is printed? System.out.println("Line1\nLine2");
+A) One line
+B) Two lines
+C) Error
+D) null
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextBoolean reads true/false input.
+Q: (Medium) Which method reads a boolean?
+A) nextBool()
+B) bool()
+C) readBoolean()
+D) nextBoolean()
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Expression evaluates before printing.
+Q: (Medium) What is printed? System.out.printf("%d", 10/2);
+A) 10/2
+B) 5
+C) Error
+D) null
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextDouble reads decimal input.
+Q: (Medium) Which Scanner method reads a double?
+A) nextFloat()
+B) doubleRead()
+C) nextDouble()
+D) getDouble()
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: Boolean prints as true/false text.
+Q: (Medium) What is printed? System.out.println(true);
+A) true
+B) 1
+C) error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: next() reads until whitespace.
+Q: (Medium) next() stops reading at:
+A) newline only
+B) space
+C) tab only
+D) end of program
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: %f formats floating numbers.
+Q: (Medium) printf("%f", 2.5) prints:
+A) 2.5
+B) 2
+C) Error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Input mismatch happens during execution.
+Q: (Medium) Scanner input errors occur at:
+A) Compile time
+B) Design time
+C) Link time
+D) Runtime
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: println appends a newline.
+Q: (Medium) println automatically adds:
+A) Space
+B) Null
+C) Tab
+D) New line
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Buffer cleanup is required after numeric input.
+Q: (Medium) Mixing nextInt and nextLine requires:
+A) Extra newline handling
+B) Casting
+C) Compilation
+D) Nothing
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: x++ returns 5 then increments to 6; ++x increments to 7 before evaluation. Total = 5 + 7 = 12.
+Q: (Hard) int x = 5; System.out.println(x++ + ++x);
+A) 10
+B) 11
+C) 12
+D) 13
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: Arithmetic occurs first (30), then string concatenation proceeds left to right.
+Q: (Hard) System.out.println(10 + 20 + "30" + 40 + 50);
+A) 30304050
+B) 304050
+C) 303050
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: nextLine() reads the leftover newline, resulting in an empty string for name.
+Q: (Hard) nextInt() then nextLine() printing name-age;
+A) Juan-20
+B) Error
+C) 20-Juan
+D) -20
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Integer division occurs first (3), then formatted to two decimal places.
+Q: (Hard) System.out.printf("%.2f", 10/3);
+A) 3.33
+B) 3.33f
+C) 3
+D) 3.00
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Multiplication occurs first (6), then string concatenation proceeds left to right.
+Q: (Hard) System.out.println("5" + 2 * 3 + 4);
+A) 564
+B) 5125
+C) 5104
+D) 5 10 4
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Cannot multiply an integer by a string; this causes a compilation error.
+Q: (Hard) System.out.println((5 + 2) * (3 + "4"));
+A) 49
+B) 21 4
+C) Error
+D) 74
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt cannot read decimal → InputMismatchException.
+Q: (Hard) double then nextInt() with decimal input;
+A) Runtime exception
+B) x = 3
+C) Compilation error
+D) x = 0
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Casting removes decimals → 2 + 3 = 5.
+Q: (Hard) System.out.printf("%d", (int)2.9 + (int)3.9);
+A) 5
+B) 6
+C) 7
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Java evaluates from left to right. 1 + 2 performs arithmetic first (3). Once "3" is encountered, all subsequent operations become string concatenation.
+Q: (Hard) System.out.println(1 + 2 + "3" + 4 + 5);
+A) 33 45
+B) 645
+C) 3345
+D) 3345
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Calling sc.close() closes the underlying input stream (System.in). Any further attempt to read using the same Scanner results in an IllegalStateException at runtime.
+Q: (Hard) Scanner closed then nextInt();
+A) Reads normally
+B) Compilation error
+C) Runtime exception
+D) b becomes 0
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: %f format specifier requires a floating-point argument (double or float), causing an IllegalFormatConversionException at runtime.
+Q: (Hard) System.out.printf("%f", 5/2);
+A) 2.50
+B) 2.000000
+C) Error
+D) 2
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: When concatenated with a string, null is converted into the literal text "null". No exception occurs because concatenation handles null references safely.
+Q: (Hard) String s = null; System.out.println(s + " Java");
+A) Exception
+B) Java
+C) Error
+D) null Java
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: hasNextInt() checks whether the next token is a valid integer before reading it. If false, the program executes the else branch, preventing an InputMismatchException.
+Q: (Hard) if(sc.hasNextInt()) ... else print Invalid;
+A) Crash
+B) Invalid
+C) 0
+D) Exception
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() leaves a newline character in the buffer. Calling an extra nextLine() clears the buffer, preventing skipped input issues when reading strings afterward.
+Q: (Hard) Which is safest when mixing numeric and string input?
+A) nextLine first always
+B) Use print instead
+C) Avoid nextLine
+D) Clear newline after numeric read
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Operator precedence applies first: 3 * 4 = 12. Then concatenation proceeds left to right.
+Q: (Hard) System.out.println("Result: " + 2 + 3 * 4);
+A) Result: 14
+B) Result: 212
+C) Result: 214
+D) Result: 20
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: %f expects a floating-point value. Passing an integer causes an IllegalFormatConversionException at runtime.
+Q: (Hard) System.out.printf("%f", 5);
+A) 5
+B) 5.0
+C) Error
+D) null
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: %s replaces with the string "Age" and %d replaces with the integer 20. Format specifiers are filled in order of arguments.
+Q: (Hard) printf("%s %d", "Age", 20) prints:
+A) Age 20
+B) %s %d
+C) Error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: 5/2 performs integer division first, resulting in 2. %d correctly formats and prints the integer value.
+Q: (Hard) System.out.printf("%d", 5/2);
+A) 2.5
+B) null
+C) Error
+D) 2
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: \t inserts a horizontal tab space between characters.
+Q: (Hard) System.out.println("A\tB");
+A) A B
+B) Error
+C) AB
+D) A B (tab spacing)
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: If non-numeric input is provided when nextInt() expects an integer, Java throws an InputMismatchException during program execution.
+Q: (Hard) What happens if nextInt() reads "abc"?
+A) Returns 0
+B) Runtime exception
+C) Converts automatically
+D) Compilation error
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: Scanner is the standard Java class used to read user input from various sources, including the keyboard via System.in. It provides methods like nextInt(), nextLine(), and nextDouble() for typed input handling.
+Q: (Easy) Which class is commonly used to read user input in Java?
+A) Printer
+B) ConsoleFile
+C) Reader
+D) Scanner
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: The Scanner class belongs to the java.util package, which contains utility classes. It must be imported using import java.util.Scanner;.
+Q: (Easy) Which package contains the Scanner class?
+A) java.output
+B) java.util
+C) java.io
+D) java.lang
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() reads and returns an integer value from the input stream. It throws an InputMismatchException if the input is not a valid integer.
+Q: (Easy) Which method reads an integer using Scanner?
+A) nextInt()
+B) readInt()
+C) getInt()
+D) intRead()
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: nextLine() reads an entire line of text, including spaces, until a newline character is encountered.
+Q: (Easy) Which method reads a full line of text?
+A) next()
+B) getLine()
+C) readLine()
+D) nextLine()
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: print() outputs text to the console without automatically adding a newline, so the next output continues on the same line.
+Q: (Easy) Which statement prints text without a new line?
+A) print()
+B) println()
+C) printf()
+D) scan()
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: println() prints text and automatically appends a newline character, moving the cursor to the next line.
+Q: (Easy) Which statement prints text and moves to a new line?
+A) print()
+B) printf()
+C) println()
+D) write()
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: System.out is a PrintStream object used to send output to the console (standard output stream).
+Q: (Easy) Which object represents standard output?
+A) System.in
+B) System.write
+C) System.read
+D) System.out
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: System.in represents the standard input stream, typically connected to keyboard input.
+Q: (Easy) Which object represents standard input?
+A) System.in
+B) System.out
+C) System.scan
+D) System.read
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: printf() allows formatted output using format specifiers like %d, %f, and %s for structured printing.
+Q: (Easy) What does printf() allow?
+A) Input reading
+B) Formatted output
+C) File deletion
+D) Loop control
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: \n is an escape sequence that inserts a newline character in strings.
+Q: (Easy) Which symbol inserts a new line in printf?
+A) /n
+B) //n
+C) \n
+D) newline
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: \t inserts a horizontal tab space in the output.
+Q: (Easy) Which escape sequence prints a tab?
+A) \t
+B) \tab
+C) /t
+D) space
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: nextDouble() reads a floating-point number from input and returns a double value.
+Q: (Easy) Which method reads a decimal number?
+A) nextDouble()
+B) nextDecimal()
+C) readDouble()
+D) doubleRead()
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Output is the process of displaying or sending processed data to an external device such as a monitor.
+Q: (Easy) Output refers to:
+A) Saving memory
+B) Receiving keyboard data
+C) Deleting files
+D) Sending data to screen
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Input is the process of receiving data from the user or an external source into the program.
+Q: (Easy) Input refers to:
+A) Printing
+B) Executing
+C) Compiling
+D) Reading user data
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: println() prints numeric values directly; integers are not enclosed in quotation marks.
+Q: (Easy) System.out.println(5); prints:
+A) Error
+B) "5"
+C) 5
+D) null
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: next() reads input until it encounters whitespace (space, tab, or newline).
+Q: (Easy) Which reads a single word?
+A) nextLine()
+B) next()
+C) word()
+D) readWord()
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: %d formats and prints integer values.
+Q: (Easy) printf("%d", 5) prints:
+A) %d
+B) null
+C) Error
+D) 5
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: All escape sequences in Java start with a backslash (\), such as \n and \t.
+Q: (Easy) Escape sequences begin with:
+A) /
+B) %
+C) #
+D) \
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: To read keyboard input, a Scanner must be constructed with System.in.
+Q: (Easy) A Scanner must be connected to:
+A) System.out
+B) System.in
+C) System.write
+D) Console.print
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: Invalid input types result in runtime exceptions like InputMismatch Exception.
+Q: (Easy) Input errors usually cause:
+A) Exceptions
+B) Faster output
+C) Compilation success
+D) Optimization
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: The + operator concatenates strings with numbers.
+Q: (Medium) What is printed? System.out.println("Hello" + 5);
+A) Hello
+B) 5Hello
+C) Hello 5
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() parses and returns integer input from the user.
+Q: (Medium) What does this read? int x=sc.nextlnt();
+A) A string
+B) A decimal
+C) An integer
+D) A character
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: Invalid input causes InputMismatchException.
+Q: (Medium) What happens if a user types text when nextInt() is expected?
+A) Program continues
+B) Value becomes 0
+C) Compilation error
+D) Runtime exception
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: printf() replaces format specifiers with the provided arguments in order.
+Q: (Medium) What is printed? System.out.printf("%d + %d", 2, 3);
+A) 5
+B) 2+3
+C) %d + %d
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() leaves a newline in the buffer, which nextLine() immediately consumes.
+Q: (Medium) What does nextLine() read after nextInt()?
+A) Compilation error
+B) Integer again
+C) Random value
+D) Remaining newline
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: String concatenation converts numeric values to text before combining.
+Q: (Medium) What is printed? System.out.println("Age: " + 20);
+A) Age:
+B) 20
+C) Age: 20
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: %.2f formats a floating-point number to two decimal places.
+Q: (Medium) Which format prints a decimal with 2 digits?
+A) %.2f
+B) %d
+C) %s
+D) %n
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: %n inserts a platform-independent newline in printf().
+Q: (Medium) Which prints a new line in printf?
+A) nextLine
+B) /n
+C) newline
+D) %n
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: When one operand is a string, Java converts the number to a string and concatenates.
+Q: (Medium) What is printed? System.out.println(3+"4");
+A) 7
+B) 3
+C) Error
+D) 34
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: %s formats strings.
+Q: (Medium) printf("%s", "Java") prints:
+A) Error
+B) %s
+C) Java
+D) null
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: \n inserts a newline.
+Q: (Medium) What is printed? System.out.println("Line1\nLine2");
+A) One line
+B) Two lines
+C) Error
+D) null
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextBoolean reads true/false input.
+Q: (Medium) Which method reads a boolean?
+A) nextBool()
+B) bool()
+C) readBoolean()
+D) nextBoolean()
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Expression evaluates before printing.
+Q: (Medium) What is printed? System.out.printf("%d", 10/2);
+A) 10/2
+B) 5
+C) Error
+D) null
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextDouble reads decimal input.
+Q: (Medium) Which Scanner method reads a double?
+A) nextFloat()
+B) doubleRead()
+C) nextDouble()
+D) getDouble()
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: Boolean prints as true/false text.
+Q: (Medium) What is printed? System.out.println(true);
+A) true
+B) 1
+C) error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: next() reads until whitespace.
+Q: (Medium) next() stops reading at:
+A) newline only
+B) space
+C) tab only
+D) end of program
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: %f formats floating numbers.
+Q: (Medium) printf("%f", 2.5) prints:
+A) 2.5
+B) 2
+C) Error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Input mismatch happens during execution.
+Q: (Medium) Scanner input errors occur at:
+A) Compile time
+B) Design time
+C) Link time
+D) Runtime
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: printin appends a newline.
+Q: (Medium) printin automatically adds:
+A) Space
+B) Null
+C) Tab
+D) New line
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Buffer cleanup is required after numeric input.
+Q: (Medium) Mixing nextInt and nextLine requires:
+A) Extra newline handling
+B) Casting
+C) Compilation
+D) Nothing
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: x++ returns 5 then increments to 6; ++x increments to 7 before evaluation. Total = 5 + 7 = 12.
+Q: (Hard) int x = 5; System.out.println(x++ + ++x);
+A) 10
+B) 11
+C) 12
+D) 13
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: Arithmetic occurs first (30), then string concatenation proceeds left to right.
+Q: (Hard) System.out.println(10 + 20 + "30" + 40 + 50);
+A) 30304050
+B) 304050
+C) 303050
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: nextLine() reads the leftover newline, resulting in an empty string for name.
+Q: (Hard) nextInt() then nextLine() printing name-age;
+A) Juan-20
+B) Error
+C) 20-Juan
+D) -20
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Integer division occurs first (3), then formatted to two decimal places.
+Q: (Hard) System.out.printf("%.2f", 10/3);
+A) 3.33
+B) 3.33f
+C) 3
+D) 3.00
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Multiplication occurs first (6), then string concatenation proceeds left to right.
+Q: (Hard) System.out.println("5" + 2 * 3 + 4);
+A) 564
+B) 5125
+C) 5104
+D) 5 10 4
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Cannot multiply an integer by a string; this causes a compilation error.
+Q: (Hard) System.out.println((5 + 2) * (3 + "4"));
+A) 49
+B) 21 4
+C) Error
+D) 74
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt cannot read decimal -> InputMismatchException.
+Q: (Hard) double then nextInt() with decimal input;
+A) Runtime exception
+B) x = 3
+C) Compilation error
+D) x = 0
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Casting removes decimals -> 2 + 3 = 5.
+Q: (Hard) System.out.printf("%d", (int)2.9 + (int)3.9);
+A) 5
+B) 6
+C) 7
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: Java evaluates from left to right. 1 + 2 performs arithmetic first (3). Once "3" is encountered, all subsequent operations become string concatenation.
+Q: (Hard) System.out.println(1 + 2 + "3" + 4 + 5);
+A) 33 45
+B) 645
+C) 3345
+D) 3345
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Calling sc.close() closes the underlying input stream (System.in). Any further attempt to read using the same Scanner results in an IllegalStateException at runtime.
+Q: (Hard) Scanner closed then nextInt();
+A) Reads normally
+B) Compilation error
+C) Runtime exception
+D) b becomes 0
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: %f format specifier requires a floating-point argument (double or float), causing an IllegalFormatConversionException at runtime.
+Q: (Hard) System.out.printf("%f", 5/2);
+A) 2.50
+B) 2.000000
+C) Error
+D) 2
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: When concatenated with a string, null is converted into the literal text "null". No exception occurs because concatenation handles null references safely.
+Q: (Hard) String s = null; System.out.println(s + " Java");
+A) Exception
+B) Java
+C) Error
+D) null Java
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: hasNextInt() checks whether the next token is a valid integer before reading it. If false, the program executes the else branch, preventing an InputMismatchException.
+Q: (Hard) if(sc.hasNextInt()) ... else print Invalid;
+A) Crash
+B) Invalid
+C) 0
+D) Exception
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: nextInt() leaves a newline character in the buffer. Calling an extra nextLine() clears the buffer, preventing skipped input issues when reading strings afterward.
+Q: (Hard) Which is safest when mixing numeric and string input?
+A) nextLine first always
+B) Use print instead
+C) Avoid nextLine
+D) Clear newline after numeric read
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: Operator precedence applies first: 3 * 4 = 12. Then concatenation proceeds left to right.
+Q: (Hard) System.out.println("Result: " + 2 + 3 * 4);
+A) Result: 14
+B) Result: 212
+C) Result: 214
+D) Result: 20
+Answer: 1
+
+Level: 1
+Topic: Input/Output
+Explanation: %f expects a floating-point value. Passing an integer causes an IllegalFormatConversionException at runtime.
+Q: (Hard) System.out.printf("%f", 5);
+A) 5
+B) 5.0
+C) Error
+D) null
+Answer: 2
+
+Level: 1
+Topic: Input/Output
+Explanation: %s replaces with the string "Age" and %d replaces with the integer 20. Format specifiers are filled in order of arguments.
+Q: (Hard) printf("%s %d", "Age", 20) prints:
+A) Age 20
+B) %s %d
+C) Error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Input/Output
+Explanation: 5/2 performs integer division first, resulting in 2. %d correctly formats and prints the integer value.
+Q: (Hard) System.out.printf("%d", 5/2);
+A) 2.5
+B) null
+C) Error
+D) 2
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: \t inserts a horizontal tab space between characters.
+Q: (Hard) System.out.println("A\tB");
+A) A B
+B) Error
+C) AB
+D) A B (tab spacing)
+Answer: 3
+
+Level: 1
+Topic: Input/Output
+Explanation: If non-numeric input is provided when nextInt() expects an integer, Java throws an InputMismatchException during program execution.
+Q: (Hard) What happens if nextInt() reads "abc"?
+A) Returns 0
+B) Runtime exception
+C) Converts automatically
+D) Compilation error
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: The int data type stores whole numbers without fractional values.
+Q: (Easy) Which data type is used in Java to store integer values without decimal points?
+A) float
+B) double
+C) int
+D) char
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: The final keyword prevents a variable's value from being changed after initialization.
+Q: (Easy) Which keyword is used to declare a constant variable in Java?
+A) const
+B) final
+C) static
+D) fixed
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: A boolean variable defaults to false when not explicitly initialized.
+Q: (Easy) What is the default value of a boolean variable in Java?
+A) true
+B) false
+C) 0
+D) null
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: The char data type stores a single Unicode character.
+Q: (Easy) Which data type is used to store a single character in Java?
+A) String
+B) char
+C) character
+D) byte
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Every Java statement must end with a semicolon.
+Q: (Easy) Which symbol is used to end a statement in Java?
+A).
+B);
+C):
+D),
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Decimal values are stored using floating-point types such as float or double.
+Q: (Easy) Which data type is used to store decimal numbers in Java?
+A) int
+B) boolean
+C) char
+D) float / double
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: The default numeric value for int variables is zero.
+Q: (Easy) What is the default value of an int variable?
+A) 0
+B) 1
+C) null
+D) undefined
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Variable names cannot start with numbers or contain spaces or hyphens.
+Q: (Easy) Which of the following is a valid variable name in Java?
+A) 2value
+B) value-1
+C) value 1
+D) value1
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: The long data type stores large integers using 64 bits.
+Q: (Easy) Which data type occupies 64 bits in Java?
+A) float
+B) int
+C) short
+D) long
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: A byte always occupies 8 bits in Java.
+Q: (Easy) What is the size of a byte data type?
+A) 8 bits
+B) 4 bits
+C) 16 bits
+D) 32 bits
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: A variable is declared by specifying its data type followed by the variable name.
+Q: (Easy) Which element is required to declare a variable in Java?
+A) define
+B) var
+C) data
+D) data type
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Float stores decimal values but with lower precision than double.
+Q: (Easy) Which primitive type stores fractional numbers with less precision?
+A) float
+B) double
+C) int
+D) long
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: The default value of char is the Unicode null character.
+Q: (Easy) What is the default value of a char variable?
+A) '0'
+B) null
+C) '\u0000'
+D) blank space
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Variable names cannot start with digits or contain spaces or hyphens.
+Q: (Easy) Which of the following is a correct declaration?
+A) int 1num;
+B) int num1;
+C) int num-1;
+D) int num 1;
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Byte stores integers in the range-128 to 127.
+Q: (Easy) Which primitive type stores very small integer values?
+A) byte
+B) short
+C) long
+D) double
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Double provides higher precision for decimal numbers.
+Q: (Easy) Which data type is used to store very large decimal values?
+A) float
+B) int
+C) short
+D) double
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Boolean stores logical values, not numbers.
+Q: (Easy) Which of the following is not a numeric data type?
+A) int
+B) float
+C) boolean
+D) double
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Local variables must be initialized before use.
+Q: (Easy) What happens if a variable is declared but not initialized inside a method?
+A) Gets default value
+B) Compilation error
+C) Runtime error
+D) Becomes zero
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Boolean stores only true or false values.
+Q: (Easy) Which type stores only true or false?
+A) bit
+B) logical
+C) boolean
+D) binary
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Decimal numbers are treated as floating-point values.
+Q: (Easy) Which of the following is a floating-point literal?
+A) 10
+B) 10L
+C) 10.5
+D) '10'
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Java automatically converts int to double through implicit widening conversion.
+Q: (Medium) What will be the output? int a=5; double b=a; System.out.println(b);
+A) 5
+B) Runtime error
+C) Compilation error
+D) 5.0
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Assigning a decimal value to an int without casting causes a type mismatch error.
+Q: (Medium) Which of the following causes a compilation error?
+A) int a=10;
+B) double d=10;
+C) int a=10.5;
+D) float f=10f;
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Unicode value 65 corresponds to the character 'A'.
+Q: (Medium) What is the output? char c=65; System.out.println(c);
+A) 65
+B) Runtime error
+C) Compilation error
+D) A
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Narrowing conversions like double to int require manual casting.
+Q: (Medium) Which conversion requires explicit casting?
+A) double -> int
+B) int -> double
+C) int -> long
+D) byte -> short
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Casting removes the decimal part without rounding.
+Q: (Medium) What is the output? int x=(int)5.9; System.out.println(x);
+A) 5
+B) 6
+C) 5.9
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Boolean variables represent logical values true or false.
+Q: (Medium) Which variable type stores true or false values only?
+A) bit
+B) flag
+C) boolean
+D) binary
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Java automatically performs widening conversion.
+Q: (Medium) What happens when a smaller data type is assigned to a larger one?
+A) Compilation error
+B) Explicit casting required
+C) Data loss
+D) Automatic conversion
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Double uses 64 bits and provides higher precision than float.
+Q: (Medium) Which is the largest primitive data type in Java?
 A) int
 B) float
 C) long
@@ -668,656 +2081,1532 @@ D) double
 Answer: 3
 
 Level: 1
-Topic: Syntax
-Q: (Hard) Which of these is not a Java keyword?
-A) static
-B) private
-C) goto
-D) include
+Topic: Data types and Variables
+Explanation: Arithmetic promotes byte to int, so casting back to byte is required.
+Q: (Medium) What will be the output? byte b=10; b=(byte)(b*2); System.out.println(b);
+A) 20
+B) Compilation error
+C) Runtime error
+D) 10
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: String is a class, not a primitive type.
+Q: (Medium) Which of the following is not a primitive data type?
+A) int
+B) float
+C) String
+D) char
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Integer division happens first (7/2=3), then converted to double.
+Q: (Medium) What is the output? int x=7; double y=x/2; System.out.println(y);
+A) 3.5
+B) 3.0
+C) 3
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Widening converts smaller types to larger types automatically.
+Q: (Medium) Which conversion is widening?
+A) double -> int
+B) float -> byte
+C) long -> short
+D) int -> double
 Answer: 3
 
 Level: 1
-Topic: Type Casting
-Q: (Hard) What will be the output?
-System.out.println((int) (3.6 + 2.5));
+Topic: Data types and Variables
+Explanation: Characters are stored as numbers, so 'A'+1 becomes 'B'.
+Q: (Medium) What will be printed? char ch='A'+1; System.out.println(ch);
+A) A
+B) B
+C) 66
+D) Error
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Double uses more bits and provides higher precision.
+Q: (Medium) Which statement is correct?
+A) float is larger than double
+B) double has more precision
+C) int stores decimals
+D) byte stores characters
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Casting long to int works if value fits range.
+Q: (Medium) What is the Output? long a=10; int b=(int)a; System.out.println(b);
+A) 10
+B) Error
+C) Runtime error
+D) 0
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Long constants need L to differentiate from int.
+Q: (Medium) Which requires suffix 'L'?
+A) int literal
+B) long literal
+C) float literal
+D) double literal
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Integer is automatically widened to float.
+Q: (Medium) What happens here? float f=5;
+A) Error
+B) Works
+C) Needs cast
+D) Runtime error
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Parentheses are used for casting.
+Q: (Medium) Which operator performs explicit conversion?
+A) ()
+B) =
+C) ::
+D) ->
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Post-increment prints old value first.
+Q: (Medium) What is the Output? int a=5; System.out.println(a++);
 A) 5
 B) 6
-C) 7
-D) 8
-Answer: 2
+C) Error
+D) 4
+Answer: 0
 
 Level: 1
-Topic: Strings
-Q: (Hard) What is the result of this?
-System.out.println("A" + 1);
-A) A1
-B) 66
-C) 65
+Topic: Data types and Variables
+Explanation: Arithmetic operations promote byte to int.
+Q: (Medium) Which is true about byte arithmetic?
+A) Result stays byte
+B) Converts to int
+C) Converts to long
 D) Error
-Answer: 0
-
-Level: 1
- Topic: Syntax
- Q: (Easy) Which symbol starts a code block in Java?
- A) {
- B) [
- C) (
- D) <
- Answer: 0
-Level: 1
- Topic: Variables
- Q: (Easy) What happens if you use a local variable before initializing it?
- A) It defaults to 0
- B) It defaults to null
- C) Compiler error
- D) Runtime exception
- Answer: 2
-Level: 1
- Topic: Data Types
- Q: (Easy) Which type stores true or false values?
- A) int
- B) boolean
- C) char
- D) byte
- Answer: 1
-Level: 1
- Topic: Output
- Q: (Easy) Which method prints text followed by a newline?
- A) System.out.println()
- B) System.out.print()
- C) System.out.printf()
- D) System.out.write()
- Answer: 0
-Level: 1
- Topic: Comments
- Q: (Easy) Which starts a Javadoc comment?
- A) /** ... /
- B) //
- C) / ... */
- D) <!— ... —>
- Answer: 0
-Level: 1
- Topic: Operators
- Q: (Easy) Which is the assignment operator in Java?
- A) =
- B) ==
- C) :=
- D) equals()
- Answer: 0
-Level: 1
- Topic: Strings
- Q: (Easy) Which method compares two strings for exact content (case-sensitive)?
- A) equals()
- B) ==
- C) compareToIgnoreCase()
- D) equalsIgnoreCase()
- Answer: 0
-Level: 1
- Topic: Input
- Q: (Easy) Which creates a Scanner to read from the keyboard?
- A) new Scanner(System.in);
- B) new Scanner();
- C) Scanner(System);
- D) System.in.Scanner();
- Answer: 0
-Level: 1
- Topic: Syntax
- Q: (Easy) What is the correct file extension for a Java source file?
- A) .jav
- B) .java
- C) .class
- D) .jar
- Answer: 1
-Level: 1
- Topic: Variables
- Q: (Easy) Which is a valid char declaration and initialization?
- A) char grade = 'A';
- B) char grade = "A";
- C) char grade = A;
- D) char 'A' = grade;
- Answer: 0
-Level: 1
- Topic: Data Types
- Q: (Medium) What is the range of a byte in Java?
- A) –128 to 127
- B) 0 to 255
- C) –255 to 255
- D) –32,768 to 32,767
- Answer: 0
-Level: 1
- Topic: Operators
- Q: (Medium) What is printed by System.out.println(10 / 3.0); ?
- A) 3
- B) 3.0
- C) 3.3333333333333335
- D) Error
- Answer: 2
-Level: 1
- Topic: Strings
- Q: (Medium) What is the output of "Java".substring(1, 3)?
- A) Ja
- B) av
- C) va
- D) ava
- Answer: 1
-Level: 1
- Topic: Type Casting
- Q: (Medium) What is printed here? int n = 'A'; System.out.println(n);
- A) 64
- B) 65
- C) 'A'
- D) Error
- Answer: 1
-Level: 1
- Topic: Input
- Q: (Medium) After calling nextInt(), what should you do before reading a full line with nextLine()?
- A) Call next()
- B) Call nextLine() once to consume the newline
- C) Nothing extra
- D) Close and reopen the Scanner
- Answer: 1
-Level: 1
- Topic: Output
- Q: (Medium) Which printf specifier prints a floating number with two decimals?
- A) %.2f
- B) %2f
- C) %.02
- D) %f2
- Answer: 0
-Level: 1
- Topic: Syntax
- Q: (Medium) Which access level makes a member visible only within its package?
- A) public
- B) private
- C) protected
- D) no modifier (package-private)
- Answer: 3
-Level: 1
- Topic: Operators
- Q: (Medium) What does this print? int i = 3; System.out.println(i++);
- A) 3
- B) 4
- C) Error
- D) NaN
- Answer: 0
-Level: 1
- Topic: Variables
- Q: (Medium) Which declares an array of 5 integers?
- A) int a(5);
- B) int[] a = new int[5];
- C) int a = [5]int;
- D) array<int> a(5);
- Answer: 1
-Level: 1
- Topic: Strings
- Q: (Medium) Result of "abc".equalsIgnoreCase("ABC")?
- A) true
- B) false
- C) "abc"
- D) Error
- Answer: 0
-Level: 1
- Topic: Operators
- Q: (Hard) Result of (5 > 3) ? 10 : 20;
- A) 10
- B) 20
- C) true
- D) false
- Answer: 0
-Level: 1
- Topic: Type Casting
- Q: (Hard) Which cast is narrowing and may lose precision?
- A) int → double
- B) double → float
- C) byte → short
- D) char → int
- Answer: 1
-Level: 1
- Topic: Syntax
- Q: (Hard) Which statement is true about overloading main?
- A) You cannot overload main at all
- B) You can overload main, but the JVM starts with public static void main(String[] args)
- C) main may return int instead of void
- D) main must be private to run
- Answer: 1
-Level: 1
- Topic: Strings
- Q: (Hard) What does this print? String s = " hi "; System.out.println(s.trim().length());
- A) 2
- B) 4
- C) 6
- D) 0
- Answer: 0
-Level: 1
- Topic: Output
- Q: (Hard) What is printed by System.out.printf("%d %s", 7, "up"); ?
- A) 7 up
- B) 7up
- C) 7 up\n
- D) Error
- Answer: 0
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which keyword declares a package at the top of a Java file?
-A) package
-B) import
-C) namespace
-D) module
-Answer: 0
-
-Level: 1
-Topic: Variables
-Q: (Easy) Which is a correct multiple declaration and initialization?
-A) int a = 1; int b = 2;
-B) int a, b = 2 = 1;
-C) int a = 1, b = 2;
-D) int (a=1, b=2);
-Answer: 2
-
-Level: 1
-Topic: Data Types
-Q: (Easy) Which primitive stores a 64-bit whole number?
-A) int
-B) long
-C) short
-D) byte
 Answer: 1
 
 Level: 1
-Topic: Output
-Q: (Easy) Which method supports format specifiers like %d and %.2f?
-A) System.out.print()
-B) System.out.write()
-C) System.out.printf()
-D) System.print()
-Answer: 2
-
-Level: 1
-Topic: Comments
-Q: (Easy) Which of these will the compiler ignore?
-A) /* comment */
-B) / comment /
-C) <!- comment ->
-D) //-comment-//
-Answer: 0
-
-Level: 1
-Topic: Operators
-Q: (Easy) Which operator computes the remainder?
-A) /
-B) %
-C) *
-D) ^
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Easy) Which method converts a string to lowercase?
-A) toLower()
-B) lower()
-C) toLowerCase()
-D) lowercase()
-Answer: 2
-
-Level: 1
-Topic: Input
-Q: (Easy) How do you read an int with Scanner named sc?
-A) sc.readInt()
-B) sc.next()
-C) sc.nextInt()
-D) sc.getInt()
-Answer: 2
-
-Level: 1
-Topic: Syntax
-Q: (Easy) Which symbol closes a Java code block?
-A) )
-B) ]
-C) }
-D) >
-Answer: 2
-
-Level: 1
-Topic: Variables
-Q: (Easy) Which is a valid long literal?
-A) 100l
-B) 100L
-C) L100
-D) 100Long
-Answer: 1
-
-Level: 1
-Topic: Data Types
-Q: (Easy) Default value of a boolean field (not local) is:
-A) true
-B) false
-C) null
-D) 0
-Answer: 1
-
-Level: 1
-Topic: Type Casting
-Q: (Easy) Which performs an explicit cast from long to int?
-A) int x = long y;
-B) int x = (int) y;
-C) (int x) = y;
-D) cast<int>(y);
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Easy) Which increments a variable by 1 (postfix)?
-A) ++i
-B) i++
-C) i+=0
-D) i=+1
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Easy) Which checks if a substring exists?
-A) includes()
-B) contains()
-C) has()
-D) find()
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Easy) Which escape sequence represents a double quote inside a string literal?
-A) \q
-B) "
-C) ''
-D) ""
-Answer: 1
-
----
-
-Level: 1
-Topic: Syntax
-Q: (Medium) Which access modifier restricts visibility to the same class only?
-A) public
-B) private
-C) protected
-D) default
-Answer: 1
-
-Level: 1
-Topic: Variables
-Q: (Medium) Which is valid for a constant?
-A) final int X; X = 5;
-B) final int X = 5;
-C) int final X = 5;
-D) const int X = 5;
-Answer: 1
-
-Level: 1
-Topic: Data Types
-Q: (Medium) How many bits are in a double?
-A) 32
-B) 48
-C) 64
-D) 128
-Answer: 2
-
-Level: 1
-Topic: Type Casting
-Q: (Medium) Which converts a String to a double?
-A) Double.parse()
-B) Double.parseDouble()
-C) parseDouble(String)
-D) String.toDouble()
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) Result of `4 + 6 / 2 * 3`?
-A) 15
-B) 13
-C) 12
-D) 9
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Medium) Which compares references, not contents?
-A) equals()
-B) compareTo()
-C) ==
-D) equalsIgnoreCase()
-Answer: 2
-
-Level: 1
-Topic: Input
-Q: (Medium) What does `Scanner.next()` return?
-A) Entire line including newline
-B) Next token delimited by whitespace
-C) Next character
-D) Next integer
-Answer: 1
-
-Level: 1
-Topic: Output
-Q: (Medium) Platform-independent newline in printf is:
-A) '\ n'
-B) '\ r \ n'
-C) '%n'
-D) '\ t'
-Answer: 2
-
-Level: 1
-Topic: Comments
-Q: (Medium) Which block is a Javadoc comment?
-A) /* ... */
-B) /** ... */
-C) // ...
-D) <!— ... —>
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Medium) The ternary operator syntax is:
-A) cond : a ? b
-B) a ? b : cond
-C) cond ? a : b
-D) a : cond ? b
-Answer: 2
-
-Level: 1
-Topic: Type Casting
-Q: (Medium) What happens for `Integer.parseInt("abc")`?
-A) 0
-B) "abc"
-C) NumberFormatException
-D) IllegalArgumentException
-Answer: 2
-
-Level: 1
-Topic: Syntax
-Q: (Medium) Which is a valid Unicode escape for 'A'?
-A) '\u0041'
-B) "u0041"
-C) \u0041
-D) '0041u'
-Answer: 0
-
-Level: 1
-Topic: Variables
-Q: (Medium) Which is a valid float literal?
-A) 3.14
-B) 3.14F
-C) 3,14f
-D) 3.14D
-Answer: 1
-
-Level: 1
-Topic: Strings
-Q: (Medium) What does `"hello".indexOf("z")` return?
-A) 0
+Topic: Data types and Variables
+Explanation: The remainder operator keeps the sign of the dividend.
+Q: (Hard) What will be the output? int x=-5 % 2; System.out.println(x);
+A) -1
 B) 1
-C) -1
+C) 0
 D) Error
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Since both operands are integers, integer division occurs first (10/4=2), then stored as 2.0.
+Q: (Hard) What will be the result of the following statement? double d=10/4; System.out.println(d);
+A) 2.5
+B) 2
+C) 2.0
+D) Compilation error
 Answer: 2
 
 Level: 1
-Topic: Data Types
-Q: (Medium) Size of `char` in Java?
-A) 8 bits
-B) 16 bits
-C) 32 bits
-D) 64 bits
+Topic: Data types and Variables
+Explanation: Local variables must be explicitly initialized before being accessed.
+Q: (Hard) Which statement about local variables is correct?
+A) They get default values automatically
+B) They must be initialized before use
+C) They are stored in heap memory
+D) They are static by default
 Answer: 1
 
----
+Level: 1
+Topic: Data types and Variables
+Explanation: The char is promoted to its Unicode value (65), so 65+1=66 is printed.
+Q: (Hard) What will be printed? char ch='A'; System.out.println(ch+1);
+A) A1
+B) B
+C) Compilation error
+D) 66
+Answer: 3
 
 Level: 1
-Topic: Syntax
-Q: (Hard) Which import lets you call `sqrt(9)` without `Math.`?
-A) import java.lang.Math;
-B) import static java.lang.Math.sqrt;
-C) import static java.lang.Math.*;
-D) import java.math.*;
+Topic: Data types and Variables
+Explanation: Because one operand is double, floating-point division occurs.
+Q: (Hard) What will be printed? System.out.println(5/2.0);
+A) 2
+B) Error
+C) 2.0
+D) 2.5
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Integer division happens first (9/2=4), then stored as 4.0.
+Q: (Hard) What will be the output? double d=9/2; System.out.println(d);
+A) 4.5
+B) 4
+C) 4.0
+D) Compilation error
 Answer: 2
 
 Level: 1
-Topic: Operators
-Q: (Hard) What prints?
+Topic: Data types and Variables
+Explanation: Integer addition occurs first (10+20=30), then string concatenation continues from left to right.
+Q: (Hard) What will be the output of the following code? System.out.println(10+20+"Java"+30+40);
+A) 30Java3040
+B) 1020Java3040
+C) 30Java70
+D) Compilation error
+Answer: 0
 
-```
-int i = 1;
-int y = i++ + ++i; 
-System.out.println(y);
-```
+Level: 1
+Topic: Data types and Variables
+Explanation: Addition happens first, then string concatenation.
+Q: (Hard) What will be the output? System.out.println(1 + 2 + "3");
+A) 33
+B) 123
+C) 6
+D) 15
+Answer: 0
 
-A) 2
-B) 3
-C) 4
+Level: 1
+Topic: Data types and Variables
+Explanation: Fractional data is truncated when converting to int.
+Q: (Hard) Which conversion definitely loses information?
+A) int -> long
+B) long -> double
+C) short -> int
+D) double -> int
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Compound assignment automatically casts to int.
+Q: (Hard) What will be printed? int a = 1; a += 2.5; System.out.println(a);
+A) 3
+B) 3.5
+C) Error
+D) 2
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Primitive variables store actual values, not object references.
+Q: (Hard) Which statement is true about primitive variables?
+A) Stored in heap memory
+B) Stored as references
+C) Stored directly as values
+D) Immutable objects
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Instant.now() returns the current timestamp from the UTC timeline.
+Q: (Hard) Which method returns the current moment in UTC in modern Java?
+A) Time.getUTC();
+B) Date.getUTC();
+C) Instant.now();
+D) Timezon.getUTC();
+Answer: 2
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Multiplication has higher precedence than addition, so 2x3 is evaluated first.
+Q: (Hard) What will be the output? System.out.println(5 + 2 * 3);
+A) 21
+B) 11
+C) 13
+D) 16
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Floating-point types cause rounding errors; BigDecimal is recommended instead.
+Q: (Hard) Which data type is safest for storing currency values?
+A) float
+B) double
+C) int
+D) None of these
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Integer division gives 3, then multiplied by 2 results in 6.
+Q: (Hard) What will be the output? int x = 7 / 2 * 2; System.out.println(x);
+A) 6
+B) 7
+C) 8
+D) 5
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Compound assignment automatically casts the result to int, truncating the decimal.
+Q: (Hard) What will be the output of the following code? int a = 1; a += 4.5; System.out.println(a);
+A) 5.5
+B) 4
+C) Compilation error
 D) 5
 Answer: 3
 
 Level: 1
-Topic: Type Casting
-Q: (Hard) Value of `(short)32768`?
-A) 32768
-B) -32768
-C) 0
-D) 32767
+Topic: Data types and Variables
+Explanation: Byte overflow wraps around because its range is -128 to 127.
+Q: (Hard) What will be the output? byte b = 127; b++; System.out.println(b);
+A) 128
+B) 127
+C) Error
+D) -128
+Answer: 3
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Overflow occurs because byte range is -128 to 127.
+Q: (Hard) What is the output? int a = 130; byte b = (byte)a; System.out.println(b);
+A) 130
+B) -126
+C) Compilation error
+D) Runtime error
+Answer: 1
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Expressions evaluate left-to-right; string concatenation starts after "Java".
+Q: (Hard) What will this print? System.out.println(10 + 20 + "Java" + 10 + 20);
+A) 30Java1020
+B) 30Java30
+C) Java301020
+D) 1020Java30
+Answer: 0
+
+Level: 1
+Topic: Data types and Variables
+Explanation: Arithmetic operations on byte are promoted to int, so explicit casting is required before assigning back to byte.
+Q: (Hard) What will be the output of the following code? byte b = 10; b = b * 5; System.out.println(b);
+A) 50
+B) 0
+C) Runtime error
+D) Compilation error
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The semicolon; is the required terminator for statements in Java and C#. Missing it results in a syntax error.
+Q: (Easy) Which symbol is used to end a statement in Java/C#?
+A) :
+B) .
+C) ;
+D) ,
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: int is the standard keyword used to declare integer variables in Java/C#.
+Q: (Easy) Which keyword is used to declare an integer?
+A) float
+B) int
+C) double
+D) string
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: int x; declares a variable named x that can store integer values but does not assign a value yet.
+Q: (Easy) What does int x; do?
+A) Assigns value to x
+B) Declares an integer variable
+C) Prints x
+D) Deletes x
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Variable names cannot start with numbers or contain spaces/symbols like hyphens, making num1 the only valid identifier.
+Q: (Easy) Which is a valid variable name?
+A) 2num
+B) num-1
+C) num1
+D) num 1
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The if keyword begins a conditional statement that executes code based on a condition.
+Q: (Easy) What keyword is used to define a conditional statement?
+A) for
+B) if
+C) print
+D) case
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: bool (or boolean in Java) stores only true or false values.
+Q: (Easy) What data type stores true or false values?
+A) int
+B) char
+C) string
+D) bool
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: System.out.println() is the correct Java syntax for displaying output to the console.
+Q: (Easy) What is the correct way to print output?
+A) print("Hi");
+B) System.out.println("Hi");
+C) Console.read("Hi");
+D) echo("Hi");
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: // indicates a single-line comment in Java/C#, meaning the rest of the line is ignored by the compiler.
+Q: (Easy) What symbol starts a single-line comment?
+A) /*
+B) #
+C) //
+D) -
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: An algorithm is a step-by-step set of instructions used to solve a problem.
+Q: (Easy) What is an algorithm?
+A) A type of musical instrument
+B) A programming language
+C) Computer code
+D) A list of instructions
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Debugging is the process of locating and fixing errors in code.
+Q: (Easy) Finding and fixing problems in code is known as?
+A) Coding
+B) Debugging
+C) Automating
+D) Programming
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Syntax refers to the formal rules that define how code must be written to be understood by the compiler.
+Q: (Easy) Syntax in coding is.
+A) The way you write the code.
+B) An error that can appear in your code.
+C) The coding language.
+D) Different languages mixed together.
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: A program is an implemented algorithm written in a programming language that a computer can execute.
+Q: (Easy) What is an algorithm that has been coded into something that can be run by a machine?
+A) Algorithm
+B) Bug
+C) Code
+D) Program
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Syntax is the structured set of rules that govern how Python (or any language) code must be written.
+Q: (Easy) Set of rules that are used to create a Python Program.
+A) Variables
+B) Keyword
+C) Syntax
+D) None of the above
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Indentation improves readability and, in some languages like Python, defines code structure.
+Q: (Easy) Spaces at the beginning of a code line.
+A) String
+B) Indentation
+C) Integer
+D) None of the above
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: print("hello world") is the correct Python syntax for displaying text output.
+Q: (Easy) How to print "hello world"?
+A) hello world
+B) print"hello world"
+C) print(hello world)
+D) print("hello world")
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: A method defines an action or behavior that an object can perform.
+Q: (Easy) An action performed by an object.
+A) Method
+B) Algorithm
+C) Integer
+D) Syntax
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: # starts a single-line comment in Python.
+Q: (Easy) Which is the symbol to write a single-line comment?
+A) 
+B) #
+C) ^
+D) Syntax
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: int is the correct keyword for declaring an integer variable.
+Q: (Easy) Which keyword is used to declare an integer variable?
+A) string
+B) int
+C) bool
+D) char
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Comments help humans understand code logic and purpose without affecting execution.
+Q: (Easy) What is the purpose of comments in a program?
+A) To execute code
+B) To store values
+C) To explain code for humans
+D) To fix syntax errors
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: A missing semicolon prevents successful compilation because the statement is incomplete.
+Q: (Easy) What happens if a semicolon is missing?
+A) Program runs faster
+B) Runtime error
+C) Compilation error
+D) Logical error
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: int score = 100 correctly declares an integer variable and assigns a value using proper syntax.
+Q: (Medium) Which correctly declares score with value 100?
+A) int score == 100
+B) int score = 100;
+C) score int = 100;
+D) int score: 100;
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The variable is declared as int but assigned a string value "5", causing a type mismatch error.
+Q: (Medium) What is wrong with this code? int number ="5";
+A) Missing semicolon
+B) Wrong operator
+C) Data type mismatch
+D) Invalid variable name
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: System.out.println(x); is the correct syntax for printing the value of a variable in Java.
+Q: (Medium) Which line correctly prints a variable value in Java?
+A) print x;
+B) System.out.println(x);
+C) Console.read(x);
+D) echo(x);
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Java requires String (capital S) and quotation marks for text values.
+Q: (Medium) Which line correctly declares a string variable?
+A) string name = "Ana";
+B) text name = "Ana";
+C) String = name "Ana";
+D) String name = "Ana";
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Braces {} group multiple statements into a single block controlled by the if.
+Q: (Medium) Which structure is required after an if statement to group multiple lines?
+A) Parentheses
+B) Brackets []
+C) Braces {}
+D) Semicolon
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Conditions in Java/C# must be inside parentheses and followed by braces for the code block.
+Q: (Medium) Which of the following is a correct if statement syntax in Java/C#?
+A) if (x>5) {}
+B) if x>5{}
+C) if x>5 then
+D) if {x>5}
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Line 1 is missing a semicolon, which causes a syntax (compilation) error.
+Q: (Medium) Which line causes an error? int x=5 System.out.println(x);
+A) Line 1
+B) Line 2
+C) Both
+D) None
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Braces are needed to clearly define the block of code that belongs to the if statement.
+Q: (Medium) What is missing? if (x>0) System.out.println(x);
+A) Semicolon
+B) Parentheses
+C) Keyword
+D) Braces
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The dot. operator is used to access methods and properties of an object.
+Q: (Medium) Which symbol is used to access a method from an object in Java?
+A) :
+B) ->
+C) .
+D) ::
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Local variables must be initialized before use, otherwise compilation fails.
+Q: (Medium) What happens if a variable is not initialized?
+A) Program crashes always
+B) It prints null
+C) Default value is used
+D) Compilation error
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: A for loop is commonly used when the number of iterations is known beforehand.
+Q: (Medium) Which loop repeats a fixed number of times?
+A) if
+B) while
+C) for
+D) switch
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: x=5; correctly assigns a new value to an already-declared variable.
+Q: (Medium) Which line correctly assigns a value to an existing variable?
+A) value x=5;
+B) x=5
+C) x:=5
+D) x=5
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: break immediately terminates the nearest loop.
+Q: (Medium) What does break do?
+A) Ends the program
+B) Skips iteration
+C) Exits loop
+D) Restarts loop
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Strings in Java require the String type and quotation marks around text values.
+Q: (Medium) Which is correct?
+A) String name = John;
+B) string name = "John";
+C) String "John" = name;
+D) String name = "John";
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Semicolons are mandatory in Java/C#; therefore, saying they are optional is false.
+Q: (Medium) Which statement is false?
+A) Semicolons are optional
+B) Variables store values
+C) Data types define values
+D) Syntax errors stop compilation
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: A missing semicolon violates syntax rules and is caught at compile time.
+Q: (Medium) What type of error is a missing semicolon?
+A) Syntax
+B) Runtime
+C) Logical
+D) Semantic
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Dividing by zero is not a syntax issue but causes a runtime exception.
+Q: (Medium) Which causes a runtime error?
+A) Missing semicolon
+B) Wrong data type
+C) Misspelled keyword
+D) Dividing by zero
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The break keyword exits a loop before it finishes all iterations.
+Q: (Medium) Which keyword is used to exit a loop early?
+A) break
+B) stop
+C) end
+D) exitloop
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The return keyword sends a value back from a method to where it was called.
+Q: (Medium) Which keyword returns a value?
+A) void
+B) return
+C) print
+D) output
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Braces define the boundaries of code blocks such as loops, methods, and conditionals.
+Q: (Medium) What is the purpose of braces {}?
+A) Group code blocks
+B) End statement
+C) Declare variables
+D) Print output
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: else must be followed by a code block in braces to define the alternative execution path.
+Q: (Hard) Which is the correct syntax for an else statement?
+A) else ()
+B) else if
+C) else {}
+D) elseif {}
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Variable names cannot begin with a number, so 1value violates identifier naming rules.
+Q: (Hard) Why is this incorrect? int 1value = 10;
+A) Invalid keyword
+B) Invalid data type
+C) Variable name starts with number
+D) Missing semicolon
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The semicolon ends the if statement early, so the block executes regardless of the condition.
+Q: (Hard) What is the effect of this code? if (x>0)
+A) Syntax error
+B) Program crashes
+C) Infinite loop
+D) Condition ignored
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Meaningful variable names and constants improve readability and long-term maintainability.
+Q: (Hard) Which refactor improves maintainability?
+A) Replace variables with hard-coded numbers
+B) Use meaningful variable names and constants
+C) Remove comments to reduce clutter
+D) Combine all logic into one method
+Answer: 1
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Descriptive log messages help developers trace and diagnose issues during debugging.
+Q: (Hard) Which change improves debugging?
+A) Add descriptive log messages
+B) Remove whitespace
+C) Use single-letter variables
+D) Nest more conditions
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: A Java method must include a return type, method name, parentheses, and a body in braces.
+Q: (Hard) Which is the correct syntax to define a method in Java?
+A) void myMethod() {}
+B) method myMethod()
+C) function myMethod[]
+D) define myMethod()
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Deep nesting makes code harder to read, test, and maintain, violating clean code principles.
+Q: (Hard) Which violates clean coding principles?
+A) Using constants instead of magic numbers
+B) Meaningful method names
+C) Deeply nested conditionals
+D) Consistent formatting
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Compiler warnings can highlight risky or suspicious code that may lead to logic errors.
+Q: (Hard) Which is best for preventing logic errors?
+A) Compiler warnings enabled
+B) Removing braces
+C) Using shorter code
+D) Ignoring indentation
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: This expression modifies x multiple times in one statement, producing undefined or confusing behavior.
+Q: (Hard) What is the final value of y? int x = 1; int y = x++ + ++x;
+A) 2
+B) 3
+C) 4
+D) Undefined / unsafe expression
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Commas separate multiple arguments passed into a method call.
+Q: (Hard) Which punctuation separates parameters in a method call?
+A) ;
+B) :
+C) .
+D) ,
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The new keyword allocates memory and creates a new object instance.
+Q: (Hard) Which keyword is used to create a new object in Java?
+A) create
+B) make
+C) new
+D) object
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The loop runs indefinitely but includes a condition-based break, known as a guarded exit.
+Q: (Hard) What design principle is shown? while (true) { if (condition) break; }
+A) Guarded exit
+B) Infinite recursion
+C) Dead code
+D) Loop failure
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Extracting shared logic into a helper method reduces duplication and improves maintainability.
+Q: (Hard) Repeated validation logic appears in multiple methods. Best fix?
+A) Copy everywhere
+B) Remove validation
+C) Extract helper method
+D) Inline logic
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Guard clauses reduce deep nesting by handling conditions early and exiting when necessary.
+Q: (Hard) Deep nesting: Best improvement? if(a){ if(b){ if(c){
+A) Add nesting
+B) Merge variables
+C) Remove conditions
+D) Guard clauses
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Calling a method on null causes a NullPointerException at runtime.
+Q: (Hard) What happens? String s = null; if (s.equals("hi"))
+A) False
+B) True
+C) Compilation error
+D) Runtime exception
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Repeated logic across classes suggests the need for a shared abstraction like a superclass or utility class.
+Q: (Hard) Repeated logic across classes suggests:
+A) Shared abstraction
+B) Hardcoding
+C) Duplication
+D) Global variables
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: int arr[]; is a valid syntax for declaring an integer array.
+Q: (Hard) Which of the following is valid array declaration syntax?
+A) int arr[];
+B) array int arr;
+C) int arr();
+D) int {} arr;
+Answer: 0
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: Methods must be called with parentheses, even if no parameters are provided.
+Q: (Hard) Which line correctly calls a method named display?
+A) display;
+B) run display
+C) call display()
+D) display()
+Answer: 3
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: The return keyword sends a value back to the calling method.
+Q: (Hard) Which keyword is used to return a value from a method?
+A) send
+B) output
+C) return
+D) give
+Answer: 2
+
+Level: 1
+Topic: Basic Syntax and Comments
+Explanation: import java.util.*; correctly imports all classes from the java.util package.
+Q: (Hard) Which is the correct syntax to import a package in Java?
+A) include java.util;
+B) package java.util;
+C) using java.util;
+D) import java.util.*;
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: The String class is used in Java to store and manipulate sequences of characters as textual data.
+Q: (Easy) In Java, which class is used to represent a sequence of characters as text?
+A) Text
+B) String
+C) Character
+D) CharArray
 Answer: 1
 
 Level: 1
 Topic: Strings
-Q: (Hard) Given `String s = "abc"; s.replace('a','z'); System.out.println(s);` what prints?
-A) zbc
-B) abc
+Explanation: In Java, string literals are enclosed in double quotation marks, such as "Hello".
+Q: (Easy) How are string literals written in Java?
+A) Using single quotation marks ('')
+B) Using curly braces {}
+C) Using parentheses ()
+D) Using double quotation marks (" ")
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: The plus (+) operator is used to join two strings together into one combined string.
+Q: (Easy) Which operator is used to concatenate two strings in Java?
+A) &
+B) #
+C) *
+D) +
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: The length() method returns the total number of characters contained in the string.
+Q: (Easy) What does the length() method return when called on a string object?
+A) The memory size of the string
+B) The index of the last character
+C) The total number of characters in the string
+D) The capacity of the string
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: The toUpperCase() method returns a new string in which all alphabetic characters are converted to uppercase.
+Q: (Easy) Which method is used to convert all characters of a string to uppercase?
+A) toUpperCase()
+B) capital()
+C) upper()
+D) changeCase()
+Answer: 0
+
+Level: 1
+Topic: Strings
+Explanation: The toLowerCase() method converts all characters of a string to lowercase.
+Q: (Easy) Which method converts a string to lowercase?
+A) low()
+B) toSmallCase()
+C) toLowerCase()
+D) small()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: Strings in Java are zero-indexed, meaning the first character is at index 0.
+Q: (Easy) What is the index of the first character in a Java string?
+A) 1
+B) -1
+C) 0
+D) 2
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: The charAt() method returns the character at a specific numerical index in the string.
+Q: (Easy) Which method returns the character at a specified index?
+A) getChar()
+B) charAt()
+C) char()
+D) index()
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: String is a reference data type (Class), unlike int or char which are primitive types.
+Q: (Easy) Is String a primitive data type in Java?
+A) Yes
+B) No
+C) Only in old Java
+D) Depends on usage
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: The concat() method is an alternative to the + operator for joining two strings.
+Q: (Easy) Which method can also be used to concatenate strings?
+A) join()
+B) add()
+C) append()
+D) concat()
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: String indexing follows the formula 0 to length - 1.
+Q: (Easy) What is the index of the last character in a string of length n?
+A) n
+B) n + 1
+C) n - 1
+D) 0
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: The equals() method compares the actual content of two string objects.
+Q: (Easy) Which method checks if two strings have the same content?
+A) ==
+B) equals()
+C) compare()
+D) same()
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: Strings are immutable; once created, their character sequence cannot be changed.
+Q: (Easy) What does "immutable" mean regarding Java strings?
+A) They can be changed
+B) They cannot be changed
+C) they are static
+D) They are public
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: The isEmpty() method returns true if the string length is 0.
+Q: (Easy) Which method checks if a string is empty?
+A) null()
+B) blank()
+C) isZero()
+D) isEmpty()
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: The contains() method checks if a specific sequence of characters exists within a string.
+Q: (Easy) Which method checks if a string contains a specific substring?
+A) find()
+B) includes()
+C) contains()
+D) has()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: The replace() method replaces all occurrences of a character with a new character.
+Q: (Easy) Which method replaces characters in a string?
+A) swap()
+B) change()
+C) replace()
+D) update()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: The trim() method removes leading and trailing whitespace from a string.
+Q: (Easy) Which method removes whitespace from both ends of a string?
+A) cut()
+B) strip()
+C) trim()
+D) clean()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: String literals are stored in a special memory area called the String Constant Pool.
+Q: (Easy) Where are string literals stored in memory?
+A) Stack
+B) String Constant Pool
+C) Register
+D) Cache
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: The indexOf() method returns the position of the first occurrence of a character.
+Q: (Easy) Which method finds the first index of a character?
+A) search()
+B) find()
+C) locate()
+D) indexOf()
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: A string can be converted to a character array using the toCharArray() method.
+Q: (Easy) Which method converts a string to a char array?
+A) getChars()
+B) toCharArray()
+C) split()
+D) bytes()
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: The == operator compares memory addresses (references), not the text inside the strings.
+Q: (Medium) What does the == operator compare when used with two string objects?
+A) Text content
+B) Length
+C) Memory addresses
+D) First character
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: substring(start, end) returns characters from the start index up to, but not including, the end index.
+Q: (Medium) What is the result of "Hello".substring(1, 3)?
+A) Hel
+B) el
+C) ell
+D) He
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: equalsIgnoreCase() compares strings for equality while ignoring whether letters are uppercase or lowercase.
+Q: (Medium) Which method compares two strings ignoring case sensitivity?
+A) equals()
+B) same()
+C) equalsIgnoreCase()
+D) compareTo()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: The compareTo() method returns 0 if the strings are lexicographically equal.
+Q: (Medium) What does compareTo() return if two strings are identical?
+A) 1
+B) -1
+C) true
+D) 0
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: Using the new keyword always creates a new object in the heap, bypassing the pool.
+Q: (Medium) Does String s = new String("Hi") create an object in the String Pool?
+A) No, it creates it in the heap
+B) Yes, always
+C) Only if it's empty
+D) Only in Java 8
+Answer: 0
+
+Level: 1
+Topic: Strings
+Explanation: startsWith() checks if the string begins with the specified prefix.
+Q: (Medium) Which method checks if a string starts with "Java"?
+A) begins()
+B) startsWith()
+C) hasPrefix()
+D) first()
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: The + operator converts non-string types to strings during concatenation.
+Q: (Medium) What is the result of "Score: " + 10?
+A) Error
+B) Score: 10
+C) Score:
+D) 10
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: The split() method breaks a string into an array based on a provided delimiter (regex).
+Q: (Medium) Which method divides a string into an array of substrings?
+A) divide()
+B) break()
+C) split()
+D) segment()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: charAt(0) retrieves the character at the very first position of the string.
+Q: (Medium) What is returned by "Java".charAt(0)?
+A) a
+B) J
+C) v
+D) 0
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: indexOf() returns -1 if the specified character or substring is not found.
+Q: (Medium) What does indexOf() return if the character is not found?
+A) 0
+B) null
+C) -1
+D) False
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: replaceAll() uses regular expressions to find and replace matches.
+Q: (Medium) Which method replaces all matches of a regular expression?
+A) replace()
+B) replaceFirst()
+C) replaceAll()
+D) changeAll()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: valueOf() is a static method used to convert various data types (int, double, etc.) into String objects.
+Q: (Medium) Which static method converts an integer to a string?
+A) toString()
+B) parseString()
+C) valueOf()
+D) convert()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: endsWith() verifies if the string terminates with a specific suffix.
+Q: (Medium) Which method checks if a string ends with ".com"?
+A) last()
+B) endsWith()
+C) hasSuffix()
+D) terminal()
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: charAt(3) refers to the 4th character; "Java" only has indices 0, 1, 2, 3.
+Q: (Medium) What is returned by "Java".charAt(3)?
+A) a
+B) v
+C) J
+D) Error
+Answer: 0
+
+Level: 1
+Topic: Strings
+Explanation: substring(start) returns a new string starting from the specified index to the end.
+Q: (Medium) What does "Programming".substring(7) return?
+A) Program
+B) ming
+C) mming
+D) gramming
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: Strings created with literals share the same reference in the String Pool.
+Q: (Medium) String s1="A"; String s2="A"; What is s1 == s2?
+A) true
+B) false
+C) Error
+D) null
+Answer: 0
+
+Level: 1
+Topic: Strings
+Explanation: Strings created with new String() always have different memory references.
+Q: (Medium) String s1=new String("A"); String s2=new String("A"); What is s1 == s2?
+A) true
+B) false
 C) Error
 D) null
 Answer: 1
 
 Level: 1
-Topic: Input
-Q: (Hard) Best way to read a single char with Scanner `sc`?
-A) sc.nextChar()
-B) sc.next().charAt(0)
-C) sc.read()
-D) sc.nextByte()
-Answer: 1
+Topic: Strings
+Explanation: lastIndexOf() searches backwards from the end of the string.
+Q: (Medium) Which method finds the last occurrence of a character?
+A) indexOf()
+B) searchLast()
+C) findLast()
+D) lastIndexOf()
+Answer: 3
 
 Level: 1
-Topic: Output
-Q: (Hard) What prints? `System.out.printf("%6.2f", 3.1);`
-A) 3.10
-B) 003.10
-C) ␣␣3.10 (two spaces then 3.10)
-D) 3.100000
-Answer: 2
-
-Level: 1
-Topic: Data Types
-Q: (Hard) Which provides arbitrary-precision integers?
-A) long
-B) BigInteger
-C) double
-D) short
-Answer: 1
-
-Level: 1
-Topic: Operators
-Q: (Hard) Result of `-1 >>> 1` on 32-bit int?
-A) -1
-B) 2147483647
-C) 0
-D) 1073741823
-Answer: 1
-
-Level: 1
-Topic: Syntax
-Q: (Hard) Which numeric literal with underscores is valid?
-A) 1_000_
-B) _1000
-C) 1_000_000
-D) 1000__000
-Answer: 2
-
-Level: 1
-Topic: Variables
-Q: (Hard) Which statement is true?
-A) Local variables get default values
-B) Instance fields of primitives default to 0/false
-C) Uninitialized fields cause compile errors
-D) Only static fields have defaults
+Topic: Strings
+Explanation: concat() can only join strings; it does not automatically convert numbers to strings.
+Q: (Medium) Can concat() be used to join a String and an int directly?
+A) Yes
+B) No
+C) Only if int is 0
+D) Only in Java 11
 Answer: 1
 
 Level: 1
 Topic: Strings
-Q: (Hard) Best class for efficient string concatenation in loops?
-A) String
+Explanation: String.join() is used to join multiple strings with a specific delimiter.
+Q: (Medium) Which method joins multiple strings with a delimiter?
+A) concat()
+B) append()
+C) String.join()
+D) combine()
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: String s1="A"; s1.concat("B"); creates a new string "AB" but s1 still points to "A" because strings are immutable.
+Q: (Hard) What is the value of s1? String s1 = "Java"; s1.concat(" Script");
+A) Java Script
+B) Script
+C) Java
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: Reassigning the reference to the result of concat() updates what the variable points to.
+Q: (Hard) What is the value of s1? String s1 = "Java"; s1 = s1.concat(" Script");
+A) Java
+B) Java Script
+C) Script
+D) null
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: charAt(4) is an invalid index for "Java" (indices are 0-3), resulting in a runtime exception.
+Q: (Hard) What happens? "Java".charAt(4);
+A) Returns ' '
+B) Returns 'a'
+C) Compilation Error
+D) StringIndexOutOfBoundsException
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: length is 4, but the highest index is 3. Accessing index 4 is out of bounds.
+Q: (Hard) For a string s, what is s.charAt(s.length())?
+A) The last character
+B) The first character
+C) null
+D) StringIndexOutOfBoundsException
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: substring(0, 0) starts at index 0 and ends before index 0, resulting in an empty string.
+Q: (Hard) What is returned by "Java".substring(0, 0)?
+A) J
+B) Java
+C) "" (Empty string)
+D) Error
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: compareTo() returns the difference in Unicode values if strings differ. 'a' (97) - 'b' (98) = -1.
+Q: (Hard) What is the result of "a".compareTo("b")?
+A) 1
+B) -1
+C) 0
+D) false
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: String variables that are not initialized are null. Calling methods on null results in a NullPointerException.
+Q: (Hard) What happens? String s; System.out.println(s.length());
+A) 0
+B) Error
+C) null
+D) Compilation Error (Variable not initialized)
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: compareTo() is case-sensitive. 'A' (65) and 'a' (97) have different Unicode values.
+Q: (Hard) What is returned by "A".compareTo("a")?
+A) 0
+B) -32
+C) 32
+D) 1
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: length() counts every character including spaces, tabs, and special symbols.
+Q: (Hard) What is the length of " "?
+A) 0
+B) 1
+C) 2
+D) null
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: substring(2, 4) takes characters at index 2 and 3. "J(0)a(1)v(2)a(3)" -> "va".
+Q: (Hard) What is "Java".substring(2, 4)?
+A) ava
+B) va
+C) av
+D) v
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: trim() removes "outer" spaces only; spaces between words are preserved.
+Q: (Hard) What does " A B ".trim() return?
+A) AB
+B) A B
+C) AB
+D) A B
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: StringBuilder is a mutable alternative to String, allowing characters to be changed without creating new objects.
+Q: (Hard) Which class is a mutable version of String?
+A) StringFixed
 B) StringBuffer
 C) StringBuilder
-D) Formatter
+D) Both B and C
+Answer: 3
+
+Level: 1
+Topic: Strings
+Explanation: replace('a', 'o') replaces all 'a' characters. "Java" becomes "Jovo".
+Q: (Hard) What is "Java".replace('a', 'o')?
+A) Jova
+B) Javo
+C) Jovo
+D) Java
 Answer: 2
 
 Level: 1
-Topic: Type Casting
-Q: (Hard) What happens?
+Topic: Strings
+Explanation: s1 points to the pool, s2 points to the heap. They are different objects (references).
+Q: (Hard) String s1="abc"; String s2=new String("abc"); s1 == s2 is?
+A) true
+B) false
+C) null
+D) Error
+Answer: 1
 
-```
-Integer i = null;
-int x = i;
-```
+Level: 1
+Topic: Strings
+Explanation: Content is identical, so equals() returns true even if references are different.
+Q: (Hard) String s1="abc"; String s2=new String("abc"); s1.equals(s2) is?
+A) true
+B) false
+C) null
+D) Error
+Answer: 0
 
-A) x becomes 0
-B) x becomes null
+Level: 1
+Topic: Strings
+Explanation: compareToIgnoreCase() treats 'a' and 'A' as the same, returning 0.
+Q: (Hard) What is returned by "abc".compareToIgnoreCase("ABC")?
+A) 1
+B) -1
+C) 0
+D) Exception
+Answer: 2
+
+Level: 1
+Topic: Strings
+Explanation: split(",") creates an array ["a","b","c"], so index 1 is "b".
+Q: (Hard) What is returned by "a,b,c".split(",")[1]?
+A) a
+B) b
+C) c
+D) null
+Answer: 1
+
+Level: 1
+Topic: Strings
+Explanation: intern() returns a pooled string reference, which matches the literal "abc".
+Q: (Hard) Which of the following expressions returns true? "abc".intern() == "abc"
+A) true
+B) false
 C) NullPointerException
-D) Compile error
-Answer: 2
+D) Compilation error
+Answer: 0
 
 Level: 1
-Topic: Data Types
-Q: (Hard) Value of `byte b = (byte)130; System.out.println(b);`
-A) 130
-B) -126
-C) 126
-D) -130
-Answer: 1
+Topic: Strings
+Explanation: Regex replaces each character in the range a–c with "x".
+Q: (Hard) What does "abc".replaceAll("[a-c]","x") return?
+A) xxx
+B) abc
+C) a-b-c
+D) Error
+Answer: 0
 
 Level: 1
-Topic: Syntax
-Q: (Hard) Which main signature is also valid?
-A) static void main(String args)
-B) public static int main(String[] args)
-C) public static void main(String... args)
-D) private static void main(String[] args)
-Answer: 2
+Topic: Strings
+Explanation: Java evaluates left-to-right: "a" + 1 = "a1", then "a1" + 2 = "a12".
+Q: (Hard) What is the result of concatenating a string and integer in "a" + 1 + 2?
+A) a12
+B) 3
+C) 12a
+D) Error
+Answer: 0
 
 Level: 1
-Topic: Operators
-Q: (Hard) Result of `1 << 3`?
-A) 3
-B) 8
-C) 6
-D) 4
-Answer: 1
-
-
+Topic: Strings
+Explanation: Index exceeds the string length, causing StringIndexOutOfBoundsException.
+Q: (Hard) What is the result of "Hello".charAt(10)?
+A) o
+B) null
+C) Error
+D) StringIndexOutOfBoundsException
+Answer: 3
 
