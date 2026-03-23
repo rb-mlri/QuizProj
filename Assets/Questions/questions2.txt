@@ -660,23 +660,6 @@ D) Compilation fails
 Answer: 2
 
 Level: 2
-Topic: Control Flow (While Loop, For Loop, Do/While Loop, Break and Continue)
-Explanation: The loop modifies elements conditionally using continue and break, affecting the final computed value.
-Q: (Hard) What is the final value of sum?
-int sum = 0;
-for(int i = 1; i <= 5; i++) 
-{
-    if(i % 2 == 0) continue;
-    if(i == 5) break;
-    sum += i;
-}
-A) 1
-B) 4
-C) 5
-D) 9
-Answer: 2
-
-Level: 2
 Topic: Control Flow (While Loop, For loop, Do/While Loop, Break and Continue)
 Explanation: The loop executes twice, incrementing i to 2.
 Q: (Hard) What gets printed? 
@@ -798,12 +781,687 @@ Answer: 3
 Level: 2
 Topic: Control Flow (While Loop, For loop, Do/While Loop, Break and Continue)
 Explanation: The semicolon creates an empty loop body, so the print block executes once.
-Q: (Hard) What happens? 
-int i = 0; 
-for(; i < 5; i++); 
+Q: (Hard) What happens?
+int i = 0;
+for(; i < 5; i++);
 { System.out.print("Hello "); }
 A) Hello five times
 B) Hello once
 C) Compilation error
 D) Infinite loop
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements) 
+Explanation: The if statement evaluates a boolean condition and executes the code only when it is true.
+Q: (Easy) Which keyword is used in Java to execute a block of code only if a condition is true?
+A) when
+B) if
+C) condition
+D) check
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Java requires the condition inside an if to evaluate to a boolean value.
+Q: (Easy) Which data type must be used inside an if condition?
+A) int
+B) double
+C) boolean
+D) String
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: If the condition is false and no else exists, execution simply continues to the next statement. 
+Q: (Easy) What happens if the condition in an if statement evaluates to false and there is no else block? 
+A) The program stops
+B) An error occurs
+C) Nothing happens
+D) The block executes anyway
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The else block executes only when the preceding if condition is false.
+Q: (Easy) Which keyword is used to define an alternative block of code when an if condition is false?
+A) otherwise
+B) elseif
+C) switch
+D) else
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The else-if ladder evaluates multiple conditions in order until one is true.
+Q: (Easy) Which structure allows multiple conditions to be checked sequentially?
+A) else-if ladder
+B) nested-if
+C) switch
+D) for
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The break statement prevents fall-through in switch cases.
+Q: (Easy) Which keyword is used to exit a switch case?
+A) stop
+B) break
+C) return
+D) exit
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Without break, execution continues into the next case block.
+Q: (Easy) What happens if break is omitted in a switch case?
+A) Compilation error
+B) Execution stops
+C) Fall-through occurs
+D) Default runs only
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The default case runs when no other cases match.
+Q: (Easy) Which keyword defines the block executed when no switch case matches?
+A) else
+B) default
+C) otherwise
+D) final
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Java 7 introduced support for String in switch statements.
+Q: (Easy) Which data type is allowed in a Java switch statement (Java 7+)?
+A) double
+B) float
+C) boolean
+D) String
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: == compares values, while = assigns values.
+Q: (Easy) Which operator checks equality in an if condition?
+A) =
+B) ==
+C) ===
+D) equals
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Java requires parentheses around the condition and braces to define the code blocks.
+Q: (Easy) Which of the following correctly represents a valid if-else structure in Java?
+A) if condition { } else { }
+B) if(condition) statement else statement
+C) if(condition) { } else { }
+D) condition if else
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: && is the short-circuit logical AND operator used in conditional statements.
+Q: (Easy) Which operator represents logical AND in Java conditions?
+A) and
+B) &&
+C) &
+D) AND
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: || is the short-circuit logical OR operator.
+Q: (Easy) Which symbol represents logical OR in Java?
+A) ||
+B) |
+C) OR
+D) &&
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The switch statement is designed for comparing one expression against multiple constant values.
+Q: (Easy) Which statement is most appropriate when checking a single variable against many constant values?
+A) for loop
+B) while loop
+C) switch
+D) nested-if
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Java allows unlimited nesting of if statements.
+Q: (Easy) Can an if statement be nested inside another if statement in Java?
+A) Yes
+B) No
+C) Only inside switch
+D) Only once
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Each case label must end with a colon to define its block.
+Q: (Easy) What symbol must follow each case label in a switch statement?
+A) ;
+B) {}
+C) :
+D) .
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The default block handles unmatched cases.
+Q: (Easy) Which block executes when no switch case matches the expression?
+A) else
+B) break
+C) catch
+D) default
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Relational operators return boolean values; 5 is greater than 3, so the result is true.
+Q: (Easy) What is the result of the expression 5 > 3 in an if condition?
+A) 5
+B) 3
+C) true
+D) false
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: if-else handles relational expressions and ranges better than switch.
+Q: (Easy) Which structure is more suitable for evaluating value ranges (e.g., grades 90–100)?
+A) if-else
+B) switch
+C) break
+D) case
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The if statement is the core decision-making construct in Java.
+Q: (Easy) Which statement is primarily used for decision making in Java?
+A) class
+B) import
+C) package
+D) if
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Since 10 > 5 evaluates to true, the if block executes and prints "A".
+Q: (Medium) What is the output?
+int x = 10;
+if (x > 5) {
+System.out.println("A");
+} else {
+System.out.println("B");
+}
+A) A
+B) B
+C) AB
+D) Compilation Error
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Without braces, only the first statement belongs to the if; "World" always executes.
+Q: (Medium) What is the output?
+int x = 5;
+if (x == 5)
+System.out.println("Hello");
+System.out.println("World");
+A) Hello
+B) World
+C) Hello World
+D) Error
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: 7 % 2 equals 1, so the else block executes and prints "Odd".
+Q: (Medium) What is the output?
+int num = 7;
+if (num % 2 == 0)
+System.out.println("Even");
+else
+System.out.println("Odd");
+A) Even
+B) Odd
+C) 7
+D) Error
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The else pairs with the nearest if; 5 > 7 is false, so "Y" prints.
+Q: (Medium) What is the output?
+int a = 5;
+if (a > 3)
+if (a > 7)
+System.out.println("X");
+else
+System.out.println("Y");
+A) Y
+B) X
+C) Nothing
+D) Error
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Case 2 matches the value of x, executes, then terminates because of the break.
+Q: (Medium) What is the output? 
+int x = 2;
+switch(x) {
+case 1:
+System.out.println("One");
+break;
+case 2:
+System.out.println("Two");
+break;
+default:
+System.out.println("Other");
+}
+A) One
+B) Error
+C) Other
+D) Two
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Without break, execution continues into case 2 (fall-through).
+Q: (Medium) What is the output? 
+int x = 1;
+switch(x) {
+case 1:
+System.out.println("A");
+case 2:
+System.out.println("B");
+}
+A) A
+B) B
+C) A B
+D) Error
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Both conditions are true, so the if block executes.
+Q: (Medium) What is the output?
+int x = 3;
+if (x < 5 && x > 1)
+System.out.println("Yes");
+A) Yes
+B) No
+C) Error
+D) Nothing
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The second condition (x > 6) is true; short-circuit OR makes the expression true.
+Q: (Medium) What is the output?
+int x = 8;
+if (x < 5 || x > 6)
+System.out.println("True");
+A) True
+B) False
+C) Error
+D) Nothing
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Once a true condition is found (x > 5), remaining else-if conditions are skipped.
+Q: (Medium) What is the output?
+int x = 10;
+if (x > 5)
+System.out.println("A");
+else if (x > 8)
+System.out.println("B");
+A) Nothing
+B) B
+C) A B
+D) A
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Java allows Strings in switch; case matches "MON" and executes.
+Q: (Medium) What is the output?
+String day = "MON";
+switch(day) {
+case "MON":
+System.out.println("Start");
+break;
+case "FRI":
+System.out.println("End");
+}
+A) Start
+B) End
+C) Error
+D) Nothing
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Both outer and inner conditions are true, so the inner block executes.
+Q: (Medium) Nested if where both conditions are true prints?
+int x = 4;
+if (x > 2)
+if (x < 5)
+System.out.println("Yes");
+A) Yes
+B) No
+C) Error
+D) Nothing
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: 85 satisfies the >=80 condition, so "B" prints.
+Q: (Medium) Score = 85 using grade ladder (>=90 A, >=80 B, else C). Output?
+A) A
+B) B
+C) C
+D) Error
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Missing break causes fall-through; both the matched case and default execute.
+Q: (Medium) Switch without break after case 3 prints?
+A) Three only
+B) Default only
+C) Error
+D) Three Default
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Positive values are greater than zero.
+Q: (Medium) Which checks a positive number?
+A) num < 0
+B) num > 0
+C) num == 0
+D) num != 0
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: !false evaluates to true, so the if block executes.
+Q: (Medium) If boolean flag = false; if(!flag) prints?
+A) False
+B) True
+C) Error
+D) Nothing
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Case labels must be compile-time constants.
+Q: (Medium) Valid switch case label?
+A) case x > 5
+B) case variable
+C) case 5.2
+D) case 5
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Comparison happens first, then x increments; printed value is 2.
+Q: (Medium) What is the output?
+int x = 1;
+if (x++ == 1)
+System.out.println(x);
+A) 1
+B) 2
+C) Error
+D) Nothing
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Parentheses are required around conditions in Java.
+Q: (Medium) Correct syntax?
+A) if x > 5 {}
+B) if x > 5
+C) if(x > 5); {}
+D) if(x > 5) {}
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Execution jumps directly to the matching case, skipping default if it appears earlier.
+Q: (Medium) Default placed before matching case prints?
+A) Default only
+B) Case only
+C) Both
+D) Error
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Switch cannot evaluate ranges; if-else handles relational comparisons.
+Q: (Medium) Best structure for checking value ranges 0–59?
+A) switch
+B) break
+C) case
+D) if-else
+Answer: 3
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: All previous conditions are false, so the else block executes.
+Q: (Hard) x = 0 in the following ladder prints?
+int x = 0;
+if (x > 0)
+System.out.println("Positive");
+else if (x < 0)
+System.out.println("Negative");
+else
+System.out.println("Zero");
+A) Positive
+B) Negative
+C) Zero
+D) Nothing
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The else clause pairs with the nearest unmatched if.
+Q: (Hard) In a nested if-else structure, the “dangling else” attaches to?
+A) The first if
+B) The nearest unmatched if
+C) Outer block
+D) None
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Execution continues sequentially from the matching case due to fall-through.
+Q: (Hard) Switch without break prints from the match downward due to?
+A) Error
+B) Loop
+C) Fall-through
+D) Default
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The break statement terminates execution of the switch case.
+Q: (Hard) Which statement prevents fall-through in a switch?
+A) continue
+B) break
+C) stop
+D) return only
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The second condition is evaluated only if the first condition is true.
+Q: (Hard) Short-circuit AND (&&) evaluates the second condition only if?
+A) First is false
+B) First is true
+C) Always
+D) Never
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Floating-point types are not allowed in switch statements.
+Q: (Hard) Which data type is invalid for a switch statement?
+A) int
+B) char
+C) double
+D) String
+Answer: 2
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Execution reaches the inner block only when all conditions are true.
+Q: (Hard) A deeply nested if executes the inner block when?
+A) Any condition is true
+B) All conditions are true
+C) First condition is false
+D) Always
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: && has higher precedence than ||.
+Q: (Hard) Operator precedence: && is evaluated before?
+A) ==
+B) ||
+C) !
+D) ++
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Multiple cases can point to the same block using fall-through grouping.
+Q: (Hard) Multiple case labels sharing one block is an example of?
+A) Invalid syntax
+B) Fall-through grouping
+C) Compilation error
+D) Loop behavior
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Once a true condition is found, remaining conditions are skipped.
+Q: (Hard) In an else-if ladder, execution stops when?
+A) First true condition
+B) All conditions true
+C) Last condition
+D) Default
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Relational comparisons require if-else structures.
+Q: (Hard) Which code best checks whether a number is positive, negative, or zero?
+A) switch (num) { … }
+B) if-else ladder
+C) nested for loop
+D) do-while
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Comparison happens first, then the variable increments.
+Q: (Hard) Post-increment inside an if comparison executes when? 
+int x = 1;
+if (x++ == 1)
+System.out.println(x);
+A) Prints 1
+B) Prints 2
+C) Prints 0
+D) Error
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Parentheses around conditions are mandatory in Java.
+Q: (Hard) Which is correct syntax for a simple if statement?
+A) if x > 5 {}
+B) if(x > 5) {}
+C) if(x > 5); {}
+D) if x > 5;
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Execution always jumps directly to the matching case.
+Q: (Hard) What happens if default is placed before the matching case?
+A) Default executes first
+B) Matching case executes normally
+C) Compilation error
+D) Both execute
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: break ensures execution stops at the matched case.
+Q: (Hard) Which statement prevents unwanted fall-through in multiple case labels?
+A) continue
+B) break
+C) return
+D) default
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The second operand is evaluated only if the first is false.
+Q: (Hard) Short-circuit OR (||) evaluates the second condition only if?
+A) First is false
+B) First is true
+C) Always
+D) Never
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Switch supports integral types, Strings, and enums.
+Q: (Hard) Valid switch types in Java include?
+A) int, char, String, enum
+B) double, float, int
+C) boolean, double, String
+D) float, long, boolean
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: The inner block is reached only if the outer condition is true.
+Q: (Hard) Nested if executes the inner block only if?
+A) Outer is true
+B) Inner is false
+C) Either condition is true
+D) Always
+Answer: 0
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: if-else supports relational comparisons and ranges.
+Q: (Hard) Which structure is better for evaluating value ranges (e.g., 0–59)?
+A) switch
+B) if-else
+C) case
+D) break
+Answer: 1
+
+Level: 2
+Topic: Logic (If-Else, Statements, Switch Statements)
+Explanation: Only numbers strictly greater than 0 are positive.
+Q: (Hard) Which expression evaluates to true for positive numbers only?
+A) num >= 0
+B) num > 0
+C) num != 0
+D) num < 0
 Answer: 1

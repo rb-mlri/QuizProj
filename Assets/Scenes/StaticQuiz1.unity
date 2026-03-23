@@ -795,7 +795,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5d9b109272b8dbb439753fa555d480ee, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1623,6 +1623,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1418662903}
     m_Modifications:
+    - target: {fileID: 2277367815253467857, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277367815253467857, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739067658920705377, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 664.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739067658920705377, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 491.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739067658920705377, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3577910747965539478, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
       propertyPath: m_Name
       value: ExplanationPanel
@@ -1710,6 +1730,18 @@ PrefabInstance:
     - target: {fileID: 6732736517055115527, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784942853745264300, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 761.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784942853745264300, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 524.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784942853745264300, guid: a56844e822d6b8e409e60365d93f3b6e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -256.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1390,7 +1390,8 @@ D) 6
 Answer: 1
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal) Explanation: 3 − 1 = 2.
+Topic: Arrays (Single Dimensional Arrays, Loop Traversal) 
+Explanation: 3 − 1 = 2.
 Q: (Hard) Analyze the expression used in the following statement. What value will be printed by the program?
 int arr[] = {1,2,3};
 System.out.print(arr.length - arr[0]);

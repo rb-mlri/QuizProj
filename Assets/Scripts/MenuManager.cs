@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour
     [Header("UI References")]
     public GameObject startButton;
     public GameObject tutorialButton;
+    public GameObject quitButton;
     public GameObject modeSelectPanel;
     public GameObject staticLevelPanel;
     public GameObject dynamicLevelPanel;
@@ -69,6 +70,7 @@ public class MenuManager : MonoBehaviour
     {
         startButton.SetActive(false);
         tutorialButton.SetActive(false);
+        quitButton.SetActive(false);
         modeSelectPanel.SetActive(true);
     }
 
@@ -76,6 +78,7 @@ public class MenuManager : MonoBehaviour
     {
         startButton.SetActive(true);
         tutorialButton.SetActive(true);
+        quitButton.SetActive(true);
         modeSelectPanel.SetActive(false);
         staticLevelPanel.SetActive(false);
         dynamicLevelPanel.SetActive(false);

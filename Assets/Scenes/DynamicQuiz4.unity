@@ -299,14 +299,11 @@ MonoBehaviour:
   wrongColor: {r: 1, g: 0.6, b: 0.6, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   questionFile: {fileID: 4900000, guid: a34a00010e5f9ec44be38034e10f12ba, type: 3}
-  correctToLevelUp: 3
-  wrongToLevelDown: 2
   totalQuestions: 20
   knightAnimator: {fileID: 617633285}
   scarecrow: {fileID: 20430909}
   audioSource: {fileID: 0}
   slashSound: {fileID: 0}
-  nextQuestionDelay: 2
 --- !u!1001 &380484574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1073,7 +1070,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5d9b109272b8dbb439753fa555d480ee, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1432,7 +1429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 35467411933009667, guid: 1e5577f4d1bbe5041881841c14bc6afc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 317.7
+      value: 292.51
       objectReference: {fileID: 0}
     - target: {fileID: 35467411933009667, guid: 1e5577f4d1bbe5041881841c14bc6afc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

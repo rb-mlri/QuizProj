@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Question
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 84adc72fa5f12a84e831d1a0d30988cc, type: 2}
-  m_sharedMaterial: {fileID: 2254415272005660901, guid: 84adc72fa5f12a84e831d1a0d30988cc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69418fa4fb38b2d41b0eec5dce5e7e0e, type: 2}
+  m_sharedMaterial: {fileID: -2980585005065263169, guid: 69418fa4fb38b2d41b0eec5dce5e7e0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -30.081291, y: -48.464336, z: -27.574509, w: -32.58803}
+  m_margin: {x: -32.261345, y: -59.463352, z: -33.55693, w: -41.524746}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -163,7 +163,7 @@ RectTransform:
   m_GameObject: {fileID: 6219779598418275613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 2.51, y: 2.2410715, z: 2.2410715}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7732560825045376738}
