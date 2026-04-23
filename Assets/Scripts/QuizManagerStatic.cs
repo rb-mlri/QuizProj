@@ -17,6 +17,7 @@ public class QuizManagerStatic : MonoBehaviour
     public Button backToMenuButton;
     public GameObject explanationPanel;
     public TextMeshProUGUI explanationText;
+    public TextMeshProUGUI questionCounterText;
 
     [Header("Next Button")]
     public Button nextButton;
@@ -60,6 +61,7 @@ public class QuizManagerStatic : MonoBehaviour
         public string selectedAnswer;
         public string correctAnswer;
         public bool isCorrect;
+        
     }
 
     private List<QuestionResponse> responses = new List<QuestionResponse>();
@@ -264,6 +266,8 @@ public class QuizManagerStatic : MonoBehaviour
             optionButtons[i].onClick.RemoveAllListeners();
             optionButtons[i].onClick.AddListener(() => OnOptionSelected(choiceIndex));
         }
+            if (questionCounterText != null)
+                questionCounterText.text = $"Question: {currentIndex + 1} / {totalQuestionsInTest}";
     }
 
     //------------------------- Handle Answer -------------------------//

@@ -16,6 +16,7 @@ public class QuizManagerDynamic : MonoBehaviour
     public TextMeshProUGUI resultText;
     public TextMeshProUGUI knowledgeText;
     public Button backToMenuButton;
+    public TextMeshProUGUI questionCounterText;
 
     [Header("Next Button & Explanation")]
     public Button nextButton;
@@ -311,6 +312,9 @@ public class QuizManagerDynamic : MonoBehaviour
             optionButtons[i].onClick.RemoveAllListeners();
             optionButtons[i].onClick.AddListener(() => OnOptionSelected(q, choiceIndex));
         }
+
+        if (questionCounterText != null)
+            questionCounterText.text = $"Question: #{currentIndex + 1}";
 
         usedQuestions.Add(q.questionText);
         currentDifficulty = q.difficulty;
