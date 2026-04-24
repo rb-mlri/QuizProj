@@ -1,0 +1,27 @@
+Question,Topic,Difficulty,Weight,SelectedAnswer,CorrectAnswer,Correct
+(Easy) What is the correct syntax for declaring a method with two integer parameters?,Parameters,Easy,0.25,void add(a  b),void add(int a  int b),False
+(Easy) What is the term for values passed into a method?,Methods (Defining  Calling),Easy,0.25,Classes,Arguments,False
+(Easy) What happens after a return statement executes?,Return values,Easy,0.25,Loop continues,Method exits,False
+(Easy) Parameters are initialized when:,Parameters,Easy,0.25,Class is loaded,Method is called,False
+(Easy) How do you initialize an array at the time of declaration?,Arrays (Single Dimensional Arrays  Loop Traversal),Easy,0.25,int[] arr = {1 2 3};,int[] arr = {1 2 3};,True
+(Easy) Which method is automatically executed when a Java program starts?,Methods (Defining  Calling),Easy,0.25,run(),main(),False
+(Easy) What must a method declare if it returns a value?,Return values,Easy,0.25,Object,Return type,False
+(Easy) What must match when calling a method?,Parameters,Easy,0.25,Number and type of parameters,Number and type of parameters,True
+(Medium) Which is true about parameter scope?,Parameters,Medium,0.60,Accessible inside class,Accessible only inside method,False
+(Medium) Which method call is valid for: void test(double a  int b),Parameters,Medium,0.60,test(5.0  6),test(5.0  6),True
+(Easy) Which of the following is required to call a non-static method?,Methods (Defining  Calling),Easy,0.25,Object instance,Object instance,True
+(Easy) What does the following method return? int square(int x){ return x * x; } If called as square(3).,Return values,Easy,0.25,6,9,False
+(Easy) What is the output? public static int add(){ return 2 + 3; },Return values,Easy,0.25,3,5,False
+(Easy) Which part of a method defines what type of value is returned?,Return values,Easy,0.25,Return statement,Return type,False
+(Hard) Which method prevents parameter modification?,Parameters,Hard,1.00,void test(final int x),void test(final int x),True
+(Medium) What will be printed? int arr[] = {1 2 3 4}; for(int i = 0; i < arr.length; i++) { if(arr[i] % 2 == 0) System.out.print(arr[i] + " "); },Arrays (Single Dimensional Arrays  Loop Traversal),Medium,0.60,2 4,2 4,True
+(Hard) Evaluate the output: int arr[] = {10  20  30}; for(int i : arr) { i = i + 5; } System.out.print(arr[0]);,Arrays (Single Dimensional Arrays  Loop Traversal),Hard,1.00,10,10,True
+(Easy) Which return type indicates that a method does not return any value?,Return values,Easy,0.25,void,void,True
+(Medium) Why must the main() method be static?,Methods (Defining  Calling),Medium,0.60,To avoid compilation errors,JVM calls it without creating an object,False
+(Medium) What does return; do in a void method?,Methods (Defining  Calling),Medium,0.60,Returns null,Exits the method,False
+
+Total Score,'8/20'
+Methods (Defining, Calling),0.51
+Arrays (Single Dimensional Arrays, Loop Traversal),0.93
+Parameters,0.91
+Return values,0.55

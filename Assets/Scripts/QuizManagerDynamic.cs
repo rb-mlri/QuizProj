@@ -17,6 +17,7 @@ public class QuizManagerDynamic : MonoBehaviour
     public TextMeshProUGUI knowledgeText;
     public Button backToMenuButton;
     public TextMeshProUGUI questionCounterText;
+    public TextMeshProUGUI statusText;
 
     [Header("Next Button & Explanation")]
     public Button nextButton;
@@ -319,6 +320,9 @@ public class QuizManagerDynamic : MonoBehaviour
         usedQuestions.Add(q.questionText);
         currentDifficulty = q.difficulty;
         askedTopics.Add(topic);
+
+        if (statusText != null)
+            statusText.text = $"Level: {currentDifficulty} | Question: #{currentIndex + 1}";
     }
 
     //------------------------- Answer Handling -------------------------//

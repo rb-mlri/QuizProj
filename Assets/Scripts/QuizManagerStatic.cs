@@ -18,6 +18,7 @@ public class QuizManagerStatic : MonoBehaviour
     public GameObject explanationPanel;
     public TextMeshProUGUI explanationText;
     public TextMeshProUGUI questionCounterText;
+    public TextMeshProUGUI statusText;
 
     [Header("Next Button")]
     public Button nextButton;
@@ -266,8 +267,12 @@ public class QuizManagerStatic : MonoBehaviour
             optionButtons[i].onClick.RemoveAllListeners();
             optionButtons[i].onClick.AddListener(() => OnOptionSelected(choiceIndex));
         }
-            if (questionCounterText != null)
-                questionCounterText.text = $"Question: {currentIndex + 1} / {totalQuestionsInTest}";
+
+        string difficultyLabel = quizQuestions[currentIndex].questionText.Contains("(Easy)") ? "Easy" :
+                                     quizQuestions[currentIndex].questionText.Contains("(Medium)") ? "Medium" : "Hard";
+
+        if (statusText != null)
+            statusText.text = $"Level: {difficultyLabel} | Question: {currentIndex + 1} / {totalQuestionsInTest}";
     }
 
     //------------------------- Handle Answer -------------------------//

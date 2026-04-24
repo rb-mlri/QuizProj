@@ -283,6 +283,7 @@ MonoBehaviour:
   explanationPanel: {fileID: 467735262}
   explanationText: {fileID: 1785223501}
   questionCounterText: {fileID: 2076226428}
+  statusText: {fileID: 2076226429}
   nextButton: {fileID: 826428271}
   questionFile: {fileID: 4900000, guid: 0afcab9857612a244ade27ecec426aa9, type: 3}
   totalQuestionsInTest: 20
@@ -1619,6 +1620,17 @@ MonoBehaviour:
 --- !u!114 &2076226428 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6685662930197422527, guid: 1e5577f4d1bbe5041881841c14bc6afc, type: 3}
+  m_PrefabInstance: {fileID: 2076226425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2076226429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5508547681749215610, guid: 1e5577f4d1bbe5041881841c14bc6afc, type: 3}
   m_PrefabInstance: {fileID: 2076226425}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
