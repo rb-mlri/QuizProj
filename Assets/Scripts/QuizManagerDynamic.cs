@@ -16,8 +16,8 @@ public class QuizManagerDynamic : MonoBehaviour
     public TextMeshProUGUI resultText;
     public TextMeshProUGUI knowledgeText;
     public Button backToMenuButton;
-    public TextMeshProUGUI questionCounterText;
     public TextMeshProUGUI statusText;
+
 
     [Header("Next Button & Explanation")]
     public Button nextButton;
@@ -313,16 +313,13 @@ public class QuizManagerDynamic : MonoBehaviour
             optionButtons[i].onClick.RemoveAllListeners();
             optionButtons[i].onClick.AddListener(() => OnOptionSelected(q, choiceIndex));
         }
-
-        if (questionCounterText != null)
-            questionCounterText.text = $"Question: #{currentIndex + 1}";
-
-        usedQuestions.Add(q.questionText);
-        currentDifficulty = q.difficulty;
-        askedTopics.Add(topic);
+        int level = PlayerPrefs.GetInt("SelectedLevel", 1);
 
         if (statusText != null)
-            statusText.text = $"Level: {currentDifficulty} | Question: #{currentIndex + 1}";
+        {
+            // Displays "Dynamic Level # | Question: #"
+            statusText.text = $"Dynamic Level {level} | Question: #{currentIndex + 1} /{totalQuestions}";
+        }
     }
 
     //------------------------- Answer Handling -------------------------//

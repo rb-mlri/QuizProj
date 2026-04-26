@@ -17,7 +17,6 @@ public class QuizManagerStatic : MonoBehaviour
     public Button backToMenuButton;
     public GameObject explanationPanel;
     public TextMeshProUGUI explanationText;
-    public TextMeshProUGUI questionCounterText;
     public TextMeshProUGUI statusText;
 
     [Header("Next Button")]
@@ -271,8 +270,13 @@ public class QuizManagerStatic : MonoBehaviour
         string difficultyLabel = quizQuestions[currentIndex].questionText.Contains("(Easy)") ? "Easy" :
                                      quizQuestions[currentIndex].questionText.Contains("(Medium)") ? "Medium" : "Hard";
 
+        int level = PlayerPrefs.GetInt("SelectedLevel", 1);
+
         if (statusText != null)
-            statusText.text = $"Level: {difficultyLabel} | Question: {currentIndex + 1} / {totalQuestionsInTest}";
+        {
+            // Displays "Static Level # | Question: #"
+            statusText.text = $"Static Level {level} | Question: #{currentIndex + 1}/{totalQuestionsInTest}";
+        }
     }
 
     //------------------------- Handle Answer -------------------------//

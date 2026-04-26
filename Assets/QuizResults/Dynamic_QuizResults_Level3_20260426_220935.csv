@@ -1,0 +1,27 @@
+Question,Topic,Difficulty,Weight,SelectedAnswer,CorrectAnswer,Correct
+(Easy) Which return type indicates that a method does not return any value?,Return values,Easy,0.25,void,void,True
+(Easy) Which is TRUE about parameters?,Parameters,Easy,0.25,They store input values,They store input values,True
+(Easy) If a method does not return any value  what return type should it have?,Methods (Defining  Calling),Easy,0.25,empty,void,False
+(Easy) Which keyword is used to prevent a method from being overridden?,Methods (Defining  Calling),Easy,0.25,public,final,False
+(Easy) Which part of a method specifies what type of value it returns?,Methods (Defining  Calling),Easy,0.25,Access modifier,Return type,False
+(Easy) Which loop is commonly used for array traversal?,Arrays (Single Dimensional Arrays  Loop Traversal),Easy,0.25,for loop,All of the above,False
+(Easy) Which of the following is the correct method declaration?,Methods (Defining  Calling),Easy,0.25,void display,public void display(),False
+(Medium) Which of the following correctly defines a method with three parameters?,Parameters,Medium,0.60,void add(int a; int b; int c),void add(int a  int b  int c),False
+(Easy) If two methods have the same name but different parameters  this is called?,Methods (Defining  Calling),Easy,0.25,Overloading,Overloading,True
+(Medium) What is the output? static int x(){ return 3 + 4 * 2; },Return values,Medium,0.60,11,11,True
+(Easy) If an array is declared as int arr[] = new int[4];  what are the initial values stored?,Arrays (Single Dimensional Arrays  Loop Traversal),Easy,0.25,random values,0 0 0 0,False
+(Medium) Default values for parameters are assigned:,Parameters,Medium,0.60,At runtime,Not allowed in Java,False
+(Medium) What defines a method’s signature in Java?,Methods (Defining  Calling),Medium,0.60,Method name only,Method name and parameter list,False
+(Easy) What type of value does arr[2] represent?,Arrays (Single Dimensional Arrays  Loop Traversal),Easy,0.25,Third element of the array,Third element of the array,True
+(Medium) Which allows variable number of parameters?,Parameters,Medium,0.60,int... a,int... a,True
+(Medium) Which statement about constructors is true?,Methods (Defining  Calling),Medium,0.60,They are regular methods,They initialize objects,False
+(Medium) What defines a method’s signature in Java?,Methods (Defining  Calling),Medium,0.60,Method name only,Method name and parameter list,False
+(Medium) Where are method calls stored during execution?,Methods (Defining  Calling),Medium,0.60,Stack,Stack,True
+(Medium) What will be the output of the following code? int arr[] = {10  20  30  40}; for(int i = 0; i < arr.length; i++) { System.out.print(arr[i] + " "); },Arrays (Single Dimensional Arrays  Loop Traversal),Medium,0.60,0 1 2 3,10 20 30 40,False
+(Hard) Evaluate the output. static int test(){ return 2 + 3 * 4; },Return values,Hard,1.00,14,14,True
+
+Total Score,'8/20'
+Methods (Defining, Calling),0.74
+Arrays (Single Dimensional Arrays, Loop Traversal),0.55
+Parameters,0.78
+Return values,0.93

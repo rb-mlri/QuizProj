@@ -1,0 +1,23 @@
+Question,SelectedAnswer,CorrectAnswer,Correct
+(Easy) Which method reads an integer using Scanner?,readInt(),nextInt(),False
+(Easy) Which data type is used in Java to store integer values without decimal points?,double,int,False
+(Easy) Which primitive type stores fractional numbers with less precision?,double,float,False
+(Easy) What is the result of 15 - 6?,-9,9,False
+(Easy) Which method checks if a string is empty?,blank(),isEmpty(),False
+(Easy) Which symbol inserts a new line in printf?,//n,\n,False
+(Easy) Which is the symbol to write a single-line comment?,#,#,True
+(Medium) printf("%f"  2.5) prints:,2,2.5,False
+(Medium) What is wrong with this code? int number ="5";,Wrong operator,Data type mismatch,False
+(Medium) What is the value of x? int x = 7; x *= 2 + 1;,14,21,False
+(Medium) Mixing nextInt and nextLine requires:,Casting,Extra newline handling,False
+(Medium) Which variable type stores true or false values only?,flag,boolean,False
+(Medium) What is printed? System.out.println("Hello" + 5);,5Hello,Hello 5,False
+(Medium) Which method reads a boolean?,bool(),nextBoolean(),False
+(Hard) class Test13 { public static void main(String[] args) { boolean a = true; boolean b = false; System.out.print(a & b); } },true,false,False
+(Hard) Which line correctly calls a method named display?,run display,display(),False
+(Hard) class Test6 { public static void main(String[] args) { int x = 8; System.out.print(x > 5 && x < 10); } },false,true,False
+(Hard) Which is the correct syntax to import a package in Java?,package java.util;,import java.util.*;,False
+(Hard) What will be printed? System.out.println(5/2.0);,Error,2.5,False
+(Hard) System.out.println("5" + 2 * 3 + 4);,5125,564,False
+
+Total Score,'1/20'
