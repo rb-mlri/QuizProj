@@ -1,2855 +1,1747 @@
 Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: In Java, a method must declare a return type; void is used when the method does not return any value.
-Q: (Easy) Which keyword is used to define a method in Java?
-A) function
-B) define
-C) void
-D) method
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: A valid method declaration requires an access modifier (optional), return type, method name, and parentheses.
-Q: (Easy) Which of the following is the correct method declaration?
-A) public void display()
-B) void display
-C) public display()
-D) display void()
-Answer: 0
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The return statement exits the method and optionally sends a value back to the calling code.
-Q: (Easy) What is the purpose of the return statement in a method?
-A) To stop program execution
-B) To print output
-C) To declare a variable
-D) To send a value back to the caller
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The main() method serves as the entry point of every standalone Java application.
-Q: (Easy) Which method is automatically executed when a Java program starts?
-A) start()
-B) run()
-C) init()
-D) main()
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The return type defines the kind of value a method will return to the caller.
-Q: (Easy) Which part of a method specifies what type of value it returns?
-A) Method name
-B) Access modifier
-C) Return type
-D) Parameter list
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Parentheses are used to define the parameter list of a method.
-Q: (Easy) Which symbol encloses the parameters of a method?
-A) {}
-B) []
-C) <>
-D) ()
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The void keyword indicates that the method does not return a value.
-Q: (Easy) If a method does not return any value, what return type should it have?
-A) null
-B) empty
-C) void
-D) int
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Calling a method means invoking it so that its code executes.
-Q: (Easy) What is a method call?
-A) Declaring a variable
-B) Executing a method
-C) Importing a package
-D) Creating a class
+Topic: Methods
+Explanation: Methods allow code reusability and cleaner programs.
+Q: (Easy) What is the primary benefit of using methods in Java?
+A) Memory storage
+B) Code reusability
+C) Faster internet
+D) Hardware cooling
 Answer: 1
 
 Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Non-static methods belong to objects, so an object must be created before calling them.
-Q: (Easy) Which of the following is required to call a non-static method?
-A) Class name
-B) Object instance
-C) Package
-D) Return type
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Static methods belong to the class and can be called using the class name.
-Q: (Easy) Which keyword allows a method to be accessed without creating an object?
-A) final
-B) abstract
-C) public
-D) static
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Java requires a return statement if the method specifies a return type other than void.
-Q: (Easy) What happens if a method has a return type but does not include a return statement?
-A) It compiles successfully
-B) Runtime error
-C) Compilation error
-D) It returns 0
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Arguments are the actual values supplied when calling a method.
-Q: (Easy) What is the term for values passed into a method?
-A) Arguments
-B) Modifiers
-C) Objects
-D) Classes
-Answer: 0
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Parameters are variables defined in the method header to receive values.
-Q: (Easy) What are parameters in a method?
-A) Return types
-B) Variables declared in method definition
-C) Method calls
-D) Keywords
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Public methods are accessible from any class.
-Q: (Easy) Which access modifier makes a method accessible everywhere?
-A) private
-B) protected
-C) public
-D) default
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Methods can accept multiple parameters separated by commas.
-Q: (Easy) Can a method have multiple parameters?
-A) No
-B) Yes
-C) Only one
-D) Only two
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The final keyword prevents method overriding.
-Q: (Easy) Which keyword is used to prevent a method from being overridden?
+Topic: Methods
+Explanation: The keyword void indicates the method returns no value.
+Q: (Easy) Which keyword indicates that a method returns nothing?
 A) static
-B) public
-C) abstract
-D) final
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Method overloading occurs when methods share a name but differ in parameter lists.
-Q: (Easy) If two methods have the same name but different parameters, this is called?
-A) Overriding
-B) Overloading
-C) Encapsulation
-D) Inheritance
-Answer: 1
-
-Level: 3 
-Topic: Methods (Defining, Calling)
-Explanation: Method names must follow identifier rules and include parentheses.
-Q: (Easy) Which method signature is valid?
-A) void 123method()
-B) method void()
-C) void method
-D) void method()
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Local variables are accessible only within the method in which they are declared.
-Q: (Easy) What is the scope of a local variable declared inside a method?
-A) Entire program
-B) Only inside that method
-C) Entire class
-D) Entire package
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Static methods are called using the class name without creating an object.
-Q: (Easy) What is required to call a static method from another class?
-A) Object instance
-B) Inheritance
-C) Class name
-D) Constructor
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Method parameters receive values passed during method calls.
-Q: (Medium) What happens if the number of arguments does not match the number of parameters?
-A) Program runs normally
-B) Runtime error
-C) Compilation error
-D) Arguments are ignored
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Java uses pass-by-value for method arguments.
-Q: (Medium) Java passes arguments to methods using which mechanism?
-A) Pass-by-reference
-B) Pass-by-pointer
-C) Pass-by-value
-D) Pass-by-object
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Static methods cannot directly access non-static members.
-Q: (Medium) Why can’t a static method access instance variables directly?
-A) Syntax restriction
-B) Instance variables belong to objects
-C) They are private
-D) They are final
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Method overloading is determined by parameter list, not return type.
-Q: (Medium) Which change allows method overloading?
-A) Changing return type only
-B) Changing method name
-C) Changing parameter list
-D) Changing access modifier
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The main method must be static so the JVM can call it without an object.
-Q: (Medium) Why must the main() method be static?
-A) To improve performance
-B) To avoid compilation errors
-C) JVM calls it without creating an object
-D) It cannot return a value
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Methods can return only one value directly.
-Q: (Medium) How many values can a method return directly?
-A) Zero
-B) One
-C) Two
-D) Multiple
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: A method can call another method within the same class directly.
-Q: (Medium) How can one method call another method in the same class?
-A) Using an object
-B) Using inheritance
-C) Directly by name
-D) Using constructor
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Recursive methods call themselves until a base condition is met.
-Q: (Medium) What is a recursive method?
-A) Method calling another class
-B) Method calling itself
-C) Method with no parameters
-D) Method without return type
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: A base condition is necessary to stop infinite recursion.
-Q: (Medium) What happens if a recursive method has no base condition?
-A) Compilation error
-B) Program ends normally
-C) Stack overflow error
-D) Logic error only
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Overloaded methods must differ in parameter type, number, or order.
-Q: (Medium) Which is NOT considered method overloading?
-A) Different number of parameters
-B) Different parameter types
-C) Different parameter order
-D) Different return type only
-Answer: 3
-
-Level: 3 
-Topic: Methods (Defining, Calling)
-Explanation: Method signatures do not include return types.
-Q: (Medium) What defines a method’s signature in Java?
-A) Method name and return type
-B) Method name only
-C) Method name and parameter list
-D) Return type only
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: A static method can call another static method directly.
-Q: (Medium) Which type of method can be called directly inside a static method?
-A) Instance method
-B) Abstract method
-C) Static method
-D) Protected method
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Constructors are not methods and do not have return types.
-Q: (Medium) Which statement about constructors is true?
-A) They have return types
-B) They are regular methods
-C) They initialize objects
-D) They are static
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Void methods can use return without a value to exit early.
-Q: (Medium) What does return; do in a void method?
-A) Returns zero
-B) Returns null
-C) Exits the method
-D) Causes error
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Parameters are local to the method.
-Q: (Medium) What is the scope of method parameters?
-A) Entire class
-B) Entire program
-C) Only within the method
-D) Package level
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Method calls follow a stack-based execution model.
-Q: (Medium) Where are method calls stored during execution?
-A) Heap
-B) Stack
-C) Queue
-D) Register
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Overloaded methods are resolved at compile time.
-Q: (Medium) When is method overloading resolved?
-A) Runtime
-B) Compile time
-C) Execution time
-D) Load time
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The JVM looks for the exact main method signature.
-Q: (Medium) Which main method signature is valid?
-Java
-public static void main(String[] args)
-A) Yes
-B) No
-C) Only without static
-D) Only without public
-Answer: 0
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Methods improve code reusability and readability.
-Q: (Medium) What is the main advantage of using methods?
-A) Faster execution
-B) Reduced memory usage
-C) Code reusability
-D) Hardware independence
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Methods can be called multiple times once defined.
-Q: (Medium) How many times can a method be called after it is defined?
-A) Once
-B) Twice
-C) Limited times
-D) Any number of times
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The method call depends on the reference type at compile time for overloading.
-Q: (Hard) Which concept determines which overloaded method is called?
-A) Runtime binding 
-B) Compile-time binding
-C) Dynamic dispatch
-D) Object creation
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Return type alone cannot differentiate overloaded methods.
-Q: (Hard) Why can methods not be overloaded by return type only?
-A) JVM limitation
-B) Causes ambiguity during compilation
-C) Syntax restriction
-D) Memory issue
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Recursive calls consume stack memory for each call.
-Q: (Hard) What limits the depth of recursive method calls?
-A) Heap size
-B) CPU speed
-C) Stack size
-D) Number of parameters
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Static methods are bound at compile time.
-Q: (Hard) Which type of binding applies to static methods?
-A) Dynamic binding 
-B) Late binding
-C) Runtime binding
-D) Compile-time binding
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: JVM looks for the exact method signature to start execution.
-Q: (Hard) What happens if the main method signature is incorrect?
-A) Program runs with warning
-B) Compilation error
-C) Runtime error
-D) Program does not start
-Answer: 3
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: A method returning an object returns its reference.
-Q: (Hard) When a method returns an object, what is actually returned?
-A) Complete object
-B) Copy of object
-C) Reference to object
-D) Memory address only
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Overloaded methods must differ in parameter list, not access modifiers.
-Q: (Hard) Which change does NOT support method overloading?
-A) Parameter type
-B) Parameter count
-C) Access modifier
-D) Parameter order
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Method calls are pushed onto the call stack sequentially.
-Q: (Hard) What data structure manages method execution order? 
-A) Queue
-B) Stack
-C) Heap
-D) Tree
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Local variables are destroyed when the method completes execution.
-Q: (Hard) What happens to local variables after a method finishes execution?
-A) Stored in heap
-B) Become global
-C) Destroyed
-D) Converted to static
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Recursive methods require careful termination conditions.
-Q: (Hard) Which is essential to avoid infinite recursion?
-A) Static keyword
-B) Loop
-C) Base condition
-D) Multiple parameters
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Method overloading resolution occurs before execution.
-Q: (Hard) When does Java decide which overloaded method to call?
-A) Runtime
-B) Execution time
-C) Compile time
-D) Load time
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Static methods cannot use this keyword.
-Q: (Hard) Why can’t static methods use the this keyword?
-A) Syntax error
-B) No object reference exists
-C) Memory limitation
-D) JVM restriction
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Return statements immediately terminate method execution.
-Q: (Hard) What happens when a return statement is executed?
-A) Loop continues
-B) Method execution stops
-C) Program ends
-D) Variable resets
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Methods improve modularity and debugging efficiency.
-Q: (Hard) Which design principle is supported by method usage?
-A) Encapsulation
-B) Modularity
-C) Polymorphism
-D) Inheritance
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: A method call creates a new stack frame.
-Q: (Hard) What is created each time a method is called?
-A) Object
-B) Heap memory
-C) Stack frame
-D) Thread
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Arguments are evaluated before method execution.
-Q: (Hard) When are method arguments evaluated?
-A) After method execution
-B) During compilation
-C) Before method execution
-D) After return
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Overloading does not depend on method body.
-Q: (Hard) Which part is ignored when determining method overloading?
-A) Method name
-B) Parameter list
-C) Method body
-D) Parameter types
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Recursive methods can replace iterative solutions in some cases.
-Q: (Hard) Which problem type is commonly solved using recursion?
-A) File handling
-B) Sorting
-C) Factorial calculation
-D) Input handling
-Answer: 2
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: Methods reduce redundancy in programs.
-Q: (Hard) What programming issue is reduced by using methods?
-A) Compilation time
-B) Redundant code
-C) Execution speed
-D) Memory allocation
-Answer: 1
-
-Level: 3
-Topic: Methods (Defining, Calling)
-Explanation: The JVM searches for the main method to begin execution.
-Q: (Hard) What is the role of the main() method in Java?
-A) Object creation
-B) Memory allocation
-C) Program entry point
-D) Exception handling
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: int arr[] is the correct syntax to declare a single-dimensional array of integers in Java.
-Q: (Easy) Which of the following correctly declares a single-dimensional array? 
-A) int arr;
-B) int arr[];
-C) array int arr;
-D) arr int[];
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: In Java, numeric types (like int) are initialized to 0 in arrays by default.
-Q: (Easy) What is the default value of elements in an int array?
-A) 0
-B) 1
+B) int
 C) null
-D) -1
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: In Java, array.length gives the number of elements in the array.
-Q: (Easy) Which method returns the length of an array?
-A) size()
-B) length
-C) getLength()
-D) length()
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Using curly braces {} initializes an array with specific values when declared.
-Q: (Easy) How do you initialize an array at the time of declaration?
-A) int arr[5];
-B) int[] arr = {1,2,3};
-C) int arr = new int[];
-D) int arr[] = ();
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Java arrays are zero-indexed, so the first element is at index 0.
-Q: (Easy) What is the index of the first element in an array?
-A) 1
-B) 0
-C) -1
-D) Depends on size
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The correct syntax for creating a new array of length 3 in Java is new int[3].
-Q: (Easy) Which of the following is a valid array initialization?
-A) int[] arr = new int[3];
-B) int arr = new int[3];
-C) arr[] = new int(3);
-D) int arr[] = {}
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Any loop such as for, while, or do-while can be used to traverse arrays.
-Q: (Easy) Which loop is commonly used for array traversal? 
-A) while loop
-B) for loop
-C) do-while loop
-D) All of the above
+D) void
 Answer: 3
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Java arrays store elements of the same type (homogeneous).
-Q: (Easy) Which of the following is true about arrays in Java?
-A) They can store multiple types in one array
-B) Size can be changed after creation
-C) They store homogeneous data
-D) They are dynamic
-Answer: 2
+Topic: Methods
+Explanation: Methods must be defined inside a class body.
+Q: (Easy) Where must a method be defined in Java?
+A) Inside a class
+B) Outside a class
+C) In a separate .txt file
+D) In the import list
+Answer: 0
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: arr[2] refers to the value at index 2 (third element) of the array.
-Q: (Easy) What type of value does arr[2] represent?
-A) The array itself
-B) Third element of the array
-C) Index of array
-D) Memory address
+Topic: Methods
+Explanation: The method header is also called the method declaration.
+Q: (Easy) What is the method header also known as?
+A) Method body
+B) Method declaration
+C) Method call
+D) Argument
 Answer: 1
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The length property is used, not a method call.
-Q: (Easy) How do you access the number of elements in an array?
-A) arr.size()
-B) arr.length()
-C) arr.length
-D) size(arr)
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Index out of bounds (5) on a 3-element array will cause an error at runtime.
-Q: (Easy) Which of the following will produce a compile-time error?
-A) int[] arr = {1,2,3};
-B) arr[5] = 10;
-C) int arr[] = new int[3];
-D) arr.length
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: arr.length displays the number of elements in the array.
-Q: (Easy) What is the output of System.out.println(arr.length);?
-A) Last element
-B) Number of elements
-C) Current index
-D) Memory address
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Valid indices run from 0 to length–1 (0–4).
-Q: (Easy) What is array index range for an array of length 5?
-A) 1–5
-B) 0–5
-C) 0–4
-D) 1–4
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: All listed loops can iterate and print array elements.
-Q: (Easy) Which of the following can be used to print array elements?
-A) for loop
-B) while loop
-C) for-each loop
-D) All of the above
+Topic: Methods
+Explanation: The return keyword sends data back to the caller.
+Q: (Easy) Which keyword is used to send data back to the caller?
+A) exit
+B) send
+C) output
+D) return
 Answer: 3
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Both for and while loops can traverse using an index.
-Q: (Easy) Which method is commonly used for traversal with an index?
-A) for loop
-B) for-each loop
-C) while loop
-D) Both A and C
-Answer: 3
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: new int() without size is invalid syntax.
-Q: (Easy) Which of these is NOT a valid array type declaration?
-A) float arr[] = new float[5];
-B) String arr[] = {"a"};
-C) char[] arr = {'a'};
-D) int arr[ ] = new int();
-Answer: 3
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: All elements are set to default value 0 for int type.
-Q: (Easy) If an array is declared as int arr[] = new int[4];, what are the initial values stored? 
-A) 1,1,1,1
-B) random values
-C) 0,0,0,0
-D) null
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Correct array creation includes type and size.
-Q: (Easy) Which of the following creates an array correctly?
-A) int arr = new int[3];
-B) int arr[] = new int[3];
-C) int arr[] = 3;
-D) arr[] = new int[3];
+Topic: Methods
+Explanation: Implementation hiding is often called the "black box" concept.
+Q: (Easy) What is the "black box" concept in method logic?
+A) A hidden variable
+B) Implementation hiding
+C) A deleted method
+D) A syntax error
 Answer: 1
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Index 0 accesses the first element.
-Q: (Easy) What will the following print?
-int arr[] = {1,2,3};
-System.out.println(arr[0]);
-A) 1
-B) 0
-C) arr
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Array size in Java is fixed once created.
-Q: (Easy) Which of the following is true about array length?
-A) It can be changed after creation
-B) It is fixed after creation
-C) It always starts at index 1
-D) It depends on loop type
+Topic: Methods
+Explanation: Local variables are limited to the method they are declared in.
+Q: (Easy) What is the scope of a local variable?
+A) The whole class
+B) Only that method
+C) The whole package
+D) The internet
 Answer: 1
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The loop iterates from index 0 to 3, printing each element sequentially.
-Q: (Medium) What will be the output of the following code?
-int arr[] = {10, 20, 30, 40};
-for(int i = 0; i < arr.length; i++)
-{
-System.out.print(arr[i] + " ");
-}
-A) 10 20 30 40
-B) 0 1 2 3
-C) Error
-D) 40 30 20 10
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The loop starts at the last index and prints elements in reverse order.
-Q: (Medium) What is the output?
-int arr[] = {1, 2, 3};
-for(int i = arr.length - 1; i >= 0; i--)
-{
-System.out.print(arr[i] + " ");
-}
-A) 1 2 3
-B) 3 2 1
-C) Error
-D) 0 1 2
+Topic: Methods
+Explanation: Parameters are the variables defined in the header.
+Q: (Easy) What do we call the variables in a method header?
+A) Arguments
+B) Parameters
+C) Constants
+D) Strings
 Answer: 1
 
 Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The loop accumulates 5 + 10 + 15 = 30.
-Q: (Medium) What value will be printed?
-int arr[] = {5, 10, 15};
-int sum = 0;
-for(int i = 0; i < arr.length; i++) {
-sum += arr[i];
-}
-System.out.println(sum);
-A) 15
-B) 30
-C) 25
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The loop skips every other element (indices 0 and 2).
-Q: (Medium) What is the output?
-int arr[] = {2, 4, 6, 8};
-for(int i = 0; i < arr.length; i += 2)
-{
-System.out.print(arr[i] + " ");
-}
-A) 2 4 6 8
-B) 2 6
-C) 4 8
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Index 3 is out of bounds (valid indices: 0–2).
-Q: (Medium) What happens when this code runs?
-int arr[] = {1,2,3};
-System.out.println(arr[3]);
-A) Prints 3
-B) Prints 0
-C) Runtime Error
-D) Compile Error
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: The loop prints indices, not values.
-Q: (Medium) What will be printed?
-int arr[] = {7, 14, 21};
-for(int i = 0; i < arr.length; i++)
-{
-System.out.print(i + " ");
-}
-A) 7 14 21
-B) 0 1 2
-C) Error
-D) 1 2 3
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Array becomes {6, 12, 18}; index 1 = 12.
-Q: (Medium) What is the output?
-int arr[] = {3, 6, 9};
-for(int i = 0; i < arr.length; i++)
-{
-arr[i] *= 2;
-}
-System.out.println(arr[1]);
-A) 6
-B) 12
-C) 9
-D) 18
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Only even numbers are printed.
-Q: (Medium) What will be printed?
-int arr[] = {1,2,3,4};
-for(int i = 0; i < arr.length; i++)
-{
-if(arr[i] % 2 == 0)
-System.out.print(arr[i] + " ");
-}
-A) 1 3
-B) 2 4
-C) 1 2 3 4
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Elements greater than 10 → 15, 20 → count = 2.
-Q: (Medium) What value does count store?
-int arr[] = {5, 10, 15, 20};
-int count = 0;
-for(int i = 0; i < arr.length; i++)
-{
-if(arr[i] > 10)
-count++;
-}
-A) 1
-B) 2
-C) 3
-D) 4
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Enhanced for-loop prints each element.
-Q: (Medium) What will be printed?
-int arr[] = {1,2,3};
-for(int i : arr)
-{
-System.out.print(i + " ");
-}
-A) 1 2 3
-B) 0 1 2
-C) Error
-D) arr
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: First and last elements are swapped.
-Q: (Medium) What is the output?
-int arr[] = {10, 20, 30};
-int x = arr[0];
-arr[0] = arr[2];
-arr[2] = x;
-System.out.print(arr[0] + " " + arr[2]);
-A) 10 30
-B) 30 10
-C) 20 30
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Default int value = 0.
-Q: (Medium) What will be printed?
-int arr[] = new int[3];
-System.out.print(arr[1]);
-A) 0
-B) null
-C) Error
-D) Garbage value
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Indices 0 & 2 → 1 + 3 = 4.
-Q: (Medium) What is the output?
-int arr[] = {1,2,3,4};
-int sum = 0;
-for(int i = 0; i < arr.length; i++)
-{
-if(i % 2 == 0)
-sum += arr[i];
-}
-System.out.println(sum);
-A) 4
-B) 6
-C) 5
-D) 10
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Array length = number of elements.
-Q: (Medium) What is printed?
-int arr[] = {9, 8, 7};
-System.out.print(arr.length);
-A) 2
-B) 3
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Values → {2,5,8}; arr[2] = 8.
-Q: (Medium) What will be printed?
-int arr[] = {2,4,6};
-for(int i = 0; i < arr.length; i++)
-{
-arr[i] += i;
-}
-System.out.print(arr[2]);
-A) 6
-B) 8
-C) 10
-D) 12
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Condition equivalent to < arr.length.
-Q: (Medium) What is the output?
-int arr[] = {1,2,3};
-for(int i = 0; i <= arr.length - 1; i++)
-{
-System.out.print(arr[i]);
-}
-A) 123
-B) Error
-C) 012
-D) 321
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Starts at index 1 → prints 2,3.
-Q: (Medium) What is printed?
-Java
-int arr[] = {1,2,3};
-for(int i = 1; i < arr.length; i++)
-{
-System.out.print(arr[i]);
-}
-A) 123
-B) 23
-C) 12
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Last index = length − 1.
-Q: (Medium) What is the output?
-int arr[] = {5,10,15};
-System.out.print(arr[arr.length - 1]);
-A) 5
-B) 10
-C) 15
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Sum of all elements.
-Q: (Medium) What will be printed?
-int arr[] = {1,1,1};
-int total = 0;
-for(int i : arr)
-total += i;
-System.out.print(total);
-A) 1
-B) 2
-C) 3
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Integer addition occurs.
-Q: (Medium) What happens here?
-int arr[] = new int[2];
-arr[0] = 5;
-arr[1] = 10;
-System.out.print(arr[0] + arr[1]);
-A) 15
-B) 510
-C) Error
-D) 5 10
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Only odd indices are added → arr[1] + arr[3] = 2 + 4.
-Q: (Hard) What will be the output?
-int arr[] = {1, 2, 3, 4};
-int sum = 0;
-for(int i = 0; i < arr.length; i++)
-{
-if(i % 2 == 0)
-continue;
-sum += arr[i];
-}
-System.out.println(sum);
-A) 4
-B) 6
-C) 2
-D) 10
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Enhanced for-loop variable is a copy; array remains unchanged.
-Q: (Hard) Evaluate the output:
-int arr[] = {10, 20, 30};
-for(int i : arr)
-{
-i = i + 5;
-}
-System.out.print(arr[0]);
-A) 15
-B) 10
-C) 25
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Post-increment correctly advances index after access.
-Q: (Hard) What is printed?
-int arr[] = {1, 2, 3};
-int i = 0;
-while(i < arr.length)
-{
-System.out.print(arr[i++] + " ");
-}
-A) 1 2 3
-B) 0 1 2
-C) Error
-D) Infinite loop
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Loop accesses arr[3], causing ArrayIndexOutOfBoundsException.
-Q: (Hard) What happens when executed?
-int arr[] = {1, 2, 3};
-for(int i = 0; i <= arr.length; i++)
-{
-System.out.print(arr[i] + " ");
-}
-A) Prints all elements
-B) Compile Error
-C) Runtime Exception
-D) Infinite Loop
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Values → 1 + 2 + 3 = 6.
-Q: (Hard) Determine the output:
-int arr[] = {5, 10, 15};
-int result = 0;
-for(int i = 0; i < arr.length; i++)
-{
-result += arr[i] / 5;
-}
-System.out.println(result);
-A) 6
-B) 5
-C) 3
-D) 30
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: arr[0] = 2 + 6 = 8.
-Q: (Hard) What will be printed?
-int arr[] = {2, 4, 6};
-for(int i = 0; i < arr.length; i++)
-{
-arr[i] = arr[i] + arr[arr.length - 1 - i];
-}
-System.out.print(arr[0]);
-A) 8
-B) 6
-C) 4
-D) 2
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Even elements → 2 and 4.
-Q: (Hard) Evaluate the result:
-int arr[] = {1, 2, 3, 4};
-int x = 0;
-for(int i : arr)
-{
-if(i % 2 == 0)
-x++;
-}
-System.out.print(x);
-A) 1
-B) 2
-C) 3
-D) 4
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Semicolon ends loop; i becomes arr.length.
-Q: (Hard) What is printed?
-int arr[] = {3, 6, 9};
-int i;
-for(i = 0; i < arr.length; i++);
-System.out.print(i);
-A) 2
-B) 3
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: arr[2] increments from 3 → 4.
-Q: (Hard) What is the output?
-int arr[] = {1, 2, 3};
-int sum = 0;
-for(int i = 0; i < arr.length; i++)
-{
-sum += arr[i];
-arr[i]++;
-}
-System.out.print(arr[2]);
-A) 3
-B) 4
-C) 5
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Standard max-search traversal.
-Q: (Hard) Analyze the following program that attempts to determine the largest value stored in an array. What value will be printed after the loop completes?
-int arr[] = {5, 10, 15};
-int max = arr[0];
-for(int i = 1; i < arr.length; i++) {
-if(arr[i] > max)
-max = arr[i];
-}
-System.out.print(max);
-A) 5
-B) 10
-C) 15
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: arr[2] = 3 × 2.
-Q: (Hard) What will be printed?
-int arr[] = {1, 2, 3};
-for(int i = 0; i < arr.length; i++) {
-arr[i] = arr[i] * i;
-}
-System.out.print(arr[2]);
-A) 3
-B) 6
-C) 4
-D) 2
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Invalid index → ArrayIndexOutOfBoundsException.
-Q: (Hard) Examine the following statement where an array index is accessed using the array’s length. What will happen when this program is executed?
-int arr[] = {10, 20, 30};
-System.out.print(arr[arr.length]);
-A) 30
-B) 0
-C) Runtime Error
-D) Compile Error
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Sum of indices → 0 + 1 + 2.
-Q: (Hard) Consider the following code that iterates through an array using a loop. After the loop finishes execution, what value will be stored in the variable sum? 
-int arr[] = {2, 4, 6};
-int sum = 0;
-for(int i = 0; i < arr.length; i++) {
-sum += i;
-}
-System.out.print(sum);
-A) 6
-B) 3
-C) 2
-D) 12
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Loop runs 3 times → arr[0] increments thrice.
-Q: (Hard) What is printed?
-int arr[] = {1, 2, 3};
-for(int i : arr)
-arr[0]++;
-System.out.print(arr[0]);
-A) 2
-B) 3
-C) 4
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Adds 1 + 2 then stops.
-Q: (Hard) Consider the following program that iterates through an array and uses a break statement inside the loop.
-What value will be printed after the loop terminates?
-int arr[] = {1,2,3,4};
-int x = 0;
-for(int i : arr) {
-if(i > 2)
-break;
-x += i;
-}
-System.out.print(x);
-A) 1
-B) 3
-C) 6
-D) 10
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: do-while guarantees execution before condition check.
-Q: (Hard) Examine the following program that uses a do-while loop to traverse an array. What will be printed when the program executes?
-int arr[] = {5, 10, 15};
-int i = 0;
-do {
-System.out.print(arr[i++] + " ");
-} while(i < arr.length);
-A) 5 10 15
-B) Error
-C) Infinite Loop
-D) 5 10
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: i increments twice → adds arr[0] + arr[2].
-Q: (Hard) Analyze the following loop carefully. Notice that the loop variable is modified inside the loop body.
-What value will be printed after the loop completes execution?
-int arr[] = {1,2,3};
-int sum = 0;
-for(int i = 0; i < arr.length; i++) {
-sum += arr[i++];
-}
-System.out.print(sum);
-A) 6
-B) 4
-C) 3
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: Multiplication traversal → 2 × 4 × 6.
-Q: (Hard) What is printed?
-int arr[] = {2, 4, 6};
-int val = 1;
-for(int i = 0; i < arr.length; i++) {
-val *= arr[i];
-}
-System.out.print(val);
-A) 12
-B) 48
-C) 24
-D) 6
-Answer: 1
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal) 
-Explanation: 3 − 1 = 2.
-Q: (Hard) Analyze the expression used in the following statement. What value will be printed by the program?
-int arr[] = {1,2,3};
-System.out.print(arr.length - arr[0]);
-A) 2
-B) 3
-C) 1
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Arrays (Single Dimensional Arrays, Loop Traversal)
-Explanation: All elements are odd.
-Q: (Hard) Consider the following program that traverses an array using an enhanced for-loop and applies a condition inside the loop. 
-After the loop finishes execution, what value will be printed?
-int arr[] = {1, 3, 5};
-int count = 0;
-for(int i : arr) {
-if(i % 2 == 1)
-count++;
-}
-System.out.print(count);
-A) 1
-B) 2
-C) 3
-D) 0
-Answer: 2
-
-Level: 3
-Topic: Parameters 
-Explanation: Parameters are variables defined in the method header to receive values when the method is called. 
-Q: (Easy) What are parameters in Java?
-A) Variables declared inside a method
-B) Variables declared in a method definition to receive values
-C) Variables declared outside a class
-D) Constants used in a program
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters are declared inside the parentheses of the method header.
-Q: (Easy) Where are parameters defined?
-A) Inside the method body
-B) In the method header
-C) Inside main method only
-D) Outside the class
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Each parameter must have a type and a name.
-Q: (Easy) What is the correct syntax for declaring a method with two integer parameters?
-A) void add(int a, int b)
-B) void add(a, b)
-C) void add(int, int)
-D) add(int a, int b)
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Arguments are the actual values passed when calling a method.
-Q: (Easy) What is the term for the values passed to a method?
-A) Parameters
-B) Variables
-C) Arguments
-D) Identifiers
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Java allows any number of parameters in a method.
-Q: (Easy) How many parameters can a Java method have?
-A) Only one
-B) Only two
-C) Unlimited
-D) Maximum of five
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters are separated using commas.
-Q: (Easy) Which symbol separates multiple parameters?
-A) Semicolon
-B) Colon
-C) Comma
-D) Period
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Each parameter must include its type and name, separated by commas.
-Q: (Easy) Which of the following is a valid method declaration?
-A) void show(int x String y)
-B) void show(int x, String y)
-C) void show(x, y)
-D) show(int x, String y)
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters are declared inside parentheses in the method header.
-Q: (Easy) Parameters must be enclosed within:
-A) Curly braces {}
-B) Square brackets []
-C) Parentheses ()
-D) Angle brackets <>
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: String[] args is a parameter of the main method.
-Q: (Easy) Which of the following is an example of a parameter?
-A) int x = 5;
-B) main(String[] args)
-C) System.out.println()
-D) return x;
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: It is a parameter that receives command-line arguments.
-Q: (Easy) What is String[] args in main method?
-A) Argument
-B) Parameter
-C) Variable
-D) Class
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters temporarily store the values passed to methods.
-Q: (Easy) Which is TRUE about parameters?
-A) They are optional in method definitions
-B) They store input values
-C) They must be global variables
-D) They are constants
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: The number of arguments must match the number of parameters.
-Q: (Easy) What happens if a method expects two parameters but receives one?
-A) Runtime error
-B) Compilation error
-C) Program runs normally
-D) Default value is used
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameter names must be unique within a method.
-Q: (Easy) Which of the following is NOT allowed?
-A) void test(int a, double b)
-B) void test(int a, int b)
-C) void test(int a, int a)
-D) void test(String s)
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters declared in the method header are called formal parameters.
-Q: (Easy) Parameters are also called:
-A) Formal parameters
-B) Local variables
-C) Arguments
-D) Static variables
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Arguments are passed without mentioning data types.
-Q: (Easy) Which is a correct method call?
-A) add(5, 6);
-B) add(int 5, int 6);
-C) add(a, b int);
-D) add();
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters can be of any valid data type.
-Q: (Easy) Can parameters have different data types?
-A) No
-B) Yes
-C) Only int
-D) Only String
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters are local to the method.
-Q: (Easy) What is the scope of a parameter?
-A) Entire program
-B) Entire class
-C) Inside the method only
-D) Global scope
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters must be declared with a data type.
-Q: (Easy) Which keyword is used before parameters?
-A) static
-B) return
-C) Data type
-D) class
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: The arguments must match both number and type of parameters.
-Q: (Easy) What must match when calling a method?
-A) Only parameter names
-B) Number and type of parameters
-C) Return type
-D) Method body
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters receive values when the method is invoked.
-Q: (Easy) Parameters are initialized when:
-A) Method is defined
-B) Class is loaded
-C) Method is called
-D) Program starts
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Java uses pass-by-value for primitives and object references.
-Q: (Medium) What will be the output?
-void change(int x) {
-x = 20;
-}
-public static void main(String[] args) {
-int a = 10;
-change(a);
-System.out.println(a);
-}
-A) 20
-B) 10
-C) Compilation error
-D) Runtime error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: The reference to the array is passed by value, but it points to the same object.
-Q: (Medium) What is printed?
-void modify(int[] arr) {
-arr[0] = 50;
-}
-If called with {10,20,30}?
-A) 10
-B) 50
-C) Compilation error
-D) Depends on return type
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: The first argument must be double and the second must be int.
-Q: (Medium) Which method call is valid for:
-void test(double a, int b)
-A) test(5, 6)
-B) test(5.0, 6)
-C) test(5, 6.0)
-D) test("5", 6)
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Java requires compatible data types during method invocation.
-Q: (Medium) What happens if the argument type does not match the parameter type?
-A) Automatic correction
-B) Compilation error
-C) Runtime conversion
-D) Program ignores value
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Reassigning a String reference inside the method does not affect the original.
-Q: (Medium) What is the output?
-void show(String s){
-s = "World";
-}
-public static void main(String[] args) {
-String str = "Hello";
-show(str);
-System.out.println(str);
-}
-A) Hello
-B) World
-C) Null
-D) Compilation error
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters must include type and name, separated by commas.
-Q: (Medium) Which of the following correctly defines a method with three parameters?
-A) void add(int a, int b, int c)
-B) void add(int a; int b; int c)
-C) void add(a, b, c)
-D) add(int a, int b, int c)
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: The order and type of arguments must match the parameter declaration.
-Q: (Medium) If a method has two parameters of different types, the order:
-A) Does not matter
-B) Must match in method call
-C) Is optional
-D) Can be reversed automatically
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: The number of arguments must match the number of parameters.
-Q: (Medium) What will happen?
-void test(int a, int b)
-test(10);
-A) Runs normally
-B) Compilation error
-C) Runtime error
-D) b becomes 0
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters are local variables of the method.
-Q: (Medium) Which is true about parameter scope?
-A) Accessible throughout program
-B) Accessible inside class
-C) Accessible only inside method
-D) Accessible globally
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Method overloading depends on parameter differences.
-Q: (Medium) Can two methods have the same name but different parameter lists?
-A) No
-B) Yes
-C) Only if static
-D) Only if private
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Primitive parameters are passed by value.
-Q: (Medium) What is the output?
-void test(int x) {
-x++;
-}
-If x = 5 is passed?
-A) 6
-B) 5
-C) Compilation error
-D) Depends on return type
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Varargs use ellipsis (...) to allow variable-length parameters.
-Q: (Medium) Which allows variable number of parameters?
-A) int a[]
-B) int... a
-C) int a
-D) int *a
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters can be declared as final to prevent reassignment.
-Q: (Medium) Which statement is correct?
-A) Parameters can be final
-B) Parameters must be static
-C) Parameters cannot be primitive
-D) Parameters cannot be objects
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Reassigning the parameter reference does not affect the original array.
-Q: (Medium) What will be printed?
-void test(int[] arr) {
-arr = new int[]{9,9,9};
-}
-Original array unchanged?
-A) Yes
-B) No
-C) Compilation error
-D) Runtime error
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Varargs must be the last parameter in the method.
-Q: (Medium) Which is valid?
-A) void test(int... a, int b)
-B) void test(int b, int... a)
-C) void test(int... a, int... b)
-D) None
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Java does not support default parameter values.
-Q: (Medium) Default values for parameters are assigned:
-A) Automatically
-B) At runtime
-C) Not allowed in Java
-D) By JVM
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Java passes a copy of the reference (pass-by-value).
-Q: (Medium) What is passed when an object is given as an argument?
-A) Object copy
-B) Reference copy
-C) Memory address directly
-D) Nothing
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: String[] args is a parameter receiving command-line input.
-Q: (Medium) Which is correct about command-line arguments?
-A) They are static variables
-B) They are parameters of main
-C) They are global variables
-D) They are constants
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: final prevents reassignment inside the method.
-Q: (Medium) If parameter is declared final, then:
-A) It cannot be used
-B) It cannot be reassigned
-C) It becomes global
-D) It becomes static
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Java strictly follows pass-by-value semantics.
-Q: (Medium) Which best describes Java parameter passing?
-A) Pure pass-by-reference
-B) Pure pass-by-value
-C) Hybrid
-D) Depends on type
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Primitive parameters are passed by value, so original variables are unchanged.
-Q: (Hard) What will be the output?
-void change(int x, int y) {
-x = x + y;
-}
-public static void main(String[] args) {
-int a = 5, b = 3;
-change(a, b);
-System.out.println(a);
-}
-A) 8
-B) 5
-C) 3
-D) Compilation error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Reassigning the reference does not affect the original string.
-Q: (Hard) What happens here?
-void modify(String s) {
-s = s.concat("World");
-}
-If "Hello" is passed?
-A) HelloWorld
-B) Hello
-C) Runtime error
-D) Compilation error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Java passes a copy of the object reference.
-Q: (Hard) Which statement is TRUE about object parameters?
-A) Java uses pass-by-reference
-B) Java uses pass-by-value of object reference
-C) Objects cannot be passed
-D) Objects are copied entirely
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: The array reference points to the same object, so modification persists.
-Q: (Hard) What will be printed?
-void test(int[] arr) {
-arr[0]++;
-}
-int[] a = {1,2,3};
-test(a);
-System.out.println(a[0]);
-A) 1
-B) 2
-C) 3
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Java does not support default parameter values. 
-Q: (Hard) Which is illegal?
-A) void test(final int x)
-B) void test(int x)
-C) void test(int x = 5)
-D) void test(int... x)
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Argument types and order must match the method signature.
-Q: (Hard) What happens if argument order is changed?
-void display(int x, double y)
-display(5.5, 10);
-A) Valid
-B) Compilation error
-C) Runtime error
-D) Automatic conversion
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Varargs must be last, but fixed parameters before them are allowed.
-Q: (Hard) Which correctly declares a method accepting unlimited integers?
-A) void sum(int a[])
-B) void sum(int... a)
-C) void sum(int a, int... b)
-D) Both B and C
-Answer: 3
-
-Level: 3
-Topic: Parameters
-Explanation: Primitive values are not modified outside the method.
-Q: (Hard) What is the output?
-void test(int x) {
-x = 100;
-}
-int a = 50;
-test(a);
-System.out.println(a);
-A) 100
-B) 50
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Ellipsis allows variable-length arguments.
-Q: (Hard) Which best describes int... nums?
-A) Array parameter
-B) Variable-length parameter
-C) Object parameter
-D) Invalid syntax
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: All Java classes inherit from Object.
-Q: (Hard) If method signature is:
-void test(Object o)
-Which call is valid?
-A) test(5);
-B) test("Hello");
-C) test(new Object());
-D) All of the above
-Answer: 3
-
-Level: 3
-Topic: Parameters
-Explanation: Parameters are scoped only within the method.
-Q: (Hard) Which statement is FALSE?
-A) Parameters are local variables
-B) Parameters can be final
-C) Parameters exist outside method
-D) Parameters receive argument values
-Answer: 2
-
-Level: 3
-Topic: Parameters
-Explanation: Reassigning the parameter reference does not affect the original array.
-Q: (Hard) What happens here?
-void test(int[] arr) {
-arr = new int[]{7,8,9};
-}
-Original array:
-A) Modified
-B) Not modified
-C) Compilation error
-D) Runtime error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: final prevents reassignment of parameters.
-Q: (Hard) Which method prevents parameter modification?
-A) void test(int x)
-B) void test(final int x)
-C) void test(static int x)
-D) void test(const int x)
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Integers are automatically widened to double.
-Q: (Hard) Which call matches:
-Java
-void calc(double x, double y)
-A) calc(5, 6);
-B) calc(5.0, 6.0);
-C) calc("5", "6");
-D) Both A and B
-Answer: 3
-
-Level: 3
-Topic: Parameters
-Explanation: Parameter names may match instance variables.
-Q: (Hard) Can a parameter name be same as instance variable?
-A) No
-B) Yes
-C) Only static
-D) Only final
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: A method without parameters is non-parameterized.
-Q: (Hard) If no parameters are defined, the method is called:
-A) Parameterized method
-B) Non-parameterized method
-C) Static method
-D) Abstract method
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Only one varargs parameter is allowed per method.
-Q: (Hard) Which is TRUE about varargs?
-A) Only one allowed per method
-B) Must be first parameter
-C) Cannot be used with other parameters
-D) Cannot be primitive
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Wrapper references are passed by value.
-Q: (Hard) What is printed?
-void test(Integer x) {
-x = 20;
-}
-Integer a = 10;
-test(a);
-System.out.println(a);
-A) 20
-B) 10
-C) Null
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Parameters
-Explanation: Varargs must appear last.
-Q: (Hard) Which declaration correctly takes a String and unlimited integers?
-A) void test(String s, int... a)
-B) void test(int... a, String s)
-C) void test(String... s, int... a)
-D) None
-Answer: 0
-
-Level: 3
-Topic: Parameters
-Explanation: Java strictly follows pass-by-value semantics.
-Q: (Hard) What best summarizes Java parameter passing?
-A) Pass-by-reference
-B) Pass-by-value for primitives, reference for objects
-C) Always pass-by-value
-D) Depends on compiler
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: The return keyword exits a method and optionally sends a value back to the calling method.
-Q: (Easy) Which keyword is used in Java to send a value back from a method?
-A) break
-B) return
-C) send
-D) give
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: A method that returns a value must specify its return type in the method signature.
-Q: (Easy) What must a method declare if it returns a value?
-A) Parameter
-B) Object
-C) Return type
+Topic: Methods
+Explanation: A signature consists of the name and parameter list.
+Q: (Easy) What defines a method's signature?
+A) Return type
+B) Name and parameter list
+C) Access modifier
 D) Class name
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: The void return type specifies that a method does not return any value.
-Q: (Easy) Which return type indicates that a method does not return any value?
-A) null
-B) void
-C) empty
-D) blank
 Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: A non-void method must return a value; otherwise, the compiler produces an error.
-Q: (Easy) What happens if a method declared as int does not include a return statement?
-A) It returns 0 automatically
-B) Compilation error
-C) Runtime error
-D) It returns null
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The return type must precede the method name; here it correctly returns a double.
-Q: (Easy) Identify the correct method declaration that returns a double value.
-A) void calculate()
-B) int calculate()
-C) double calculate()
-D) calculate double()
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: A method can return only one value directly.
-Q: (Easy) Can a Java method return multiple values directly?
-A) Yes
-B) No
-C) Only in arrays
-D) Only in classes
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The method multiplies 3 by itself and returns 9.
-Q: (Easy) What does the following method return?
-int square(int x){
-return x * x;
-}
-If called as square(3).
-A) 3
-B) 6
-C) 9
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: The return statement immediately terminates the method execution.
-Q: (Easy) Which statement correctly exits a method immediately?
-A) exit;
-B) break;
-C) return;
-D) stop;
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: An int method must return an integer value.
-Q: (Easy) Which of the following is valid?
-A) void show(){ return 5; }
-B) int show(){ return; }
-C) int show(){ return 5; }
-D) void show(){ return 5.0; }
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: Java methods can return primitive values, objects, or arrays.
-Q: (Easy) Which data type can be returned from a method?
-A) Primitive types
-B) Objects
-C) Arrays
-D) All of the above
-Answer: 3
-
-Level: 3
-Topic: Return values
-Explanation: The method returns the result of 2 + 3.
-Q: (Easy) What is the output?
-public static int add(){
-return 2 + 3;
-}
-A) 2
-B) 3
-C) 5
-D) Error
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: Only methods with a non-void return type must contain a return statement.
-Q: (Easy) A return statement is mandatory in:
-A) All methods
-B) Only void methods
-C) Non-void methods
-D) Static methods only
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: Boolean methods must return either true or false.
-Q: (Easy) If a method is declared boolean, what must it return?
-A) 0 or 1
-B) true or false
-C) Any number
+Topic: Methods
+Explanation: Static methods can be called using the class name.
+Q: (Easy) Which modifier allows calling a method without creating an object?
+A) final
+B) static
+C) private
 D) void
 Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: In a void method, return; simply terminates the method.
-Q: (Easy) What does return; do in a void method?
-A) Returns 0
-B) Returns null
-C) Exits the method
-D) Causes error
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: return(5); is syntactically valid in Java.
-Q: (Easy) Identify the correct syntax:
-A) return int 5;
-B) return(5);
-C) int return 5;
-D) return = 5;
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: break is used in loops and switch statements.
-Q: (Easy) Which keyword cannot be used with return?
-A) break
-B) value
-C) expression
-D) variable
+Topic: Methods
+Explanation: Overloading uses the same name but different parameters.
+Q: (Easy) What is the term for multiple methods with the same name but different parameters?
+A) Overloading
+B) Hiding
+C) Deleting
+D) Repeating
 Answer: 0
 
 Level: 3
-Topic: Return values
-Explanation: Once return executes, the method immediately terminates.
-Q: (Easy) What happens after a return statement executes?
-A) Code continues
-B) Loop continues
-C) Method exits
-D) Class terminates
-Answer: 2
+Topic: Methods
+Explanation: Private is the most restrictive access modifier.
+Q: (Easy) Which access modifier is most restrictive?
+A) public
+B) private
+C) static
+D) void
+Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: Constructors do not have a return type.
-Q: (Easy) Can a constructor return a value?
+Topic: Methods
+Explanation: Method calls always include parentheses.
+Q: (Easy) What character(s) follow the method name in a call?
+A) Braces {}
+B) Parentheses ()
+C) Brackets []
+D) Colons ::
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: The main method is the entry point for execution.
+Q: (Easy) What is the entry point of a Java program?
+A) main
+B) int
+C) start
+D) run
+Answer: 0
+
+Level: 3
+Topic: Methods
+Explanation: Arguments are the actual values passed in the call.
+Q: (Easy) What are the actual values passed during a method call?
+A) Parameters
+B) Arguments
+C) Signatures
+D) Defaults
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: A Java method can only return one distinct value.
+Q: (Easy) Can a Java method return more than one distinct value?
 A) Yes
 B) No
-C) Only int
-D) Only object
+C) Only if static
+D) Only if public
 Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: The method correctly returns a String value.
-Q: (Easy) Is this valid?
-String name(){
-return "Java";
-}
-A) Yes
-B) No
-C) Runtime error
-D) Logical error
-Answer: 0
+Topic: Methods
+Explanation: Local variables are destroyed when a method finishes.
+Q: (Easy) What happens to local variables when a method ends?
+A) Saved
+B) Destroyed
+C) Made global
+D) Renamed
+Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: The return type specifies what type of value will be returned.
-Q: (Easy) Which part of a method defines what type of value is returned?
-A) Method body
-B) Return statement
-C) Return type
-D) Parameter list
+Topic: Methods
+Explanation: "this" refers to the current object instance.
+Q: (Easy) Which keyword refers to the current object instance?
+A) that
+B) this
+C) self
+D) me
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: camelCase is the standard for Java methods.
+Q: (Easy) What is the standard naming convention for Java methods?
+A) PascalCase
+B) camelCase
+C) snake_case
+D) ALLCAPS
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: A recursive method is one that calls itself.
+Q: (Easy) What is a recursive method?
+A) One that never runs
+B) One that calls itself
+C) One with no name
+D) A static method
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: Math.floor(Math.random()) always results in 0.0.
+Q: (Medium) Determine output: 
+public class Test { 
+    public static void main(String args[]) { 
+        System.out.println(Math.floor(Math.random())); 
+    } 
+}
+A) 1.0
+B) 10.0
+C) 0.0
+D) 0.5
 Answer: 2
 
 Level: 3
-Topic: Return values
-Explanation: The test() method returns 10, which is printed.
-Q:(Medium) What value will be printed when the following code executes?
-static int test(){
-return 10;
+Topic: Methods
+Explanation: The int parameter matches the call A.method(5).
+Q: (Medium) Determine Output: 
+class A { 
+    public static void method(int i) { 
+        System.out.print("Method 1"); 
+    } 
+    public static int method(String str) { 
+        System.out.print("Method 2"); 
+        return 0; 
+    } 
+} 
+public class Test { 
+    public static void main(String args[]) { 
+        A.method(5); 
+    } 
 }
-public static void main(String[] args){
-System.out.println(test());
-}
-A) 0
-B) 10
-C) null
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The method adds the arguments 4 + 5 and returns 9.
-Q: (Medium) Determine the output of the following method call.
-static int add(int a, int b)
-{
-return a + b;
-}
-public static void main(String[] args){
-System.out.println(add(4,5));
-}
-A) 9
-B) 45
-C) Error
-D) 0
+A) Method 1
+B) Method 2
+C) Compile time error
+D) None
 Answer: 0
 
 Level: 3
-Topic: Return values
-Explanation: A non-void method must return a value in all execution paths.
-Q: (Medium) Identify the compilation issue in the code below.
-int value(){
-if(true)
-return 5;
+Topic: Methods
+Explanation: Method return type int cannot return a String.
+Q: (Medium) What is the output? 
+class Test { 
+    public int display(int x, int y) { 
+        return ("The sum of x and y is " + x + y); 
+    } 
+    public static void main(String args[]) { 
+        Test test = new Test(); 
+        System.out.println(test.display(4, 5)); 
+    } 
 }
-A) Returns 5
-B) Compilation error
-C) Runtime error
-D) Returns 0
-Answer: 1
+A) The sum of x and y is 9
+B) The sum of x and y is 45
+C) does not compile
+D) None
+Answer: 2
 
 Level: 3
-Topic: Return values
-Explanation: The expression 5 > 3 evaluates to true.
-Q: (Medium) What value does the following method return?
-static boolean check(){
-return 5 > 3;
+Topic: Methods
+Explanation: String values remain unchanged outside the method.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static void main(String args[]) { 
+        String value = "abc"; 
+        changeValue(value); 
+        System.out.println(value); 
+    } 
+    public static void changeValue(String a) { 
+        a = "xyz"; 
+    } 
+}
+A) abc
+B) xyz
+C) Compilation fails
+D) No output
+Answer: 0
+
+Level: 3
+Topic: Methods
+Explanation: isequal() returns true because 5 equals 5.
+Q: (Medium) What will be the output? 
+class equality { 
+    int x; 
+    int y; 
+    boolean isequal() { 
+        return (x == y); 
+    } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        equality obj = new equality(); 
+        obj.x = 5; 
+        obj.y = 5; 
+        System.out.println(obj.isequal()); 
+    } 
 }
 A) false
 B) true
-C) 1
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: A void method cannot return a value.
-Q: (Medium) Analyze why the following code causes an error.
-void show(){
-return 10;
-}
-A) Logical error
-B) Compilation error
-C) Runtime error
-D) No error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: 2 squared is 4.
-Q: (Medium) What is the output of this method call?
-Java
-static int square(int x){
-return x * x;
-}
-public static void main(String[] args){
-System.out.println(square(2));
-}
-A) 2
-B) 4
-C) 22
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The else branch returns -(-5) = 5.
-Q: (Medium) Evaluate the return value of test(-5).
-int test(int x){
-if(x>0)
-return x;
-else
-return -x;
-}
-A) -5
-B) 5
 C) 0
-D) Error
+D) 1
 Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: Integer division results in 2, then converted to double.
-Q: (Medium) Determine what will be printed.
-static double value(){
-return 5/2;
+Topic: Methods
+Explanation: Varargs (int... x) accepts any number of ints.
+Q: (Medium) Which call to sum() is appropriate? 
+class Output { 
+    public static int sum(int... x) { 
+        return 0; 
+    } 
+    static void main(String args[]) { 
+        sum(10); 
+        sum(10, 20); 
+        sum(10, 20, 30); 
+    } 
 }
-A) 2
-B) 2.5
-C) 2.0
-D) Error
+A) only sum(10)
+B) only sum(10,20)
+C) only sum(10,20,30)
+D) all of the mentioned
+Answer: 3
+
+Level: 3
+Topic: Methods
+Explanation: The method prints length (6) then width (5).
+Q: (Medium) What will be the output? 
+class area { 
+    int width; 
+    int length; 
+    void area(int width, int length) { 
+        this.width = width; 
+        this.length = length; 
+    } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        area obj = new area(); 
+        obj.area(5, 6); 
+        System.out.println(obj.length + " " + obj.width); 
+    } 
+}
+A) 0 0
+B) 5 6
+C) 6 5
+D) 5 5
 Answer: 2
 
 Level: 3
-Topic: Return values
-Explanation: A non-void method must return a value.
-Q: (Medium) Identify the compilation error in this method.
-int sum(){
-int a = 2, b = 3;
+Topic: Methods
+Explanation: this() cannot be called inside a regular method.
+Q: (Medium) What is the output? 
+class MyClass { 
+    MyClass() { System.out.print("one"); } 
+    public void myMethod() { 
+        this(); 
+        System.out.print("two"); 
+    } 
+} 
+public class TestClass { 
+    public static void main(String args[]) { 
+        MyClass obj = new MyClass(); 
+        obj.myMethod(); 
+    } 
 }
-A) Returns 5
-B) Returns 0
-C) Compilation error
-D) Runtime error
+A) two one
+B) one one two
+C) one Exception
+D) Compilation Error
+Answer: 3
+
+Level: 3
+Topic: Methods
+Explanation: Passing an object allows the method to modify its state.
+Q: (Medium) Determine output: 
+public class Test { 
+    public static void main(String args[]) { 
+        MyClass obj = new MyClass(); 
+        obj.val = 1; 
+        obj.call(obj); 
+        System.out.println(obj.val); 
+    } 
+} 
+class MyClass { 
+    public int val; 
+    public void call(MyClass ref) { 
+        ref.val++; 
+    } 
+}
+A) 1
+B) 2
+C) 3
+D) Compilation Error
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: Calling a non-static method from static main is illegal.
+Q: (Medium) What is the output? 
+public class A { 
+    int add(int i, int j) { return i + j; } 
+} 
+public class B extends A { 
+    public static void main(String argv[]) { 
+        short s = 9; 
+        System.out.println(add(s, 6)); 
+    } 
+}
+A) Error on line 2
+B) Error on line 9 (add call)
+C) Error on line 8
+D) 15
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: The volume is 1 * 3 * 2 = 6.
+Q: (Medium) What will be the output? 
+class box { 
+    int width, height, length, volume; 
+    void volume(int height, int length, int width) { 
+        volume = width * height * length; 
+    } 
+} 
+class Parameterized_method { 
+    public static void main(String args[]) { 
+        box obj = new box(); 
+        obj.height = 1; 
+        obj.length = 5; 
+        obj.width = 5; 
+        obj.volume(3, 2, 1); 
+        System.out.println(obj.volume); 
+    } 
+}
+A) 0
+B) 1
+C) 6
+D) 25
 Answer: 2
 
 Level: 3
-Topic: Return values
-Explanation: The method returns the string "Java".
-Q: (Medium) What is printed when name() is called?
-Java
-static String name()
-{
-return "Java";
+Topic: Methods
+Explanation: Volume calculates as 5 * 1 * 5 = 25.
+Q: (Medium) What will be the output? 
+class box { 
+    int width, height, length, volume; 
+    void volume() { 
+        volume = width * height * length; 
+    } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        box obj = new box(); 
+        obj.height = 1; 
+        obj.length = 5; 
+        obj.width = 5; 
+        obj.volume(); 
+        System.out.println(obj.volume); 
+    } 
 }
-public static void main(String[] args){
-System.out.println(name());
+A) 0
+B) 1
+C) 25
+D) 26
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: Varargs supports multiple integers.
+Q: (Medium) Which call to sum() is appropriate? 
+class Output { 
+    public static int sum(int... x) { 
+        int total = 0; 
+        return total; 
+    } 
+    public static void main(String args[]) { 
+        sum(10, 20, 30); 
+    } 
 }
-A) Java
-B) name
-C) null
-D) Error
+A) only sum(10)
+B) only sum(10,20)
+C) only sum(10,20,30)
+D) all of the mentioned
+Answer: 3
+
+Level: 3
+Topic: Methods
+Explanation: Height is undefined in this class.
+Q: (Medium) What will be the output? 
+class area { 
+    int width, length, volume; 
+    area() { 
+        width = 5; 
+        length = 6; 
+    } 
+    void volume() { 
+        volume = width * length * height; 
+    } 
+} 
+class cons_method { 
+    public static void main(String args[]) { 
+        area obj = new area(); 
+        obj.volume(); 
+        System.out.println(obj.volume); 
+    } 
+}
+A) 0
+B) 1
+C) 30
+D) error
+Answer: 3
+
+Level: 3
+Topic: Methods
+Explanation: isequal() correctly identifies 5 == 5.
+Q: (Medium) What will be the output? 
+class equality { 
+    int x, y; 
+    boolean isequal() { return (x == y); } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        equality obj = new equality(); 
+        obj.x = 5; 
+        obj.y = 5; 
+        System.out.println(obj.isequal()); 
+    } 
+}
+A) false
+B) true
+C) 0
+D) 1
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: show() prints Hello as expected.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static void show() { System.out.println("Hello"); } 
+    public static void main(String[] args) { show(); } 
+}
+A) Hello
+B) show
+C) main
+D) Compilation error
 Answer: 0
 
 Level: 3
-Topic: Return values
-Explanation: Code after a return statement is unreachable.
-Q: (Medium) Identify the issue in this method.
-int test(){
-return 5;
-return 10;
+Topic: Methods
+Explanation: add(3, 7) returns 10.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static int add(int a, int b) { return a + b; } 
+    public static void main(String[] args) { 
+        System.out.println(add(3, 7)); 
+    } 
 }
-A) Returns 5
-B) Returns 10
-C) Compilation error
-D) Runtime error
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: The method returns character 'A'.
-Q: (Medium) Determine the returned value.
-static char letter(){
-return 'A';
-}
-A) A
-B) 65
-C) Error
-D) null
-Answer: 0
-
-Level: 3
-Topic: Return values
-Explanation: Not all execution paths return a value.
-Q: (Medium) Identify why the following method will not compile.
-int calc(int a){
-if(a>10)
-return a;
-}
-A) Runtime error
-B) Logical error
-C) Compilation error
-D) No issue
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: Operator precedence evaluates multiplication first.
-Q: (Medium) What is the output?
-static int x(){
-return 3 + 4 * 2;
-}
-A) 14
-B) 11
+A) 3
+B) 7
 C) 10
-D) Error
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: The value 12 is passed and printed.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static void printValue(int value) { System.out.println(value); } 
+    public static void main(String[] args) { printValue(12); } 
+}
+A) value
+B) 0
+C) 12
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: square(4) returns 16.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static int square(int num) { return num * num; } 
+    public static void main(String[] args) { 
+        System.out.println(square(4)); 
+    } 
+}
+A) 4
+B) 8
+C) 16
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: greet("Mark") prints Hi Mark.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static void greet(String name) { System.out.println("Hi " + name); } 
+    public static void main(String[] args) { greet("Mark"); } 
+}
+A) Hi
+B) Mark
+C) Hi Mark
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: static methods cannot call constructors using this().
+Q: (Hard) The following code contains one compilation error, find it? 
+public class Test { 
+    Test() { } 
+    static void Test() { 
+        this(); 
+    } 
+    public static void main(String[] args) { 
+        Test(); 
+    } 
+}
+A) constructor must be public
+B) constructor call at line 2
+C) ambiguity problem
+D) line 4
 Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: void methods can use return; to exit early.
-Q: (Medium) Is the following method valid?
-void test(){
-return;
+Topic: Methods
+Explanation: Primitives (x) are pass-by-value; Objects (p) are pass-by-reference.
+Q: (Hard) What is the result? 
+class Person { public int number; } 
+public class Test { 
+    public void doIt(int i, Person p) { 
+        i = 5; 
+        p.number = 8; 
+    } 
+    public static void main(String args[]) { 
+        int x = 0; 
+        Person p = new Person(); 
+        new Test().doIt(x, p); 
+        System.out.println(x + " " + p.number); 
+    } 
 }
-A) Yes
-B) No
-C) Runtime error
-D) Logical error
-Answer:0
+A) 0 8
+B) 5 0
+C) 0 0
+D) 5 8
+Answer: 0
 
 Level: 3
-Topic: Return values
-Explanation: Post-increment returns the original value first.
-Q: (Medium) What value is returned?
-static int test(){
-int a = 5;
-return a++;
+Topic: Methods
+Explanation: Java uses widening to int before choosing varargs.
+Q: (Hard) What is the output? 
+public class Test { 
+    public static void printValue(int i, int j, int k) { 
+        System.out.println("int"); 
+    } 
+    public static void printValue(byte... b) { 
+        System.out.println("long"); 
+    } 
+    public static void main(String... args) { 
+        byte b = 9; 
+        printValue(b, b, b); 
+    } 
+}
+A) long
+B) int
+C) Compilation fails
+D) RuntimeException
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: Volume calculates as 25.
+Q: (Hard) What will be the output? 
+class box { 
+    int width, height, length, volume; 
+    void volume() { 
+        volume = width * height * length; 
+    } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        box obj = new box(); 
+        obj.height = 1; 
+        obj.length = 5; 
+        obj.width = 5; 
+        obj.volume(); 
+        System.out.println(obj.volume); 
+    } 
+}
+A) 0
+B) 1
+C) 25
+D) 26
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: Box constructor sets values; volume() calculates 150.
+Q: (Hard) What will be the output? 
+class box { 
+    int width, height, length, volume; 
+    box() { 
+        width = 5; 
+        height = 5; 
+        length = 6; 
+    } 
+    void volume() { 
+        volume = width * height * length; 
+    } 
+} 
+class constructor_output { 
+    public static void main(String args[]) { 
+        box obj = new box(); 
+        obj.volume(); 
+        System.out.println(obj.volume); 
+    } 
+}
+A) 100
+B) 150
+C) 200
+D) 250
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: Recursion calculates 5! = 120.
+Q: (Hard) What will be the output? 
+class recursion { 
+    int fact(int n) { 
+        if (n == 1) return 1; 
+        return fact(n - 1) * n; 
+    } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        recursion obj = new recursion(); 
+        System.out.print(obj.fact(5)); 
+    } 
+}
+A) 24
+B) 30
+C) 120
+D) 720
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: Recursion calculates 6! = 720.
+Q: (Hard) What will be the output? 
+class recursion { 
+    int fact(int n) { 
+        if (n == 1) return 1; 
+        return fact(n - 1) * n; 
+    } 
+} 
+class Output { 
+    public static void main(String args[]) { 
+        recursion obj = new recursion(); 
+        System.out.print(obj.fact(6)); 
+    } 
+}
+A) 1
+B) 30
+C) 120
+D) 720
+Answer: 3
+
+Level: 3
+Topic: Methods
+Explanation: Height is not declared in the area class.
+Q: (Hard) What will be the output? 
+class area { 
+    int width, length, volume; 
+    area() { 
+        width = 5; 
+        length = 6; 
+    } 
+    void volume() { 
+        volume = width * length * height; 
+    } 
+} 
+class cons_method { 
+    public static void main(String args[]) { 
+        area obj = new area(); 
+        obj.volume(); 
+        System.out.println(obj.volume); 
+    } 
+}
+A) 0
+B) 1
+C) 30
+D) error
+Answer: 3
+
+Level: 3
+Topic: Methods
+Explanation: second(4) -> first(4)*3 -> 6*3 = 18.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int first(int x) { return x + 2; } 
+    public static int second(int y) { return first(y) * 3; } 
+    public static void main(String[] args) { 
+        System.out.println(second(4)); 
+    } 
+}
+A) 6
+B) 12
+C) 18
+D) 24
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: sum (5) * y (3) = 15.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int multiply(int a, int b) { return a * b; } 
+    public static int addAndMultiply(int x, int y) { 
+        int sum = x + y; 
+        return multiply(sum, y); 
+    } 
+    public static void main(String[] args) { 
+        System.out.println(addAndMultiply(2, 3)); 
+    } 
 }
 A) 5
 B) 6
-C) Error
+C) 15
+D) 18
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: The two-parameter calculate method is chosen (3 * 4 = 12).
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int calculate(int a) { return a + 5; } 
+    public static int calculate(int a, int b) { return a * b; } 
+    public static void main(String[] args) { 
+        System.out.println(calculate(3, 4)); 
+    } 
+}
+A) 8
+B) 12
+C) 7
+D) Compilation error
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: (8-3) + (2+4) = 5 + 6 = 11.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static void printResult(int a, int b) { 
+        int total = a + b; 
+        System.out.println(total); 
+    } 
+    public static void main(String[] args) { 
+        int num1 = 8; 
+        int num2 = 2; 
+        printResult(num1 - 3, num2 + 4); 
+    } 
+}
+A) 10
+B) 11
+C) 12
+D) 14
+Answer: 1
+
+Level: 3
+Topic: Methods
+Explanation: doubleNumber(getNumber()) -> doubleNumber(4) -> 8.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int getNumber() { return 4; } 
+    public static int doubleNumber(int n) { return n * 2; } 
+    public static void main(String[] args) { 
+        int result = doubleNumber(getNumber()); 
+        System.out.println(result); 
+    } 
+}
+A) 4
+B) 6
+C) 8
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: methodA(3) + methodA(4) -> 4 + 5 = 9.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int methodA(int x) { return x + 1; } 
+    public static int methodB(int x) { 
+        return methodA(x) + methodA(x + 1); 
+    } 
+    public static void main(String[] args) { 
+        System.out.println(methodB(3)); 
+    } 
+}
+A) 7
+B) 8
+C) 9
+D) 10
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: 2 + 3 + (2+3) = 10.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int total(int a, int b, int c) { return a + b + c; } 
+    public static void main(String[] args) { 
+        int x = 2, y = 3; 
+        int z = total(x, y, x + y); 
+        System.out.println(z); 
+    } 
+}
+A) 5
+B) 7
+C) 10
+D) 12
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: mystery(4,9) is 5; mystery(10,6) is 4. Total = 9.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int mystery(int a, int b) { 
+        if (a > b) return a - b; 
+        else return b - a; 
+    } 
+    public static void main(String[] args) { 
+        int result = mystery(4, 9) + mystery(10, 6); 
+        System.out.println(result); 
+    } 
+}
+A) 4
+B) 5
+C) 9
+D) 10
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: add(3, 4) * 2 -> 7 * 2 = 14.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int add(int a, int b) { return a + b; } 
+    public static int compute(int x) { 
+        return add(x, x + 1) * 2; 
+    } 
+    public static void main(String[] args) { 
+        System.out.println(compute(3)); 
+    } 
+}
+A) 7
+B) 10
+C) 14
+D) 16
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: The original num (10) remains unchanged; result is 15.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int update(int x) { 
+        x = x + 5; 
+        return x; 
+    } 
+    public static void main(String[] args) { 
+        int num = 10; 
+        int result = update(num); 
+        System.out.println(num + " " + result); 
+    } 
+}
+A) 10 15
+B) 15 15
+C) 10 10
+D) Compilation error
+Answer: 0
+
+Level: 3
+Topic: Methods
+Explanation: three() -> two() + one() -> (1+1) + 1 = 3.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int one() { return 1; } 
+    public static int two() { return one() + one(); } 
+    public static int three() { return two() + one(); } 
+    public static void main(String[] args) { 
+        System.out.println(three()); 
+    } 
+}
+A) 1
+B) 2
+C) 3
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Methods
+Explanation: calc(2,3,4) -> calc(2,3) * 4 -> 5 * 4 = 20.
+Q: (Hard) What will be the output? 
+public class Test { 
+    public static int calc(int a, int b) { return a + b; } 
+    public static int calc(int a, int b, int c) { 
+        return calc(a, b) * c; 
+    } 
+    public static void main(String[] args) { 
+        System.out.println(calc(2, 3, 4)); 
+    } 
+}
+A) 9
+B) 14
+C) 20
+D) Compilation error
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Arrays are fixed-size collections.
+Q: (Easy) What is an array in Java?
+A) A loop
+B) A method
+C) A fixed-size collection
+D) A variable
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: The first index is 0.
+Q: (Easy) What is the index of the first element in an array?
+A) 1
+B) 4
+C) -1
+D) 0
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: length is the property for array size.
+Q: (Easy) Which property is used to get the size of an array?
+A) size()
+B) length
+C) count
+D) max
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: New int arrays default to 0.
+Q: (Easy) What is the default value of elements in a new int array?
+A) 0
+B) null
+C) 1
+D) 4
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: Curly braces are used for initializers.
+Q: (Easy) Which symbols are used for an array initializer list?
+A) ()
+B) []
+C) {}
+D) <>
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Index 10 is outside the range 0-4.
+Q: (Easy) What exception occurs if you access index 10 in an array of size 5?
+A) NullError
+B) MathError
+C) StackError
+D) ArrayIndexOutOfBoundsException
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: Array size is fixed after creation.
+Q: (Easy) Can you change the size of an array after it is created?
+A) Yes
+B) Only if public
+C) No
+D) Only if static
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Subscript and index are interchangeable.
+Q: (Easy) A subscript is also known as what?
+A) Value
+B) Name
+C) Size
+D) Index
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: new is used to allocate memory.
+Q: (Easy) Which keyword is used to allocate memory for an array?
+A) new
+B) make
+C) alloc
+D) create
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: Boolean arrays default to false.
+Q: (Easy) What is the default value for a boolean array element?
+A) true
+B) null
+C) 0
+D) false
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: Indices for 10 items are 0-9.
+Q: (Easy) An array of 10 items has which range of indices?
+A) 1-10
+B) 0-10
+C) 0-9
+D) 1-9
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: int[] a; is standard declaration.
+Q: (Easy) Which of the following is a valid array declaration?
+A) int a[5];
+B) array int a;
+C) a = int[5];
+D) int[] a;
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: {1, 2, 3} has 3 items.
+Q: (Easy) What is a.length for {1, 2, 3}?
+A) 3
+B) 2
+C) 4
 D) 0
 Answer: 0
 
 Level: 3
-Topic: Return values
-Explanation: Only the else branch executes.
-Q: (Medium) What is returned when the following executes?
-int value(){
-if(false)
-return 5;
-else
-return 6;
-}
-A) 5
-B) 6
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The long value prints as 100.
-Q: (Medium) Determine the output of the method call.
-static long test(){
-return 100L;
-}
-A) 100
-B) 100L
-C) Error
-D) null
-Answer: 0
-
-Level: 3
-Topic: Return values
-Explanation: Cannot return a double from an int method.
-Q: (Medium) Identify the error in the method below. 
-int x(){
-return 5.5;
-}
-A) Returns 5
-B) Returns 6
-C) Compilation error
-D) Runtime error
+Topic: Arrays
+Explanation: Java treats arrays as objects.
+Q: (Easy) What is the category of int[] in Java?
+A) Primitive
+B) Header
+C) Object
+D) Method
 Answer: 2
 
 Level: 3
-Topic: Return values
-Explanation: Casting truncates the decimal portion.
-Q: (Medium) What value is returned after casting?
-static int test()
-{
-return (int)3.9;
+Topic: Arrays
+Explanation: 2D arrays are arrays of arrays.
+Q: (Easy) What is a 2D array?
+A) A single line
+B) Array of arrays
+C) A method
+D) A class
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: Parallel arrays use shared subscripts.
+Q: (Easy) Parallel arrays share which of the following?
+A) Memory
+B) Values
+C) Names
+D) Subscripts (Indices)
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: String array elements default to null.
+Q: (Easy) What is the default value for a String array element?
+A) null
+B) ""
+C) "null"
+D) 0
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: The colon is the separator in enhanced for-loops.
+Q: (Easy) What symbol is used in an enhanced for-loop?
+A) ;
+B) ->
+C) :
+D) ::
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: new int[5] creates 5 slots.
+Q: (Easy) new int[5] creates how many slots?
+A) 4
+B) 6
+C) 0
+D) 5
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: Arrays can definitely store objects.
+Q: (Easy) Can arrays store objects in Java?
+A) Yes
+B) No
+C) Only Strings
+D) Only ints
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: 0-size arrays are legal in Java.
+Q: (Medium) What is the result? 
+int[] a = new int[0]; 
+System.out.print(a.length);
+A) 0
+B) Compilation error
+C) length() error
+D) None
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: New arrays are zero-initialized.
+Q: (Medium) What will be the output? 
+public class Test { 
+    public static void main(String[] args) { 
+        int[] x = new int[3]; 
+        System.out.println("x[0] is " + x[0]); 
+    } 
 }
+A) Compilation error
+B) Runtime error
+C) x[0] is 0
+D) undefined
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Reassigning a reference to a new array is valid.
+Q: (Medium) Analyze the following code: 
+int[] arr = new int[5]; 
+arr = new int[6];
+A) cannot change variable
+B) runtime error
+C) Code runs fine (assigns new array)
+D) cannot change size
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Array reassignments cannot use raw initializer lists.
+Q: (Medium) Which is NOT a valid 2D array initialization?
+A) new int[][] {{1, 2, 3}}
+B) {{1, 2, 3}, {4, 5, 6}}
+C) matrix = {{1, 2, 3}, {4, 5, 6}}; (reassignment)
+D) nested new int[]
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: x[1] refers to the second item (2.0).
+Q: (Medium) What would be the result? 
+double[] x = new double[]{1, 2, 3}; 
+System.out.println("Value is " + x[1]);
+A) {1, 2, 3}
+B) new double[3]
+C) {1.0, 2.0}
+D) output is 2.0
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: All arrays are instances of Object.
+Q: (Medium) Predict the output: 
+int[] index = new int[5]; 
+System.out.println(index instanceof Object);
+A) true
+B) false
+C) Compilation fail 3
+D) Compilation fail 4
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: Printing an array object directly shows hashcode.
+Q: (Medium) What will be the output? 
+int arr[] = new int[5]; 
+System.out.print(arr);
+A) 0
+B) arr[0] value
+C) 00000
+D) Class name@hashcode
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: Index 2 is the third item (3).
+Q: (Medium) What will the following code print? 
+int[] arr = {1, 2, 3, 4, 5}; 
+System.out.println(arr[2]);
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: arr[4] is the last slot (0).
+Q: (Medium) What will be the result? 
+int[] arr = new int[5]; 
+System.out.println(arr[4]);
+A) 0
+B) 4
+C) null
+D) IndexOutOfBoundsException
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: There are 4 items.
+Q: (Medium) What is the output? 
+int[] arr = {1, 2, 3, 4}; 
+System.out.println(arr.length);
 A) 3
 B) 4
-C) Error
-D) 3.9
-Answer: 0
-
-Level: 3
-Topic: Return values
-Explanation: A non-void method must return a value of its declared type.
-Q: (Hard) Evaluate which method will cause a compilation error.
-A) int sum() { return 5; }
-B) void print() { return; }
-C) int value() { return; }
-D) double get() { return 2.5; }
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: Java requires all execution paths in a non-void method to return a value.
-Q: (Hard) Evaluate what happens if a non-void method does not return a value on all execution paths.
-A) Runtime error
-B) Logical error
-C) Compilation error
-D) Warning only
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: The method returns 5, which is printed.
-Q: (Hard) Determine the result of executing the following program.
-static int test(){
-return 5;
-}
-public static void main(String[] args){
-System.out.println(test());
-}
-A) 0
-B) 5
-C) null
-D) Compilation error
+C) 5
+D) 6
 Answer: 1
 
 Level: 3
-Topic: Return values
-Explanation: Since 3 > 2, the method returns 3 × 2.
-Q: (Hard) Evaluate the returned value of compute(3).
-static int compute(int x){
-if(x>2)
-return x * 2;
-else
-return x;
+Topic: Arrays
+Explanation: .length is the correct way to get array size.
+Q: (Medium) How do you determine the number of elements? 
+int buses[] = new int[5];
+A) buses.length
+B) buses.length()
+C) buses.size
+D) buses.size()
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: arr.length (4) is an invalid index for a size 4 array.
+Q: (Medium) What will be the result? 
+int[] arr = {2, 4, 6, 8}; 
+System.out.println(arr[arr.length]);
+A) 8
+B) 4
+C) 0
+D) ArrayIndexOutOfBoundsException
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: After sorting {3, 1, 4, 1, 5}, the first element is 1.
+Q: (Medium) What will be the output? 
+int[] arr = {3, 1, 4, 1, 5}; 
+Arrays.sort(arr); 
+System.out.println(arr[0]);
+A) 1
+B) 3
+C) 4
+D) 5
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: Split by space results in 3 strings.
+Q: (Medium) What is the length of the array? 
+String[] arr = "Welcome to Java".split(" ");
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Arrays.toString prints elements in brackets.
+Q: (Medium) What will be the result? 
+int[] arr = {10, 20, 30, 40, 50}; 
+System.out.println(Arrays.toString(arr));
+A) 10 20 30 40 50
+B) [10, 20, 30, 40, 50]
+C) {10, 20, 30, 40, 50}
+D) Throws an exception
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: Int array starts with 0.
+Q: (Medium) What is the result? 
+int[] arr = new int[3]; 
+System.out.println(arr[0]);
+A) 0
+B) null
+C) 3
+D) Undefined
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: tiger and bear are legal; lion is not.
+Q: (Medium) How many are legal? 
+[]double lion; 
+double[] tiger; 
+double bear[];
+A) None
+B) One
+C) Two
+D) Three
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: New array has 0 at index 0.
+Q: (Medium) What is the output? 
+int[] numbers = new int[5]; 
+System.out.println(numbers[0]);
+A) 0
+B) 1
+C) null
+D) Error
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: Nested loops use array[i].length for columns.
+Q: (Medium) How do you loop through a 2D array?
+A) length / array[0].length
+B) array[0].length / length
+C) length / array[i].length
+D) enhanced for-loop
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Outer array first, then inner assignments.
+Q: (Medium) How do you declare a jagged array?
+A) new int[3][];
+B) new int[][3];
+C) new int()();
+D) new int[3];
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: indexOfMax is 1 because 5 > 1.
+Q: (Hard) What is the output? 
+double[] myList = {1, 5, 5, 5, 5, 1}; 
+double max = myList[0]; 
+int indexOfMax = 0; 
+for (int i=1; i < myList.length; i++) { 
+    if (myList[i] > max) { 
+        max = myList[i]; 
+        indexOfMax = i; 
+    } 
+} 
+System.out.println(indexOfMax);
+A) 0
+B) 1
+C) 2
+D) 3
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: Octal 016 is decimal 14.
+Q: (Hard) What is output: 
+int[] x = {120, 200, 016}; 
+for (int i=0; i < x.length; i++) 
+    System.out.print(x[i] + " ");
+A) 120 200 16
+B) 120 200 14
+C) 120 200 016
+D) compile error
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: y still points to {1, 2, 3, 4}; loop uses length 2.
+Q: (Hard) Determine output: 
+int[] x = {1, 2, 3, 4}; 
+int[] y = x; 
+x = new int[2]; 
+for (int i=0; i < x.length; i++) 
+    System.out.print(y[i] + " ");
+A) 1 2 3 4
+B) 0 0 0 0
+C) 1 2
+D) 0 0
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: The i++ inside loop skips odd indices.
+Q: (Hard) What will be the output? 
+int array_variable[] = new int[10]; 
+for (int i=0; i < 10; ++i) { 
+    array_variable[i] = i; 
+    System.out.print(array_variable[i] + " "); 
+    i++; 
 }
+A) 0 2 4 6 8
+B) 1 3 5 7 9
+C) 0 to 9
+D) 1 to 10
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: Every slot gets filled with 'i'.
+Q: (Hard) What will be the output? 
+char array_variable[] = new char[10]; 
+for (int i=0; i < 10; ++i) { 
+    array_variable[i] = 'i'; 
+    System.out.print(array_variable[i] + " "); 
+}
+A) 1 to 10
+B) 0 to 10
+C) i to r
+D) i i i i i i i i i i
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: Sum is 45; 45 / 5 = 9.
+Q: (Hard) What will be the output? 
+int array_variable[][] = {{1,2,3}, {4,5,6}, {7,8,9}}; 
+int sum = 0; 
+for (int i=0; i<3; ++i) 
+    for (int j=0; j<3; ++j) 
+        sum = sum + array_variable[i][j]; 
+System.out.print(sum/5);
+A) 8
+B) 9
+C) 10
+D) 11
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: args[4] does not exist with command line 1 2 3 4.
+Q: (Hard) What will be the output? 
+String s1=args[1]; 
+String s2=args[2]; 
+String s3=args[3]; 
+String s4=args[4]; 
+command: java Test 1 2 3 4
+A) args[2]=2
+B) args[2]=3
+C) args[2]=null
+D) Runtime Exception
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: a[1] results in 1 after loop calculation.
+Q: (Hard) What is the value of a[1]? 
+int[] a = {0, 2, 4, 1, 3}; 
+for (int i=0; i < a.length; i++) 
+    a[i] = a[(a[i]+3) % a.length];
+A) 0
+B) 1
+C) 2
+D) 3
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: n = arr[3] = 3; 3 / 2 = 1.
+Q: (Hard) What will be the output? 
+int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; 
+int n = 6; 
+n = arr[arr[n]/2]; 
+System.out.println(arr[n] / 2);
+A) 3
+B) 0
+C) 6
+D) 1
+Answer: 3
+
+Level: 3
+Topic: Arrays
+Explanation: Sum of {1} + {1,2} + {1,2,3} = 10.
+Q: (Hard) What will be the output? 
+int arr[][] = new int[3][]; 
+arr[0]=new int[1]; arr[1]=new int[2]; arr[2]=new int[3]; 
+sum=0; (nested loops assign j+1)
+A) 11
+B) 10
+C) 13
+D) 14
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: Strings sort alphabetically: "1", "10", "9".
+Q: (Hard) What does this output? 
+String[] nums = {"1", "9", "10"}; 
+Arrays.sort(nums); 
+System.out.println(Arrays.toString(nums));
+A) [1, 9, 10]
+B) [1, 10, 9]
+C) [10, 1, 9]
+D) None
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: tiger and cat are invalid (can't have size with initializer).
+Q: (Hard) How many are legal? 
+String lion[] = new String[]{"lion"}; 
+String tiger[] = new String[1]{"tiger"}; 
+String bear = new String[]{}; 
+String cat[] = new String[0]{};
+A) None
+B) One
+C) Two
+D) Three
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: only tiger has valid syntax.
+Q: (Hard) How many are legal? 
+float[] lion = new float[]; 
+float[] tiger = new float[1]; 
+float[] bear = new[] float; 
+float[] cat = new[1] float;
+A) None
+B) One
+C) Two
+D) Three
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: Prints even numbers 2 and 4.
+Q: (Hard) What will be the output? 
+int[] numbers = {1, 2, 3, 4, 5}; 
+for (int i=0; i < numbers.length; i++) { 
+    if (numbers[i] % 2 == 0) System.out.println(numbers[i]); 
+}
+A) 2 4
+B) 1 to 5
+C) 2
+D) 1 3 5
+Answer: 0
+
+Level: 3
+Topic: Arrays
+Explanation: matrix has 3 rows.
+Q: (Hard) What is the length of matrix? 
+int[][] matrix = {{1, 2}, {3, 4, 5}, {6, 7, 8, 9}}; 
+System.out.println(matrix.length);
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: 2
+
+Level: 3
+Topic: Arrays
+Explanation: Loop fills slots with 1, 2, 3, 4, 5.
+Q: (Hard) What does the following snippet do? 
+int[] arr = new int[5]; 
+for (int i=0; i < arr.length; i++) { 
+    arr[i] = i + 1; 
+}
+A) random
+B) 1 to 5
+C) 0 to 4
+D) Exception
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: 4 * 2 = 8.
+Q: (Hard) What will be the result? 
+int[] arr = {1, 2, 3, 4, 5}; 
+for (int i=0; i < arr.length; i++) { 
+    arr[i] = arr[i] * 2; 
+} 
+System.out.println(arr[3]);
 A) 3
 B) 6
-C) 2
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The compiler requires a return statement for all possible paths.
-Q: (Hard) Evaluate why the following method will not compile.
-int test(){
-if(true)
-return 1;
-}
-A) Missing return statement
-B) Runtime error
-C) Logical error
-D) No issue
-Answer: 0
-
-Level: 3
-Topic: Return values
-Explanation: Pre-increment increases the value before returning.
-Q: (Hard) Determine the output of this program.
-static int test(){
-int a = 5;
-return ++a;
-}
-public static void main(String[] args){
-System.out.println(test());
-}
-A) 5
-B) 6
-C) 7
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: Integer division results in 2, then converted to double.
-Q: (Hard) Evaluate the output of test().
-static double test(){
-return 5/2;
-}
-A) 2
-B) 2.0
-C) 2.5
-D) Compilation error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The return statement immediately terminates method execution.
-Q: (Hard) Evaluate which statement is TRUE regarding return statements.
-A) A method can return multiple primitive values directly
-B) A method stops executing after return
-C) return is required in all methods
-D) Constructors return objects
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: Casting truncates the decimal portion.
-Q: (Hard) Determine what will be returned by calc().
-static int calc(){
-return (int) 4.9;
-}
-A) 4
-B) 5
-C) 4.9
-D) Error
-Answer: 0
-
-Level: 3
-Topic: Return values
-Explanation: Cannot return an integer from a boolean method.
-Q: (Hard) Evaluate what happens when this code runs.
-static boolean check(){
-return 10;
-}
-A) Returns true
-B) Returns false
-C) Compilation error
-D) Runtime error
-Answer: 2
-
-Level: 3
-Topic: Return values
-Explanation: Code after return is unreachable.
-Q: (Hard) Determine which line causes an unreachable code error.
-int test(){
-return 5;
-System.out.println("Hello");
-}
-A) return 5;
-B) println line
-C) No error
-D) Both lines
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: The method converts negative numbers to positive.
-Q: (Hard) Evaluate the returned value of abs(-7).
-static int abs(int x){
-if(x<0)
-return -x;
-else
-return x;
-}
-A) -7
-B) 7
-C) 0
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: void methods cannot return a value.
-Q: (Hard) Determine what happens if a void method attempts return 10;.
-A) Allowed
-B) Compilation error
-C) Logical error
-D) Runtime error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: Operator precedence evaluates multiplication first.
-Q: (Hard) Evaluate the output.
-static int test(){
-return 2 + 3 * 4;
-}
-A) 20
-B) 14
-C) 10
-D) 24
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: Non-void methods must return a value.
-Q: (Hard) Evaluate why the following method fails to compile.
-int x(){
-}
-A) Missing return statement
-B) Syntax error
-C) Runtime error
-D) Logical error
-Answer: 0
-
-Level: 3
-Topic: Return values
-Explanation: The method returns the string "Hi".
-Q: (Hard) Determine the output of the following program.
-Java
-static String greet(){
-return "Hi";
-}
-public static void main(String[] args){
-System.out.println(greet());
-}
-A) greet
-B) Hi
-C) null
-D) Error
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: x++ returns 3, ++x returns 5 → total 8.
-Q: (Hard) Evaluate what is returned.
-static int test(){
-int x = 3;
-return x++ + ++x;
-}
-A) 6
-B) 7
 C) 8
-D) 9
+D) 10
 Answer: 2
 
 Level: 3
-Topic: Return values
-Explanation: The compiler requires a return for all execution paths.
-Q: (Hard) Determine the issue in the code below.
-int test(){
-if(false)
-return 1;
-else if(true)
-return 2;
-}
-A) Returns 1
-B) Returns 2
-C) Compilation error
-D) Runtime error
+Topic: Arrays
+Explanation: 20 + 30 = 50.
+Q: (Hard) What will the following output? 
+int[] arr = {10, 20, 30, 40}; 
+System.out.println(arr[1] + arr[2]);
+A) 30
+B) 50
+C) 60
+D) 70
+Answer: 1
+
+Level: 3
+Topic: Arrays
+Explanation: 1+2+3+4+5 = 15.
+Q: (Hard) What does the following output? 
+int[] arr = {1, 2, 3, 4, 5}; 
+int sum = 0; 
+for (int num : arr) sum += num; 
+System.out.println(sum);
+A) 5
+B) 10
+C) 15
+D) 20
 Answer: 2
 
 Level: 3
-Topic: Return values 
-Explanation: All execution paths return exactly one value.
-Q: (Hard) Evaluate which method is properly structured.
-A) int m(){ return 1; return 2; }
-B) int m(){ if(true) return 1; else return 2; }
-C) void m(){ return 5; }
-D) int m(){ }
-Answer: 1
-
-Level: 3
-Topic: Return values
-Explanation: Since 2 > 0, the method returns 2.
-Q: (Hard) Determine what is returned by test(2).
-static int test(int x){
-return x > 0 ? x : -x;
-}
-A) -2
-B) 2
-C) 0
-D) Error
-Answer: 1
+Topic: Arrays
+Explanation: Reassiging to new int[2] resets slots to 0.
+Q: (Hard) What will be the output? 
+int[] a = new int[4]; 
+a[1]=1; 
+a = new int[2]; 
+System.out.println("a[1] is " + a[1]);
+A) compile error
+B) runtime error
+C) a[1] is 0
+D) a[1] is 1
+Answer: 2
